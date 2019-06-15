@@ -1,0 +1,9 @@
+{ "variants": {
+    "": [
+      { "model": "block/dead_bush/0" },
+      { "model": "block/dead_bush/1" },
+      { "model": "block/dead_bush/2" },
+      { "model": "block/dead_bush/2" }
+    ]
+  }
+}

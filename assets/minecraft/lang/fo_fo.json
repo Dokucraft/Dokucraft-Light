@@ -1,0 +1,22 @@
+{
+  "language.name": "F\u00f8royskt",
+  "language.region": "F\u00f8royar",
+  "language.code": "fo_FO",
+  "container.hopper": "\u00a7fTrakt",
+  "container.crafting": "\u00a7fFramlei\u00f0sla",
+  "container.enchant": "\u00a7fGanda",
+  "container.repair": "\u00a7fUmv\u00e6l og navngev",
+  "container.creative": "\u00a7fLutur valdur",
+  "container.chestDouble": "\u00a7fSt\u00f3r kista",
+  "itemGroup.buildingBlocks": "\u00a7fByggikubbar",
+  "itemGroup.decorations": "\u00a7fPyntikubbar",
+  "itemGroup.transportation": "\u00a7fFjarflutningur",
+  "itemGroup.misc": "\u00a7fYmiskt",
+  "itemGroup.search": "\u00a7fLeita lutir",
+  "itemGroup.food": "\u00a7fMatur",
+  "itemGroup.tools": "\u00a7fAmbo\u00f0",
+  "itemGroup.combat": "\u00a7fBardagi",
+  "itemGroup.brewing": "\u00a7fBrygging",
+  "itemGroup.materials": "\u00a7fLutir",
+  "itemGroup.inventory": "\u00a7fYvirlivilsi"
+}

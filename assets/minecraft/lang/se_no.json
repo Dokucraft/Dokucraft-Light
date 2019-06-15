@@ -1,0 +1,14 @@
+{
+  "language.name": "Davvis\u00e1megiella",
+  "language.region": "S\u00e1pmi",
+  "language.code": "sme",
+  "container.inventory": "\u00a7fLohku",
+  "container.chest": "\u00a7f\u00c1rku",
+  "itemGroup.transportation": "\u00a7fFievrr\u00e1dus",
+  "itemGroup.misc": "\u00a7fIe\u0161gu\u0111etl\u00e1gan",
+  "itemGroup.search": "\u00a7fOhcat Di\u014bggat",
+  "itemGroup.food": "\u00a7fBorramu\u0161",
+  "itemGroup.tools": "\u00a7fReaiddut",
+  "itemGroup.combat": "\u00a7fD\u00e1istaleapmi",
+  "itemGroup.materials": "\u00a7fMateri\u00e1lat"
+}

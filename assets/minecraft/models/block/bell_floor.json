@@ -1,0 +1,42 @@
+{
+  "textures": {
+    "particle": "block/bell_bottom",
+    "0": "block/bell_mount"
+  },
+  "elements": [
+    {
+      "from": [2, 13, 7],
+      "to": [14, 15, 9],
+      "faces": {
+        "north": {"uv": [14, 2, 16, 14], "rotation": 90, "texture": "#0"},
+        "south": {"uv": [14, 2, 16, 14], "rotation": 90, "texture": "#0"},
+        "up": {"uv": [14, 2, 16, 14], "rotation": 90, "texture": "#0"},
+        "down": {"uv": [14, 2, 16, 14], "rotation": 270, "texture": "#0"}
+      }
+    },
+    {
+      "from": [14, 0, 6],
+      "to": [16, 16, 10],
+      "faces": {
+        "north": {"uv": [4, 0, 6, 16], "texture": "#0"},
+        "east": {"uv": [0, 0, 4, 16], "texture": "#0"},
+        "south": {"uv": [10, 0, 12, 16], "texture": "#0"},
+        "west": {"uv": [6, 0, 10, 16], "texture": "#0"},
+        "up": {"uv": [12, 8, 14, 12], "texture": "#0", "cullface": "up"},
+        "down": {"uv": [12, 12, 14, 16], "texture": "#0", "cullface": "down"}
+      }
+    },
+    {
+      "from": [0, 0, 6],
+      "to": [2, 16, 10],
+      "faces": {
+        "north": {"uv": [10, 0, 12, 16], "texture": "#0"},
+        "east": {"uv": [6, 0, 10, 16], "texture": "#0"},
+        "south": {"uv": [4, 0, 6, 16], "texture": "#0"},
+        "west": {"uv": [0, 0, 4, 16], "texture": "#0"},
+        "up": {"uv": [12, 8, 14, 12], "texture": "#0", "cullface": "up"},
+        "down": {"uv": [12, 12, 14, 16], "texture": "#0", "cullface": "down"}
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "language.name": "Limburgs",
+  "language.region": "Limburg",
+  "language.code": "li_NL",
+  "container.inventory": "\u00a7fInventaar",
+  "container.hopper": "\u00a7fVoorwerp Trechter",
+  "container.crafting": "\u00a7fVervaardiging",
+  "container.dispenser": "\u00a7fDispenser",
+  "container.dropper": "\u00a7fDropper",
+  "container.furnace": "\u00a7fAove",
+  "container.enchant": "\u00a7fBetouver",
+  "container.repair": "\u00a7fAambeeld",
+  "container.creative": "\u00a7fVoorwerpselectie",
+  "container.brewing": "\u00a7fBrouwstandaard",
+  "container.chest": "\u00a7fKis",
+  "container.chestDouble": "\u00a7fGroate Kis",
+  "container.enderchest": "\u00a7fEnderkis",
+  "container.shulkerBox": "\u00a7fShulker doeas",
+  "itemGroup.redstone": "\u00a7fRedstone",
+  "itemGroup.tools": "\u00a7fGereedsjap",
+  "itemGroup.combat": "\u00a7fGevecht",
+  "itemGroup.brewing": "\u00a7fBrouwen"
+}

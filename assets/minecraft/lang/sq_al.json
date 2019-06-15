@@ -1,0 +1,20 @@
+{
+  "language.name": "Shqip",
+  "language.region": "Shqip\u00ebri",
+  "language.code": "sq_AL",
+  "container.inventory": "\u00a7fInventar",
+  "container.hopper": "\u00a7fMbledh\u00ebs Sendesh",
+  "container.crafting": "\u00a7fduke punuar",
+  "container.dispenser": "\u00a7fGjuajt\u00ebs",
+  "container.dropper": "\u00a7fHedh\u00ebs",
+  "container.furnace": "\u00a7fStuf\u00eb",
+  "container.enchant": "\u00a7fP\u00ebrforco",
+  "container.repair": "\u00a7fNdreq dhe Em\u00ebro",
+  "container.creative": "\u00a7fSelektim i Sendeve",
+  "container.brewing": "\u00a7fBanak Ila\u00e7esh",
+  "container.chest": "\u00a7fArk\u00eb",
+  "container.chestDouble": "\u00a7fS\u00ebnduk i madh",
+  "container.enderchest": "\u00a7fArk\u00eb Ender",
+  "container.shulkerBox": "\u00a7fKutia kudh\u00ebr",
+  "itemGroup.buildingBlocks": "\u00a7fNd\u00ebrto Blloqe"
+}

@@ -1,0 +1,22 @@
+{
+  "language.name": "Quenya",
+  "language.region": "Arda",
+  "language.code": "qya_AA",
+  "container.crafting": "\u00a7fTani\u00eb",
+  "container.furnace": "\u00a7fUrna",
+  "container.enchant": "\u00a7fLuhta",
+  "container.repair": "\u00a7fEnvinyata ar anta aness\u00eb",
+  "container.creative": "\u00a7fCilm\u00eb Natwa",
+  "container.chestDouble": "\u00a7fAlt\u00eb Mando",
+  "itemGroup.buildingBlocks": "\u00a7fColcar C\u00e1rala",
+  "itemGroup.decorations": "\u00a7fNeti\u00ebn Colcar",
+  "itemGroup.redstone": "\u00a7fCarniondo",
+  "itemGroup.transportation": "\u00a7fLevi\u00eb",
+  "itemGroup.search": "\u00a7fSaca Nati",
+  "itemGroup.food": "\u00a7fMatso",
+  "itemGroup.tools": "\u00a7fTammar",
+  "itemGroup.combat": "\u00a7fMahti\u00eb",
+  "itemGroup.brewing": "\u00a7f\u00d3quantal\u00eb",
+  "itemGroup.materials": "\u00a7fTalmermali",
+  "itemGroup.inventory": "\u00a7fVori\u00eb armar"
+}

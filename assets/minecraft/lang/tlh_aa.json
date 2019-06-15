@@ -1,0 +1,21 @@
+{
+  "language.name": "tlhIngan Hol",
+  "language.region": "tlhIngan wo'",
+  "language.code": "tlh_aa",
+  "container.hopper": "\u00a7fitem hopper",
+  "container.crafting": "\u00a7fchenmoH",
+  "container.enchant": "\u00a7flaH chel",
+  "container.repair": "\u00a7ftI' 'ej pong",
+  "container.creative": "\u00a7fDoch wIv",
+  "container.chestDouble": "\u00a7fngaSwI' tIn",
+  "itemGroup.buildingBlocks": "\u00a7fchenmoHmeH ngoghmey",
+  "itemGroup.decorations": "\u00a7f'IHmoHmeH ngoghmey",
+  "itemGroup.transportation": "\u00a7flupwI'",
+  "itemGroup.search": "\u00a7fDochmeyDaq nej",
+  "itemGroup.food": "\u00a7fSoj",
+  "itemGroup.tools": "\u00a7fjanmey",
+  "itemGroup.combat": "\u00a7fvIq",
+  "itemGroup.brewing": "\u00a7fHIq vutwI'",
+  "itemGroup.materials": "\u00a7fchenmoHmeH Hap",
+  "itemGroup.inventory": "\u00a7ftaHmeH qengwI'"
+}

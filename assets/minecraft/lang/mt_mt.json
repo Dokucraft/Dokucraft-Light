@@ -1,0 +1,22 @@
+{
+  "language.name": "Malti",
+  "language.region": "Malta",
+  "language.code": "mt_MT",
+  "container.hopper": "\u00a7fLembut",
+  "container.crafting": "\u00a7fSnajja",
+  "container.enchant": "\u00a7fMa\u0121ija",
+  "container.repair": "\u00a7fSewwi u Semmi",
+  "container.creative": "\u00a7fSelezzjoni ta' O\u0121\u0121etti",
+  "container.chest": "\u00a7fSenduq",
+  "container.chestDouble": "\u00a7fSenduq Kbir",
+  "itemGroup.buildingBlocks": "\u00a7fBlokok tal-Bini",
+  "itemGroup.decorations": "\u00a7fBlokok tat-Ti\u017cjin",
+  "itemGroup.transportation": "\u00a7fTrasport",
+  "itemGroup.search": "\u00a7fFittex",
+  "itemGroup.food": "\u00a7fIkel",
+  "itemGroup.tools": "\u00a7fG\u0127odda",
+  "itemGroup.combat": "\u00a7f\u0120lied",
+  "itemGroup.brewing": "\u00a7fXarbiet",
+  "itemGroup.materials": "\u00a7fMaterjali",
+  "itemGroup.inventory": "\u00a7fInventarju tas-Sopravivenza"
+}
