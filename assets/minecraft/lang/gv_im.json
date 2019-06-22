@@ -17,5 +17,7 @@
   "itemGroup.combat": "\u00a7fCaggey",
   "itemGroup.brewing": "\u00a7fImbyl",
   "itemGroup.materials": "\u00a7fStooghyn",
-  "itemGroup.inventory": "\u00a7fCooid Vayrnaght"
+  "itemGroup.inventory": "\u00a7fCooid Vayrnaght",
+  "entity.minecraft.villager.none": "\u00a7fTheayagh",
+  "entity.minecraft.villager": "\u00a7fTheayagh"
 }
