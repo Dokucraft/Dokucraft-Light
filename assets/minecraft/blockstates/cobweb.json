@@ -2,7 +2,14 @@
     "": [
       { "model": "block/cobweb/0" },
       { "model": "block/cobweb/1" },
-      { "model": "block/cobweb/2" }
+	  { "model": "block/cobweb/2" },
+	  { "model": "block/cobweb/3" },
+	  { "model": "block/cobweb/4" },
+	  { "model": "block/cobweb/5" },
+	  { "model": "block/cobweb/6" },
+	  { "model": "block/cobweb/7" },
+	  { "model": "block/cobweb/8" },
+      { "model": "block/cobweb/9" }
     ]
   }
 }
