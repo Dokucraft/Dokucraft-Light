@@ -17,5 +17,16 @@
   "itemGroup.combat": "\u00a7fvIq",
   "itemGroup.brewing": "\u00a7fHIq vutwI'",
   "itemGroup.materials": "\u00a7fchenmoHmeH Hap",
-  "itemGroup.inventory": "\u00a7ftaHmeH qengwI'"
+  "itemGroup.inventory": "\u00a7ftaHmeH qengwI'",
+  "entity.minecraft.villager.armorer": "\u00a7fnuv may'luch",
+  "entity.minecraft.villager.butcher": "\u00a7fHa'DIbaH chenmoHwI'",
+  "entity.minecraft.villager.cartographer": "\u00a7fpu'jIn chenmoHwI'",
+  "entity.minecraft.villager.cleric": "\u00a7flalDan ghot",
+  "entity.minecraft.villager.farmer": "\u00a7fwIjwI'",
+  "entity.minecraft.villager.fisherman": "\u00a7fghotI' wamwI'",
+  "entity.minecraft.villager.fletcher": "\u00a7ftlhevjaQHom chenmoHwI'",
+  "entity.minecraft.villager.librarian": "\u00a7fpaq Dojmey ghot",
+  "entity.minecraft.villager.none": "\u00a7fvengHom ghot",
+  "entity.minecraft.villager.shepherd": "\u00a7fbolmaq DevwI'",
+  "entity.minecraft.villager": "\u00a7fvengHom ghot"
 }
