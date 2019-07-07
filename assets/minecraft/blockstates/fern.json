@@ -1,0 +1,16 @@
+{ "multipart": [
+    { "apply": [
+        { "model": "block/fern" },
+        { "model": "block/fern", "y": 90 },
+        { "model": "block/fern", "y": 180 },
+        { "model": "block/fern", "y": 270 }
+      ]
+    },
+    { "apply": [
+        { "model": "block/fern_cross", "weight": 1 },
+        { "model": "block/fern_cross_mirrored", "weight": 1 },
+        { "model": "block/fern_stems", "weight": 8 }
+      ]
+    }
+  ]
+}
