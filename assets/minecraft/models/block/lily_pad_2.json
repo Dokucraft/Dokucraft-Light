@@ -253,7 +253,7 @@
 		},
 		{
 			"from": [0.8, -16, 8],
-			"to": [15.2, -1.75, 8],
+			"to": [15.2, -2, 8],
 			"shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
 			"faces": {
@@ -263,7 +263,7 @@
 		},
 		{
 			"from": [8, -16, 0.8],
-			"to": [8, -1.5, 15.2],
+			"to": [8, -2, 15.2],
 			"shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
 			"faces": {
