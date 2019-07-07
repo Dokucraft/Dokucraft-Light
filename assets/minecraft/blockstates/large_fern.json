@@ -1,0 +1,27 @@
+{ "multipart": [
+    { "when": { "half": "lower" },
+      "apply": [
+        { "model": "block/large_fern_bottom", "weight": 2 },
+        { "model": "block/large_fern_bottom_mirrored", "weight": 2 },
+        { "model": "block/large_fern_bottom_alt", "weight": 1 },
+        { "model": "block/large_fern_bottom_alt_mirrored", "weight": 1 }
+      ]
+    },
+    { "when": { "half": "lower" },
+      "apply": [
+        { "model": "block/fern" },
+        { "model": "block/fern", "y": 90 },
+        { "model": "block/fern", "y": 180 },
+        { "model": "block/fern", "y": 270 }
+      ]
+    },
+    { "when": { "half": "upper" },
+      "apply": [
+        { "model": "block/large_fern_top", "weight": 2 },
+        { "model": "block/large_fern_top_mirrored", "weight": 2 },
+        { "model": "block/large_fern_top_alt", "weight": 1 },
+        { "model": "block/large_fern_top_alt_mirrored", "weight": 1 }
+      ]
+    }
+  ]
+}
