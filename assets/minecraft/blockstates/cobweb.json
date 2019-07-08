@@ -9,7 +9,9 @@
 	  { "model": "block/cobweb/6" },
 	  { "model": "block/cobweb/7" },
 	  { "model": "block/cobweb/8" },
-      { "model": "block/cobweb/9" }
+	  { "model": "block/cobweb/9" },
+	  { "model": "block/cobweb/10" },
+      { "model": "block/cobweb/11" }
     ]
   }
 }
