@@ -1,9 +1,8 @@
 {
 	"credit": "Made By WantedRobot",
-	"ambientocclusion": false,
 	"textures": {
 		"0": "block/torch",
-		"1": "block/fire",
+		"1": "block/torch_fire",
 		"particle": "block/torch"
 	},
 	"elements": [
