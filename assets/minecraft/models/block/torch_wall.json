@@ -4,7 +4,8 @@
 	"ambientocclusion": false,
 	"textures": {
 		"0": "block/torch",
-		"1": "block/torch_fire"
+		"1": "block/torch_fire",
+		"particle": "block/torch"
 	},
 	"elements": [
 		{
