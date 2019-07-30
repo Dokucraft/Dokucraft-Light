@@ -1,6 +1,5 @@
 {
 	"credit": "Made By WantedRobot",
-	"parent": "block/torch_wall",
 	"ambientocclusion": false,
 	"textures": {
 		"0": "block/torch",
