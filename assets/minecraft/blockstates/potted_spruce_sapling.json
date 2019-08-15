@@ -1,0 +1,179 @@
+{
+	"multipart": [{
+			"apply": [
+				{
+					"model": "block/flower_pot", "weight":2
+				},
+				{
+					"model": "block/flower_pot2", "weight":2
+				},
+				{
+					"model": "block/flower_pot3", "weight":2
+				},
+				{
+					"model": "block/flower_pot4", "weight":2
+				},
+				{
+					"model": "block/flower_pot5", "weight":2
+				},
+				{
+					"model": "block/flower_pot6", "weight":2
+				},
+				{
+					"model": "block/flower_pot7", "weight":2
+				},
+				{
+					"model": "block/flower_pot8", "weight":2
+				},
+				{
+					"model": "block/flower_pot9", "weight":1
+				},
+				{
+					"model": "block/flower_pot10", "weight":1
+				},
+				{
+					"model": "block/flower_pot11", "weight":1
+				},
+				{
+					"model": "block/flower_pot12", "weight":1
+				},
+				{
+					"model": "block/flower_pot13", "weight":1
+				},
+				{
+					"model": "block/flower_pot14", "weight":1
+				},
+				{
+					"model": "block/flower_pot15", "weight":1
+				},
+				{
+					"model": "block/flower_pot16", "weight":1
+				},
+				{
+					"model": "block/flower_pot9", "y":90, "weight":1
+				},
+				{
+					"model": "block/flower_pot10", "y":90, "weight":1
+				},
+				{
+					"model": "block/flower_pot11", "y":90, "weight":1
+				},
+				{
+					"model": "block/flower_pot12", "y":90, "weight":1
+				},
+				{
+					"model": "block/flower_pot13", "y":90, "weight":1
+				},
+				{
+					"model": "block/flower_pot14", "y":90, "weight":1
+				},
+				{
+					"model": "block/flower_pot15", "y":90, "weight":1
+				},
+				{
+					"model": "block/flower_pot16", "y":90, "weight":1
+				},
+				{
+					"model": "block/flower_pot17", "weight":2
+				},
+				{
+					"model": "block/flower_pot18", "weight":2
+				},
+				{
+					"model": "block/flower_pot19", "weight":2
+				},
+				{
+					"model": "block/flower_pot20", "weight":2
+				}
+			]
+		},
+		{
+			"apply": [
+				{
+					"model": "block/potted_spruce_sapling", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling2", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling2", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling2", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling2", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling3", "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling3", "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling3", "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling3", "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling4", "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling4", "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling4", "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling4", "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling3", "y":90, "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling3", "y":90, "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling3", "y":90, "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling3", "y":90, "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling4", "y":90, "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling4", "y":90, "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling4", "y":90, "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling4", "y":90, "weight":1
+				},
+				{
+					"model": "block/potted_spruce_sapling5", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling5", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling5", "weight":2
+				},
+				{
+					"model": "block/potted_spruce_sapling5", "weight":2
+				}
+			]
+		}
+	]
+}
