@@ -1,5 +1,6 @@
 {
 	"credit": "Made By WantedRobot",
+	"parent": "block/block",
 	"textures": {
 		"texture": "block/note_block",
 		"particle": "block/note_block"
