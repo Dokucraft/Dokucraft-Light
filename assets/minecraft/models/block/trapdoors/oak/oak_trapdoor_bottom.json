@@ -1,5 +1,6 @@
 {
 	"credit": "Made By WantedRobot",
+	"parent": "block/thin_block",
 	"ambientocclusion": false,
 	"textures": {
 		"sides": "block/oak_trapdoor_rim",
