@@ -21,9 +21,7 @@
 			"from": [6, 6, 4],
 			"to": [10, 10, 12],
 			"faces": {
-				"north": {"uv": [0, 0, 0, 0], "texture": "#piston"},
 				"east": {"uv": [0, 8, 4, 16], "rotation": 270, "texture": "#piston"},
-				"south": {"uv": [0, 0, 0, 0], "texture": "#piston"},
 				"west": {"uv": [0, 8, 4, 16], "rotation": 270, "texture": "#piston"},
 				"up": {"uv": [0, 8, 4, 16], "texture": "#piston"},
 				"down": {"uv": [0, 8, 4, 16], "rotation": 180, "texture": "#piston"}
@@ -35,7 +33,6 @@
 			"faces": {
 				"north": {"uv": [0, 2, 6, 8], "texture": "#piston"},
 				"east": {"uv": [10, 16, 4, 8], "rotation": 270, "texture": "#piston"},
-				"south": {"uv": [0, 0, 0, 0], "texture": "#piston"},
 				"west": {"uv": [10, 16, 4, 8], "rotation": 90, "texture": "#piston"},
 				"up": {"uv": [4, 8, 10, 16], "texture": "#piston"},
 				"down": {"uv": [10, 16, 4, 8], "texture": "#piston"}
