@@ -1,5 +1,5 @@
 {
-    "parent": "block/door_top_rh",
+    "parent": "block/door_top_rh_template",
     "textures": {
         "bottom": "block/spruce_door_bottom",
         "top": "block/spruce_door_top",
