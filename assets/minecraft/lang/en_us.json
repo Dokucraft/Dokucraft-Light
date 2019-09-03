@@ -2,6 +2,7 @@
   "language.name": "English",
   "language.region": "United States",
   "language.code": "en_us",
+
   "gui.advancements": "\u00a7fAdvancements",
   "container.inventory": "\u00a7fInventory",
   "container.hopper": "\u00a7fItem Hopper",
@@ -24,6 +25,7 @@
   "container.smoker": "\u00a7fSmoker",
   "container.stonecutter": "\u00a7fStonecutter",
   "container.blast_furnace": "\u00a7fBlast Furnace",
+
   "itemGroup.buildingBlocks": "\u00a7fBuilding Blocks",
   "itemGroup.decorations": "\u00a7fDecoration Blocks",
   "itemGroup.redstone": "\u00a7fRedstone",
@@ -37,12 +39,14 @@
   "itemGroup.materials": "\u00a7fMaterials",
   "itemGroup.inventory": "\u00a7fSurvival Inventory",
   "itemGroup.hotbar": "\u00a7fSaved Toolbars",
+
   "merchant.level.1": "\u00a7fNovice",
   "merchant.level.2": "\u00a7fApprentice",
   "merchant.level.3": "\u00a7fJourneyman",
   "merchant.level.4": "\u00a7fExpert",
   "merchant.level.5": "\u00a7fMaster",
   "merchant.trades": "\u00a7fTrades",
+
   "entity.minecraft.villager.armorer": "\u00a7fArmorer",
   "entity.minecraft.villager.butcher": "\u00a7fButcher",
   "entity.minecraft.villager.cartographer": "\u00a7fCartographer",
@@ -60,6 +64,11 @@
   "entity.minecraft.villager.weaponsmith": "\u00a7fWeaponsmith",
   "entity.minecraft.villager": "\u00a7fVillager",
   "entity.minecraft.wandering_trader": "\u00a7fWandering Trader",
+
+  "gameMode.hardcore": "\u00A74Hardcore Mode!",
+  "selectWorld.gameMode.hardcore": "\u00A74Hardcore",
+  "selectWorld.hardcoreMode": "\u00A74Hardcore:",
+
   "options.resourcepack": "Resource Packs",
   "options.snooper.view": "Snooper Settings",
   "options.skinCustomisation": "Skin Customization",
@@ -71,5 +80,8 @@
   "options.video": "Video Settings",
   "options.controls": "Controls",
   "options.chat.title": "Chat Settings",
-  "resourcePack.openFolder": "Resource Pack Folder"
+  "options.difficulty.hardcore": "\u00A74Hardcore",
+
+  "resourcePack.openFolder": "Resource Pack Folder",
+  "resourcePack.title": "§4(Please use Optifine!!)    §fResource Packs    §4(Please use Optifine!!)"
 }
