@@ -31,7 +31,7 @@
 
  	3.
 	   Now select Dokucraft in the resource pack menu
-	   and move it to selectde packs hit done and wait
+	   and move it to selected packs hit done and wait
 	   for the game to load the textures.
 ═══════════════════════════════════════════════════════════════════════
  	Please, share this texture pack by using the original
