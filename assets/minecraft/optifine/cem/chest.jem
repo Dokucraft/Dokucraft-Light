@@ -3,10 +3,10 @@
   "models": 
   [
     {
-      "model": "skeleton_body.jpm",
-      "part": "body", 
+      "model": "rid_chest_base.jpm",
+      "part": "base", 
 	  "attach": false,
-      "translate": [ 8, 12, -9],
+      "translate": [ 15, 10, -1],
       "rotate": [0, 0, 0]
     }
   ]
