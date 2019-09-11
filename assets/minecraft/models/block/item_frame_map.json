@@ -1,62 +1,30 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made By WantedRobot",
 	"textures": {
-		"wood": "block/birch_planks",
-		"particle": "block/birch_planks",
-		"back": "block/itemframe_background"
+		"1": "block/item_frame_back",
+		"texture": "block/item_frame_front",
+		"particle": "block/item_frame_front"
 	},
 	"elements": [
 		{
-			"from": [1, 1, 15.001],
-			"to": [15, 15, 16],
-			"faces": {
-				"north": {"uv": [1, 1, 15, 15], "texture": "#back"},
-				"south": {"uv": [1, 1, 15, 15], "texture": "#back"}
-			}
-		},
-		{
-			"from": [0, 0, 15.001],
-			"to": [15, 1, 16],
-			"faces": {
-				"north": {"uv": [1, 0, 15, 1], "rotation": 180, "texture": "#wood"},
-				"east": {"uv": [0, 15, 1, 16], "texture": "#wood"},
-				"south": {"uv": [1, 0, 15, 1], "rotation": 180, "texture": "#wood"},
-				"west": {"uv": [15, 15, 16, 16], "texture": "#wood"},
-				"up": {"uv": [0, 15, 16, 16], "texture": "#wood"},
-				"down": {"uv": [0, 15, 16, 16], "texture": "#wood"}
-			}
-		},
-		{
-			"from": [0, 15, 15.001],
+			"from": [0, 0, 15],
 			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8.5]},
 			"faces": {
-				"north": {"uv": [1, 0, 15, 1], "texture": "#wood"},
-				"east": {"uv": [0, 0, 1, 1], "texture": "#wood"},
-				"south": {"uv": [1, 0, 15, 1], "texture": "#wood"},
-				"west": {"uv": [15, 0, 16, 1], "texture": "#wood"},
-				"up": {"uv": [0, 15, 16, 16], "texture": "#wood"},
-				"down": {"uv": [0, 0, 16, 1], "texture": "#wood"}
+				"north": {"uv": [4, 4, 12, 11.5], "texture": "#texture"},
+				"east": {"uv": [0.5, 2, 1.5, 14], "rotation": 180, "texture": "#texture"},
+				"south": {"uv": [2, 2, 14, 14], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [14.5, 2, 15.5, 14], "texture": "#texture"},
+				"up": {"uv": [2, 0.5, 14, 1.5], "texture": "#texture"},
+				"down": {"uv": [2, 14.5, 14, 15.5], "texture": "#texture"}
 			}
-		},
+		}
+	],
+	"groups": [
 		{
-			"from": [0, 1, 15.001],
-			"to": [1, 15, 16],
-			"faces": {
-				"north": {"uv": [1, 0, 15, 1], "rotation": 90, "texture": "#wood"},
-				"east": {"uv": [0, 1, 1, 15], "texture": "#wood"},
-				"south": {"uv": [1, 0, 15, 1], "rotation": 270, "texture": "#wood"},
-				"west": {"uv": [0, 15, 16, 16], "rotation": 90, "texture": "#wood"}
-			}
-		},
-		{
-			"from": [15, 0, 15.001],
-			"to": [16, 15, 16],
-			"faces": {
-				"north": {"uv": [1, 0, 15, 1], "rotation": 270, "texture": "#wood"},
-				"east": {"uv": [0, 15, 16, 16], "rotation": 90, "texture": "#wood"},
-				"south": {"uv": [1, 0, 15, 1], "rotation": 90, "texture": "#wood"},
-				"west": {"uv": [15, 1, 16, 15], "texture": "#wood"}
-			}
+			"name": "item_frame",
+			"origin": [8, 8, 8],
+			"children": [0]
 		}
 	]
 }

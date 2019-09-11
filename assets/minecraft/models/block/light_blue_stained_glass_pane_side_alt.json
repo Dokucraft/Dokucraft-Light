@@ -2,6 +2,6 @@
     "parent": "block/template_glass_pane_side_alt",
     "textures": {
         "edge": "block/light_blue_stained_glass_pane_top",
-        "pane": "block/light_blue_stained_glass_panes"
+        "pane": "block/light_blue_stained_glass_pane"
     }
 }
