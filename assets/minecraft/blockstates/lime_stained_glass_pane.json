@@ -48,16 +48,16 @@
             "apply": { "model": "block/glass_pane_top_four_way", "y": 270 }
         },
         {   "when": { "north": true },
-            "apply": { "model": "block/lime_stained_glass_pane_side" }
+            "apply": { "model": "block/lime_stained_glass_pane_side_north" }
         },
         {   "when": { "east": true },
-            "apply": { "model": "block/lime_stained_glass_pane_side", "y": 90 }
+            "apply": { "model": "block/lime_stained_glass_pane_side_east" }
         },
         {   "when": { "south": true },
-            "apply": { "model": "block/lime_stained_glass_pane_side_alt" }
+            "apply": { "model": "block/lime_stained_glass_pane_side_south" }
         },
         {   "when": { "west": true },
-            "apply": { "model": "block/lime_stained_glass_pane_side_alt", "y": 90 }
+            "apply": { "model": "block/lime_stained_glass_pane_side_west" }
         },
         {   "when": { "OR": [
                 { "north": false, "west": true},
