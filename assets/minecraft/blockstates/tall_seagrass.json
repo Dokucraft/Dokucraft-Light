@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "half=lower": { "model": "block/coral/tall_seagrass/tall_seagrass_bottom" },
+        "half=upper": [
+        	{ "model": "block/coral/tall_seagrass/0" },
+        	{ "model": "block/coral/tall_seagrass/1" },
+        	{ "model": "block/coral/tall_seagrass/2" },
+        	{ "model": "block/coral/tall_seagrass/3" }
+        ]
+    }
+}
