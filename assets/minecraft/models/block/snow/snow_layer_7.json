@@ -1,22 +1,22 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
 		"outer_layer": "block/snow_layer",
-		"texture": "block/snow",
-		"particle": "block/snow"
+		"particle": "block/snow",
+		"texture": "block/snow"
 	},
 	"elements": [
 		{
 			"name": "Snow Layer",
 			"from": [0, 0, 0],
-			"to": [16, 10, 16],
+			"to": [16, 14, 16],
 			"faces": {
-				"north": {"uv": [0, 6, 16, 16], "texture": "#texture"},
-				"east": {"uv": [0, 6, 16, 16], "texture": "#texture"},
-				"south": {"uv": [0, 6, 16, 16], "texture": "#texture"},
-				"west": {"uv": [0, 6, 16, 16], "texture": "#texture"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "up"},
+				"north": {"uv": [0, 2, 16, 16], "texture": "#texture"},
+				"east": {"uv": [0, 2, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 2, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 2, 16, 16], "texture": "#texture"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#texture"},
 				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
 			}
 		},
@@ -189,10 +189,10 @@
 		{
 			"name": "Snow Layer",
 			"from": [0, 0, 15.9],
-			"to": [16, 10, 16.15],
+			"to": [16, 14, 16.15],
 			"faces": {
 				"east": {"uv": [0, 14, 0.25, 16], "texture": "#texture", "cullface": "south"},
-				"south": {"uv": [0, 6, 16, 16], "texture": "#texture", "cullface": "south"},
+				"south": {"uv": [0, 2, 16, 16], "texture": "#texture", "cullface": "south"},
 				"west": {"uv": [0, 14, 0.25, 16], "texture": "#texture", "cullface": "south"},
 				"up": {"uv": [0, 0, 16, 0.25], "texture": "#texture", "cullface": "south"},
 				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
@@ -367,9 +367,9 @@
 		{
 			"name": "Snow Layer",
 			"from": [0, 0, -0.14],
-			"to": [16, 10, 0.11],
+			"to": [16, 14, 0.11],
 			"faces": {
-				"north": {"uv": [0, 6, 16, 16], "texture": "#texture", "cullface": "north"},
+				"north": {"uv": [0, 2, 16, 16], "texture": "#texture", "cullface": "north"},
 				"east": {"uv": [0, 14, 0.25, 16], "texture": "#texture", "cullface": "north"},
 				"west": {"uv": [0, 14, 0.25, 16], "texture": "#texture", "cullface": "north"},
 				"up": {"uv": [0, 0, 16, 0.25], "texture": "#texture", "cullface": "north"},
@@ -545,10 +545,10 @@
 		{
 			"name": "Snow Layer",
 			"from": [15.9, 0, 0],
-			"to": [16.15, 10, 16],
+			"to": [16.15, 14, 16],
 			"faces": {
 				"north": {"uv": [0, 14, 0.25, 16], "texture": "#texture", "cullface": "east"},
-				"east": {"uv": [0, 6, 16, 16], "texture": "#texture", "cullface": "east"},
+				"east": {"uv": [0, 2, 16, 16], "texture": "#texture", "cullface": "east"},
 				"south": {"uv": [0, 14, 0.25, 16], "texture": "#texture", "cullface": "east"},
 				"up": {"uv": [0, 0, 0.25, 16], "texture": "#texture", "cullface": "east"},
 				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
@@ -723,11 +723,11 @@
 		{
 			"name": "Snow Layer",
 			"from": [-0.14, 0, 0],
-			"to": [0.11, 10, 16],
+			"to": [0.11, 14, 16],
 			"faces": {
 				"north": {"uv": [0, 14, 0.25, 16], "texture": "#texture", "cullface": "west"},
 				"south": {"uv": [0, 14, 0.25, 16], "texture": "#texture", "cullface": "west"},
-				"west": {"uv": [0, 6, 16, 16], "texture": "#texture", "cullface": "west"},
+				"west": {"uv": [0, 2, 16, 16], "texture": "#texture", "cullface": "west"},
 				"up": {"uv": [0, 0, 0.25, 16], "texture": "#texture", "cullface": "west"},
 				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
 			}
