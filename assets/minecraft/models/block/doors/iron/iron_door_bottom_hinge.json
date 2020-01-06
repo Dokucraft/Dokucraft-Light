@@ -1,8 +1,0 @@
-{
-    "parent": "block/door_bottom_rh_template",
-    "textures": {
-        "bottom": "block/iron_door_bottom",
-        "top": "block/iron_door_top",
-        "sides": "block/iron_door_sides"
-    }
-}
