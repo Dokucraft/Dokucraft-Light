@@ -1,4 +1,4 @@
-{ "parent":"block/vine",
+{ "parent":"block/vines/vine",
   "display": {
     "gui": { "rotation": [0, 180, 0] },
     "fixed": { "translation": [0, 0, -8] },

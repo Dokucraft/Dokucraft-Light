@@ -16,45 +16,45 @@
         { "north": true, "east": true, "south": true, "west": true }
       ]},
       "apply": [
-        { "model": "block/andesite_wall_post" },
-        { "model": "block/andesite_wall_post", "y": 90 },
-        { "model": "block/andesite_wall_post", "y": 180 },
-        { "model": "block/andesite_wall_post", "y": 270 }
+        { "model": "block/walls/andesite/andesite_wall_post" },
+        { "model": "block/walls/andesite/andesite_wall_post", "y": 90 },
+        { "model": "block/walls/andesite/andesite_wall_post", "y": 180 },
+        { "model": "block/walls/andesite/andesite_wall_post", "y": 270 }
       ]
     },
     { "when": { "north": true, "east": false, "south": true, "west": false },
-      "apply": { "model": "block/andesite_wall_railing" }
+      "apply": { "model": "block/walls/andesite/andesite_wall_railing" }
     },
     { "when": { "north": false, "east": true, "south": false, "west": true },
-      "apply": { "model": "block/andesite_wall_railing", "y": 90 }
+      "apply": { "model": "block/walls/andesite/andesite_wall_railing", "y": 90 }
     },
     { "when": { "OR": [
         { "north": true, "east": false, "south": false, "west": false },
         { "north": true, "east": true },
         { "north": true, "west": true }
       ]},
-      "apply": { "model": "block/andesite_wall_side_ne" }
+      "apply": { "model": "block/walls/andesite/andesite_wall_side_ne" }
     },
     { "when": { "OR": [
         { "north": false, "east": true, "south": false, "west": false },
         { "east": true, "north": true },
         { "east": true, "south": true }
       ]},
-      "apply": { "model": "block/andesite_wall_side_ne", "y": 90 }
+      "apply": { "model": "block/walls/andesite/andesite_wall_side_ne", "y": 90 }
     },
     { "when": { "OR": [
         { "north": false, "east": false, "south": true, "west": false },
         { "south": true, "east": true },
         { "south": true, "west": true }
       ]},
-      "apply": { "model": "block/andesite_wall_side_sw" }
+      "apply": { "model": "block/walls/andesite/andesite_wall_side_sw" }
     },
     { "when": { "OR": [
         { "north": false, "east": false, "south": false, "west": true },
         { "west": true, "north": true },
         { "west": true, "south": true }
       ]},
-      "apply": { "model": "block/andesite_wall_side_sw", "y": 90 }
+      "apply": { "model": "block/walls/andesite/andesite_wall_side_sw", "y": 90 }
     }
   ]
 }
