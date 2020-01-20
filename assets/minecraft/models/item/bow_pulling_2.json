@@ -1,5 +1,6 @@
 {
 	"credit": "Made By WantedRobot",
+	"gui_light": "front",
 	"textures": {
 		"2": "item/arrow",
 		"4": "item/bow_pulling_2",
