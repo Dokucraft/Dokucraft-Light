@@ -1,1 +1,8 @@
-{"variants":{"":{"model":"block/netherrack"}}}
+{
+    "variants": {
+        "": [
+            { "model": "block/netherrack" },
+            { "model": "block/netherrack_alt" }
+        ]
+    }
+}
