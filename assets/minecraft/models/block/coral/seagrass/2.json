@@ -2,13 +2,13 @@
 	"credit": "Made By WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"seagrass": "block/seagrass",
-		"particle": "block/seagrass"
+		"particle": "block/seagrass",
+		"seagrass": "block/seagrass"
 	},
 	"elements": [
 		{
-			"from": [4, 0, 0],
-			"to": [4, 16, 16],
+			"from": [4, 0, -8],
+			"to": [4, 32, 24],
 			"shade": false,
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
@@ -17,8 +17,8 @@
 			}
 		},
 		{
-			"from": [0, 0, 4],
-			"to": [16, 16, 4],
+			"from": [-8, 0, 4],
+			"to": [24, 32, 4],
 			"shade": false,
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
@@ -27,8 +27,8 @@
 			}
 		},
 		{
-			"from": [0, 0, 12],
-			"to": [16, 16, 12],
+			"from": [-8, 0, 12],
+			"to": [24, 32, 12],
 			"shade": false,
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
@@ -37,8 +37,8 @@
 			}
 		},
 		{
-			"from": [12, 0, 0],
-			"to": [12, 16, 16],
+			"from": [12, 0, -8],
+			"to": [12, 32, 24],
 			"shade": false,
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
