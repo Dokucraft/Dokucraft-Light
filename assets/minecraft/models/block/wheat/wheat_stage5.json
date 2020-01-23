@@ -1,0 +1,6 @@
+{
+    "parent": "block/wheat/wheat",
+    "textures": {
+        "wheat": "block/wheat/wheat_stage5"
+    }
+}
