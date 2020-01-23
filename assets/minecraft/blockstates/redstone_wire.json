@@ -1,0 +1,82 @@
+{
+    "multipart": [
+        {
+            "when": { "north": "none", "east": "none", "south": "none", "west": "none" },
+            "apply": [
+            	{ "model": "block/redstone/redstone_dust_dot" },
+            	{ "model": "block/redstone/redstone_dust_dot", "y": 90 },
+            	{ "model": "block/redstone/redstone_dust_dot", "y": 180 },
+            	{ "model": "block/redstone/redstone_dust_dot", "y": 270 }
+            ]
+        },
+        {
+            "when": { "OR": [
+                { "north": "side|up", "south": "side|up", "east": "none", "west": "none" },
+                { "north": "side|up", "east": "none", "west": "none" },
+                { "south": "side|up", "east": "none", "west": "none" }
+            ]},
+            "apply": { "model": "block/redstone/redstone_dust_line" }
+        },
+        {
+            "when": { "OR": [
+                { "east": "side|up", "west": "side|up", "north": "none", "south": "none" },
+                { "east": "side|up", "north": "none", "south": "none" },
+                { "west": "side|up", "north": "none", "south": "none" }
+            ]},
+            "apply": { "model": "block/redstone/redstone_dust_line", "y": 90 }
+        },
+        {
+            "when": { "north": "side|up", "east": "side|up", "south": "side|up", "west": "side|up" },
+            "apply": [
+            	{ "model": "block/redstone/redstone_dust_line_4" },
+            	{ "model": "block/redstone/redstone_dust_line_4", "y": 90 },
+            	{ "model": "block/redstone/redstone_dust_line_4", "y": 180 },
+            	{ "model": "block/redstone/redstone_dust_line_4", "y": 270 }
+            ]
+        },
+        {
+            "when": {  "north": "side|up", "south": "none", "east": "side|up", "west": "none" },
+            "apply": { "model": "block/redstone/redstone_dust_line_2" }
+        },
+        {
+            "when": {  "north": "side|up", "south": "none", "east": "none", "west": "side|up" },
+            "apply": { "model": "block/redstone/redstone_dust_line_2", "y": 270 }
+        },
+        {
+            "when": {  "south": "side|up", "north": "none", "east": "side|up", "west": "none" },
+            "apply": { "model": "block/redstone/redstone_dust_line_2", "y": 90 }
+        },
+        {
+            "when": {  "south": "side|up", "north": "none", "east": "none", "west": "side|up" },
+            "apply": { "model": "block/redstone/redstone_dust_line_2_sw", "y": 270 }
+        },
+        {
+            "when": {  "north": "side|up", "south": "side|up", "east": "side|up", "west": "none" },
+            "apply": { "model": "block/redstone/redstone_dust_line_3" }
+        },
+        {
+            "when": {  "north": "side|up", "south": "none", "east": "side|up", "west": "side|up" },
+            "apply": { "model": "block/redstone/redstone_dust_line_3", "y": 270 }
+        },
+        {
+            "when": {  "north": "side|up", "south": "side|up", "east": "none", "west": "side|up" },
+            "apply": { "model": "block/redstone/redstone_dust_line_3_alt" }
+        },
+        {
+            "when": {  "north": "none", "south": "side|up", "east": "side|up", "west": "side|up" },
+            "apply": { "model": "block/redstone/redstone_dust_line_3_alt", "y": 270 }
+        },
+        {   "when": { "north": "up" },
+            "apply": { "model": "block/redstone/redstone_dust_up" }
+        },
+        {   "when": { "east": "up" },
+            "apply": { "model": "block/redstone/redstone_dust_up", "y": 90 }
+        },
+        {   "when": { "south": "up" },
+            "apply": { "model": "block/redstone/redstone_dust_up", "y": 180 }
+        },
+        {   "when": { "west": "up" },
+            "apply": { "model": "block/redstone/redstone_dust_up", "y": 270 }
+        }
+    ]
+}
