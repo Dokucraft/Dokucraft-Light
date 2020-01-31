@@ -1,8 +1,8 @@
 {
   "textures": [
-    "minecraft:bubble",
-    "minecraft:bubble/bubble_2",
-    "minecraft:bubble/bubble_3",
-    "minecraft:bubble/bubble_big"
+    "minecraft:bubble_column_up/0",
+    "minecraft:bubble_column_up/2",
+    "minecraft:bubble_column_up/3",
+    "minecraft:bubble_column_up/4"
   ]
 }

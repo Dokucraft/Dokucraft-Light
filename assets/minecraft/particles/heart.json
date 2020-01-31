@@ -1,7 +1,7 @@
 {
   "textures": [
-    "minecraft:hearts/heart",
-    "minecraft:hearts/heart_1",
-    "minecraft:hearts/heart_big"
+    "minecraft:hearts/0",
+    "minecraft:hearts/1",
+    "minecraft:hearts/2"
   ]
 }

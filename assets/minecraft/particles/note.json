@@ -1,6 +1,7 @@
 {
   "textures": [
-    "minecraft:note",
-    "minecraft:note/0"
+    "minecraft:note/0",
+    "minecraft:note/1",
+    "minecraft:note/2"
   ]
 }
