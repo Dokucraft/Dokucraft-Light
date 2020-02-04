@@ -1,0 +1,12 @@
+{
+  "textures": [
+    "minecraft:ambient_entity_effect/7",
+    "minecraft:ambient_entity_effect/6",
+    "minecraft:ambient_entity_effect/5",
+    "minecraft:ambient_entity_effect/4",
+    "minecraft:ambient_entity_effect/3",
+    "minecraft:ambient_entity_effect/2",
+    "minecraft:ambient_entity_effect/1",
+    "minecraft:ambient_entity_effect/0"
+  ]
+}

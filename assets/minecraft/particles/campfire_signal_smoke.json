@@ -1,0 +1,20 @@
+{
+  "textures": [
+    "minecraft:campfire_signal_smoke/0",
+    "minecraft:campfire_signal_smoke/1",
+    "minecraft:campfire_signal_smoke/2",
+    "minecraft:campfire_signal_smoke/3",
+    "minecraft:campfire_signal_smoke/4",
+    "minecraft:campfire_signal_smoke/5",
+    "minecraft:campfire_signal_smoke/6",
+    "minecraft:campfire_signal_smoke/7",
+    "minecraft:campfire_signal_smoke/8",
+    "minecraft:campfire_signal_smoke/9",
+    "minecraft:campfire_signal_smoke/10",
+    "minecraft:campfire_signal_smoke/11",
+    "minecraft:campfire_signal_smoke/12",
+    "minecraft:campfire_signal_smoke/13",
+    "minecraft:campfire_signal_smoke/14",
+    "minecraft:campfire_signal_smoke/15"
+  ]
+}
