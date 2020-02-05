@@ -83,5 +83,7 @@
   "options.difficulty.hardcore": "\u00A74Hardcore",
 
   "resourcePack.openFolder": "Resource Pack Folder",
-  "resourcePack.title": "§4(Please use Optifine!!)    §fResource Packs    §4(Please use Optifine!!)"
+  "resourcePack.title": "§4(Please use Optifine!!)    §fResource Packs    §4(Please use Optifine!!)",
+
+  "item.minecraft.music_disc_11.desc": "What the Forest Taught Me"
 }
