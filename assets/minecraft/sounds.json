@@ -21,5 +21,16 @@
     ],
     "replace": true,
     "subtitle": "subtitles.weather.rain"
+  },
+  "music_disc.11": {
+    "sounds": [
+      {
+        "name": "records/What the Forest Taught Me by Hiroki Kikuta",
+        "stream": true,
+        "volume": 0.01
+      }
+    ],
+    "replace": true,
+    "subtitle": "§6What the Forest Taught Me §rby §6Hiroki Kikuta"
   }
 }
