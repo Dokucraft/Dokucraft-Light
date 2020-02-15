@@ -1,5 +1,13 @@
 { "variants": {
-    "has_record=false": { "model": "block/jukebox" },
-    "has_record=true": { "model": "block/jukebox_with_record" }
+    "has_record=false": [
+    	{ "model": "block/jukebox", "y": 90 },
+    	{ "model": "block/jukebox", "y": 180 },
+    	{ "model": "block/jukebox", "y": 270 }
+    ],
+    "has_record=true": [
+    	{ "model": "block/jukebox_with_record", "y": 90 },
+    	{ "model": "block/jukebox_with_record", "y": 180 },
+    	{ "model": "block/jukebox_with_record", "y": 270 }
+    ]
   }
 }

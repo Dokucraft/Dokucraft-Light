@@ -2,7 +2,7 @@
 	"credit": "Made By WantedRobot",
 	"parent": "block/block",
 	"textures": {
-		"1": "block/jukebox_top_with_record",
+		"2": "block/jukebox_top",
 		"particle": "block/jukebox_side",
 		"texture": "block/jukebox_side"
 	},
@@ -16,7 +16,7 @@
 				"east": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "east"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "south"},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "west"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "up"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2", "cullface": "up"},
 				"down": {"uv": [0, 16, 16, 0], "texture": "#texture", "cullface": "down"}
 			}
 		},
