@@ -1,6 +1,6 @@
 {
 	"credit": "Made By WantedRobot",
-	"parent": "block/template_orientable_trapdoor_open",
+	"parent": "block/thin_block",
 	"textures": {
 		"1": "block/acacia_trapdoor_rim",
 		"texture": "block/acacia_trapdoor",
