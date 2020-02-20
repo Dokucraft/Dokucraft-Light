@@ -1,6 +1,6 @@
 {
     "parent": "block/button",
     "textures": {
-        "texture": "block/oak_button"
+        "texture": "block/buttons/oak_button"
     }
 }
