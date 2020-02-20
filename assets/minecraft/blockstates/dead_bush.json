@@ -11,7 +11,10 @@
       { "model": "block/flower/dead_bush/8" },
       { "model": "block/flower/dead_bush/9" },
       { "model": "block/flower/dead_bush/10" },
-      { "model": "block/flower/dead_bush/11" }
+      { "model": "block/flower/dead_bush/11" },
+      { "model": "block/flower/dead_bush/12" },
+      { "model": "block/flower/dead_bush/13" },
+      { "model": "block/flower/dead_bush/14" }
     ]
   }
 }
