@@ -1,19 +1,19 @@
 { "multipart": [
     { "when": { "OR": [
-        { "north": false, "east": false, "south": false, "west": false },
-        { "north": true, "east": false, "south": false, "west": false },
-        { "north": false, "east": true, "south": false, "west": false },
-        { "north": false, "east": false, "south": true, "west": false },
-        { "north": false, "east": false, "south": false, "west": true },
-        { "north": true, "east": true, "south": false, "west": false },
-        { "north": false, "east": true, "south": true, "west": false },
-        { "north": false, "east": false, "south": true, "west": true },
-        { "north": true, "east": false, "south": false, "west": true },
-        { "north": true, "east": true, "south": true, "west": false },
-        { "north": true, "east": true, "south": false, "west": true },
-        { "north": true, "east": false, "south": true, "west": true },
-        { "north": false, "east": true, "south": true, "west": true },
-        { "north": true, "east": true, "south": true, "west": true }
+        { "north": "none", "east": "none", "south": "none", "west": "none" },
+        { "north": "tall|low", "east": "none", "south": "none", "west": "none" },
+        { "north": "none", "east": "tall|low", "south": "none", "west": "none" },
+        { "north": "none", "east": "none", "south": "tall|low", "west": "none" },
+        { "north": "none", "east": "none", "south": "none", "west": "tall|low" },
+        { "north": "tall|low", "east": "tall|low", "south": "none", "west": "none" },
+        { "north": "none", "east": "tall|low", "south": "tall|low", "west": "none" },
+        { "north": "none", "east": "none", "south": "tall|low", "west": "tall|low" },
+        { "north": "tall|low", "east": "none", "south": "none", "west": "tall|low" },
+        { "north": "tall|low", "east": "tall|low", "south": "tall|low", "west": "none" },
+        { "north": "tall|low", "east": "tall|low", "south": "none", "west": "tall|low" },
+        { "north": "tall|low", "east": "none", "south": "tall|low", "west": "tall|low" },
+        { "north": "none", "east": "tall|low", "south": "tall|low", "west": "tall|low" },
+        { "north": "tall|low", "east": "tall|low", "south": "tall|low", "west": "tall|low" }
       ]},
       "apply": [
         { "model": "block/andesite_wall_post" },
@@ -22,37 +22,37 @@
         { "model": "block/andesite_wall_post", "y": 270 }
       ]
     },
-    { "when": { "north": true, "east": false, "south": true, "west": false },
+    { "when": { "north": "tall|low", "east": "none", "south": "tall|low", "west": "none" },
       "apply": { "model": "block/andesite_wall_railing" }
     },
-    { "when": { "north": false, "east": true, "south": false, "west": true },
+    { "when": { "north": "none", "east": "tall|low", "south": "none", "west": "tall|low" },
       "apply": { "model": "block/andesite_wall_railing", "y": 90 }
     },
     { "when": { "OR": [
-        { "north": true, "east": false, "south": false, "west": false },
-        { "north": true, "east": true },
-        { "north": true, "west": true }
+        { "north": "tall|low", "east": "none", "south": "none", "west": "none" },
+        { "north": "tall|low", "east": "tall|low" },
+        { "north": "tall|low", "west": "tall|low" }
       ]},
       "apply": { "model": "block/andesite_wall_side_ne" }
     },
     { "when": { "OR": [
-        { "north": false, "east": true, "south": false, "west": false },
-        { "east": true, "north": true },
-        { "east": true, "south": true }
+        { "north": "none", "east": "tall|low", "south": "none", "west": "none" },
+        { "east": "tall|low", "north": "tall|low" },
+        { "east": "tall|low", "south": "tall|low" }
       ]},
       "apply": { "model": "block/andesite_wall_side_ne", "y": 90 }
     },
     { "when": { "OR": [
-        { "north": false, "east": false, "south": true, "west": false },
-        { "south": true, "east": true },
-        { "south": true, "west": true }
+        { "north": "none", "east": "none", "south": "tall|low", "west": "none" },
+        { "south": "tall|low", "east": "tall|low" },
+        { "south": "tall|low", "west": "tall|low" }
       ]},
       "apply": { "model": "block/andesite_wall_side_sw" }
     },
     { "when": { "OR": [
-        { "north": false, "east": false, "south": false, "west": true },
-        { "west": true, "north": true },
-        { "west": true, "south": true }
+        { "north": "none", "east": "none", "south": "none", "west": "tall|low" },
+        { "west": "tall|low", "north": "tall|low" },
+        { "west": "tall|low", "south": "tall|low" }
       ]},
       "apply": { "model": "block/andesite_wall_side_sw", "y": 90 }
     }
