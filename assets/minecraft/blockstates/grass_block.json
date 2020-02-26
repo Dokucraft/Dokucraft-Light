@@ -1,6 +1,16 @@
 {
     "variants": {
-        "snowy=false": { "model": "block/grass_block" },
-        "snowy=true":  { "model": "block/grass_block_snow" }
+        "snowy=false": [
+        	{ "model": "block/grass_block" },
+        	{ "model": "block/grass_block/root_0" },
+        	{ "model": "block/grass_block/root_1" },
+        	{ "model": "block/grass_block/root_2" }
+        ],
+        "snowy=true":  [
+        	{ "model": "block/grass_block_snow/grass_block_snow" },
+        	{ "model": "block/grass_block_snow/root_0" },
+        	{ "model": "block/grass_block_snow/root_1" },
+        	{ "model": "block/grass_block_snow/root_2" }
+        ]
     }
 }
