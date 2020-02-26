@@ -1,18 +1,40 @@
 {
     "variants": {
-        "": [
+        "unstable=false": [
         	{ "model": "block/tnt/0", "y": 90 },
         	{ "model": "block/tnt/0", "y": 180 },
         	{ "model": "block/tnt/0", "y": 270 },
-        	{ "model": "block/tnt/1", "y": 90 },
-        	{ "model": "block/tnt/1", "y": 180 },
-        	{ "model": "block/tnt/1", "y": 270 },
-        	{ "model": "block/tnt/2", "y": 90 },
-        	{ "model": "block/tnt/2", "y": 180 },
-        	{ "model": "block/tnt/2", "y": 270 },
-        	{ "model": "block/tnt/3", "y": 90 },
-        	{ "model": "block/tnt/3", "y": 180 },
-        	{ "model": "block/tnt/3", "y": 270 }
-    	]
+            { "model": "block/tnt/0", "x": 90 },
+            { "model": "block/tnt/0", "x": 270 },
+            { "model": "block/tnt/0", "z": 90 },
+            { "model": "block/tnt/0", "z": 180 },
+            { "model": "block/tnt/0", "z": 270 },
+            { "model": "block/tnt/1", "y": 90 },
+            { "model": "block/tnt/1", "y": 180 },
+            { "model": "block/tnt/1", "y": 270 },
+            { "model": "block/tnt/1", "x": 90 },
+            { "model": "block/tnt/1", "x": 270 },
+            { "model": "block/tnt/1", "z": 90 },
+            { "model": "block/tnt/1", "z": 180 },
+            { "model": "block/tnt/1", "z": 270 },
+            { "model": "block/tnt/2", "y": 90 },
+            { "model": "block/tnt/2", "y": 180 },
+            { "model": "block/tnt/2", "y": 270 },
+            { "model": "block/tnt/2", "x": 90 },
+            { "model": "block/tnt/2", "x": 270 },
+            { "model": "block/tnt/2", "z": 90 },
+            { "model": "block/tnt/2", "z": 180 },
+            { "model": "block/tnt/2", "z": 270 }
+    	],
+    	"unstable=true": [
+    		{ "model": "block/tnt/unstable", "y": 90 },
+        	{ "model": "block/tnt/unstable", "y": 180 },
+        	{ "model": "block/tnt/unstable", "y": 270 },
+        	{ "model": "block/tnt/unstable", "x": 90 },
+			{ "model": "block/tnt/unstable", "x": 270 },
+			{ "model": "block/tnt/unstable", "X": 90 },
+			{ "model": "block/tnt/unstable", "X": 180 },
+			{ "model": "block/tnt/unstable", "X": 270 }
+        ]
     }
 }
