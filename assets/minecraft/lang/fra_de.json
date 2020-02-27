@@ -1,5 +1,7 @@
 {
   "language.name": "Fr\u00e4ngisch",
   "language.region": "Frange",
-  "language.code": "vmf_de"
+  "language.code": "vmf_de",
+  "merchant.level.5": "\u00a7fMeester",
+  "merchant.trades": "\u00a7fHandln"
 }

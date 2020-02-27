@@ -2,9 +2,16 @@
   "language.name": "Te Reo M\u0101ori",
   "language.region": "Aotearoa",
   "language.code": "mi_NZ",
-  "merchant.level.1": "\u00a7fPia",
-  "merchant.level.2": "\u00a7fPia",
-  "merchant.level.4": "\u00a7fTohunga",
-  "merchant.level.5": "\u00a7fM\u0101hita",
-  "merchant.trades": "\u00a7fHoko"
+  "container.loom": "\u00a7fwhenu",
+  "merchant.level.1": "\u00a7fHoahoa",
+  "merchant.level.2": "\u00a7fWhakaaehanga",
+  "merchant.level.3": "\u00a7fJourneyman",
+  "merchant.level.4": "\u00a7ftohunga",
+  "merchant.level.5": "\u00a7fAriki",
+  "merchant.trades": "\u00a7fringarehe",
+  "entity.minecraft.villager.mason": "\u00a7fMason",
+  "entity.minecraft.wandering_trader": "\u00a7fPohehe Ana Kaihokohoko",
+  "enchantment.minecraft.multishot": "\u00a76t\u014dtoru pere / r\u014dp\u016b pere",
+  "enchantment.minecraft.quick_charge": "\u00a76Tiaki Tere",
+  "enchantment.minecraft.piercing": "\u00a76Ngoto"
 }

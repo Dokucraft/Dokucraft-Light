@@ -2,6 +2,11 @@
   "language.name": "Taqbaylit",
   "language.region": "Dzayer",
   "language.code": "kab_dz",
+  "container.loom": "\u00a7fA\u1e93e\u1e6d\u1e6da",
+  "merchant.level.1": "\u00a7fAbujad",
+  "merchant.level.2": "\u00a7fAnelmad",
+  "merchant.trades": "\u00a7fTinezza",
+  "entity.minecraft.villager.mason": "\u00a7fAma\u1e63\u1e63ut",
   "entity.minecraft.villager.toolsmith": "\u00a7fA\u1e25eddad n yifecka",
   "entity.minecraft.villager.weaponsmith": "\u00a7fA\u1e25eddad n yimrigen"
 }

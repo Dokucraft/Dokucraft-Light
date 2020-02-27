@@ -4,6 +4,14 @@
   "language.code": "haw",
   "container.furnace": "\u00a7fUmu",
   "container.chest": "\u00a7fPahu",
+  "merchant.level.1": "\u00a7f\u02bbO Novice",
+  "merchant.level.2": "\u00a7fKumu",
+  "merchant.level.3": "\u00a7fHele",
+  "merchant.level.4": "\u00a7fKauka",
+  "merchant.level.5": "\u00a7fE ke Kumu",
+  "merchant.trades": "\u00a7fK\u0101lepa",
   "entity.minecraft.villager.farmer": "\u00a7fMahiai",
-  "entity.minecraft.villager.fisherman": "\u00a7fLawai\u02bba"
+  "entity.minecraft.villager.fisherman": "\u00a7fLawai\u02bba",
+  "enchantment.minecraft.sharpness": "\u00a7c\u02bbOi",
+  "enchantment.minecraft.smite": "\u00a7cKu\u02bbi"
 }

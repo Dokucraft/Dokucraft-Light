@@ -1,6 +1,6 @@
 {
   "language.name": "Gutrazda",
-  "language.region": "Gutland",
+  "language.region": "Dakia jah Heispanja",
   "language.code": "got",
   "container.barrel": "\u00a7fBarils",
   "container.loom": "\u00a7fWaibjastols",
@@ -14,6 +14,9 @@
   "merchant.level.4": "\u00a7fFro\u00fes",
   "merchant.level.5": "\u00a7fFrauja",
   "merchant.trades": "\u00a7fKaupa",
+  "entity.minecraft.villager.cartographer": "\u00a7fKartja",
+  "entity.minecraft.villager.fisherman": "\u00a7fFiskja",
+  "entity.minecraft.villager.librarian": "\u00a7fBokahusja",
   "entity.minecraft.villager.mason": "\u00a7fTimrja",
   "entity.minecraft.villager.weaponsmith": "\u00a7fWepnasmi\u00feja",
   "entity.minecraft.wandering_trader": "\u00a7fFarands Lewja"

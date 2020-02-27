@@ -1,5 +1,8 @@
 {
   "language.name": "Igbo",
   "language.region": "Naigeria",
-  "language.code": "ig_ng"
+  "language.code": "ig_ng",
+  "merchant.level.4": "\u00a7f\u1ecckachamara",
+  "merchant.level.5": "\u00a7fNna ukwu",
+  "merchant.trades": "\u00a7fAh\u1ecba"
 }
