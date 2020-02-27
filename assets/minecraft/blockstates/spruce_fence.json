@@ -1,17 +1,183 @@
 {
     "multipart": [
-        {   "apply": { "model": "block/fence/spruce/spruce_fence_post" }},
-        {   "when": { "north": true },
-            "apply": { "model": "block/fence/spruce/spruce_fence_side_ne", "uvlock": false }
+		{   "when": { "north": "false", "south": "false", "east": "false", "west": "false" },
+           "apply": { "model": "block/fence/spruce/spruce_fence_post_x" }
+		},   
+		
+        {   "when": { "north": "true", "east": "false", "west": "false" },
+            "apply": { "model": "block/fence/spruce/spruce_fence_side_n" }
         },
-        {   "when": { "east": true },
-            "apply": { "model": "block/fence/spruce/spruce_fence_side_ne", "y": 90, "uvlock": false }
+		{   "when": { "north": "true", "east": "false", "west": "false" },
+            "apply": { "model": "block/fence/spruce/spruce_fence_post" }
         },
-        {   "when": { "south": true },
-            "apply": { "model": "block/fence/spruce/spruce_fence_side_sw", "y": 180, "uvlock": false }
+		
+        {   "when": { "east": "true", "north": "false", "south": "false" },
+            "apply": { "model": "block/fence/spruce/spruce_fence_side_n", "y": 90 }
         },
-        {   "when": { "west": true },
-            "apply": { "model": "block/fence/spruce/spruce_fence_side_sw", "y": 270, "uvlock": false }
-        }
+		{   "when": { "east": "true", "north": "false", "south": "false" },
+            "apply": { "model": "block/fence/spruce/spruce_fence_post", "y": 90 }
+        },
+		
+        {   "when": { "south": "true", "east": "false", "west": "false" },
+            "apply": { "model": "block/fence/spruce/spruce_fence_side_s"}
+        },
+		{   "when": { "south": "true", "east": "false", "west": "false" },
+            "apply": { "model": "block/fence/spruce/spruce_fence_post"}
+        },
+		
+        {   "when": { "west": "true", "north": "false", "south": "false" },
+            "apply": { "model": "block/fence/spruce/spruce_fence_side_s", "y": 90 }
+        },
+		{   "when": { "west": "true", "north": "false", "south": "false" },
+            "apply": { "model": "block/fence/spruce/spruce_fence_post", "y": 90 }
+        },
+
+
+		{   "when": { "north": "true", "south": "false", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n" }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n", "y": 90 }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_corner" }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_rope_ne" }
+		},
+		
+		
+		{   "when": { "north": "true", "south": "false", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n" }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s", "y": 90 }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_corner", "y": 270 }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_rope_nw" }
+		},
+		
+		
+		{   "when": { "north": "false", "south": "true", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s" }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n", "y": 90 }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_corner", "y": 90 }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_rope_se" }
+		},
+		
+		
+		{   "when": { "north": "false", "south": "true", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s" }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s", "y": 90 }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_corner", "y": 180 }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_rope_sw" }
+		},
+		
+		
+		{   "when": { "north": "true", "south": "true", "east": "false", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n" }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "false", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s" }
+		},
+		
+		
+		{   "when": { "north": "false", "south": "false", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n", "y": 90 }
+		},
+		{   "when": { "north": "false", "south": "false", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s", "y": 90 }
+		},
+		
+		
+		{   "when": { "north": "true", "south": "false", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n" }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n", "y": 90 }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s", "y": 90 }
+		},
+		{   "when": { "north": "true", "south": "false", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_t", "y": 270 }
+		},
+		
+		
+		{   "when": { "north": "false", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s" }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n", "y": 90 }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s", "y": 90 }
+		},
+		{   "when": { "north": "false", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_t", "y": 90 }
+		},
+		
+		
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n" }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s" }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n", "y": 90 }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "false" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_t" }
+		},
+		
+		
+		{   "when": { "north": "true", "south": "true", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n" }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s" }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s", "y": 90 }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "false", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_t", "y": 180 }
+		},
+		
+		
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n" }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s" }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_n", "y": 90 }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_side_s", "y": 90 }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_post_x" }
+		},
+		{   "when": { "north": "true", "south": "true", "east": "true", "west": "true" },
+			"apply": { "model": "block/fence/spruce/spruce_fence_rope_x" }
+		}
     ]
 }

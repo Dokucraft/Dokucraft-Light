@@ -24,6 +24,7 @@
 				"north": {"uv": [6, 2, 14, 6], "texture": "#brown_mushroom"},
 				"east": {"uv": [0, 6, 16, 10], "texture": "#brown_mushroom"},
 				"south": {"uv": [0, 6, 8, 10], "texture": "#brown_mushroom"},
+				"west": {"uv": [0, 0, 16, 4], "texture": "#brown_mushroom"},
 				"up": {"uv": [0, 0, 8, 16], "texture": "#brown_mushroom"}
 			}
 		}

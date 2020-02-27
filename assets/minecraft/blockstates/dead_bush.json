@@ -1,20 +1,20 @@
 { "variants": {
     "": [
-      { "model": "block/flower/dead_bush/0" },
-      { "model": "block/flower/dead_bush/1" },
-      { "model": "block/flower/dead_bush/2" },
-      { "model": "block/flower/dead_bush/3" },
-      { "model": "block/flower/dead_bush/4" },
-      { "model": "block/flower/dead_bush/5" },
-      { "model": "block/flower/dead_bush/6" },
-      { "model": "block/flower/dead_bush/7" },
-      { "model": "block/flower/dead_bush/8" },
-      { "model": "block/flower/dead_bush/9" },
-      { "model": "block/flower/dead_bush/10" },
-      { "model": "block/flower/dead_bush/11" },
-      { "model": "block/flower/dead_bush/12" },
-      { "model": "block/flower/dead_bush/13" },
-      { "model": "block/flower/dead_bush/14" }
+      { "model": "block/plants/dead_bush/0" },
+      { "model": "block/plants/dead_bush/1" },
+      { "model": "block/plants/dead_bush/2" },
+      { "model": "block/plants/dead_bush/3" },
+      { "model": "block/plants/dead_bush/4" },
+      { "model": "block/plants/dead_bush/5" },
+      { "model": "block/plants/dead_bush/6" },
+      { "model": "block/plants/dead_bush/7" },
+      { "model": "block/plants/dead_bush/8" },
+      { "model": "block/plants/dead_bush/9" },
+      { "model": "block/plants/dead_bush/10" },
+      { "model": "block/plants/dead_bush/11" },
+      { "model": "block/plants/dead_bush/12" },
+      { "model": "block/plants/dead_bush/13" },
+      { "model": "block/plants/dead_bush/14" }
     ]
   }
 }

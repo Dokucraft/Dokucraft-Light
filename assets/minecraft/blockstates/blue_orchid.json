@@ -1,9 +1,9 @@
 {
     "variants": {
         "": [
-        { "model": "block/flower/blue_orchid/0" },
-        { "model": "block/flower/blue_orchid/1" },
-        { "model": "block/flower/blue_orchid/2" }
+        { "model": "block/plants/blue_orchid/0" },
+        { "model": "block/plants/blue_orchid/1" },
+        { "model": "block/plants/blue_orchid/2" }
     ]
     }
 }
