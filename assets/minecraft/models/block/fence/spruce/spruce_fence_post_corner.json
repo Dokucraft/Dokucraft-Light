@@ -1,0 +1,33 @@
+{
+	"credit": "Made By WantedRobot",
+	"textures": {
+		"0": "block/spruce_fence",
+		"particle": "block/spruce_fence"
+	},
+	"elements": [
+		{
+			"from": [6.5, 0, 6.505],
+			"to": [7.5, 16, 8.505],
+			"faces": {
+				"north": {"uv": [0, 0.5, 16, 1.5], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 2], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 0.5, 16, 1.5], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 2], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 1], "rotation": 90, "texture": "#0", "cullface": "up"},
+				"down": {"uv": [0, 0, 2, 1], "rotation": 90, "texture": "#0", "cullface": "down"}
+			}
+		},
+		{
+			"from": [7.495, 0, 8.5],
+			"to": [9.495, 16, 9.5],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [0, 0.5, 16, 1.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 2], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 0.5, 16, 1.5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#0", "cullface": "up"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#0", "cullface": "down"}
+			}
+		}
+	]
+}
