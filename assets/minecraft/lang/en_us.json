@@ -123,5 +123,9 @@
   "resourcePack.openFolder": "Resource Pack Folder",
   "resourcePack.title": "§4(Please use Optifine!!)    §fResource Packs    §4(Please use Optifine!!)",
 
-  "item.minecraft.music_disc_11.desc": "What the Forest Taught Me"
+  "item.minecraft.music_disc_11.desc": "What the Forest Taught Me",
+
+  "menu.singleplayer": "§f逡 Singleplayer",
+  "menu.multiplayer": "§f逢 Multiplayer",
+  "menu.online": "§f連 Minecraft Realms"
 }
