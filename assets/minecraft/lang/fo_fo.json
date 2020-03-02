@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dFoyran",
   "enchantment.minecraft.multishot": "\u00a76Fleirskot",
   "enchantment.minecraft.quick_charge": "\u00a76Skundl\u00f8\u00f0ing",
-  "enchantment.minecraft.piercing": "\u00a76Gj\u00f8gnumskering"
+  "enchantment.minecraft.piercing": "\u00a76Gj\u00f8gnumskering",
+  "menu.singleplayer": "\u00a7f\u9021 Einleikur",
+  "menu.multiplayer": "\u00a7f\u9022 Fleirleikur",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

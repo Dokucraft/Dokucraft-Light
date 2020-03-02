@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dCanalitzaci\u00f3",
   "enchantment.minecraft.multishot": "\u00a76Multi-tir",
   "enchantment.minecraft.quick_charge": "\u00a76C\u00e0rrega r\u00e0pida",
-  "enchantment.minecraft.piercing": "\u00a76Perforaci\u00f3"
+  "enchantment.minecraft.piercing": "\u00a76Perforaci\u00f3",
+  "menu.singleplayer": "\u00a7f\u9021 Un jugador",
+  "menu.multiplayer": "\u00a7f\u9022 Multijugador",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

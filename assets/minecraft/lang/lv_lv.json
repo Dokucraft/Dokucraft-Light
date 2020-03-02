@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dFokus\u0113jo\u0161s",
   "enchantment.minecraft.multishot": "\u00a76Multi\u0161\u0101viens",
   "enchantment.minecraft.quick_charge": "\u00a76\u0100tr\u0101 uzl\u0101de",
-  "enchantment.minecraft.piercing": "\u00a76P\u012brsings"
+  "enchantment.minecraft.piercing": "\u00a76P\u012brsings",
+  "menu.singleplayer": "\u00a7f\u9021 Viensp\u0113l\u0113t\u0101ja re\u017e\u012bms",
+  "menu.multiplayer": "\u00a7f\u9022 Daudzsp\u0113l\u0113t\u0101ju re\u017e\u012bms",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

@@ -4,5 +4,8 @@
   "language.code": "ig_ng",
   "merchant.level.4": "\u00a7f\u1ecckachamara",
   "merchant.level.5": "\u00a7fNna ukwu",
-  "merchant.trades": "\u00a7fAh\u1ecba"
+  "merchant.trades": "\u00a7fAh\u1ecba",
+  "menu.singleplayer": "\u00a7f\u9021 Single Game",
+  "menu.multiplayer": "\u00a7f\u9022 Online Game",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

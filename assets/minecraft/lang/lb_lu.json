@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dKanalisatioun",
   "enchantment.minecraft.multishot": "\u00a76Multischoss",
   "enchantment.minecraft.quick_charge": "\u00a76Schnelllueden",
-  "enchantment.minecraft.piercing": "\u00a76Duerchschoss"
+  "enchantment.minecraft.piercing": "\u00a76Duerchschoss",
+  "menu.singleplayer": "\u00a7f\u9021 Eenzelspiller",
+  "menu.multiplayer": "\u00a7f\u9022 Multispiller",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

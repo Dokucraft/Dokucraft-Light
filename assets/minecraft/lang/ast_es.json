@@ -91,5 +91,8 @@
   "enchantment.minecraft.binding_curse": "\u00a74Maldici\u00f3n d'atadura",
   "enchantment.minecraft.vanishing_curse": "\u00a74Maldici\u00f3n de desapaici\u00f3n",
   "enchantment.minecraft.loyalty": "\u00a7dLlealt\u00e1",
-  "enchantment.minecraft.quick_charge": "\u00a76Carga r\u00e1pida"
+  "enchantment.minecraft.quick_charge": "\u00a76Carga r\u00e1pida",
+  "menu.singleplayer": "\u00a7f\u9021 Un xugador",
+  "menu.multiplayer": "\u00a7f\u9022 Multixugador",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

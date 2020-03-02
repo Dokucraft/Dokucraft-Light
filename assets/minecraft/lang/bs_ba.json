@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dKanalisanje",
   "enchantment.minecraft.multishot": "\u00a76Multi pucanj",
   "enchantment.minecraft.quick_charge": "\u00a76Brzo punjenje",
-  "enchantment.minecraft.piercing": "\u00a76Pirsing"
+  "enchantment.minecraft.piercing": "\u00a76Pirsing",
+  "menu.singleplayer": "\u00a7f\u9021 Samostalna igra",
+  "menu.multiplayer": "\u00a7f\u9022 Online igra",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dDirijare",
   "enchantment.minecraft.multishot": "\u00a76Multiproiectil",
   "enchantment.minecraft.quick_charge": "\u00a76\u00cenc\u0103rcare rapid\u0103",
-  "enchantment.minecraft.piercing": "\u00a76Sfredelire"
+  "enchantment.minecraft.piercing": "\u00a76Sfredelire",
+  "menu.singleplayer": "\u00a7f\u9021 Singleplayer",
+  "menu.multiplayer": "\u00a7f\u9022 Multiplayer",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

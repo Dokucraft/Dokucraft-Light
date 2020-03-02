@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dQed ji\u0121i",
   "enchantment.minecraft.multishot": "\u00a76Multishot",
   "enchantment.minecraft.quick_charge": "\u00a76I\u010b\u010bar\u0121jar ta ' malajr",
-  "enchantment.minecraft.piercing": "\u00a76Titqib"
+  "enchantment.minecraft.piercing": "\u00a76Titqib",
+  "menu.singleplayer": "\u00a7f\u9021 Ilg\u0127ab Wa\u0127dek",
+  "menu.multiplayer": "\u00a7f\u9022 Ilg\u0127ab mal-O\u0127rajn",
+  "menu.online": "\u00a7f\u9023 Realms ta' Minecraft"
 }

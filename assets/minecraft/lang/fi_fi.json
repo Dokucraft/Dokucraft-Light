@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dKanavointi",
   "enchantment.minecraft.multishot": "\u00a76Moniammunta",
   "enchantment.minecraft.quick_charge": "\u00a76Pikalataus",
-  "enchantment.minecraft.piercing": "\u00a76L\u00e4vistys"
+  "enchantment.minecraft.piercing": "\u00a76L\u00e4vistys",
+  "menu.singleplayer": "\u00a7f\u9021 Yksinpeli",
+  "menu.multiplayer": "\u00a7f\u9022 Moninpeli",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

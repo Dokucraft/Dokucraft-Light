@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dCharging",
   "enchantment.minecraft.multishot": "\u00a76Fleet o' Bolts",
   "enchantment.minecraft.quick_charge": "\u00a76Swift Riggin'",
-  "enchantment.minecraft.piercing": "\u00a76Sailin' Through"
+  "enchantment.minecraft.piercing": "\u00a76Sailin' Through",
+  "menu.singleplayer": "\u00a7f\u9021 Lonely Voyage",
+  "menu.multiplayer": "\u00a7f\u9022 Play with yer mates",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dEntladong",
   "enchantment.minecraft.multishot": "\u00a76Miehfachscho\u00df",
   "enchantment.minecraft.quick_charge": "\u00a76Fl\u00f6cklade",
-  "enchantment.minecraft.piercing": "\u00a76Durchscho\u00df"
+  "enchantment.minecraft.piercing": "\u00a76Durchscho\u00df",
+  "menu.singleplayer": "\u00a7f\u9021 Alleen spille",
+  "menu.multiplayer": "\u00a7f\u9022 Zesamme spille",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

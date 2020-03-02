@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dPenyaluran",
   "enchantment.minecraft.multishot": "\u00a76Serangan Berbilang",
   "enchantment.minecraft.quick_charge": "\u00a76Pengisian Pantas",
-  "enchantment.minecraft.piercing": "\u00a76Penusukan"
+  "enchantment.minecraft.piercing": "\u00a76Penusukan",
+  "menu.singleplayer": "\u00a7f\u9021 Permainan Tunggal",
+  "menu.multiplayer": "\u00a7f\u9022 Permainan Jamak",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

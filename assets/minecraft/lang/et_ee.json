@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dKanaliseerimine",
   "enchantment.minecraft.multishot": "\u00a76Mitmiklask",
   "enchantment.minecraft.quick_charge": "\u00a76Kiirlaadimine",
-  "enchantment.minecraft.piercing": "\u00a76L\u00e4bistamine"
+  "enchantment.minecraft.piercing": "\u00a76L\u00e4bistamine",
+  "menu.singleplayer": "\u00a7f\u9021 \u00dcksikm\u00e4ng",
+  "menu.multiplayer": "\u00a7f\u9022 Mitmikm\u00e4ng",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

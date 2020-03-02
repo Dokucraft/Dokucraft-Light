@@ -4,5 +4,6 @@
   "language.code": "moh_ca",
   "itemGroup.food": "\u00a7fKahkwa'sh\u00f3n:'a",
   "entity.minecraft.villager.farmer": "\u00a7fRai\u00e9n:thos",
-  "entity.minecraft.villager.fisherman": "\u00a7fRanitsiat\u00f3:rats"
+  "entity.minecraft.villager.fisherman": "\u00a7fRanitsiat\u00f3:rats",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

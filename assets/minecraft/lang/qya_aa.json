@@ -57,5 +57,8 @@
   "enchantment.minecraft.flame": "\u00a76N\u00e1r",
   "enchantment.minecraft.punch": "\u00a76Mala Pilin",
   "enchantment.minecraft.infinity": "\u00a76Unmetta",
-  "enchantment.minecraft.thorns": "\u00a7bNeceli"
+  "enchantment.minecraft.thorns": "\u00a7bNeceli",
+  "menu.singleplayer": "\u00a7f\u9021 Erquen",
+  "menu.multiplayer": "\u00a7f\u9022 Linquen",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

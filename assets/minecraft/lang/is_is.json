@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dLei\u00f0andi",
   "enchantment.minecraft.multishot": "\u00a76Hr\u00ed\u00f0skot",
   "enchantment.minecraft.quick_charge": "\u00a76Skyndihle\u00f0sla",
-  "enchantment.minecraft.piercing": "\u00a76Stingandi"
+  "enchantment.minecraft.piercing": "\u00a76Stingandi",
+  "menu.singleplayer": "\u00a7f\u9021 Spila einn",
+  "menu.multiplayer": "\u00a7f\u9022 Netspilun",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

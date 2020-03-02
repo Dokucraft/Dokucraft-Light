@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dSanelladur",
   "enchantment.minecraft.multishot": "\u00a76Tenn lies",
   "enchantment.minecraft.quick_charge": "\u00a76Karg prim",
-  "enchantment.minecraft.piercing": "\u00a76Toullus"
+  "enchantment.minecraft.piercing": "\u00a76Toullus",
+  "menu.singleplayer": "\u00a7f\u9021 Ur c'hoarier",
+  "menu.multiplayer": "\u00a7f\u9022 Liesc'hoarier",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

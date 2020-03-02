@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dCondutividade",
   "enchantment.minecraft.multishot": "\u00a76Rajada",
   "enchantment.minecraft.quick_charge": "\u00a76Carga r\u00e1pida",
-  "enchantment.minecraft.piercing": "\u00a76Perfura\u00e7\u00e3o"
+  "enchantment.minecraft.piercing": "\u00a76Perfura\u00e7\u00e3o",
+  "menu.singleplayer": "\u00a7f\u9021 Um jogador",
+  "menu.multiplayer": "\u00a7f\u9022 Multijogador",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

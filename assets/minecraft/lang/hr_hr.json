@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dUsmjerivanje",
   "enchantment.minecraft.multishot": "\u00a76Vi\u0161estruka paljba",
   "enchantment.minecraft.quick_charge": "\u00a76Brzo punjenje",
-  "enchantment.minecraft.piercing": "\u00a76Prodornost"
+  "enchantment.minecraft.piercing": "\u00a76Prodornost",
+  "menu.singleplayer": "\u00a7f\u9021 Igraj sam",
+  "menu.multiplayer": "\u00a7f\u9022 Igraj s drugima",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

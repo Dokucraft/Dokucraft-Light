@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dThunder-stone",
   "enchantment.minecraft.multishot": "\u00a76Thrice-loading",
   "enchantment.minecraft.quick_charge": "\u00a76Blessing of Father Time",
-  "enchantment.minecraft.piercing": "\u00a76Piercing"
+  "enchantment.minecraft.piercing": "\u00a76Piercing",
+  "menu.singleplayer": "\u00a7f\u9021 Soliloquy",
+  "menu.multiplayer": "\u00a7f\u9022 Theatres",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

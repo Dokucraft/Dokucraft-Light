@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dLynleiar",
   "enchantment.minecraft.multishot": "\u00a76Mangskot",
   "enchantment.minecraft.quick_charge": "\u00a76Sn\u00f8gglading",
-  "enchantment.minecraft.piercing": "\u00a76Gjennomtrengjande"
+  "enchantment.minecraft.piercing": "\u00a76Gjennomtrengjande",
+  "menu.singleplayer": "\u00a7f\u9021 Einspelar",
+  "menu.multiplayer": "\u00a7f\u9022 Fleirspelar",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

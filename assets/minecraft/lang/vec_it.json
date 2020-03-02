@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dCondutivit\u00e0",
   "enchantment.minecraft.multishot": "\u00a76Multiproj\u00e8ti\u0142e",
   "enchantment.minecraft.quick_charge": "\u00a76Carga r\u00e0pida",
-  "enchantment.minecraft.piercing": "\u00a76Parforasion"
+  "enchantment.minecraft.piercing": "\u00a76Parforasion",
+  "menu.singleplayer": "\u00a7f\u9021 Zugador s\u00ecngo\u0142o",
+  "menu.multiplayer": "\u00a7f\u9022 Multizugador",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

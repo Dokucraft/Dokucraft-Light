@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dVedenie",
   "enchantment.minecraft.multishot": "\u00a76Roz\u0161tiepenie \u0161\u00edpu",
   "enchantment.minecraft.quick_charge": "\u00a76R\u00fdchlonab\u00edjanie",
-  "enchantment.minecraft.piercing": "\u00a76Prer\u00e1\u017eanie"
+  "enchantment.minecraft.piercing": "\u00a76Prer\u00e1\u017eanie",
+  "menu.singleplayer": "\u00a7f\u9021 Hra pre jedn\u00e9ho hr\u00e1\u010da",
+  "menu.multiplayer": "\u00a7f\u9022 Hra pre viacer\u00fdch hr\u00e1\u010dov",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

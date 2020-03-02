@@ -19,5 +19,8 @@
   "entity.minecraft.villager.weaponsmith": "\u00a7fHubka",
   "enchantment.minecraft.multishot": "\u00a76Badan",
   "enchantment.minecraft.quick_charge": "\u00a76Lacag degdeg ah",
-  "enchantment.minecraft.piercing": "\u00a76Dillaac"
+  "enchantment.minecraft.piercing": "\u00a76Dillaac",
+  "menu.singleplayer": "\u00a7f\u9021 Hal ciyaaryahanka",
+  "menu.multiplayer": "\u00a7f\u9022 Multiplayer",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

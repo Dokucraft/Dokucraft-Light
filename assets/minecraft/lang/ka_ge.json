@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7d\u10d0\u10e0\u10ee\u10d8",
   "enchantment.minecraft.multishot": "\u00a76\u10db\u10e3\u10da\u10e2\u10d8\u10e8\u10dd\u10e2\u10d8",
   "enchantment.minecraft.quick_charge": "\u00a76\u10e9\u10e5\u10d0\u10e0\u10d8 \u10d2\u10d0\u10d3\u10d0\u10e2\u10d4\u10dc\u10d0",
-  "enchantment.minecraft.piercing": "\u00a76\u10de\u10d8\u10e0\u10e1\u10d8\u10dc\u10d2\u10d8"
+  "enchantment.minecraft.piercing": "\u00a76\u10de\u10d8\u10e0\u10e1\u10d8\u10dc\u10d2\u10d8",
+  "menu.singleplayer": "\u00a7f\u9021 \u10e1\u10dd\u10da\u10dd \u10d7\u10d0\u10db\u10d0\u10e8\u10d8",
+  "menu.multiplayer": "\u00a7f\u9022 \u10e5\u10e1\u10d4\u10da\u10e3\u10e0\u10d8 \u10d7\u10d0\u10db\u10d0\u10e8\u10d8",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

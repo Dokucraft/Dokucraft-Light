@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dBlicszlag",
   "enchantment.minecraft.multishot": "\u00a76Mockaszcza\u0142",
   "enchantment.minecraft.quick_charge": "\u00a76Gibke nabi\u0107y",
-  "enchantment.minecraft.piercing": "\u00a76Prze\u017cga\u0144y"
+  "enchantment.minecraft.piercing": "\u00a76Prze\u017cga\u0144y",
+  "menu.singleplayer": "\u00a7f\u9021 Jednogr\u014fczka",
+  "menu.multiplayer": "\u00a7f\u9022 Wielogr\u014fczka",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

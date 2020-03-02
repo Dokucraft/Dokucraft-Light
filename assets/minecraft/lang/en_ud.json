@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7d\u1d77u\u1d09\ua781\ua781\u01dduu\u0250\u0265\u0186",
   "enchantment.minecraft.multishot": "\u00a76\u0287o\u0265s\u1d09\u0287\ua781nW",
   "enchantment.minecraft.quick_charge": "\u00a76\u01dd\u1d77\u0279\u0250\u0265\u0186 \u029e\u0254\u1d09n\ua779",
-  "enchantment.minecraft.piercing": "\u00a76\u1d77u\u1d09\u0254\u0279\u01dd\u1d09\u0500"
+  "enchantment.minecraft.piercing": "\u00a76\u1d77u\u1d09\u0254\u0279\u01dd\u1d09\u0500",
+  "menu.singleplayer": "\u00a7f\u9021 \u0279\u01dd\u028e\u0250\ua781d\u01dd\ua781\u1d77u\u1d09S",
+  "menu.multiplayer": "\u00a7f\u9022 \u0279\u01dd\u028e\u0250\ua781d\u1d09\u0287\ua781nW",
+  "menu.online": "\u00a7f\u9023 s\u026f\ua781\u0250\u01dd\u1d1a \u0287\u025f\u0250\u0279\u0254\u01ddu\u1d09W"
 }

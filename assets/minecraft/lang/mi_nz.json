@@ -13,5 +13,8 @@
   "entity.minecraft.wandering_trader": "\u00a7fPohehe Ana Kaihokohoko",
   "enchantment.minecraft.multishot": "\u00a76t\u014dtoru pere / r\u014dp\u016b pere",
   "enchantment.minecraft.quick_charge": "\u00a76Tiaki Tere",
-  "enchantment.minecraft.piercing": "\u00a76Ngoto"
+  "enchantment.minecraft.piercing": "\u00a76Ngoto",
+  "menu.singleplayer": "\u00a7f\u9021 anake",
+  "menu.multiplayer": "\u00a7f\u9022 huihui",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

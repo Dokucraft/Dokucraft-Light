@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dSuperlieding",
   "enchantment.minecraft.multishot": "\u00a76Multyskot",
   "enchantment.minecraft.quick_charge": "\u00a76Fluchlade",
-  "enchantment.minecraft.piercing": "\u00a76Trochboarje"
+  "enchantment.minecraft.piercing": "\u00a76Trochboarje",
+  "menu.singleplayer": "\u00a7f\u9021 Allinnich spylje",
+  "menu.multiplayer": "\u00a7f\u9022 Multyspiler",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

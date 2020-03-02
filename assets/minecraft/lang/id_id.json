@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dPemusatan",
   "enchantment.minecraft.multishot": "\u00a76Multi Tembak",
   "enchantment.minecraft.quick_charge": "\u00a76Ledak Lekas",
-  "enchantment.minecraft.piercing": "\u00a76Tajam"
+  "enchantment.minecraft.piercing": "\u00a76Tajam",
+  "menu.singleplayer": "\u00a7f\u9021 Bermain Sendiri",
+  "menu.multiplayer": "\u00a7f\u9022 Bermain Bersama",
+  "menu.online": "\u00a7f\u9023 Alam Minecraft"
 }

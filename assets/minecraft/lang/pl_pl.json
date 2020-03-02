@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dPora\u017cenie",
   "enchantment.minecraft.multishot": "\u00a76Wielostrza\u0142",
   "enchantment.minecraft.quick_charge": "\u00a76Szybkie \u0142adowanie",
-  "enchantment.minecraft.piercing": "\u00a76Przeszycie"
+  "enchantment.minecraft.piercing": "\u00a76Przeszycie",
+  "menu.singleplayer": "\u00a7f\u9021 Tryb jednoosobowy",
+  "menu.multiplayer": "\u00a7f\u9022 Tryb wieloosobowy",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

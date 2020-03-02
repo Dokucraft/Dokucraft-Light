@@ -19,5 +19,8 @@
   "entity.minecraft.villager.librarian": "\u00a7fBokahusja",
   "entity.minecraft.villager.mason": "\u00a7fTimrja",
   "entity.minecraft.villager.weaponsmith": "\u00a7fWepnasmi\u00feja",
-  "entity.minecraft.wandering_trader": "\u00a7fFarands Lewja"
+  "entity.minecraft.wandering_trader": "\u00a7fFarands Lewja",
+  "menu.singleplayer": "\u00a7f\u9021 Ainalaikands",
+  "menu.multiplayer": "\u00a7f\u9022 Managlaikands",
+  "menu.online": "\u00a7f\u9023 Meinakraftais Midjungardeis"
 }

@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dKanalizimin",
   "enchantment.minecraft.multishot": "\u00a76Multishot",
   "enchantment.minecraft.quick_charge": "\u00a76Ngarkes\u00eb e shpejt\u00eb",
-  "enchantment.minecraft.piercing": "\u00a76Dep\u00ebrtues"
+  "enchantment.minecraft.piercing": "\u00a76Dep\u00ebrtues",
+  "menu.singleplayer": "\u00a7f\u9021 Lojtar t\u00eb vet\u00ebm",
+  "menu.multiplayer": "\u00a7f\u9022 Multi lojtar\u00eb",
+  "menu.online": "\u00a7f\u9023 Realms t\u00eb Minecraft-it"
 }

@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7d\u0e2a\u0e32\u0e22\u0e1f\u0e49\u0e32\u0e1e\u0e34\u0e06\u0e32\u0e15",
   "enchantment.minecraft.multishot": "\u00a76\u0e01\u0e23\u0e30\u0e2a\u0e38\u0e19\u0e01\u0e23\u0e30\u0e08\u0e32\u0e22",
   "enchantment.minecraft.quick_charge": "\u00a76\u0e0a\u0e32\u0e23\u0e4c\u0e08\u0e40\u0e23\u0e47\u0e27",
-  "enchantment.minecraft.piercing": "\u00a76\u0e40\u0e08\u0e32\u0e30\u0e40\u0e01\u0e23\u0e32\u0e30"
+  "enchantment.minecraft.piercing": "\u00a76\u0e40\u0e08\u0e32\u0e30\u0e40\u0e01\u0e23\u0e32\u0e30",
+  "menu.singleplayer": "\u00a7f\u9021 \u0e40\u0e25\u0e48\u0e19\u0e04\u0e19\u0e40\u0e14\u0e35\u0e22\u0e27",
+  "menu.multiplayer": "\u00a7f\u9022 \u0e40\u0e25\u0e48\u0e19\u0e2b\u0e25\u0e32\u0e22\u0e04\u0e19",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

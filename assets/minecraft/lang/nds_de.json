@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dEntladung",
   "enchantment.minecraft.multishot": "\u00a76Mennigmaalsch\u00f6\u00f6t",
   "enchantment.minecraft.quick_charge": "\u00a76Gauladen",
-  "enchantment.minecraft.piercing": "\u00a76D\u00f6rsch\u00f6\u00f6t"
+  "enchantment.minecraft.piercing": "\u00a76D\u00f6rsch\u00f6\u00f6t",
+  "menu.singleplayer": "\u00a7f\u9021 Einzelspeeler",
+  "menu.multiplayer": "\u00a7f\u9022 M\u00e4erspi\u00ebler",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

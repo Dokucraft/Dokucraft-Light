@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dSupergeleiding",
   "enchantment.minecraft.multishot": "\u00a76Multischot",
   "enchantment.minecraft.quick_charge": "\u00a76Snelladen",
-  "enchantment.minecraft.piercing": "\u00a76Doorboren"
+  "enchantment.minecraft.piercing": "\u00a76Doorboren",
+  "menu.singleplayer": "\u00a7f\u9021 Alleen spelen",
+  "menu.multiplayer": "\u00a7f\u9022 Samen spelen",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

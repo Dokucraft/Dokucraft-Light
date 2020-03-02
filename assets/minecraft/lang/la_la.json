@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dPerductio",
   "enchantment.minecraft.multishot": "\u00a76Multiactus",
   "enchantment.minecraft.quick_charge": "\u00a76Adornatio Celeris",
-  "enchantment.minecraft.piercing": "\u00a76Penetratio"
+  "enchantment.minecraft.piercing": "\u00a76Penetratio",
+  "menu.singleplayer": "\u00a7f\u9021 Ludus Unius",
+  "menu.multiplayer": "\u00a7f\u9022 Ludus Multorum",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

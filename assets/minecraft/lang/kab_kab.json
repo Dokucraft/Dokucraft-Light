@@ -8,5 +8,8 @@
   "merchant.trades": "\u00a7fTinezza",
   "entity.minecraft.villager.mason": "\u00a7fAma\u1e63\u1e63ut",
   "entity.minecraft.villager.toolsmith": "\u00a7fA\u1e25eddad n yifecka",
-  "entity.minecraft.villager.weaponsmith": "\u00a7fA\u1e25eddad n yimrigen"
+  "entity.minecraft.villager.weaponsmith": "\u00a7fA\u1e25eddad n yimrigen",
+  "menu.singleplayer": "\u00a7f\u9021 Aywan ",
+  "menu.multiplayer": "\u00a7f\u9022 Ugar imyurar ",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

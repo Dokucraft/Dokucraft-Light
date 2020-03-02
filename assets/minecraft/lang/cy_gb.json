@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dSianelu",
   "enchantment.minecraft.multishot": "\u00a76Aml-saethu",
   "enchantment.minecraft.quick_charge": "\u00a76Cyflym ei wefru",
-  "enchantment.minecraft.piercing": "\u00a76Trywanu"
+  "enchantment.minecraft.piercing": "\u00a76Trywanu",
+  "menu.singleplayer": "\u00a7f\u9021 Chwaraewr Sengl",
+  "menu.multiplayer": "\u00a7f\u9022 Aml-Chwaraewr",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

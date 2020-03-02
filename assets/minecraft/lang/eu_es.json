@@ -94,5 +94,8 @@
   "enchantment.minecraft.channeling": "\u00a7dEroankortasuna",
   "enchantment.minecraft.multishot": "\u00a76Multitiroa",
   "enchantment.minecraft.quick_charge": "\u00a76Karga azkarra",
-  "enchantment.minecraft.piercing": "\u00a76Zulaketa"
+  "enchantment.minecraft.piercing": "\u00a76Zulaketa",
+  "menu.singleplayer": "\u00a7f\u9021 Jokalari bakarra",
+  "menu.multiplayer": "\u00a7f\u9022 Multijokalaria",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dNukreipimas",
   "enchantment.minecraft.multishot": "\u00a76Daugia\u0161ovis",
   "enchantment.minecraft.quick_charge": "\u00a76Greitas u\u017etaisymas",
-  "enchantment.minecraft.piercing": "\u00a76Prad\u016brimas"
+  "enchantment.minecraft.piercing": "\u00a76Prad\u016brimas",
+  "menu.singleplayer": "\u00a7f\u9021 \u017daisti vienam",
+  "menu.multiplayer": "\u00a7f\u9022 \u017daisti tinkle",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

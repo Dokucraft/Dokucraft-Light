@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dV\u00fdboj",
   "enchantment.minecraft.multishot": "\u00a76\u0160t\u011bpen\u00ed \u0161\u00edp\u016f",
   "enchantment.minecraft.quick_charge": "\u00a76Rychlonab\u00edjen\u00ed",
-  "enchantment.minecraft.piercing": "\u00a76Pr\u016fraznost"
+  "enchantment.minecraft.piercing": "\u00a76Pr\u016fraznost",
+  "menu.singleplayer": "\u00a7f\u9021 Hra jednoho hr\u00e1\u010de",
+  "menu.multiplayer": "\u00a7f\u9022 Hra v\u00edce hr\u00e1\u010d\u016f",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

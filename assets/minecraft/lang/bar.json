@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dEntladung",
   "enchantment.minecraft.multishot": "\u00a76Dopplschuss",
   "enchantment.minecraft.quick_charge": "\u00a76Schneilon",
-  "enchantment.minecraft.piercing": "\u00a76Duachschuss"
+  "enchantment.minecraft.piercing": "\u00a76Duachschuss",
+  "menu.singleplayer": "\u00a7f\u9021 Oanzlspiela",
+  "menu.multiplayer": "\u00a7f\u9022 Measpiela",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

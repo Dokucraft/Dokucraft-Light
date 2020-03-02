@@ -94,5 +94,8 @@
   "enchantment.minecraft.impaling": "\u00a7d\u010cuggen",
   "enchantment.minecraft.channeling": "\u00a7d\u00c1ltagasti",
   "enchantment.minecraft.multishot": "\u00a76M\u00e1\u014bgab\u00e1h\u010din",
-  "enchantment.minecraft.quick_charge": "\u00a76Gealdinleahttu"
+  "enchantment.minecraft.quick_charge": "\u00a76Gealdinleahttu",
+  "menu.singleplayer": "\u00a7f\u9021 Ieh\u010danas spealli",
+  "menu.multiplayer": "\u00a7f\u9022 M\u00e1\u014bga spealli",
+  "menu.online": "\u00a7f\u9023 Minecraft Ilmmit"
 }

@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dKanaligado",
   "enchantment.minecraft.multishot": "\u00a76Poliflecho",
   "enchantment.minecraft.quick_charge": "\u00a76Pafajo rapida",
-  "enchantment.minecraft.piercing": "\u00a76Penetreso"
+  "enchantment.minecraft.piercing": "\u00a76Penetreso",
+  "menu.singleplayer": "\u00a7f\u9021 Un ludanto",
+  "menu.multiplayer": "\u00a7f\u9022 Plura ludanti",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

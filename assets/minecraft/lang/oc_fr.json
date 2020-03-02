@@ -77,5 +77,8 @@
   "enchantment.minecraft.vanishing_curse": "\u00a74Malediccion de Desaparicion",
   "enchantment.minecraft.multishot": "\u00a76Tir multiple",
   "enchantment.minecraft.quick_charge": "\u00a76Carga rapida",
-  "enchantment.minecraft.piercing": "\u00a76Perforacion"
+  "enchantment.minecraft.piercing": "\u00a76Perforacion",
+  "menu.singleplayer": "\u00a7f\u9021 Un Jogaire",
+  "menu.multiplayer": "\u00a7f\u9022 Multijogaire",
+  "menu.online": "\u00a7f\u9023 Reialmes Minecraft"
 }

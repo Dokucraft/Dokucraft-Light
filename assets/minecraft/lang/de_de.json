@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dEntladung",
   "enchantment.minecraft.multishot": "\u00a76Mehrfachschuss",
   "enchantment.minecraft.quick_charge": "\u00a76Schnellladen",
-  "enchantment.minecraft.piercing": "\u00a76Durchschuss"
+  "enchantment.minecraft.piercing": "\u00a76Durchschuss",
+  "menu.singleplayer": "\u00a7f\u9021 Einzelspieler",
+  "menu.multiplayer": "\u00a7f\u9022 Mehrspieler",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dY\u0131ld\u0131r\u0131m Y\u00f6nlendirmesi",
   "enchantment.minecraft.multishot": "\u00a76\u00c7oklu At\u0131\u015f",
   "enchantment.minecraft.quick_charge": "\u00a76H\u0131zl\u0131 \u00c7eki\u015f",
-  "enchantment.minecraft.piercing": "\u00a76Delme"
+  "enchantment.minecraft.piercing": "\u00a76Delme",
+  "menu.singleplayer": "\u00a7f\u9021 Tek Oyunculu",
+  "menu.multiplayer": "\u00a7f\u9022 \u00c7ok Oyunculu",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

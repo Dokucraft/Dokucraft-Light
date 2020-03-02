@@ -13,5 +13,8 @@
   "entity.minecraft.villager.farmer": "\u00a7fMahiai",
   "entity.minecraft.villager.fisherman": "\u00a7fLawai\u02bba",
   "enchantment.minecraft.sharpness": "\u00a7c\u02bbOi",
-  "enchantment.minecraft.smite": "\u00a7cKu\u02bbi"
+  "enchantment.minecraft.smite": "\u00a7cKu\u02bbi",
+  "menu.singleplayer": "\u00a7f\u9021 Pa\u02bbani wale",
+  "menu.multiplayer": "\u00a7f\u9022 Pa\u02bbani me kekahi",
+  "menu.online": "\u00a7f\u9023 \u02bbO Minecraft Realms"
 }

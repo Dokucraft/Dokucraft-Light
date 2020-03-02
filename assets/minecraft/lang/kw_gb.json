@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dDover Lughes",
   "enchantment.minecraft.multishot": "\u00a76Liestenn",
   "enchantment.minecraft.quick_charge": "\u00a76Tenna Uskis",
-  "enchantment.minecraft.piercing": "\u00a76Gwana"
+  "enchantment.minecraft.piercing": "\u00a76Gwana",
+  "menu.singleplayer": "\u00a7f\u9021 Unn Gwarier",
+  "menu.multiplayer": "\u00a7f\u9022 Liesgwarier",
+  "menu.online": "\u00a7f\u9023 Realms Minecraft"
 }

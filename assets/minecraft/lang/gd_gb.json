@@ -76,5 +76,8 @@
   "enchantment.minecraft.loyalty": "\u00a7dD\u00eclseachd",
   "enchantment.minecraft.impaling": "\u00a7dTro-lotadh",
   "enchantment.minecraft.riptide": "\u00a7dBras-shruth",
-  "enchantment.minecraft.channeling": "\u00a7dSeanaileadh"
+  "enchantment.minecraft.channeling": "\u00a7dSeanaileadh",
+  "menu.singleplayer": "\u00a7f\u9021 Aon-chluicheadair",
+  "menu.multiplayer": "\u00a7f\u9022 Ioma-chluicheadair",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

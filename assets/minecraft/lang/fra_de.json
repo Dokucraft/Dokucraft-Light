@@ -3,5 +3,8 @@
   "language.region": "Frange",
   "language.code": "vmf_de",
   "merchant.level.5": "\u00a7fMeester",
-  "merchant.trades": "\u00a7fHandln"
+  "merchant.trades": "\u00a7fHandln",
+  "menu.singleplayer": "\u00a7f\u9021 Aanzlschbiela",
+  "menu.multiplayer": "\u00a7f\u9022 Meeschbiela",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

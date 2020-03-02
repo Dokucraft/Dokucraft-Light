@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dF\u00f6ldel\u00e9s",
   "enchantment.minecraft.multishot": "\u00a76T\u00f6bbsz\u00f6r\u00f6s l\u00f6v\u00e9s",
   "enchantment.minecraft.quick_charge": "\u00a76Gyors t\u00f6lt\u00e9s",
-  "enchantment.minecraft.piercing": "\u00a76\u00c1td\u00f6f\u00e9s"
+  "enchantment.minecraft.piercing": "\u00a76\u00c1td\u00f6f\u00e9s",
+  "menu.singleplayer": "\u00a7f\u9021 Egyj\u00e1t\u00e9kos m\u00f3d",
+  "menu.multiplayer": "\u00a7f\u9022 T\u00f6bbj\u00e1t\u00e9kos m\u00f3d",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }

@@ -96,5 +96,8 @@
   "enchantment.minecraft.channeling": "\u00a7dThunderwave",
   "enchantment.minecraft.multishot": "\u00a76Manishot",
   "enchantment.minecraft.quick_charge": "\u00a76Quick Load",
-  "enchantment.minecraft.piercing": "\u00a76Throughshot"
+  "enchantment.minecraft.piercing": "\u00a76Throughshot",
+  "menu.singleplayer": "\u00a7f\u9021 Oneplayer",
+  "menu.multiplayer": "\u00a7f\u9022 Maniplayer",
+  "menu.online": "\u00a7f\u9023 Minecraft Realms"
 }
