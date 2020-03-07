@@ -1,0 +1,7 @@
+{
+    "parent": "block/ladder",
+    "textures": {
+        "particle": "block/ladder_underwater",
+        "texture": "block/ladder_underwater"
+    }
+}

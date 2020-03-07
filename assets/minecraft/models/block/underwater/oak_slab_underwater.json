@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "block/oak_planks_underwater",
+        "top": "block/oak_planks_underwater",
+        "side": "block/oak_planks_underwater"
+    }
+}
