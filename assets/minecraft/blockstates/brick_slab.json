@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "block/brick_slab" },
         "type=top": { "model": "block/brick_slab_top" },
-        "type=double": { "model": "block/brick_slab_double" }
+        "type=double": { "model": "block/double_slab/brick_slab_double" }
     }
 }
