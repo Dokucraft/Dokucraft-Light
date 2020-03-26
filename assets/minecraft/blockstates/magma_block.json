@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      { "model": "block/magma/0", "weight": 5 },
+      { "model": "block/magma/1", "weight": 5 },
+      { "model": "block/magma/2", "weight": 3 }
+    ]
+  }
+}
