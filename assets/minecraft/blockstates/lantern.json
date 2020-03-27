@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "hanging=false":[
+			{ "model": "block/lantern/lantern" },
+			{ "model": "block/lantern/lantern", "y": 90 },
+			{ "model": "block/lantern/lantern", "y": 180 },
+			{ "model": "block/lantern/lantern", "y": 270 },
+			{ "model": "block/lantern/lantern_2" },
+			{ "model": "block/lantern/lantern_2", "y": 90 },
+			{ "model": "block/lantern/lantern_2", "y": 180 },
+			{ "model": "block/lantern/lantern_2", "y": 270 },
+			{ "model": "block/lantern/lantern_3" },
+			{ "model": "block/lantern/lantern_3", "y": 90 },
+			{ "model": "block/lantern/lantern_3", "y": 180 },
+			{ "model": "block/lantern/lantern_3", "y": 270 }
+		],
+		"hanging=true": [
+			{ "model": "block/lantern/lantern_hanging" },
+			{ "model": "block/lantern/lantern_hanging", "y": 90 },
+			{ "model": "block/lantern/lantern_hanging", "y": 180 },
+			{ "model": "block/lantern/lantern_hanging", "y": 270 },
+			{ "model": "block/lantern/lantern_hanging_2" },
+			{ "model": "block/lantern/lantern_hanging_2", "y": 90 },
+			{ "model": "block/lantern/lantern_hanging_2", "y": 180 },
+			{ "model": "block/lantern/lantern_hanging_2", "y": 270 }
+		]
+    }
+}
