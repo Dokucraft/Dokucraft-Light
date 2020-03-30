@@ -1,1 +1,10 @@
-{"variants":{"":{"model":"block/netherrack"}}}
+{ "variants": {
+    "": [
+      { "model": "block/netherrack/netherrack", "weight": 825 },
+      { "model": "block/netherrack/netherrack_alt", "weight": 825 },
+      { "model": "block/netherrack/netherrack_eyes", "weight": 800 },
+      { "model": "block/netherrack/netherrack_big_eye", "weight": 25 },
+      { "model": "block/netherrack/netherrack_big_eye_2", "weight": 25 }
+    ]
+  }
+}
