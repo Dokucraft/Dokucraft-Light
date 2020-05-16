@@ -119,13 +119,18 @@
   "options.controls": "Controls",
   "options.chat.title": "Chat Settings",
   "options.difficulty.hardcore": "\u00A74Hardcore",
+  "options.off": "\u00A74OFF",
+  "options.on": "\u00A72ON",
+  "options.biomeBlendRadius.1": "\u00A74OFF\u00A7r (Fastest)",
+  "options.ao.off": "\u00A74OFF",
+  "options.narrator.off": "\u00A74OFF",
 
   "resourcePack.openFolder": "Resource Pack Folder",
-  "resourcePack.title": "§4(Please use Optifine!!)    §fResource Packs    §4(Please use Optifine!!)",
+  "resourcePack.title": "\u00A74(Please use Optifine!!)    \u00A7rResource Packs    \u00A74(Please use Optifine!!)",
 
   "item.minecraft.music_disc_11.desc": "What the Forest Taught Me",
 
-  "menu.singleplayer": "§f逡 Singleplayer",
-  "menu.multiplayer": "§f逢 Multiplayer",
-  "menu.online": "§f連 Realms"
+  "menu.singleplayer": "\u00A7f逡\u00A7r Singleplayer",
+  "menu.multiplayer": "\u00A7f逢\u00A7r Multiplayer",
+  "menu.online": "\u00A7f連\u00A7r Realms"
 }
