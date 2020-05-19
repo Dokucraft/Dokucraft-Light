@@ -1,0 +1,19 @@
+{ "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/diamond_pickaxe"
+  },
+  "overrides": [
+    { "predicate": { "damage": 0.33 },
+      "model": "item/damaged_tools/pickaxe/diamond/imperfect"
+    },
+    { "predicate": { "damage": 0.67 },
+      "model": "item/damaged_tools/pickaxe/diamond/damaged"
+    },
+    { "predicate": { "damage": 0.82 },
+      "model": "item/damaged_tools/pickaxe/diamond/broken"
+    },
+    { "predicate": { "damage": 0.95 },
+      "model": "item/damaged_tools/pickaxe/diamond/wrecked"
+    }
+  ]
+}

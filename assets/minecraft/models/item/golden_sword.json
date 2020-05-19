@@ -1,0 +1,19 @@
+{ "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/golden_sword"
+  },
+  "overrides": [
+    { "predicate": { "damage": 0.33 },
+      "model": "item/damaged_tools/sword/gold/imperfect"
+    },
+    { "predicate": { "damage": 0.67 },
+      "model": "item/damaged_tools/sword/gold/damaged"
+    },
+    { "predicate": { "damage": 0.82 },
+      "model": "item/damaged_tools/sword/gold/broken"
+    },
+    { "predicate": { "damage": 0.95 },
+      "model": "item/damaged_tools/sword/gold/wrecked"
+    }
+  ]
+}

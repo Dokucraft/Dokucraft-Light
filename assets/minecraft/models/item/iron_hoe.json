@@ -1,0 +1,19 @@
+{ "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/iron_hoe"
+  },
+  "overrides": [
+    { "predicate": { "damage": 0.33 },
+      "model": "item/damaged_tools/hoe/iron/imperfect"
+    },
+    { "predicate": { "damage": 0.67 },
+      "model": "item/damaged_tools/hoe/iron/damaged"
+    },
+    { "predicate": { "damage": 0.82 },
+      "model": "item/damaged_tools/hoe/iron/broken"
+    },
+    { "predicate": { "damage": 0.95 },
+      "model": "item/damaged_tools/hoe/iron/wrecked"
+    }
+  ]
+}

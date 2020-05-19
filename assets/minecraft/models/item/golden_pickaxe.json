@@ -1,0 +1,19 @@
+{ "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/golden_pickaxe"
+  },
+  "overrides": [
+    { "predicate": { "damage": 0.33 },
+      "model": "item/damaged_tools/pickaxe/gold/imperfect"
+    },
+    { "predicate": { "damage": 0.67 },
+      "model": "item/damaged_tools/pickaxe/gold/damaged"
+    },
+    { "predicate": { "damage": 0.82 },
+      "model": "item/damaged_tools/pickaxe/gold/broken"
+    },
+    { "predicate": { "damage": 0.95 },
+      "model": "item/damaged_tools/pickaxe/gold/wrecked"
+    }
+  ]
+}
