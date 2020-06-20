@@ -1,0 +1,6 @@
+{
+    "parent": "block/buttons/button_inventory",
+    "textures": {
+        "texture": "block/buttons/crimson_button"
+    }
+}
