@@ -1,6 +1,5 @@
 {
 	"credit": "Made By WantedRobot",
-	"gui_light": "front",
 	"textures": {
 		"1": "item/bow_pulling_0",
 		"2": "item/arrow",
@@ -1023,6 +1022,7 @@
 			}
 		}
 	],
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [-80, 260, -40],
@@ -1035,14 +1035,13 @@
 			"scale": [0.9, 0.9, 0.9]
 		},
 		"firstperson_righthand": {
-			"rotation": [0, -90, 25],
-			"translation": [1.13, 3.2, 1.13],
-			"scale": [0.68, 0.68, 0.68]
+			"rotation": [-53, -45, -30],
+			"translation": [0, 1, -1]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, 90, -25],
-			"translation": [1.13, 3.2, 1.13],
-			"scale": [0.68, 0.68, 0.68]
+			"rotation": [-69, -45, -131],
+			"translation": [0, 0.5, -1],
+			"scale": [-1, -1, -1]
 		}
 	},
 	"groups": [
