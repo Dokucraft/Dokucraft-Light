@@ -1,0 +1,4 @@
+{
+	"parent":"block/torch/soul_fire_torch",
+	"gui_light": "front"
+}

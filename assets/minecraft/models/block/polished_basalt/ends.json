@@ -1,0 +1,14 @@
+{ "parent": "block/block",
+  "textures": {
+    "particle": "block/polished_basalt/side_0"
+  },
+	"elements": [
+		{ "from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down":  { "texture": "#0", "cullface": "down" },
+				"up":    { "texture": "#0", "cullface": "up" }
+			}
+		}
+	]
+}

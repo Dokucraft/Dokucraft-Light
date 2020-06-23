@@ -1,0 +1,20 @@
+{ "parent": "block/block",
+  "textures": {
+    "side": "block/stripped_crimson_stem",
+    "end": "block/stripped_crimson_stem_top",
+    "particle": "block/stripped_crimson_stem"
+  },
+  "elements": [
+    { "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#side", "rotation": 270, "cullface": "north"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#end", "cullface": "east"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#side", "rotation": 90, "cullface": "south"},
+        "west": {"uv": [0, 16, 16, 0], "texture": "#end", "cullface": "west"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#side", "rotation": 90, "cullface": "up"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#side", "rotation": 90, "cullface": "down"}
+      }
+    }
+  ]
+}

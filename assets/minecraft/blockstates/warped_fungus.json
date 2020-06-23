@@ -1,0 +1,14 @@
+{ "variants": {
+    "": [
+      { "model": "block/mushroom/warped/0" },
+      { "model": "block/mushroom/warped/1" },
+      { "model": "block/mushroom/warped/2" },
+      { "model": "block/mushroom/warped/3" },
+      { "model": "block/mushroom/warped/4" },
+      { "model": "block/mushroom/warped/5" },
+      { "model": "block/mushroom/warped/6" },
+      { "model": "block/mushroom/warped/7" },
+      { "model": "block/mushroom/warped/8" }
+    ]
+  }
+}

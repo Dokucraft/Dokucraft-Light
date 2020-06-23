@@ -1,0 +1,78 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "block/crimson_trapdoor",
+		"3": "block/crimson_trapdoor_rim",
+		"particle": "block/crimson_trapdoor"
+	},
+	"elements": [
+		{
+			"from": [14, 13, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [9, 13, 12, 16], "rotation": 90, "texture": "#3"},
+				"east": {"uv": [6, 0, 9, 16], "rotation": 90, "texture": "#3"},
+				"south": {"uv": [3, 0, 6, 3], "rotation": 90, "texture": "#3"},
+				"west": {"uv": [14, 3, 14.5, 14], "texture": "#1"},
+				"up": {"uv": [14, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [14, 16, 16, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 13, 0],
+			"to": [2, 16, 16],
+			"faces": {
+				"north": {"uv": [9, 0, 12, 3], "rotation": 90, "texture": "#3"},
+				"east": {"uv": [1.5, 3, 2, 14], "texture": "#1"},
+				"south": {"uv": [3, 13, 6, 16], "rotation": 90, "texture": "#3"},
+				"west": {"uv": [0, 0, 3, 16], "rotation": 90, "texture": "#3"},
+				"up": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"down": {"uv": [0, 16, 2, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [2, 13, 14],
+			"to": [14, 16, 16],
+			"faces": {
+				"north": {"uv": [2, 14, 14, 14.5], "texture": "#1"},
+				"east": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"south": {"uv": [3, 3, 6, 13], "rotation": 90, "texture": "#3"},
+				"west": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"up": {"uv": [2, 14, 14, 16], "texture": "#1"},
+				"down": {"uv": [2, 14, 14, 16], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [2, 13, 0],
+			"to": [14, 16, 3],
+			"faces": {
+				"north": {"uv": [9, 3, 12, 13], "rotation": 90, "texture": "#3"},
+				"east": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"south": {"uv": [2, 2.5, 14, 3], "texture": "#1"},
+				"west": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"up": {"uv": [2, 0, 14, 3], "texture": "#1"},
+				"down": {"uv": [2, 3, 14, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [2, 13.5, 3],
+			"to": [14, 15.5, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"up": {"uv": [2, 3, 14, 14], "texture": "#1"},
+				"down": {"uv": [2, 3, 14, 14], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Crimson Trapdoor",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3, 4]
+		}
+	]
+}

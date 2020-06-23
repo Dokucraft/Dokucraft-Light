@@ -1,0 +1,5 @@
+{ "parent": "block/polished_basalt/side",
+	"textures": {
+		"0": "block/polished_basalt/side_4"
+	}
+}

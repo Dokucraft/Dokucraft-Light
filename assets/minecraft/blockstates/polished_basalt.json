@@ -1,0 +1,207 @@
+{ "multipart": [
+    { "when": { "axis": "y" },
+      "apply": [
+        { "model": "block/polished_basalt/side_0", "weight": 1000 },
+        { "model": "block/polished_basalt/side_1", "weight": 1001 },
+        { "model": "block/polished_basalt/side_2", "weight": 1002 },
+        { "model": "block/polished_basalt/side_3", "weight": 1003 },
+        { "model": "block/polished_basalt/side_4", "weight": 1004 },
+        { "model": "block/polished_basalt/side_5", "weight": 1005 },
+        { "model": "block/polished_basalt/side_6", "weight": 1006 },
+        { "model": "block/polished_basalt/side_7", "weight": 1007 }
+      ]
+    },
+    { "when": { "axis": "y" },
+      "apply": [
+        { "model": "block/polished_basalt/side_0", "weight": 1010, "y": 90 },
+        { "model": "block/polished_basalt/side_1", "weight": 1011, "y": 90 },
+        { "model": "block/polished_basalt/side_2", "weight": 1012, "y": 90 },
+        { "model": "block/polished_basalt/side_3", "weight": 1013, "y": 90 },
+        { "model": "block/polished_basalt/side_4", "weight": 1014, "y": 90 },
+        { "model": "block/polished_basalt/side_5", "weight": 1015, "y": 90 },
+        { "model": "block/polished_basalt/side_6", "weight": 1016, "y": 90 },
+        { "model": "block/polished_basalt/side_7", "weight": 1017, "y": 90 }
+      ]
+    },
+    { "when": { "axis": "y" },
+      "apply": [
+        { "model": "block/polished_basalt/side_0", "weight": 1020, "y": 180 },
+        { "model": "block/polished_basalt/side_1", "weight": 1021, "y": 180 },
+        { "model": "block/polished_basalt/side_2", "weight": 1022, "y": 180 },
+        { "model": "block/polished_basalt/side_3", "weight": 1023, "y": 180 },
+        { "model": "block/polished_basalt/side_4", "weight": 1024, "y": 180 },
+        { "model": "block/polished_basalt/side_5", "weight": 1025, "y": 180 },
+        { "model": "block/polished_basalt/side_6", "weight": 1026, "y": 180 },
+        { "model": "block/polished_basalt/side_7", "weight": 1027, "y": 180 }
+      ]
+    },
+    { "when": { "axis": "y" },
+      "apply": [
+        { "model": "block/polished_basalt/side_0", "weight": 1030, "y": 270 },
+        { "model": "block/polished_basalt/side_1", "weight": 1031, "y": 270 },
+        { "model": "block/polished_basalt/side_2", "weight": 1032, "y": 270 },
+        { "model": "block/polished_basalt/side_3", "weight": 1033, "y": 270 },
+        { "model": "block/polished_basalt/side_4", "weight": 1034, "y": 270 },
+        { "model": "block/polished_basalt/side_5", "weight": 1035, "y": 270 },
+        { "model": "block/polished_basalt/side_6", "weight": 1036, "y": 270 },
+        { "model": "block/polished_basalt/side_7", "weight": 1037, "y": 270 }
+      ]
+    },
+    { "when": { "axis": "y" },
+      "apply": [
+        { "model": "block/polished_basalt/ends_0", "weight": 20100 },
+        { "model": "block/polished_basalt/ends_1", "weight": 1101 },
+        { "model": "block/polished_basalt/ends_2", "weight": 1102 },
+        { "model": "block/polished_basalt/ends_3", "weight": 1103 },
+        { "model": "block/polished_basalt/ends_4", "weight": 1104 },
+        { "model": "block/polished_basalt/ends_5", "weight": 1105 },
+        { "model": "block/polished_basalt/ends_6", "weight": 1106 },
+        { "model": "block/polished_basalt/ends_7", "weight": 1107 },
+        { "model": "block/polished_basalt/ends_8", "weight": 1108 },
+        { "model": "block/polished_basalt/ends_9", "weight": 1109 },
+        { "model": "block/polished_basalt/ends_a", "weight": 1110 },
+        { "model": "block/polished_basalt/ends_b", "weight": 1111 },
+        { "model": "block/polished_basalt/ends_c", "weight": 1112 },
+        { "model": "block/polished_basalt/ends_d", "weight": 1113 },
+        { "model": "block/polished_basalt/ends_e", "weight": 1114 },
+        { "model": "block/polished_basalt/ends_f", "weight": 1115 }
+      ]
+    },
+    { "when": { "axis": "z" },
+      "apply": [
+        { "model": "block/polished_basalt/side_z_0", "weight": 1000 },
+        { "model": "block/polished_basalt/side_z_1", "weight": 1001 },
+        { "model": "block/polished_basalt/side_z_2", "weight": 1002 },
+        { "model": "block/polished_basalt/side_z_3", "weight": 1003 },
+        { "model": "block/polished_basalt/side_z_4", "weight": 1004 },
+        { "model": "block/polished_basalt/side_z_5", "weight": 1005 },
+        { "model": "block/polished_basalt/side_z_6", "weight": 1006 },
+        { "model": "block/polished_basalt/side_z_7", "weight": 1007 }
+      ]
+    },
+    { "when": { "axis": "z" },
+      "apply": [
+        { "model": "block/polished_basalt/side_x_0", "weight": 1010 },
+        { "model": "block/polished_basalt/side_x_1", "weight": 1011 },
+        { "model": "block/polished_basalt/side_x_2", "weight": 1012 },
+        { "model": "block/polished_basalt/side_x_3", "weight": 1013 },
+        { "model": "block/polished_basalt/side_x_4", "weight": 1014 },
+        { "model": "block/polished_basalt/side_x_5", "weight": 1015 },
+        { "model": "block/polished_basalt/side_x_6", "weight": 1016 },
+        { "model": "block/polished_basalt/side_x_7", "weight": 1017 }
+      ]
+    },
+    { "when": { "axis": "z" },
+      "apply": [
+        { "model": "block/polished_basalt/side_z_0", "weight": 1020, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_z_1", "weight": 1021, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_z_2", "weight": 1022, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_z_3", "weight": 1023, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_z_4", "weight": 1024, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_z_5", "weight": 1025, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_z_6", "weight": 1026, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_z_7", "weight": 1027, "x": 180, "y": 180 }
+      ]
+    },
+    { "when": { "axis": "z" },
+      "apply": [
+        { "model": "block/polished_basalt/side_x_0", "weight": 1030, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_x_1", "weight": 1031, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_x_2", "weight": 1032, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_x_3", "weight": 1033, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_x_4", "weight": 1034, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_x_5", "weight": 1035, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_x_6", "weight": 1036, "x": 180, "y": 180 },
+        { "model": "block/polished_basalt/side_x_7", "weight": 1037, "x": 180, "y": 180 }
+      ]
+    },
+    { "when": { "axis": "z" },
+      "apply": [
+        { "model": "block/polished_basalt/ends_0", "weight": 20100, "x": 90 },
+        { "model": "block/polished_basalt/ends_1", "weight": 1101, "x": 90 },
+        { "model": "block/polished_basalt/ends_2", "weight": 1102, "x": 90 },
+        { "model": "block/polished_basalt/ends_3", "weight": 1103, "x": 90 },
+        { "model": "block/polished_basalt/ends_4", "weight": 1104, "x": 90 },
+        { "model": "block/polished_basalt/ends_5", "weight": 1105, "x": 90 },
+        { "model": "block/polished_basalt/ends_6", "weight": 1106, "x": 90 },
+        { "model": "block/polished_basalt/ends_7", "weight": 1107, "x": 90 },
+        { "model": "block/polished_basalt/ends_8", "weight": 1108, "x": 90 },
+        { "model": "block/polished_basalt/ends_9", "weight": 1109, "x": 90 },
+        { "model": "block/polished_basalt/ends_a", "weight": 1110, "x": 90 },
+        { "model": "block/polished_basalt/ends_b", "weight": 1111, "x": 90 },
+        { "model": "block/polished_basalt/ends_c", "weight": 1112, "x": 90 },
+        { "model": "block/polished_basalt/ends_d", "weight": 1113, "x": 90 },
+        { "model": "block/polished_basalt/ends_e", "weight": 1114, "x": 90 },
+        { "model": "block/polished_basalt/ends_f", "weight": 1115, "x": 90 }
+      ]
+    },
+    { "when": { "axis": "x" },
+      "apply": [
+        { "model": "block/polished_basalt/side_z_0", "weight": 1000, "y": 90 },
+        { "model": "block/polished_basalt/side_z_1", "weight": 1001, "y": 90 },
+        { "model": "block/polished_basalt/side_z_2", "weight": 1002, "y": 90 },
+        { "model": "block/polished_basalt/side_z_3", "weight": 1003, "y": 90 },
+        { "model": "block/polished_basalt/side_z_4", "weight": 1004, "y": 90 },
+        { "model": "block/polished_basalt/side_z_5", "weight": 1005, "y": 90 },
+        { "model": "block/polished_basalt/side_z_6", "weight": 1006, "y": 90 },
+        { "model": "block/polished_basalt/side_z_7", "weight": 1007, "y": 90 }
+      ]
+    },
+    { "when": { "axis": "x" },
+      "apply": [
+        { "model": "block/polished_basalt/side_x_0", "weight": 1010, "y": 90 },
+        { "model": "block/polished_basalt/side_x_1", "weight": 1011, "y": 90 },
+        { "model": "block/polished_basalt/side_x_2", "weight": 1012, "y": 90 },
+        { "model": "block/polished_basalt/side_x_3", "weight": 1013, "y": 90 },
+        { "model": "block/polished_basalt/side_x_4", "weight": 1014, "y": 90 },
+        { "model": "block/polished_basalt/side_x_5", "weight": 1015, "y": 90 },
+        { "model": "block/polished_basalt/side_x_6", "weight": 1016, "y": 90 },
+        { "model": "block/polished_basalt/side_x_7", "weight": 1017, "y": 90 }
+      ]
+    },
+    { "when": { "axis": "x" },
+      "apply": [
+        { "model": "block/polished_basalt/side_z_0", "weight": 1020, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_z_1", "weight": 1021, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_z_2", "weight": 1022, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_z_3", "weight": 1023, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_z_4", "weight": 1024, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_z_5", "weight": 1025, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_z_6", "weight": 1026, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_z_7", "weight": 1027, "x": 180, "y": 270 }
+      ]
+    },
+    { "when": { "axis": "x" },
+      "apply": [
+        { "model": "block/polished_basalt/side_x_0", "weight": 1030, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_x_1", "weight": 1031, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_x_2", "weight": 1032, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_x_3", "weight": 1033, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_x_4", "weight": 1034, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_x_5", "weight": 1035, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_x_6", "weight": 1036, "x": 180, "y": 270 },
+        { "model": "block/polished_basalt/side_x_7", "weight": 1037, "x": 180, "y": 270 }
+      ]
+    },
+    { "when": { "axis": "x" },
+      "apply": [
+        { "model": "block/polished_basalt/ends_0", "weight": 20100, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_1", "weight": 1101, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_2", "weight": 1102, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_3", "weight": 1103, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_4", "weight": 1104, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_5", "weight": 1105, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_6", "weight": 1106, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_7", "weight": 1107, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_8", "weight": 1108, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_9", "weight": 1109, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_a", "weight": 1110, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_b", "weight": 1111, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_c", "weight": 1112, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_d", "weight": 1113, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_e", "weight": 1114, "x": 90, "y": 90 },
+        { "model": "block/polished_basalt/ends_f", "weight": 1115, "x": 90, "y": 90 }
+      ]
+    }
+  ]
+}

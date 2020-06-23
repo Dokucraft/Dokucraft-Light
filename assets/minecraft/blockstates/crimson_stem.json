@@ -1,0 +1,21 @@
+{ "variants": {
+    "axis=y": [
+      { "model": "block/crimson_stem" },
+      { "model": "block/crimson_stem", "y": 90 },
+      { "model": "block/crimson_stem", "y": 180 },
+      { "model": "block/crimson_stem", "y": 270 }
+    ],
+    "axis=z": [
+      { "model": "block/crimson_stem_horizontal", "y": 90 },
+      { "model": "block/crimson_stem_horizontal", "x": 90, "y": 90 },
+      { "model": "block/crimson_stem_horizontal", "x": 180, "y": 90 },
+      { "model": "block/crimson_stem_horizontal", "x": 270, "y": 90 }
+    ],
+    "axis=x": [
+      { "model": "block/crimson_stem_horizontal" },
+      { "model": "block/crimson_stem_horizontal", "x": 90 },
+      { "model": "block/crimson_stem_horizontal", "x": 180 },
+      { "model": "block/crimson_stem_horizontal", "x": 270 }
+    ]
+  }
+}

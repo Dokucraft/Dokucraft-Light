@@ -1,1 +1,4 @@
-{"parent":"block/torch/torch"}
+{
+	"parent":"block/torch/torch",
+	"gui_light": "front"
+}

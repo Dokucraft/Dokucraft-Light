@@ -1,0 +1,14 @@
+{ "variants": {
+    "": [
+      { "model": "block/mushroom/crimson/0" },
+      { "model": "block/mushroom/crimson/1" },
+      { "model": "block/mushroom/crimson/2" },
+      { "model": "block/mushroom/crimson/3" },
+      { "model": "block/mushroom/crimson/4" },
+      { "model": "block/mushroom/crimson/5" },
+      { "model": "block/mushroom/crimson/6" },
+      { "model": "block/mushroom/crimson/7" },
+      { "model": "block/mushroom/crimson/8" }
+    ]
+  }
+}
