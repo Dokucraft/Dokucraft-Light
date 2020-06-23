@@ -1,5 +1,5 @@
 { "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "minecraft:item/damaged_tools/hoe/diamond/damaged"
+    "layer0": "minecraft:item/damaged_tools/hoe/stone/damaged"
   }
 }
