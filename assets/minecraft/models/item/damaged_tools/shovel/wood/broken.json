@@ -1,5 +1,5 @@
 { "parent": "minecraft:item/shovel_template",
   "textures": {
-    "layer0": "minecraft:item/damaged_tools/shovel/diamond/broken"
+    "layer0": "minecraft:item/damaged_tools/shovel/wood/broken"
   }
 }
