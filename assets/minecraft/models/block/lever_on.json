@@ -2,8 +2,8 @@
 	"credit": "Made By WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"base": "block/lever_base",
 		"particle": "block/lever_base",
+		"base": "block/lever_base",
 		"lever": "block/lever"
 	},
 	"elements": [
@@ -156,8 +156,8 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [30, 40, 0],
-			"translation": [0, 2.5, 0]
+			"rotation": [30, 45, 0],
+			"translation": [0, 3, 0]
 		},
 		"head": {
 			"translation": [0, 14.5, 0]

@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
+	"gui_light": "front",
 	"textures": {
 		"1": "block/chain",
 		"particle": "block/chain"

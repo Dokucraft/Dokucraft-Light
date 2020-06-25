@@ -1,1 +1,4 @@
-{"parent":"block/tripwire/tripwire_hook"}
+{
+	"parent":"block/tripwire/tripwire_hook",
+	"gui_light": "front"
+}

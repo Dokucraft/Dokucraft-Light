@@ -1,3 +1,4 @@
 {
-    "parent": "block/redstone_torch/redstone_torch"
+    "parent": "block/redstone_torch/redstone_torch",
+    "gui_light": "front"
 }
