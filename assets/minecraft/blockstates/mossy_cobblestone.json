@@ -1,0 +1,15 @@
+{"variants": {
+	"":  [
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone0", "weight":30 },
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone1", "weight":20 },
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone2", "weight":20 },
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone3", "weight":20 },
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone4", "weight":40 },
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone5", "weight":20 },
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone6", "weight":5 },
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone7", "weight":20 },
+		{ "model": "block/mossy_cobblestone/mossy_cobblestone8", "weight":5 }
+
+		]   
+	}
+}
