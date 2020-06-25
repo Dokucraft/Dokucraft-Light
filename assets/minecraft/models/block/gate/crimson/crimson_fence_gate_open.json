@@ -1,0 +1,7 @@
+{
+    "parent": "block/fence/fence_gate_open",
+    "textures": {
+        "particle": "block/crimson_planks",
+        "0": "block/crimson_fence_gate"
+    }
+}
