@@ -2,8 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"1": "block/glass_insides",
-		"particle": "#all"
+		"1": "block/glass",
+		"particle": "block/magenta_stained_glass",
+		"all": "block/magenta_stained_glass"
 	},
 	"elements": [
 		{
@@ -30,5 +31,6 @@
 				"down": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "down"}
 			}
 		}
-	]
+	],
+	"display": {}
 }
