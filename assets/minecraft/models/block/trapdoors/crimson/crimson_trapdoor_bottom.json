@@ -4,7 +4,7 @@
 	"textures": {
 		"1": "block/crimson_trapdoor",
 		"3": "block/crimson_trapdoor_rim",
-		"particle": "block/warped_trapdoor"
+		"particle": "block/crimson_trapdoor"
 	},
 	"elements": [
 		{
@@ -39,9 +39,7 @@
 			"rotation": {"angle": 0, "axis": "z", "origin": [8, 1.5, 8.2]},
 			"faces": {
 				"north": {"uv": [2, 14, 14, 14.5], "texture": "#1"},
-				"east": {"uv": [0, 0, 8, 0], "texture": "#missing"},
 				"south": {"uv": [3, 3, 6, 13], "rotation": 90, "texture": "#3"},
-				"west": {"uv": [0, 0, 8, 0], "texture": "#missing"},
 				"up": {"uv": [2, 14, 14, 16], "texture": "#1"},
 				"down": {"uv": [2, 14, 14, 16], "rotation": 180, "texture": "#1"}
 			}
@@ -52,9 +50,7 @@
 			"rotation": {"angle": 0, "axis": "z", "origin": [8, 1.5, 8.2]},
 			"faces": {
 				"north": {"uv": [9, 3, 12, 13], "rotation": 90, "texture": "#3"},
-				"east": {"uv": [0, 0, 8, 0], "texture": "#missing"},
 				"south": {"uv": [2, 2.5, 14, 3], "texture": "#1"},
-				"west": {"uv": [0, 0, 8, 0], "texture": "#missing"},
 				"up": {"uv": [2, 0, 14, 3], "texture": "#1"},
 				"down": {"uv": [2, 3, 14, 0], "texture": "#1"}
 			}
@@ -64,10 +60,6 @@
 			"to": [14, 2.5, 14],
 			"rotation": {"angle": 0, "axis": "z", "origin": [8, 1.5, 8.2]},
 			"faces": {
-				"north": {"uv": [0, 0, 8, 0], "texture": "#missing"},
-				"east": {"uv": [0, 0, 8, 0], "texture": "#missing"},
-				"south": {"uv": [0, 0, 8, 0], "texture": "#missing"},
-				"west": {"uv": [0, 0, 8, 0], "texture": "#missing"},
 				"up": {"uv": [2, 3, 14, 14], "texture": "#1"},
 				"down": {"uv": [2, 3, 14, 14], "texture": "#1"}
 			}

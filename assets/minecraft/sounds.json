@@ -25,7 +25,7 @@
   "music_disc.11": {
     "sounds": [
       {
-        "name": "records/What the Forest Taught Me by Hiroki Kikuta",
+        "name": "records/what_the_forest_taught_me_by_hiroki_kikuta",
         "stream": true,
         "volume": 0.01
       }

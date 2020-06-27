@@ -1,0 +1,29 @@
+{
+  "variants": {
+    "type=bottom": [
+		{ "model": "block/cobblestone_slab/cobblestone_slab0", "weight":30 },
+		{ "model": "block/cobblestone_slab/cobblestone_slab1", "weight":20 },
+		{ "model": "block/cobblestone_slab/cobblestone_slab2", "weight":20 },
+		{ "model": "block/cobblestone_slab/cobblestone_slab3", "weight":20 },
+		{ "model": "block/cobblestone_slab/cobblestone_slab4", "weight":40 },
+		{ "model": "block/cobblestone_slab/cobblestone_slab5", "weight":20 },
+		{ "model": "block/cobblestone_slab/cobblestone_slab6", "weight":5 },
+		{ "model": "block/cobblestone_slab/cobblestone_slab7", "weight":20 },
+		{ "model": "block/cobblestone_slab/cobblestone_slab8", "weight":5 }
+	],
+    "type=top": [
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top0", "weight":30 },
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top1", "weight":20 },
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top2", "weight":20 },
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top3", "weight":20 },
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top4", "weight":40 },
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top5", "weight":20 },
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top6", "weight":5 },
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top7", "weight":20 },
+		{ "model": "block/cobblestone_slab_top/cobblestone_slab_top8", "weight":5 }
+	],
+    "type=double": {
+      "model": "block/cobblestone"
+    }
+  }
+}
