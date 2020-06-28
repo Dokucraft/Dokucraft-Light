@@ -1,7 +1,6 @@
 {
   "variants": {
-    "": {
-      "model": "minecraft:block/chain"
-    }
+    "waterlogged=false": {"model": "minecraft:block/chain"},
+    "waterlogged=true": {"model": "minecraft:block/chain_wet"}
   }
 }

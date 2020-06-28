@@ -1,5 +1,5 @@
 {
-	"credit": "Made by SyndiShanX",
+	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
 		"0": "block/soul_fire_torch",
@@ -8,20 +8,20 @@
 	},
 	"elements": [
 		{
-			"from": [4.75, 10, 5.5],
-			"to": [4.75, 23.5, 11.75],
+			"from": [4.55, 10, 5.1],
+			"to": [4.55, 23.5, 11.35],
 			"shade": false,
-			"rotation": {"angle": -45, "axis": "y", "origin": [4.9375, 17.75, 8.6875]},
+			"rotation": {"angle": -45, "axis": "y", "origin": [5, 17.75, 8.5]},
 			"faces": {
 				"east": {"uv": [11.25, 2.5, 5, 16], "texture": "#1"},
 				"west": {"uv": [5, 2.5, 11.25, 16], "texture": "#1"}
 			}
 		},
 		{
-			"from": [1.40089, 9.5, 8.61428],
-			"to": [7.65089, 23, 8.61428],
+			"from": [1.25, 9.5, 8.25],
+			"to": [7.5, 23, 8.25],
 			"shade": false,
-			"rotation": {"angle": -45, "axis": "y", "origin": [5.02589, 17.25, 8.86428]},
+			"rotation": {"angle": -45, "axis": "y", "origin": [5, 17.25, 8.5]},
 			"faces": {
 				"north": {"uv": [5, 2.5, 11.25, 16], "texture": "#1"},
 				"south": {"uv": [11.25, 2.5, 5, 16], "texture": "#1"}

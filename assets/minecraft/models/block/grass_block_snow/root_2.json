@@ -1,5 +1,5 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
 		"4": "block/root",
@@ -7,21 +7,11 @@
 		"6": "block/root_alt",
 		"side": "block/grass_block_snow",
 		"particle": "block/dirt",
-		"bottom": "block/dirt"
+		"bottom": "block/dirt",
+		"1_4": "block/snow_layer",
+		"overlay": "block/grass_block_side_overlay"
 	},
 	"elements": [
-		{
-			"from": [0, 0, 0],
-			"to": [16, 16, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "north"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "east"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "south"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "west"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "up", "tintindex": 0},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
-			}
-		},
 		{
 			"name": "root1",
 			"from": [0, -16, 8],
@@ -49,6 +39,45 @@
 				"up": {"uv": [0, 0, 0, 0], "rotation": 270, "texture": "#4"},
 				"down": {"uv": [0, 0, 0, 0], "rotation": 90, "texture": "#4"}
 			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "up", "tintindex": 0},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "north", "tintindex": 0},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "east", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "south", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "west", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1_4", "cullface": "north", "tintindex": 0},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1_4", "cullface": "east", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1_4", "cullface": "south", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1_4", "cullface": "west", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [0, 1,
+		{
+			"name": "grass_block_snow",
+			"origin": [8, 8, 8],
+			"children": [2, 3, 4]
 		}
 	]
 }
