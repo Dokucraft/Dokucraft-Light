@@ -1,5 +1,5 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made with Blockbench",
 	"parent": "block/thin_block",
 	"textures": {
 		"sides": "block/iron_trapdoor_rim",

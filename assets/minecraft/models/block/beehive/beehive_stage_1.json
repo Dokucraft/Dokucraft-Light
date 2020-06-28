@@ -1,0 +1,29 @@
+{
+	"credit": "Made by SyndiShanX",
+	"textures": {
+		"ends": "block/beehive_end",
+		"side": "block/beehive_side",
+		"front": "block/beehive/1",
+		"particle": "block/beehive_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#ends"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#ends"}
+			}
+		}
+	],
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [0, 135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		}
+	}
+}

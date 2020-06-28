@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "facing=north,honey_level=0": { "model": "block/beehive/beehive_stage_0" },
+        "facing=south,honey_level=0": { "model": "block/beehive/beehive_stage_0", "y": 180 },
+        "facing=west,honey_level=0":  { "model": "block/beehive/beehive_stage_0", "y": 270 },
+        "facing=east,honey_level=0":  { "model": "block/beehive/beehive_stage_0", "y": 90 },
+        "facing=north,honey_level=1": { "model": "block/beehive/beehive_stage_1" },
+        "facing=south,honey_level=1": { "model": "block/beehive/beehive_stage_1", "y": 180 },
+        "facing=west,honey_level=1":  { "model": "block/beehive/beehive_stage_1", "y": 270 },
+        "facing=east,honey_level=1":  { "model": "block/beehive/beehive_stage_1", "y": 90 },
+        "facing=north,honey_level=2": { "model": "block/beehive/beehive_stage_2" },
+        "facing=south,honey_level=2": { "model": "block/beehive/beehive_stage_2", "y": 180 },
+        "facing=west,honey_level=2":  { "model": "block/beehive/beehive_stage_2", "y": 270 },
+        "facing=east,honey_level=2":  { "model": "block/beehive/beehive_stage_2", "y": 90 },
+        "facing=north,honey_level=3": { "model": "block/beehive/beehive_stage_3" },
+        "facing=south,honey_level=3": { "model": "block/beehive/beehive_stage_3", "y": 180 },
+        "facing=west,honey_level=3":  { "model": "block/beehive/beehive_stage_3", "y": 270 },
+        "facing=east,honey_level=3":  { "model": "block/beehive/beehive_stage_3", "y": 90 },
+        "facing=north,honey_level=4": { "model": "block/beehive/beehive_stage_4" },
+        "facing=south,honey_level=4": { "model": "block/beehive/beehive_stage_4", "y": 180 },
+        "facing=west,honey_level=4":  { "model": "block/beehive/beehive_stage_4", "y": 270 },
+        "facing=east,honey_level=4":  { "model": "block/beehive/beehive_stage_4", "y": 90 },
+        "facing=north,honey_level=5": { "model": "block/beehive/beehive_stage_5" },
+        "facing=south,honey_level=5": { "model": "block/beehive/beehive_stage_5", "y": 180 },
+        "facing=west,honey_level=5":  { "model": "block/beehive/beehive_stage_5", "y": 270 },
+        "facing=east,honey_level=5":  { "model": "block/beehive/beehive_stage_5", "y": 90 }
+    }
+}
