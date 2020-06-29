@@ -1,0 +1,15 @@
+{
+	"credit": "Made by SyndiShanX",
+    "parent": "item/hylian_shield",
+    "display": {
+        "firstperson_righthand": {
+			"translation": [-1, 0, 11],
+			"scale": [1.15, 1.15, 1.15]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-180, 0, 0],
+			"translation": [-1, 0, 11],
+			"scale": [-1.15, -1.15, -1.15]
+		}
+    }
+}
