@@ -1,0 +1,7 @@
+{
+	"credit": "Made By WantedRobot",
+	"parent": "block/cube_all",
+	"textures": {
+        "all": "block/dark_oak_planks_double"
+	}
+}

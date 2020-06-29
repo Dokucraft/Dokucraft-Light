@@ -1,1 +1,1 @@
-{"parent":"block/cube_column","textures":{"end":"block/chiseled_stone_bricks_top","side":"block/infested_chiseled_stone_bricks"}}
+{"parent":"block/cube_column","textures":{"end":"block/infested_chiseled_stone_bricks_top","side":"block/infested_chiseled_stone_bricks"}}
