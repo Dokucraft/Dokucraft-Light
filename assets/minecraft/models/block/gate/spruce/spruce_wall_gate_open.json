@@ -2,6 +2,6 @@
     "parent": "block/gate/wall_gate_open",
     "textures": {
         "particle": "block/spruce_planks",
-        "0": "block/spruce_fence_gate"
+        "0": "block/gate/spruce_fence_gate"
     }
 }

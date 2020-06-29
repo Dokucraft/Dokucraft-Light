@@ -2,6 +2,6 @@
     "parent": "block/fence/fence_side_sw",
     "textures": {
         "particle": "block/warped_planks",
-        "0": "block/warped_fence"
+        "0": "block/fence/warped_fence"
     }
 }

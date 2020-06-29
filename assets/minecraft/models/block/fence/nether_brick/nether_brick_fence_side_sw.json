@@ -2,6 +2,6 @@
     "parent": "block/fence/fence_side_sw",
     "textures": {
         "particle": "block/nether_bricks",
-        "0": "block/nether_brick_fence"
+        "0": "block/fence/nether_brick_fence"
     }
 }

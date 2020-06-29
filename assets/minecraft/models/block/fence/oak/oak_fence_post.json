@@ -2,6 +2,6 @@
     "parent": "block/fence/fence_post",
     "textures": {
         "particle": "block/oak_planks",
-        "0": "block/oak_fence"
+        "0": "block/fence/oak_fence"
     }
 }

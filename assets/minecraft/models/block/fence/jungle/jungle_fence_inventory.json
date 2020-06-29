@@ -1,6 +1,6 @@
 {
     "parent": "block/fence/fence_inventory",
     "textures": {
-        "texture": "block/jungle_fence"
+        "texture": "block/fence/jungle_fence"
     }
 }

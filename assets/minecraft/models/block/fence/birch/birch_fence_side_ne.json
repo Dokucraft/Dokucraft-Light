@@ -2,6 +2,6 @@
     "parent": "block/fence/fence_side_ne",
     "textures": {
         "particle": "block/birch_planks",
-        "0": "block/birch_fence"
+        "0": "block/fence/birch_fence"
     }
 }

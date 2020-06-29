@@ -2,6 +2,6 @@
     "parent": "block/fence/fence_post",
     "textures": {
         "particle": "block/acacia_planks",
-        "0": "block/acacia_fence"
+        "0": "block/fence/acacia_fence"
     }
 }
