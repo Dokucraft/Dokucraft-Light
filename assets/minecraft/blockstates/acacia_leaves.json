@@ -1,0 +1,24 @@
+{
+	"multipart": [{
+			"apply": [{
+				"model": "block/acacia_leaves"
+			}]
+		},
+		{
+			"apply": [
+				{"model": "block/leaves/acacia_leaves/top0"},
+				{"model": "block/leaves/acacia_leaves/top1"},
+				{"model": "block/leaves/acacia_leaves/top2"},
+				{"model": "block/leaves/acacia_leaves/top3"}
+			]
+		},
+		{
+			"apply": [
+				{"model": "block/leaves/acacia_leaves/bottom0"},
+				{"model": "block/leaves/acacia_leaves/bottom1"},
+				{"model": "block/leaves/acacia_leaves/bottom2"},
+				{"model": "block/leaves/acacia_leaves/bottom3"}
+			]
+		}
+	]
+}

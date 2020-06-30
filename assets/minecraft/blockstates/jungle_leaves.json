@@ -1,0 +1,24 @@
+{
+	"multipart": [{
+			"apply": [{
+				"model": "block/jungle_leaves"
+			}]
+		},
+		{
+			"apply": [
+				{"model": "block/leaves/jungle_leaves/top0"},
+				{"model": "block/leaves/jungle_leaves/top1"},
+				{"model": "block/leaves/jungle_leaves/top2"},
+				{"model": "block/leaves/jungle_leaves/top3"}
+			]
+		},
+		{
+			"apply": [
+				{"model": "block/leaves/jungle_leaves/bottom0"},
+				{"model": "block/leaves/jungle_leaves/bottom1"},
+				{"model": "block/leaves/jungle_leaves/bottom2"},
+				{"model": "block/leaves/jungle_leaves/bottom3"}
+			]
+		}
+	]
+}

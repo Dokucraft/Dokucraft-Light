@@ -1,0 +1,24 @@
+{
+	"multipart": [{
+			"apply": {
+				"model": "block/oak_leaves"
+			}
+		},
+		{
+			"apply": [
+				{"model": "block/leaves/oak_leaves/top0"},
+				{"model": "block/leaves/oak_leaves/top1"},
+				{"model": "block/leaves/oak_leaves/top2"},
+				{"model": "block/leaves/oak_leaves/top3"}
+			]
+		},
+		{
+			"apply": [
+				{"model": "block/leaves/oak_leaves/bottom0"},
+				{"model": "block/leaves/oak_leaves/bottom1"},
+				{"model": "block/leaves/oak_leaves/bottom2"},
+				{"model": "block/leaves/oak_leaves/bottom3"}
+			]
+		}
+	]
+}
