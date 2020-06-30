@@ -1,16 +1,37 @@
-{
-    "variants": {
-        "snowy=false": [
-        	{ "model": "block/grass_block" },
-        	{ "model": "block/grass_block/root_0" },
-        	{ "model": "block/grass_block/root_1" },
-        	{ "model": "block/grass_block/root_2" }
-        ],
-        "snowy=true":  [
-        	{ "model": "block/grass_block_snow/grass_block_snow" },
-        	{ "model": "block/grass_block_snow/root_0" },
-        	{ "model": "block/grass_block_snow/root_1" },
-        	{ "model": "block/grass_block_snow/root_2" }
-        ]
+{ "multipart": [
+    { "when": { "snowy": "false" },
+      "apply": [
+        { "model": "block/grass_block" },
+        { "model": "block/grass_block/1" },
+        { "model": "block/grass_block/2" },
+        { "model": "block/grass_block/3" },
+        { "model": "block/grass_block/4" },
+        { "model": "block/grass_block/5" },
+        { "model": "block/grass_block/6" },
+        { "model": "block/grass_block/7" },
+        { "model": "block/grass_block/8" },
+        { "model": "block/grass_block/9" }
+      ]
+    },
+    { "when": { "snowy": "true" },
+      "apply": [
+        { "model": "block/grass_block_snow/0" },
+        { "model": "block/grass_block_snow/1" },
+        { "model": "block/grass_block_snow/2" },
+        { "model": "block/grass_block_snow/3" },
+        { "model": "block/grass_block_snow/4" },
+        { "model": "block/grass_block_snow/5" },
+        { "model": "block/grass_block_snow/6" },
+        { "model": "block/grass_block_snow/7" },
+        { "model": "block/grass_block_snow/8" },
+        { "model": "block/grass_block_snow/9" }
+      ]
+    },
+    { "apply": [
+        { "model": "block/roots/0" },
+        { "model": "block/roots/1" },
+        { "model": "block/roots/2" }
+      ]
     }
+  ]
 }
