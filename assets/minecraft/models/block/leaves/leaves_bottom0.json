@@ -1,0 +1,24 @@
+{
+	"credit": "Made by WantedRobot",
+	"parent": "block/block",
+	"textures": {
+		"particle": "#all"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "down", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bottom_1",
+			"origin": [8, 8, 8],
+			"children": [0]
+		}
+	]
+}
