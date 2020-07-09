@@ -1,13 +1,14 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made by WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
 		"particle": "#top"
 	},
 	"elements": [
 		{
-			"from": [0, 0, 0],
-			"to": [3, 16, 16],
+			"from": [1, 0, 0],
+			"to": [4, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8, 8]},
 			"faces": {
 				"north": {"uv": [9, 0, 6, 16], "texture": "#sides", "cullface": "north"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#top"},

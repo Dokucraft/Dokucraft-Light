@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "block/sandstone_slab" },
         "type=top": { "model": "block/sandstone_slab_top" },
-        "type=double": { "model": "block/doubleslabs/sandstone_slab_double" }
+        "type=double": { "model": "block/double_slabs/sandstone_slab_double" }
     }
 }

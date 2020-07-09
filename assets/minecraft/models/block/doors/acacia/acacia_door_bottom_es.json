@@ -1,9 +1,9 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made by WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"1_bottom": "block/acacia_door_bottom",
 		"particle": "block/acacia_door_bottom",
+		"1_bottom": "block/acacia_door_bottom",
 		"1_sides": "block/acacia_door_sides"
 	},
 	"elements": [
