@@ -1,5 +1,5 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made by WantedRobot",
 	"parent": "block/block",
 	"textures": {
 		"1": "block/glass_insides",
