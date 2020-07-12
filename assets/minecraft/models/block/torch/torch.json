@@ -1,5 +1,5 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "block/torch",
 		"1": "block/torch_fire",
@@ -251,7 +251,7 @@
 				"east": {"uv": [7, 10, 9, 16], "texture": "#0"},
 				"south": {"uv": [7, 10, 9, 16], "texture": "#0"},
 				"west": {"uv": [7, 10, 9, 16], "texture": "#0"},
-				"down": {"uv": [8, 14, 9, 15], "texture": "#0", "cullface": "down"}
+				"down": {"uv": [10, 0, 12, 2], "texture": "#0", "cullface": "down"}
 			}
 		},
 		{
