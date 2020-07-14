@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/item_frame_back",
-		"texture": "block/item_frame_front",
-		"particle": "block/item_frame_front"
+		"particle": "block/item_frame_front",
+		"texture": "block/item_frame_front"
 	},
 	"elements": [
 		{
@@ -55,7 +55,7 @@
 			}
 		},
 		{
-			"from": [4, 4.5, 15.5],
+			"from": [4, 4.5, 15.475],
 			"to": [12, 12, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8.5]},
 			"faces": {
