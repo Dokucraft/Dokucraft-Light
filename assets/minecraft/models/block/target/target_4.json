@@ -3,8 +3,8 @@
 	"parent": "minecraft:block/cube_column",
 	"textures": {
 		"end": "block/target/target_top",
-		"particle": "block/target/target_side_ring_3 on",
-		"side": "block/target/target_side_ring_3 on"
+		"particle": "block/target/target_side_ring_3_on",
+		"side": "block/target/target_side_ring_3_on"
 	},
 	"elements": [
 		{
