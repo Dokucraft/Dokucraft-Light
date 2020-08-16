@@ -43,6 +43,7 @@
 §bHandsome_Dan
 §bFTWBurn
 §bSyndiShanX
+
 0xEBJC
 99NFT
 A Can Of Win
@@ -65,10 +66,12 @@ Aoku
 Aqua_KaZ
 Arathesies
 Archibald_TK
+Arkcrawler
 Artismatik
 Ascender
 Astramentous
 atley9999
+Attiki
 aussie_modder
 AwesomeSauceUK
 Axios93
@@ -110,6 +113,7 @@ ColossalSoft
 ComicSeanns
 consulting-detective
 Cpt_Punch
+CR00T_R0M
 Craftable11
 Crawfish
 crawler34
@@ -214,6 +218,7 @@ iComet
 id_missing
 iiKraze
 iJoanx
+Impy
 Imweird16
 InboundBark
 Inevitablel
@@ -235,6 +240,7 @@ jedhaury
 Jellytix
 JetStorm
 JForceGames
+Jimmy_sheep
 Jimmysheep
 jippii_ja
 jkirby97
@@ -338,6 +344,7 @@ Oirammario12345
 OliviaTheVampire
 Ollinolli2938
 omega234
+OmegaBattle
 OttoLrt
 Oys
 pablo_k081
@@ -437,6 +444,7 @@ tdriling
 technocreeper2
 TehSwayne
 Tekayo
+Terrifik
 Tetsune
 Thaly
 Thantosss1220
@@ -491,6 +499,7 @@ Wulfre
 xcadaverx
 Xemnes
 XiLERAWR
+Xlivyx
 xLotto22
 xXDominic13Xx
 xXGeramNinjaXx
@@ -503,6 +512,7 @@ zedas
 Zemeon
 ZenithKnight
 Zephyr
+Zerberoth
 Zeyart
 ZiemoOne
 Zoey 4 Life
