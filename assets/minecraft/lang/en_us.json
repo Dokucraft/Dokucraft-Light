@@ -132,5 +132,6 @@
 
   "menu.singleplayer": "\u00A7f逡\u00A7r Singleplayer",
   "menu.multiplayer": "\u00A7f逢\u00A7r Multiplayer",
-  "menu.online": "\u00A7f連\u00A7r Realms"
+  "menu.online": "\u00A7f連\u00A7r Realms",
+	"selectServer.direct": "Direct Connect"
 }
