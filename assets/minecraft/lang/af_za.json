@@ -97,7 +97,8 @@
   "enchantment.minecraft.multishot": "\u00a76Veelskote",
   "enchantment.minecraft.quick_charge": "\u00a76Vinnige Lading",
   "enchantment.minecraft.piercing": "\u00a76Deurdringende",
-  "menu.singleplayer": "\u00a7f\u9021 Enkelspeler",
-  "menu.multiplayer": "\u00a7f\u9022 Multispeler",
-  "menu.online": "\u00a7f\u9023 Minecraft Realms"
+  
+  "menu.singleplayer": "§r\uA840\uF826\uF824\uF828\uF82A\u00A7f連\u00A7r Enkelspeler\uF824\uF828\uF82A\uA841",
+  "menu.multiplayer": "§r\uA840\uF826\uF829\uF82A\u00A7f連\u00A7r Multispeler\uF829\uF82A\uA841",
+  "menu.online": "§r\uA840\uF83A\uF827\u00A7f連\u00A7r Minecraft Realms\uF821\uF82A\uA841"
 }
