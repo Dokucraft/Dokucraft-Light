@@ -1,7 +1,8 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"ambientocclusion": false,
+	"texture_size": [32, 32],
 	"textures": {
 		"1": "block/redstone_lamp_on",
 		"2": "block/redstone_lamp_top_on",
@@ -162,11 +163,11 @@
 			"from": [0, 0, 15.5],
 			"to": [0.5, 16, 16],
 			"faces": {
-				"north": {"uv": [15.5, 0, 16, 16], "texture": "#1"},
+				"north": {"uv": [15.5, 0, 16, 16], "texture": "#1", "cullface": "down"},
 				"east": {"uv": [0, 0, 0.5, 16], "texture": "#1"},
 				"south": {"uv": [0, 0, 0.5, 16], "texture": "#1", "cullface": "south"},
 				"west": {"uv": [15.5, 0, 16, 16], "texture": "#1", "cullface": "west"},
-				"up": {"uv": [0, 15.5, 0.5, 16], "texture": "#1", "cullface": "up"},
+				"up": {"uv": [0, 15.5, 0.5, 16], "texture": "#2", "cullface": "up"},
 				"down": {"uv": [0, 0, 0.5, 0.5], "texture": "#2", "cullface": "down"}
 			}
 		},
@@ -179,7 +180,7 @@
 				"south": {"uv": [0, 0, 0.5, 16], "texture": "#1"},
 				"west": {"uv": [0, 0, 0.5, 16], "texture": "#1", "cullface": "west"},
 				"up": {"uv": [0, 0, 0.5, 0.5], "texture": "#2", "cullface": "up"},
-				"down": {"uv": [0, 15.5, 0.5, 16], "texture": "#1", "cullface": "down"}
+				"down": {"uv": [0, 15.5, 0.5, 16], "texture": "#2", "cullface": "down"}
 			}
 		},
 		{
@@ -193,6 +194,13 @@
 				"up": {"uv": [15.5, 0, 16, 0.5], "texture": "#2", "cullface": "up"},
 				"down": {"uv": [15.5, 15.5, 16, 16], "texture": "#2", "cullface": "down"}
 			}
+		}
+	],
+	"groups": [
+		{
+			"name": "redstone_lamp_on",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 		}
 	]
 }
