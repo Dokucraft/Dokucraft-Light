@@ -1,0 +1,7 @@
+{
+    "parent": "block/log/template_log_z",
+    "textures": {
+        "end": "block/log/spruce/7",
+        "side": "block/spruce_log"
+    }
+}
