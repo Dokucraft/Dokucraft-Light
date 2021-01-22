@@ -1,0 +1,30 @@
+{
+	"credit": "Made by WantedRobot, and SyndiShanX",
+	"ambientocclusion": false,
+	"textures": {
+		"0": "block/tall_grass/0",
+		"particle": "block/tall_grass/0"
+	},
+	"elements": [
+		{
+			"from": [-2.2, -16, 8],
+			"to": [18.2, 16, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 0, 12, 16], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [4, 0, 12, 16], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8, -16, -2.2],
+			"to": [8, 16, 18.2],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [4, 0, 12, 16], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [4, 0, 12, 16], "texture": "#0", "tintindex": 0}
+			}
+		}
+	]
+}

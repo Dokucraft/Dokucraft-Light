@@ -2,9 +2,18 @@
     "variants": {
         "half=lower": { "model": "block/plants/tall_grass/tall_grass_bottom" },
         "half=upper": [
-        	{ "model": "block/plants/tall_grass/0" },
-        	{ "model": "block/plants/tall_grass/1" },
-        	{ "model": "block/plants/tall_grass/2" }
+        	{ "model": "block/plants/tall_grass/0_rot1" },
+        	{ "model": "block/plants/tall_grass/0_rot2" },
+        	{ "model": "block/plants/tall_grass/0_rot3" },
+        	{ "model": "block/plants/tall_grass/1_rot1" },
+        	{ "model": "block/plants/tall_grass/1_rot2" },
+        	{ "model": "block/plants/tall_grass/1_rot3" },
+        	{ "model": "block/plants/tall_grass/2_rot1" },
+        	{ "model": "block/plants/tall_grass/2_rot2" },
+        	{ "model": "block/plants/tall_grass/2_rot3" },
+        	{ "model": "block/plants/tall_grass/3_rot1" },
+        	{ "model": "block/plants/tall_grass/3_rot2" },
+        	{ "model": "block/plants/tall_grass/3_rot3" }
         ]
     }
 }
