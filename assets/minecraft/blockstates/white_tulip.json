@@ -3,7 +3,16 @@
         "": [
         { "model": "block/plants/white_tulip/0" },
         { "model": "block/plants/white_tulip/1" },
-        { "model": "block/plants/white_tulip/2" }
+        { "model": "block/plants/white_tulip/2" },
+        { "model": "block/plants/white_tulip/3" },
+        { "model": "block/plants/white_tulip/4" },
+        { "model": "block/plants/white_tulip/5" },
+        { "model": "block/plants/white_tulip/6" },
+        { "model": "block/plants/white_tulip/7" },
+        { "model": "block/plants/white_tulip/8" },
+        { "model": "block/plants/white_tulip/9" },
+        { "model": "block/plants/white_tulip/10" },
+        { "model": "block/plants/white_tulip/11" }
     ]
     }
 }
