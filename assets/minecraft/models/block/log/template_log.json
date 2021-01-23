@@ -1,4 +1,5 @@
 {
+		"credit": "Made by SyndiShanX",
     "parent": "block/block",
 		"textures": {
         "down": "#end",
