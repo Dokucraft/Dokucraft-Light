@@ -1,25 +1,26 @@
 {
-    "parent": "block/block",
+		"credit": "Made by SyndiShanX",
+		"parent": "block/block",
 		"textures": {
-        "down": "#side",
-        "up": "#side",
-        "north": "#end",
-        "east": "#side",
-        "south": "#end",
-        "west": "#side",
+				"down": "#side",
+				"up": "#side",
+				"north": "#end",
+				"east": "#side",
+				"south": "#end",
+				"west": "#side",
 				"particle": "#side"
-    },
-    "elements": [
-        {   "from": [ 0, 0, 0 ],
-            "to": [ 16, 16, 16 ],
-            "faces": {
-                "down":  { "texture": "#down", "cullface": "down" },
-                "up":    { "texture": "#up", "cullface": "up" },
-                "north": { "texture": "#north", "cullface": "north" },
-                "south": { "texture": "#south", "cullface": "south" },
-                "west":  { "texture": "#west", "cullface": "west" },
-                "east":  { "texture": "#east", "cullface": "east" }
-            }
-        }
-    ]
+		},
+		"elements": [
+			{		"from": [0, 0, 0],
+					"to": [16, 16, 16],
+					"faces": {
+							"north": { "texture": "#north", "cullface": "north"},
+							"east":  { "rotation": 90, "texture": "#east", "cullface": "east"},
+							"south": { "texture": "#south", "cullface": "south"},
+							"west":  { "rotation": 270, "texture": "#west", "cullface": "west"},
+							"up":    { "texture": "#up", "cullface": "up"},
+							"down":  { "rotation": 180, "texture": "#down", "cullface": "down"}
+					}
+			}
+		]
 }
