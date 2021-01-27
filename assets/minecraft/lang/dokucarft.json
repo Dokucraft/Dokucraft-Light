@@ -1,0 +1,773 @@
+{
+  "language.name": "English",
+  "language.region": "Dokucraft",
+  "language.code": "dokucraft",
+
+  "gui.advancements": "\u00a7fAdvancements",
+  "gui.socialInteractions.tab_blocked": "\u00A74Blocked",
+  "gui.socialInteractions.status_blocked": "\u00A74Blocked",
+  "gui.socialInteractions.status_offline": "\u00A74Offline",
+  "gui.socialInteractions.status_hidden_offline": "Hidden - \u00A74Offline",
+  "gui.socialInteractions.status_blocked_offline": "\u00A74Blocked \u00A7r- \u00A74Offline",
+
+  "menu.quit": "\u00A74Quit Game",
+  "menu.returnToMenu": "\u00A72Save \u00A7fand \u00A74Quit to Title",
+  "menu.disconnect": "\u00A74Disconnect",
+  "menu.modded": "\u00A76https://dokucraft.co.uk/",
+  "menu.singleplayer": "§r\uA840\uF826\uF824\uF828\uF82A\u00A7f連\u00A7r Singleplayer\uF824\uF828\uF82A\uA841",
+  "menu.multiplayer": "§r\uA840\uF826\uF829\uF82A\u00A7f連\u00A7r Multiplayer\uF829\uF82A\uA841",
+  "menu.online": "§r\uA840\uF83A\uF827\u00A7f連\u00A7r Minecraft Realms\uF821\uF82A\uA841",
+
+  "optimizeWorld.stage.failed": "\u00A74Failed! :(",
+
+  "createWorld.customize.flat.removeLayer": "\u00A74Remove Layer",
+  "createWorld.customize.custom.page2": "Advanced Settings (\u00A74Expert Users Only!\u00A72)",
+  "createWorld.customize.custom.page3": "Extra Advanced Settings (\u00A74Expert Users Only!\u00A72)",
+  "createWorld.customize.custom.confirmTitle": "\u00A74Warning!",
+
+  "gameMode.hardcore": "\u00A74Hardcore Mode!",
+
+  "selectWorld.delete": "\u00A74Delete",
+  "selectWorld.edit.save": "\u00A72Save",
+  "selectWorld.gameMode.hardcore": "\u00A74Hardcore",
+  "selectWorld.hardcoreMode": "\u00A74Hardcore:",
+  "selectWorld.edit.backupFailed": "\u00A74Backup failed",
+  "selectWorld.edit.export_worldgen_settings.failure": "\u00A74Export failed",
+  "selectWorld.deleteQuestion": "\u00A74Are you sure you want to delete this world?",
+  "selectWorld.deleteButton": "\u00A74Delete",
+  "selectWorld.unable_to_load": "\u00A74Unable to load worlds",
+  "selectWorld.futureworld.error.title": "\u00A74An error occurred!",
+  "selectWorld.futureworld.error.text": "\u00A74Something went wrong while trying to load a world from a future version. This was a risky operation to begin with; sorry it didn't work.",
+  "selectWorld.recreate.error.title": "\u00A74An error occurred!",
+  "selectWorld.recreate.error.text": "\u00A74Something went wrong while trying to recreate a world.",
+  "selectWorld.access_failure": "\u00A74Failed to access world",
+  "selectWorld.delete_failure": "\u00A74Failed to delete world",
+  "selectWorld.import_worldgen_settings.experimental.title": "\u00A74Warning!\u00A72 These settings are using experimental features",
+  "selectWorld.import_worldgen_settings.deprecated.title": "\u00A74Warning!\u00A72 These settings are using deprecated features",
+
+  "selectServer.delete": "\u00A74Delete",
+  "selectServer.deleteButton": "\u00A74Delete",  
+  "selectServer.direct": "Direct Connect",
+  
+  "addServer.resourcePack.disabled": "\u00A74Disabled",
+
+  "multiplayer.status.cancelled": "\u00A74Cancelled",
+  "multiplayer.status.cannot_connect": "\u00A74Can't connect to server",
+  "multiplayer.status.cannot_resolve": "\u00A74Can't resolve hostname",
+  "multiplayer.status.incompatible": "\u00A74Incompatible version!",
+  "multiplayer.status.no_connection": "\u00A74(no connection)",
+  "multiplayer.status.quitting": "\u00A74Quitting",
+  "multiplayer.disconnect.banned": "\u00A74You are banned from this server",
+  "multiplayer.disconnect.banned.reason": "\u00A74You are banned from this server.\nReason: %s",
+  "multiplayer.disconnect.banned.expiration": "\u00A74\nYour ban will be removed on %s",
+  "multiplayer.disconnect.banned_ip.reason": "\u00A74Your IP address is banned from this server.\nReason: %s",
+  "multiplayer.disconnect.banned_ip.expiration": "\u00A74\nYour ban will be removed on %s",
+  "multiplayer.disconnect.generic": "\u00A74Disconnected",
+  "multiplayer.disconnect.ip_banned": "\u00A74You have been IP banned from this server",
+  "multiplayer.disconnect.kicked": "\u00A74Kicked by an operator",
+  "multiplayer.disconnect.incompatible": "\u00A74Incompatible client! Please use %s",
+  "multiplayer.disconnect.outdated_client": "\u00A74Incompatible client! Please use %s",
+  "multiplayer.disconnect.outdated_server": "\u00A74Incompatible client! Please use %s",
+  "multiplayer.disconnect.server_shutdown": "\u00A74Server closed",
+  "multiplayer.disconnect.slow_login": "\u00A74Took too long to log in",
+  "multiplayer.disconnect.unverified_username": "\u00A74Failed to verify username!",
+  "multiplayer.disconnect.not_whitelisted": "\u00A74You are not white-listed on this server!",
+  "multiplayer.disconnect.server_full": "\u00A74The server is full!",
+  "multiplayer.disconnect.name_taken": "\u00A74That name is already taken",
+
+  "disconnect.genericReason": "\u00A74%s",
+  "disconnect.disconnected": "\u00A74Disconnected by Server",
+  "disconnect.lost": "\u00A74Connection Lost",
+  "disconnect.kicked": "\u00A74Was kicked from the game",
+  "disconnect.timeout": "\u00A74Timed out",
+  "disconnect.closed": "\u00A74Connection closed",
+  "disconnect.loginFailed": "\u00A74Failed to log in",
+  "disconnect.loginFailedInfo": "\u00A74Failed to log in: %s",
+  "disconnect.loginFailedInfo.serversUnavailable": "\u00A74The authentication servers are currently not reachable. Please try again.",
+  "disconnect.loginFailedInfo.invalidSession": "\u00A74Invalid session (Try restarting your game and the launcher)",
+  "disconnect.loginFailedInfo.insufficientPrivileges": "\u00A74Multiplayer is disabled. Please check your Microsoft account settings.",
+  "disconnect.quitting": "\u00A74Quitting",
+  "disconnect.endOfStream": "\u00A74End of stream",
+  "disconnect.overflow": "\u00A74Buffer overflow",
+  "disconnect.spam": "\u00A74Kicked for spamming",
+  "disconnect.exceeded_packet_rate": "\u00A74Kicked for exceeding packet rate limit",
+
+  "options.resourcepack": "\uF80A\uF82A\uF806§r Resource Packs",
+  "options.snooper.view": "Snooper Settings",
+  "options.skinCustomisation": "\uF809\uF808\uF82A\uF807§r Skin Customization",
+  "options.accessibility.title": "\uF808\uF82A\uF807§r Accessibility Settings",
+  "options.multiplayer.title": "Multiplayer Settings",
+  "options.mouse_settings": "Mouse Settings",
+  "options.sounds": "\uF80A\uF808\uF82A\uF804§r Music & Sounds",
+  "options.language": "\uF80B\uF82A\uF808§r Language",
+  "options.video": "\uF80A\uF809\uF82A\uF801§r Video Settings",
+  "options.controls": "\uF80B\uF808\uF82A\uF803§r Controls",
+  "options.chat.title": "\uF80A\uF809\uF82A\uF806§r Chat Settings",
+  "options.difficulty.hardcore": "\u00A74Hardcore",
+  "options.off": "\u00A74OFF",
+  "options.on": "\u00A72ON",
+  "options.off.composed": "%s: \u00A74OFF",
+  "options.on.composed": "%s: \u00A72ON",
+  "options.biomeBlendRadius.1": "\u00A74OFF\u00A7r (Fastest)",
+  "options.ao.off": "\u00A74OFF",
+  "options.narrator.off": "\u00A74OFF",
+  "options.narrator.notavailable": "\u00A74Not Available",
+
+  "narrator.toast.disabled": "\u00A74Narrator Disabled",
+
+ // Bat Subtitles
+  "subtitles.entity.bat.ambient": "\u4E88 Bat screeches \u4E88",
+  "subtitles.entity.bat.death": "\u4E89 Bat dies \u4E89",
+  "subtitles.entity.bat.hurt": "\u4E8A Bat hurts \u4E8A",
+  "subtitles.entity.bat.takeoff": "\u4E8B Bat takes off \u4E8B",
+
+// Bee Subtitles
+  "subtitles.entity.bee.ambient": "\u4E8C Bee buzzes \u4E8C",
+  "subtitles.entity.bee.death": "\u4E8D Bee dies \u4E8D",
+  "subtitles.entity.bee.hurt": "\u4E8E Bee hurts \u4E8E",
+  "subtitles.entity.bee.loop": "\u4E8F Bee buzzes \u4E8F",
+  "subtitles.entity.bee.loop_aggressive": "\u4E90 Bee buzzes angrily \u4E90",
+  "subtitles.entity.bee.pollinate": "\u4E91 Bee buzzes happily \u4E91",
+  "subtitles.entity.bee.sting": "\u4E92 Bee stings \u4E92",
+
+// Blaze Subtitles
+  "subtitles.entity.blaze.ambient": "\u4E93 Blaze breathes \u4E93",
+  "subtitles.entity.blaze.burn": "\u4E94 Blaze crackles \u4E94",
+  "subtitles.entity.blaze.death": "\u4E95 Blaze dies \u4E95",
+  "subtitles.entity.blaze.hurt": "\u4E96 Blaze hurts \u4E96",
+  "subtitles.entity.blaze.shoot": "\u4E97 Blaze shoots \u4E97",
+
+// Cat Subtitles
+  "subtitles.entity.cat.ambient": "\u4E98 Cat meows \u4E98",
+  "subtitles.entity.cat.beg_for_food": "\u4E99 Cat begs \u4E99",
+  "subtitles.entity.cat.death": "\u4E9A Cat dies \u4E9A",
+  "subtitles.entity.cat.eat": "\u4E9B Cat eats \u4E9B",
+  "subtitles.entity.cat.hiss": "\u4E9C Cat hisses \u4E9C",
+  "subtitles.entity.cat.hurt": "\u4E9D Cat hurts \u4E9D",
+  "subtitles.entity.cat.purr": "\u4E9E Cat purrs \u4E9E",
+
+// Chicken Subtitles
+  "subtitles.entity.chicken.ambient": "\u4E9F Chicken clucks \u4E9F",
+  "subtitles.entity.chicken.death": "\u4F00 Chicken dies \u4F00",
+  "subtitles.entity.chicken.egg": "\u4F01 Chicken plops \u4F01",
+  "subtitles.entity.chicken.hurt": "\u4F02 Chicken hurts \u4F02",
+
+// Cod Subtitles
+  "subtitles.entity.cod.death": "\u4F03 Cod dies \u4F03",
+  "subtitles.entity.cod.flop": "\u4F04 Cod flops \u4F04",
+  "subtitles.entity.cod.hurt": "\u4F05 Cod hurts \u4F05",
+
+// Cow Subtitles
+  "subtitles.entity.cow.ambient": "\u4F06 Cow moos \u4F06",
+  "subtitles.entity.cow.death": "\u4F07 Cow dies \u4F07",
+  "subtitles.entity.cow.hurt": "\u4F08 Cow hurts \u4F08",
+  "subtitles.entity.cow.milk": "\u4F09 Cow gets milked \u4F09",
+
+// Creeper Subtitles
+  "subtitles.entity.creeper.death": "\u4F0A Creeper dies \u4F0A",
+  "subtitles.entity.creeper.hurt": "\u4F0B Creeper hurts \u4F0B",
+  "subtitles.entity.creeper.primed": "\u4F0C Creeper hisses \u4F0C",
+
+// Dolphin Subtitles
+  "subtitles.entity.dolphin.ambient": "\u4F0D Dolphin chirps \u4F0D",
+  "subtitles.entity.dolphin.ambient_water": "\u4F0E Dolphin whistles \u4F0E",
+  "subtitles.entity.dolphin.attack": "\u4F0F Dolphin attacks \u4F0F",
+  "subtitles.entity.dolphin.death": "\u4F10 Dolphin dies \u4F10",
+  "subtitles.entity.dolphin.eat": "\u4F11 Dolphin eats \u4F11",
+  "subtitles.entity.dolphin.hurt": "\u4F12 Dolphin hurts \u4F12",
+  "subtitles.entity.dolphin.jump": "\u4F13 Dolphin jumps \u4F13",
+  "subtitles.entity.dolphin.play": "\u4F14 Dolphin plays \u4F14",
+  "subtitles.entity.dolphin.splash": "\u4F15 Dolphin splashes \u4F15",
+  "subtitles.entity.dolphin.swim": "\u4F16 Dolphin swims \u4F16",
+
+// Donkey Subtitles
+  "subtitles.entity.donkey.ambient": "\u4F17 Donkey hee-haws \u4F17",
+  "subtitles.entity.donkey.angry": "\u4F18 Donkey neighs \u4F18",
+  "subtitles.entity.donkey.chest": "\u4F19 Donkey Chest equips \u4F19",
+  "subtitles.entity.donkey.death": "\u4F1A Donkey dies \u4F1A",
+  "subtitles.entity.donkey.eat": "\u4F1B Donkey eats \u4F1B",
+  "subtitles.entity.donkey.hurt": "\u4F1C Donkey hurts \u4F1C",
+
+// Drowned Subtitles
+  "subtitles.entity.drowned.ambient": "\u4F1D Drowned gurgles \u4F1D",
+  "subtitles.entity.drowned.ambient_water": "\u4F1E Drowned gurgles \u4F1E",
+  "subtitles.entity.drowned.death": "\u4F1F Drowned dies \u4F1F",
+  "subtitles.entity.drowned.hurt": "\u4F20 Drowned hurts \u4F20",
+  "subtitles.entity.drowned.shoot": "\u4F21 Drowned throws Trident \u4F21",
+  "subtitles.entity.drowned.step": "\u4F22 Drowned steps \u4F22",
+  "subtitles.entity.drowned.swim": "\u4F23 Drowned swims \u4F23",
+
+// Elder Guardian Subtitles
+  "subtitles.entity.elder_guardian.ambient": "\u4F24 Elder Guardian moans \u4F24",
+  "subtitles.entity.elder_guardian.ambient_land": "\u4F25 Elder Guardian flaps \u4F25",
+  "subtitles.entity.elder_guardian.curse": "\u4F26 Elder Guardian curses \u4F26",
+  "subtitles.entity.elder_guardian.death": "\u4F27 Elder Guardian dies \u4F27",
+  "subtitles.entity.elder_guardian.flop": "\u4F28 Elder Guardian flops \u4F28",
+  "subtitles.entity.elder_guardian.hurt": "\u4F29 Elder Guardian hurts \u4F29",
+
+// Dragon Subtitles
+  "subtitles.entity.ender_dragon.ambient": "\u4F2A Dragon roars \u4F2A",
+  "subtitles.entity.ender_dragon.death": "\u4F2B Dragon dies \u4F2B",
+  "subtitles.entity.ender_dragon.flap": "\u4F2C Dragon flaps \u4F2C",
+  "subtitles.entity.ender_dragon.growl": "\u4F2D Dragon growls \u4F2D",
+  "subtitles.entity.ender_dragon.hurt": "\u4F2E Dragon hurts \u4F2E",
+  "subtitles.entity.ender_dragon.shoot": "\u4F2F Dragon shoots \u4F2F",
+  
+// Enderman Subtitles
+  "subtitles.entity.enderman.ambient": "\u4F30 Enderman vwoops \u4F30",
+  "subtitles.entity.enderman.death": "\u4F31 Enderman dies \u4F31",
+  "subtitles.entity.enderman.hurt": "\u4F32 Enderman hurts \u4F32",
+  "subtitles.entity.enderman.stare": "\u4F33 Enderman cries out \u4F33",
+  "subtitles.entity.enderman.teleport": "\u4F34 Enderman teleports \u4F34",
+
+// Endermite Subtitles
+  "subtitles.entity.endermite.ambient": "\u4F35 Endermite scuttles \u4F35",
+  "subtitles.entity.endermite.death": "\u4F36 Endermite dies \u4F36",
+  "subtitles.entity.endermite.hurt": "\u4F37 Endermite hurts \u4F37",
+
+// Evoker Subtitles
+  "subtitles.entity.evoker.ambient": "\u4F38 Evoker murmurs \u4F38",
+  "subtitles.entity.evoker.cast_spell": "\u4F39 Evoker casts spell \u4F39",
+  "subtitles.entity.evoker.celebrate": "\u4F3A Evoker cheers \u4F3A",
+  "subtitles.entity.evoker.death": "\u4F3B Evoker dies \u4F3B",
+  "subtitles.entity.evoker.hurt": "\u4F3C Evoker hurts \u4F3C",
+  "subtitles.entity.evoker.prepare_attack": "\u4F3D Evoker prepares attack \u4F3D",
+  "subtitles.entity.evoker.prepare_summon": "\u4F3E Evoker prepares summoning \u4F3E",
+  "subtitles.entity.evoker.prepare_wololo": "\u4F3F Evoker prepares charming \u4F3F",
+
+// Evoker Fangs Subtitles
+  "subtitles.entity.evoker_fangs.attack": "\u4F40 Fangs snap \u4F40",
+
+// Fox Subtitles
+  "subtitles.entity.fox.aggro": "\u4F41 Fox angers \u4F41",
+  "subtitles.entity.fox.ambient": "\u4F42 Fox squeaks \u4F42",
+  "subtitles.entity.fox.bite": "\u4F43 Fox bites \u4F43",
+  "subtitles.entity.fox.death": "\u4F44 Fox dies \u4F44",
+  "subtitles.entity.fox.eat": "\u4F45 Fox eats \u4F45",
+  "subtitles.entity.fox.hurt": "\u4F46 Fox hurts \u4F46",
+  "subtitles.entity.fox.screech": "\u4F47 Fox screeches \u4F47",
+  "subtitles.entity.fox.sleep": "\u4F48 Fox snores \u4F48",
+  "subtitles.entity.fox.sniff": "\u4F49 Fox sniffs \u4F49",
+  "subtitles.entity.fox.spit": "\u4F4A Fox spits \u4F4A",
+  "subtitles.entity.fox.teleport": "\u4F4B Fox teleports \u4F4B",
+
+// Ghast Subtitles
+  "subtitles.entity.ghast.ambient": "\u4F4C Ghast cries \u4F4C",
+  "subtitles.entity.ghast.death": "\u4F4D Ghast dies \u4F4D",
+  "subtitles.entity.ghast.hurt": "\u4F4E Ghast hurts \u4F4E",
+  "subtitles.entity.ghast.shoot": "\u4F4F Ghast shoots \u4F4F",
+
+// Guardian Subtitles
+  "subtitles.entity.guardian.ambient": "\u4F50 Guardian moans \u4F50",
+  "subtitles.entity.guardian.ambient_land": "\u4F51 Guardian flaps \u4F51",
+  "subtitles.entity.guardian.attack": "\u4F52 Guardian shoots \u4F52",
+  "subtitles.entity.guardian.death": "\u4F53 Guardian dies \u4F53",
+  "subtitles.entity.guardian.flop": "\u4F54 Guardian flops \u4F54",
+  "subtitles.entity.guardian.hurt": "\u4F55 Guardian hurts \u4F55",
+
+// Hoglin Subtitles
+  "subtitles.entity.hoglin.ambient": "\u4F56 Hoglin growls \u4F56",
+  "subtitles.entity.hoglin.angry": "\u4F57 Hoglin growls angrily \u4F57",
+  "subtitles.entity.hoglin.attack": "\u4F58 Hoglin attacks \u4F58",
+  "subtitles.entity.hoglin.converted_to_zombified": "\u4F59 Hoglin converts to Zoglin \u4F59",
+  "subtitles.entity.hoglin.death": "\u4F5A Hoglin dies \u4F5A",
+  "subtitles.entity.hoglin.hurt": "\u4F5B Hoglin hurts \u4F5B",
+  "subtitles.entity.hoglin.retreat": "\u4F5C Hoglin retreats \u4F5C",
+  "subtitles.entity.hoglin.step": "\u4F5D Hoglin steps \u4F5D",
+
+// Horse Subtitles
+  "subtitles.entity.horse.ambient": "\u4F5E Horse neighs \u4F5E",
+  "subtitles.entity.horse.angry": "\u4F5F Horse neighs \u4F5F",
+  "subtitles.entity.horse.armor": "\u4F60 Horse armor equips \u4F60",
+  "subtitles.entity.horse.breathe": "\u4F61 Horse breathes \u4F61",
+  "subtitles.entity.horse.death": "\u4F62 Horse dies \u4F62",
+  "subtitles.entity.horse.eat": "\u4F63 Horse eats \u4F63",
+  "subtitles.entity.horse.gallop": "\u4F64 Horse gallops \u4F64",
+  "subtitles.entity.horse.hurt": "\u4F65 Horse hurts \u4F65",
+  "subtitles.entity.horse.jump": "\u4F66 Horse jumps \u4F66",
+  "subtitles.entity.horse.saddle": "\u4F67 Saddle equips \u4F67",
+
+// Husk Subtitles
+  "subtitles.entity.husk.ambient": "\u4F68 Husk groans \u4F68",
+  "subtitles.entity.husk.converted_to_zombie": "\u4F69 Husk converts to Zombie \u4F69",
+  "subtitles.entity.husk.death": "\u4F6A Husk dies \u4F6A",
+  "subtitles.entity.husk.hurt": "\u4F6B Husk hurts \u4F6B",
+
+// Illusioner Subtitles
+  "subtitles.entity.illusioner.ambient": "\u4F6C Illusioner murmurs \u4F6C",
+  "subtitles.entity.illusioner.cast_spell": "\u4F6D Illusioner casts spell \u4F6D",
+  "subtitles.entity.illusioner.death": "\u4F6E Illusioner dies \u4F6E",
+  "subtitles.entity.illusioner.hurt": "\u4F6F Illusioner hurts \u4F6F",
+  "subtitles.entity.illusioner.mirror_move": "\u4F70 Illusioner displaces \u4F70",
+  "subtitles.entity.illusioner.prepare_blindness": "\u4F71 Illusioner prepares blindness \u4F71",
+  "subtitles.entity.illusioner.prepare_mirror": "\u4F72 Illusioner prepares mirror image \u4F72",
+
+// Iron Golem Subtitles
+  "subtitles.entity.iron_golem.attack": "\u4F73 Iron Golem attacks \u4F73",
+  "subtitles.entity.iron_golem.damage": "\u4F74 Iron Golem breaks \u4F74",
+  "subtitles.entity.iron_golem.death": "\u4F75 Iron Golem dies \u4F75",
+  "subtitles.entity.iron_golem.hurt": "\u4F76 Iron Golem hurts \u4F76",
+  "subtitles.entity.iron_golem.repair": "\u4F77 Iron Golem repaired \u4F77",
+
+// Llama Subtitles
+  "subtitles.entity.llama.ambient": "\u4F78 Llama bleats \u4F78",
+  "subtitles.entity.llama.angry": "\u4F79 Llama bleats angrily \u4F79",
+  "subtitles.entity.llama.chest": "\u4F7A Llama Chest equips \u4F7A",
+  "subtitles.entity.llama.death": "\u4F7B Llama dies \u4F7B",
+  "subtitles.entity.llama.eat": "\u4F7C Llama eats \u4F7C",
+  "subtitles.entity.llama.hurt": "\u4F7D Llama hurts \u4F7D",
+  "subtitles.entity.llama.spit": "\u4F7E Llama spits \u4F7E",
+  "subtitles.entity.llama.step": "\u4F7F Llama steps \u4F7F",
+  "subtitles.entity.llama.swag": "\u4F80 Llama is decorated \u4F80",
+
+// Magma Cube Subtitles
+  "subtitles.entity.magma_cube.death": "\u4F81 Magma Cube dies \u4F81",
+  "subtitles.entity.magma_cube.hurt": "\u4F82 Magma Cube hurts \u4F82",
+  "subtitles.entity.magma_cube.squish": "\u4F83 Magma Cube squishes \u4F83",
+
+// Mooshroom Subtitles
+  "subtitles.entity.mooshroom.convert": "\u4F84 Mooshroom transforms \u4F84",
+  "subtitles.entity.mooshroom.eat": "\u4F85 Mooshroom eats \u4F85",
+  "subtitles.entity.mooshroom.milk": "\u4F86 Mooshroom gets milked \u4F86",
+  "subtitles.entity.mooshroom.suspicious_milk": "\u4F87 Mooshroom gets milked suspiciously \u4F87",
+
+// Mule Subtitles
+  "subtitles.entity.mule.ambient": "\u4F88 Mule hee-haws \u4F88",
+  "subtitles.entity.mule.angry": "\u4F89 Mule neighs \u4F89",
+  "subtitles.entity.mule.chest": "\u4F8A Mule Chest equips \u4F8A",
+  "subtitles.entity.mule.death": "\u4F8B Mule dies \u4F8B",
+  "subtitles.entity.mule.eat": "\u4F8C Mule eats \u4F8C",
+  "subtitles.entity.mule.hurt": "\u4F8D Mule hurts \u4F8D",
+
+// Panda Subtitles
+  "subtitles.entity.panda.aggressive_ambient": "\u4F8E Panda huffs \u4F8E",
+  "subtitles.entity.panda.ambient": "\u4F8F Panda pants \u4F8F",
+  "subtitles.entity.panda.bite": "\u4F90 Panda bites \u4F90",
+  "subtitles.entity.panda.cant_breed": "\u4F91 Panda bleats \u4F91",
+  "subtitles.entity.panda.death": "\u4F92 Panda dies \u4F92",
+  "subtitles.entity.panda.eat": "\u4F93 Panda eats \u4F93",
+  "subtitles.entity.panda.hurt": "\u4F94 Panda hurts \u4F94",
+  "subtitles.entity.panda.pre_sneeze": "\u4F95 Panda's nose tickles \u4F95",
+  "subtitles.entity.panda.sneeze": "\u4F96 Panda sneezes \u4F96",
+  "subtitles.entity.panda.step": "\u4F97 Panda steps \u4F97",
+  "subtitles.entity.panda.worried_ambient": "\u4F98 Panda whimpers \u4F98",
+
+// Parrot Subtitles
+  "subtitles.entity.parrot.ambient": "\u4F99 Parrot talks \u4F99",
+  "subtitles.entity.parrot.death": "\u4F9A Parrot dies \u4F9A",
+  "subtitles.entity.parrot.eats": "\u4F9B Parrot eats \u4F9B",
+  "subtitles.entity.parrot.fly": "\u4F9CParrot flutters \u4F9C",
+  "subtitles.entity.parrot.hurts": "\u4F9D Parrot hurts \u4F9D",
+  "subtitles.entity.parrot.imitate.blaze": "\u4F9E Parrot breathes \u4F9E",
+  "subtitles.entity.parrot.imitate.creeper": "\u4F9F Parrot hisses \u4F9F",
+  "subtitles.entity.parrot.imitate.drowned": "\u4FA0 Parrot gurgles \u4FA0",
+  "subtitles.entity.parrot.imitate.elder_guardian": "\u4FA1 Parrot flaps \u4FA1",
+  "subtitles.entity.parrot.imitate.ender_dragon": "\u4FA2 Parrot roars \u4FA2",
+  "subtitles.entity.parrot.imitate.endermite": "\u4FA3 Parrot scuttles \u4FA3",
+  "subtitles.entity.parrot.imitate.evoker": "\u4FA4 Parrot murmurs \u4FA4",
+  "subtitles.entity.parrot.imitate.ghast": "\u4FA5 Parrot cries \u4FA4",
+  "subtitles.entity.parrot.imitate.guardian": "\u4FA6 Parrot moans \u4FA6",
+  "subtitles.entity.parrot.imitate.hoglin": "\u4FA7 Parrot growls \u4FA7",
+  "subtitles.entity.parrot.imitate.husk": "\u4FA8 Parrot groans \u4FA8",
+  "subtitles.entity.parrot.imitate.illusioner": "\u4FA9 Parrot murmurs \u4FA9",
+  "subtitles.entity.parrot.imitate.magma_cube": "\u4FAA Parrot squishes \u4FAA",
+  "subtitles.entity.parrot.imitate.phantom": "\u4FAB Parrot screeches \u4FAB",
+  "subtitles.entity.parrot.imitate.piglin": "\u4FAC Parrot snorts \u4FAC",
+  "subtitles.entity.parrot.imitate.piglin_brute": "\u4FAD Parrot snorts mightily \u4FAD",
+  "subtitles.entity.parrot.imitate.pillager": "\u4FAE Parrot murmurs \u4FAE",
+  "subtitles.entity.parrot.imitate.ravager": "\u4FAF Parrot grunts \u4FAF",
+  "subtitles.entity.parrot.imitate.shulker": "\u4FB0 Parrot lurks \u4FB0",
+  "subtitles.entity.parrot.imitate.silverfish": "\u4FB1 Parrot hisses \u4FB1",
+  "subtitles.entity.parrot.imitate.skeleton": "\u4FB2 Parrot rattles \u4FB2",
+  "subtitles.entity.parrot.imitate.slime": "\u4FB3 Parrot squishes \u4FB3",
+  "subtitles.entity.parrot.imitate.spider": "\u4FB4 Parrot hisses \u4FB4",
+  "subtitles.entity.parrot.imitate.stray": "\u4FB5 Parrot rattles \u4FB5",
+  "subtitles.entity.parrot.imitate.vex": "\u4FB6 Parrot vexes \u4FB6",
+  "subtitles.entity.parrot.imitate.vindicator": "\u4FB7 Parrot mutters \u4FB7",
+  "subtitles.entity.parrot.imitate.witch": "\u4FB8 Parrot giggles \u4FB8",
+  "subtitles.entity.parrot.imitate.wither": "\u4FB9 Parrot angers \u4FB9",
+  "subtitles.entity.parrot.imitate.wither_skeleton": "\u4FBA Parrot rattles \u4FBA",
+  "subtitles.entity.parrot.imitate.zoglin": "\u4FBB Parrot growls \u4FBB",
+  "subtitles.entity.parrot.imitate.zombie": "\u4FBC Parrot groans \u4FBC",
+  "subtitles.entity.parrot.imitate.zombie_villager": "\u4FBD Parrot groans \u4FBD",
+
+// Phantom Subtitles
+  "subtitles.entity.phantom.ambient": "\u4FBE Phantom screeches \u4FBE",
+  "subtitles.entity.phantom.bite": "\u4FBF Phantom bites \u4FBF",
+  "subtitles.entity.phantom.death": "\u4FC0 Phantom dies \u4FC0",
+  "subtitles.entity.phantom.flap": "\u4FC1 Phantom flaps \u4FC1",
+  "subtitles.entity.phantom.hurt": "\u4FC2 Phantom hurts \u4FC2",
+  "subtitles.entity.phantom.swoop": "\u4FC3 Phantom swoops \u4FC3",
+
+// Pig Subtitles
+  "subtitles.entity.pig.ambient": "\u4FC4 Pig oinks \u4FC4",
+  "subtitles.entity.pig.death": "\u4FC5 Pig dies \u4FC5",
+  "subtitles.entity.pig.hurt": "\u4FC6 Pig hurts \u4FC6",
+  "subtitles.entity.pig.saddle": "\u4FC7 Saddle equips \u4FC7",
+
+// Piglin Subtitles
+  "subtitles.entity.piglin.admiring_item": "\u4FC8 Piglin admires item \u4FC8",
+  "subtitles.entity.piglin.ambient": "\u4FC9 Piglin snorts \u4FC9",
+  "subtitles.entity.piglin.angry": "\u4FCA Piglin snorts angrily \u4FCA",
+  "subtitles.entity.piglin.celebrate": "\u4FCB Piglin celebrates \u4FCB",
+  "subtitles.entity.piglin.converted_to_zombified": "\u4FCC Piglin converts to Zombified Piglin \u4FCC",
+  "subtitles.entity.piglin.death": "\u4FCD Piglin dies \u4FCD",
+  "subtitles.entity.piglin.hurt": "\u4FCE Piglin hurts \u4FCE",
+  "subtitles.entity.piglin.jealous": "\u4FCF Piglin snorts enviously \u4FCF",
+  "subtitles.entity.piglin.retreat": "\u4FD0 Piglin retreats \u4FD0",
+  "subtitles.entity.piglin.step": "\u4FD1 Piglin steps \u4FD1",
+
+// Piglin Brute Subtitles
+  "subtitles.entity.piglin_brute.ambient": "\u4FD2 Piglin Brute snorts \u4FD2",
+  "subtitles.entity.piglin_brute.angry": "\u4FD3 Piglin Brute snorts angrily \u4FD3",
+  "subtitles.entity.piglin_brute.death": "\u4FD4 Piglin Brute dies \u4FD4",
+  "subtitles.entity.piglin_brute.hurt": "\u4FD5 Piglin Brute hurts \u4FD5",
+  "subtitles.entity.piglin_brute.step": "\u4FD6 Piglin Brute steps \u4FD6",
+  "subtitles.entity.piglin_brute.converted_to_zombified": "\u4FD7 Piglin Brute converts to Zombified Piglin \u4FD7",
+
+// Pillager Subtitles
+  "subtitles.entity.pillager.ambient": "\u4FD8 Pillager murmurs \u4FD8",
+  "subtitles.entity.pillager.celebrate": "\u4FD9 Pillager cheers \u4FD9",
+  "subtitles.entity.pillager.death": "\u4FDA Pillager dies \u4FDA",
+  "subtitles.entity.pillager.hurt": "\u4FDB Pillager hurts \u4FDB",
+
+// Polar Bear Subtitles
+  "subtitles.entity.polar_bear.ambient": "\u4FDC Polar Bear groans \u4FDC",
+  "subtitles.entity.polar_bear.ambient_baby": "\u4FDD Polar Bear hums \u4FDD",
+  "subtitles.entity.polar_bear.death": "\u4FDE Polar Bear dies \u4FDE",
+  "subtitles.entity.polar_bear.hurt": "\u4FDF Polar Bear hurts \u4FDF",
+  "subtitles.entity.polar_bear.warning": "\u4FE0 Polar Bear roars \u4FE0",
+
+// Pufferfish Subtitles
+  "subtitles.entity.puffer_fish.blow_out": "\u4FE1 Pufferfish deflates \u4FE1",
+  "subtitles.entity.puffer_fish.blow_up": "\u4FE2 Pufferfish inflates \u4FE2",
+  "subtitles.entity.puffer_fish.death": "\u4FE3 Pufferfish dies \u4FE3",
+  "subtitles.entity.puffer_fish.flop": "\u4FE4 Pufferfish flops \u4FE4",
+  "subtitles.entity.puffer_fish.hurt": "\u4FE5 Pufferfish hurts \u4FE5",
+  "subtitles.entity.puffer_fish.sting": "\u4FE6 Pufferfish stings \u4FE6",
+
+// Rabbit Subtitles
+  "subtitles.entity.rabbit.ambient": "\u4FE7 Rabbit squeaks \u4FE7",
+  "subtitles.entity.rabbit.attack": "\u4FE8 Rabbit attacks \u4FE8",
+  "subtitles.entity.rabbit.death": "\u4FE9 Rabbit dies \u4FE9",
+  "subtitles.entity.rabbit.hurt": "\u4FEA Rabbit hurts \u4FEA",
+  "subtitles.entity.rabbit.jump": "\u4FEB Rabbit hops \u4FEB",
+
+// Ravager Subtitles
+  "subtitles.entity.ravager.ambient": "\u4FEC Ravager grunts \u4FEC",
+  "subtitles.entity.ravager.attack": "\u4FED Ravager bites \u4FED",
+  "subtitles.entity.ravager.celebrate": "\u4FEE Ravager cheers \u4FEE",
+  "subtitles.entity.ravager.death": "\u4FEF Ravager dies \u4FEF",
+  "subtitles.entity.ravager.hurt": "\u4FF0 Ravager hurts \u4FF0",
+  "subtitles.entity.ravager.roar": "\u4FF1 Ravager roars \u4FF1",
+  "subtitles.entity.ravager.step": "\u4FF2 Ravager steps \u4FF2",
+  "subtitles.entity.ravager.stunned": "\u4FF3 Ravager stunned \u4FF3",
+
+// Salmon Subtitles
+  "subtitles.entity.salmon.death": "\u4FF4 Salmon dies \u4FF4",
+  "subtitles.entity.salmon.flop": "\u4FF5 Salmon flops \u4FF5",
+  "subtitles.entity.salmon.hurt": "\u4FF6 Salmon hurts \u4FF6",
+
+// Sheep Subtitles
+  "subtitles.entity.sheep.ambient": "\u4FF7 Sheep baahs \u4FF7",
+  "subtitles.entity.sheep.death": "\u4FF8 Sheep dies \u4FF8",
+  "subtitles.entity.sheep.hurt": "\u4FF9 Sheep hurts \u4FF9",
+
+// Shulker Subtitles
+  "subtitles.entity.shulker.ambient": "\u4FFA Shulker lurks \u4FFA",
+  "subtitles.entity.shulker.close": "\u4FFB Shulker closes \u4FFB",
+  "subtitles.entity.shulker.death": "\u4FFC Shulker dies \u4FFC",
+  "subtitles.entity.shulker.hurt": "\u4FFD Shulker hurts \u4FFD",
+  "subtitles.entity.shulker.open": "\u4FFE Shulker opens \u4FFE",
+  "subtitles.entity.shulker.shoot": "\u4FFF Shulker shoots \u4FFF",
+  "subtitles.entity.shulker.teleport": "\u5000 Shulker teleports \u5000",
+  "subtitles.entity.shulker_bullet.hit": "\u5001 Shulker bullet explodes \u5001",
+  "subtitles.entity.shulker_bullet.hurt": "\u5002 Shulker bullet breaks \u5002",
+
+// Silverfish Subtitles
+  "subtitles.entity.silverfish.ambient": "\u5003 Silverfish hisses \u5003",
+  "subtitles.entity.silverfish.death": "\u5004 Silverfish dies \u5004",
+  "subtitles.entity.silverfish.hurt": "\u5005 Silverfish hurts \u5005",
+
+// Skeleton Subtitles
+  "subtitles.entity.skeleton.ambient": "\u5006 Skeleton rattles \u5006",
+  "subtitles.entity.skeleton.death": "\u5007 Skeleton dies \u5007",
+  "subtitles.entity.skeleton.hurt": "\u5008 Skeleton hurts \u5008",
+  "subtitles.entity.skeleton.shoot": "\u5009 Skeleton shoots \u5009",
+
+// Skeleton Horse Subtitles
+  "subtitles.entity.skeleton_horse.ambient": "\u500A Skeleton Horse cries \u500A",
+  "subtitles.entity.skeleton_horse.death": "\u500B Skeleton Horse dies \u500B",
+  "subtitles.entity.skeleton_horse.hurt": "\u500C Skeleton Horse hurts \u500C",
+  "subtitles.entity.skeleton_horse.swim": "\u500D Skeleton Horse swims \u500D",
+
+// Slime Subtitles
+  "subtitles.entity.slime.attack": "\u500E Slime attacks \u500E",
+  "subtitles.entity.slime.death": "\u500F Slime dies \u500F",
+  "subtitles.entity.slime.hurt": "\u5010 Slime hurts \u5010",
+  "subtitles.entity.slime.squish": "\u5011 Slime squishes \u5011",
+
+// Snow Golem Subtitles
+  "subtitles.entity.snow_golem.death": "\u5012 Snow Golem dies \u5012",
+  "subtitles.entity.snow_golem.hurt": "\u5013 Snow Golem hurts \u5013",
+
+// Spider Subtitles
+  "subtitles.entity.spider.ambient": "\u5014 Spider hisses \u5014",
+  "subtitles.entity.spider.death": "\u5015 Spider dies \u5015",
+  "subtitles.entity.spider.hurt": "\u5016 Spider hurts \u5016",
+
+// Squid Subtitles
+  "subtitles.entity.squid.ambient": "\u5017 Squid swims \u5017",
+  "subtitles.entity.squid.death": "\u5018 Squid dies \u5018",
+  "subtitles.entity.squid.hurt": "\u5019 Squid hurts \u5019",
+  "subtitles.entity.squid.squirt": "\u501A Squid shoots ink \u501A",
+
+// Stray Subtitles
+  "subtitles.entity.stray.ambient": "\u501B Stray rattles \u501B",
+  "subtitles.entity.stray.death": "\u501C Stray dies \u501C",
+  "subtitles.entity.stray.hurt": "\u501D Stray hurts \u501D",
+
+// Strider Subtitles
+  "subtitles.entity.strider.death": "\u501E Strider dies \u501E",
+  "subtitles.entity.strider.eat": "\u501F Strider eats \u501F",
+  "subtitles.entity.strider.happy": "\u5020 Strider warbles \u5020",
+  "subtitles.entity.strider.hurt": "\u5021 Strider hurts \u5021",
+  "subtitles.entity.strider.idle": "\u5022 Strider chirps \u5022",
+  "subtitles.entity.strider.retreat": "\u5023 Strider retreats \u5023",
+
+// Tropical Fish Subtitles
+  "subtitles.entity.tropical_fish.death": "\u5024 Tropical Fish dies \u5024",
+  "subtitles.entity.tropical_fish.flop": "\u5025 Tropical Fish flops \u5025",
+  "subtitles.entity.tropical_fish.hurt": "\u5026 Tropical Fish hurts \u5026",
+
+// Turtle Subtitles
+  "subtitles.entity.turtle.ambient_land": "\u5027 Turtle chirps \u5027",
+  "subtitles.entity.turtle.death": "\u5028 Turtle dies \u5028",
+  "subtitles.entity.turtle.death_baby": "\u5029 Turtle baby dies \u5029",
+  "subtitles.entity.turtle.egg_break": "\u502A Turtle Egg breaks \u502A",
+  "subtitles.entity.turtle.egg_crack": "\u502B Turtle Egg cracks \u502B",
+  "subtitles.entity.turtle.egg_hatch": "\u502C Turtle Egg hatches \u502C",
+  "subtitles.entity.turtle.hurt": "\u502D Turtle hurts \u502D",
+  "subtitles.entity.turtle.hurt_baby": "\u502E Turtle baby hurts \u502E",
+  "subtitles.entity.turtle.lay_egg": "\u502F Turtle lays egg \u502F",
+  "subtitles.entity.turtle.shamble": "\u5030 Turtle shambles \u5030",
+  "subtitles.entity.turtle.shamble_baby": "\u5031 Turtle baby shambles \u5031",
+  "subtitles.entity.turtle.swim": "\u5032 Turtle swims \u5032",
+
+// Vex Subtitles
+  "subtitles.entity.vex.ambient": "\u5033 Vex vexes \u5033",
+  "subtitles.entity.vex.charge": "\u5034 Vex shrieks \u5034",
+  "subtitles.entity.vex.death": "\u5035 Vex dies \u5035",
+  "subtitles.entity.vex.hurt": "\u5036 Vex hurts \u5036",
+
+// Villager Subtitles
+  "subtitles.entity.villager.ambient": "\u5037 Villager mumbles \u5037",
+  "subtitles.entity.villager.celebrate": "\u5038 Villager cheers \u5038",
+  "subtitles.entity.villager.death": "\u5039 Villager dies \u5039",
+  "subtitles.entity.villager.hurt": "\u503A Villager hurts \u503A",
+  "subtitles.entity.villager.no": "\u503B Villager disagrees \u503B",
+  "subtitles.entity.villager.trade": "\u503C Villager trades \u503C",
+  "subtitles.entity.villager.yes": "\u503D Villager agrees \u503D",
+
+  "subtitles.entity.villager.work_armorer": "\u503E Armorer works \u503E",
+  "subtitles.entity.villager.work_butcher": "\u503F Butcher works \u503F",
+  "subtitles.entity.villager.work_cartographer": "\u5040 Cartographer works \u5040",
+  "subtitles.entity.villager.work_cleric": "\u5041 Cleric works \u5041",
+  "subtitles.entity.villager.work_farmer": "\u5042 Farmer works \u5042",
+  "subtitles.entity.villager.work_fisherman": "\u5043 Fisherman works \u5043",
+  "subtitles.entity.villager.work_fletcher": "\u5044 Fletcher works \u5044",
+  "subtitles.entity.villager.work_leatherworker": "\u5045 Leatherworker works \u5045",
+  "subtitles.entity.villager.work_librarian": "\u5046 Librarian works \u5046",
+  "subtitles.entity.villager.work_mason": "\u5047 Mason works \u5047",
+  "subtitles.entity.villager.work_shepherd": "\u5048 Shepherd works \u5048",
+  "subtitles.entity.villager.work_toolsmith": "\u5049 Toolsmith works \u5049",
+  "subtitles.entity.villager.work_weaponsmith": "\u504A Weaponsmith works \u504A",
+
+// Vindicator Subtitles
+  "subtitles.entity.vindicator.ambient": "\u504B Vindicator mutters \u504B",
+  "subtitles.entity.vindicator.celebrate": "\u504C Vindicator cheers \u504C",
+  "subtitles.entity.vindicator.death": "\u504D Vindicator dies \u504D",
+  "subtitles.entity.vindicator.hurt": "\u504E Vindicator hurts \u504E",
+
+// Wandering Trader Subtitles
+  "subtitles.entity.wandering_trader.ambient": "\u504F Wandering Trader mumbles \u504F",
+  "subtitles.entity.wandering_trader.death": "\u5050 Wandering Trader dies \u5050",
+  "subtitles.entity.wandering_trader.disappeared": "\u5051 Wandering Trader disappears \u5051",
+  "subtitles.entity.wandering_trader.drink_milk": "\u5052 Wandering Trader drinks milk \u5052",
+  "subtitles.entity.wandering_trader.drink_potion": "\u5053 Wandering Trader drinks potion \u5053",
+  "subtitles.entity.wandering_trader.hurt": "\u5054 Wandering Trader hurts \u5054",
+  "subtitles.entity.wandering_trader.no": "\u5055 Wandering Trader disagrees \u5055",
+  "subtitles.entity.wandering_trader.reappeared": "\u5056 Wandering Trader appears \u5056",
+  "subtitles.entity.wandering_trader.trade": "\u5057 Wandering Trader trades \u5057",
+  "subtitles.entity.wandering_trader.yes": "\u5058 Wandering Trader agrees \u5058",
+ 
+// Witch Subtitles
+  "subtitles.entity.witch.ambient": "\u5059 Witch giggles \u5059",
+  "subtitles.entity.witch.celebrate": "\u505A Witch cheers \u505A",
+  "subtitles.entity.witch.death": "\u505B Witch dies \u505B",
+  "subtitles.entity.witch.drink": "\u505C Witch drinks \u505C",
+  "subtitles.entity.witch.hurt": "\u505D Witch hurts \u505D",
+  "subtitles.entity.witch.throw": "\u505E Witch throws \u505E",
+
+// Wither Subtitles
+  "subtitles.entity.wither.ambient": "\u505F Wither angers \u505F",
+  "subtitles.entity.wither.death": "\u5060 Wither dies \u5060",
+  "subtitles.entity.wither.hurt": "\u5061 Wither hurts \u5061",
+  "subtitles.entity.wither.shoot": "\u5062 Wither attacks \u5062",
+  "subtitles.entity.wither.spawn": "\u5063 Wither released \u5063",
+
+// Wither Skeleton Subtitles
+  "subtitles.entity.wither_skeleton.ambient": "\u5064 Wither Skeleton rattles \u5064",
+  "subtitles.entity.wither_skeleton.death": "\u5065 Wither Skeleton dies \u5065",
+  "subtitles.entity.wither_skeleton.hurt": "\u5066 Wither Skeleton hurts \u5066",
+
+// Wolf Subtitles
+  "subtitles.entity.wolf.ambient": "\u5067 Wolf pants \u5067",
+  "subtitles.entity.wolf.death": "\u5068 Wolf dies \u5068",
+  "subtitles.entity.wolf.growl": "\u5069 Wolf growls \u5069",
+  "subtitles.entity.wolf.hurt": "\u506A Wolf hurts \u506A",
+  "subtitles.entity.wolf.shake": "\u506B Wolf shakes \u506B",
+
+// Zoglin Subtitles
+  "subtitles.entity.zoglin.ambient": "\u506C Zoglin growls \u506C",
+  "subtitles.entity.zoglin.angry": "\u506D Zoglin growls angrily \u506D",
+  "subtitles.entity.zoglin.attack": "\u506E Zoglin attacks \u506E",
+  "subtitles.entity.zoglin.death": "\u506F Zoglin dies \u506F",
+  "subtitles.entity.zoglin.hurt": "\u5070 Zoglin hurts \u5070",
+  "subtitles.entity.zoglin.step": "\u5071 Zoglin steps \u5071",
+
+// Zombie Subtitles
+  "subtitles.entity.zombie.ambient": "\u5072 Zombie groans \u5072",
+  "subtitles.entity.zombie.attack_wooden_door": "\u5073 Door shakes \u5073",
+  "subtitles.entity.zombie.converted_to_drowned": "\u5074 Zombie converts to Drowned \u5074",
+  "subtitles.entity.zombie.break_wooden_door": "\u5075 Door breaks \u5075",
+  "subtitles.entity.zombie.death": "\u5076 Zombie dies \u5076",
+  "subtitles.entity.zombie.destroy_egg": "\u5077 Turtle Egg stomped \u5077",
+  "subtitles.entity.zombie.hurt": "\u5078 Zombie hurts \u5078",
+  "subtitles.entity.zombie.infect": "\u5079 Zombie infects \u5079",
+
+// Zombie Horse Subtitles
+  "subtitles.entity.zombie_horse.ambient": "\u507A Zombie Horse cries \u507A",
+  "subtitles.entity.zombie_horse.death": "\u507B Zombie Horse dies \u507B",
+  "subtitles.entity.zombie_horse.hurt": "\u507C Zombie Horse hurts \u507C",
+
+// Zombie Villager Subtitles
+  "subtitles.entity.zombie_villager.ambient": "\u507D Zombie Villager groans \u507D",
+  "subtitles.entity.zombie_villager.converted": "\u507E Zombie Villager vociferates \u507E",
+  "subtitles.entity.zombie_villager.cure": "\u507F Zombie Villager snuffles \u507F",
+  "subtitles.entity.zombie_villager.death": "\u5080 Zombie Villager dies \u5080",
+  "subtitles.entity.zombie_villager.hurt": "\u5081 Zombie Villager hurts \u5081",
+
+// Zombiefied Piglin Subtitles
+  "subtitles.entity.zombified_piglin.ambient": "\u5082 Zombified Piglin grunts \u5082",
+  "subtitles.entity.zombified_piglin.angry": "\u5083 Zombified Piglin grunts angrily \u5083",
+  "subtitles.entity.zombified_piglin.death": "\u5084 Zombified Piglin dies \u5084",
+  "subtitles.entity.zombified_piglin.hurt": "\u5085 Zombified Piglin hurts \u5085",
+
+  "title.multiplayer.disabled": "\u00A74Multiplayer is disabled. Please check your Microsoft account settings.",
+
+  "merchant.level.1": "\u00a7fNovice",
+  "merchant.level.2": "\u00a7fApprentice",
+  "merchant.level.3": "\u00a7fJourneyman",
+  "merchant.level.4": "\u00a7fExpert",
+  "merchant.level.5": "\u00a7fMaster",
+  "merchant.trades": "\u00a7fTrades",
+
+  "container.inventory": "\u00a7fInventory",
+  "container.hopper": "\u00a7fItem Hopper",
+  "container.crafting": "\u00a7fCrafting",
+  "container.dispenser": "\u00a7fDispenser",
+  "container.dropper": "\u00a7fDropper",
+  "container.furnace": "\u00a7fFurnace",
+  "container.enchant": "\u00a7fEnchant",
+  "container.repair": "\u00a7fRepair & Name",
+  "container.creative": "\u00a7fItem Selection",
+  "container.brewing": "\u00a7fBrewing Stand",
+  "container.chest": "\u00a7fChest",
+  "container.chestDouble": "\u00a7fLarge Chest",
+  "container.enderchest": "\u00a7fEnder Chest",
+  "container.shulkerBox": "\u00a7fShulker Box",
+  "container.barrel": "\u00a7fBarrel",
+  "container.loom": "\u00a7fLoom",
+  "container.grindstone_title": "\u00a7fRepair & Disenchant",
+  "container.cartography_table": "\u00a7fCartography Table",
+  "container.smoker": "\u00a7fSmoker",
+  "container.stonecutter": "\u00a7fStonecutter",
+  "container.blast_furnace": "\u00a7fBlast Furnace",
+
+
+  "itemGroup.buildingBlocks": "\u00a7fBuilding Blocks",
+  "itemGroup.decorations": "\u00a7fDecoration Blocks",
+  "itemGroup.redstone": "\u00a7fRedstone",
+  "itemGroup.transportation": "\u00a7fTransportation",
+  "itemGroup.misc": "\u00a7fMiscellaneous",
+  "itemGroup.search": "\u00a7fSearch",
+  "itemGroup.food": "\u00a7fFoodstuffs",
+  "itemGroup.tools": "\u00a7fTools",
+  "itemGroup.combat": "\u00a7fCombat",
+  "itemGroup.brewing": "\u00a7fBrewing",
+  "itemGroup.materials": "\u00a7fMaterials",
+  "itemGroup.inventory": "\u00a7fInventory",
+  "itemGroup.hotbar": "\u00a7fSaved Toolbars",
+
+  "entity.minecraft.villager.armorer": "\u00a7fArmorer",
+  "entity.minecraft.villager.butcher": "\u00a7fButcher",
+  "entity.minecraft.villager.cartographer": "\u00a7fCartographer",
+  "entity.minecraft.villager.cleric": "\u00a7fCleric",
+  "entity.minecraft.villager.farmer": "\u00a7fFarmer",
+  "entity.minecraft.villager.fisherman": "\u00a7fFisherman",
+  "entity.minecraft.villager.fletcher": "\u00a7fFletcher",
+  "entity.minecraft.villager.leatherworker": "\u00a7fLeatherworker",
+  "entity.minecraft.villager.librarian": "\u00a7fLibrarian",
+  "entity.minecraft.villager.mason": "\u00a7fMason",
+  "entity.minecraft.villager.none": "\u00a7fVillager",
+  "entity.minecraft.villager.nitwit": "\u00a7fNitwit",
+  "entity.minecraft.villager.shepherd": "\u00a7fShepherd",
+  "entity.minecraft.villager.toolsmith": "\u00a7fToolsmith",
+  "entity.minecraft.villager.weaponsmith": "\u00a7fWeaponsmith",
+  "entity.minecraft.villager": "\u00a7fVillager",
+  "entity.minecraft.wandering_trader": "\u00a7fWandering Trader",
+
+  "enchantment.minecraft.sharpness": "\u00a7cSharpness",
+  "enchantment.minecraft.smite": "\u00a7cSmite",
+  "enchantment.minecraft.bane_of_arthropods": "\u00a7cBane of Arthropods",
+  "enchantment.minecraft.knockback": "\u00a7cKnockback",
+  "enchantment.minecraft.fire_aspect": "\u00a7cFire Aspect",
+  "enchantment.minecraft.sweeping": "\u00a7cSweeping Edge",
+  "enchantment.minecraft.protection": "\u00a7bProtection",
+  "enchantment.minecraft.fire_protection": "\u00a7bFire Protection",
+  "enchantment.minecraft.feather_falling": "\u00a7bFeather Falling",
+  "enchantment.minecraft.blast_protection": "\u00a7bBlast Protection",
+  "enchantment.minecraft.projectile_protection": "\u00a7bProjectile Protection",
+  "enchantment.minecraft.respiration": "\u00a7bRespiration",
+  "enchantment.minecraft.aqua_affinity": "\u00a7bAqua Affinity",
+  "enchantment.minecraft.depth_strider": "\u00a7bDepth Strider",
+  "enchantment.minecraft.frost_walker": "\u00a7bFrost Walker",
+  "enchantment.minecraft.efficiency": "\u00a7eEfficiency",
+  "enchantment.minecraft.silk_touch": "\u00a7eSilk Touch",
+  "enchantment.minecraft.unbreaking": "\u00a7aUnbreaking",
+  "enchantment.minecraft.looting": "\u00a7cLooting",
+  "enchantment.minecraft.fortune": "\u00a7eFortune",
+  "enchantment.minecraft.luck_of_the_sea": "\u00a79Luck of the Sea",
+  "enchantment.minecraft.lure": "\u00a79Lure",
+  "enchantment.minecraft.power": "\u00a76Power",
+  "enchantment.minecraft.flame": "\u00a76Flame",
+  "enchantment.minecraft.punch": "\u00a76Punch",
+  "enchantment.minecraft.infinity": "\u00a76Infinity",
+  "enchantment.minecraft.thorns": "\u00a7bThorns",
+  "enchantment.minecraft.mending": "\u00a7aMending",
+  "enchantment.minecraft.binding_curse": "\u00a74Curse of Binding",
+  "enchantment.minecraft.vanishing_curse": "\u00a74Curse of Vanishing",
+  "enchantment.minecraft.loyalty": "\u00a7dLoyalty",
+  "enchantment.minecraft.impaling": "\u00a7dImpaling",
+  "enchantment.minecraft.riptide": "\u00a7dRiptide",
+  "enchantment.minecraft.channeling": "\u00a7dChanneling",
+  "enchantment.minecraft.multishot": "\u00a76Multishot",
+  "enchantment.minecraft.quick_charge": "\u00a76Quick Charge",
+  "enchantment.minecraft.piercing": "\u00a76Piercing",
+
+  "resourcePack.openFolder": "Resource Pack Folder",
+  "resourcePack.title": "\u00A74(Please use Optifine!!)    \u00A7rResource Packs    \u00A74(Please use Optifine!!)",
+
+  "item.minecraft.music_disc_11.desc": "What the Forest Taught Me"
+}
