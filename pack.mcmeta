@@ -1,16 +1,9 @@
 {
-	"pack":{
-		"pack_format":6,
-		"description":"§4Light and fluffy\n§6V1.16.4 By Dokucraft TSC"
-	},
-	"meta":{
-		"game_version":"1.16.4"
-	},
-   	"language": {
-      	"dokucraft": {
-         "name": "\u00A72Dokucraft\u00A74",
-         "region": "Please use",
-         "bidirectional": false
-    }
-}
+  "pack": {
+    "pack_format": 7,
+    "description": "§4Light and fluffy\n§6V1.17.0 By Dokucraft TSC"
+  },
+  "meta": {
+    "game_version": "1.17.0"
+  }
 }
