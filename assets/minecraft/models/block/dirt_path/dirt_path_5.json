@@ -1,7 +1,7 @@
-{ "parent": "block/grass_path/grass_path_template",
+{ "parent": "block/dirt_path/dirt_path_template",
   "textures": {
     "top": "block/path/5",
-    "side": "block/grass_path_side",
+    "side": "block/dirt_path_side",
     "bottom": "block/dirt",
     "particle": "block/dirt"
   }
