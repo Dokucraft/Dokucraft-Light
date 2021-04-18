@@ -1,0 +1,21 @@
+{ "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/blackstone/slab/lower/0" },
+      { "model": "minecraft:block/blackstone/slab/lower/1" },
+      { "model": "minecraft:block/blackstone/slab/lower/2" },
+      { "model": "minecraft:block/blackstone/slab/lower/3" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/blackstone/0" },
+      { "model": "minecraft:block/blackstone/1" },
+      { "model": "minecraft:block/blackstone/2" },
+      { "model": "minecraft:block/blackstone/3" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/blackstone/slab/upper/0" },
+      { "model": "minecraft:block/blackstone/slab/upper/1" },
+      { "model": "minecraft:block/blackstone/slab/upper/2" },
+      { "model": "minecraft:block/blackstone/slab/upper/3" }
+    ]
+  }
+}

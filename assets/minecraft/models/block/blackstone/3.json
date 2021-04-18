@@ -1,1 +1,5 @@
-{ "parent": "block/cube_all", "textures": { "all": "block/blackstone/3" } }
+{ "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "minecraft:block/blackstone/3"
+  }
+}
