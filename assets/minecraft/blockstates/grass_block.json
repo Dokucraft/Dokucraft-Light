@@ -26,12 +26,6 @@
         { "model": "block/grass_block_snow/8" },
         { "model": "block/grass_block_snow/9" }
       ]
-    },
-    { "apply": [
-        { "model": "block/roots/0" },
-        { "model": "block/roots/1" },
-        { "model": "block/roots/2" }
-      ]
     }
   ]
 }
