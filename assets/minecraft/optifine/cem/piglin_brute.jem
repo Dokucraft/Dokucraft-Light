@@ -23,7 +23,8 @@
 					"uvSouth": [37, 2, 41, 6],
 					"uvWest": [36, 2, 37, 6],
 					"uvUp": [36, 2, 32, 1],
-					"uvDown": [40, 1, 36, 2]
+					"uvDown": [40, 1, 36, 2],
+					"sizeAdd": 0.01
 				},
 				{
 					"coordinates": [-3, 24, -5, 1, 2, 1],
@@ -64,7 +65,9 @@
 			],
 			"submodels": [
 				{
+					"id": "head_sub_0",
 					"invertAxis": "xy",
+					"translate": [0, 0, 0],
 					"mirrorTexture": "u",
 					"boxes": [
 						{
