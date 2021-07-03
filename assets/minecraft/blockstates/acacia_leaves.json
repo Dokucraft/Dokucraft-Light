@@ -1,10 +1,25 @@
 {
-	"multipart": [{
-			"apply": [{
-				"model": "block/acacia_leaves"
-			}]
+	"multipart": [
+		{	"when": { "OR": [
+				{"persistent":false, "distance":1},
+				{"persistent":false, "distance":2},
+				{"persistent":false, "distance":3},
+				{"persistent":false, "distance":4},
+				{"persistent":false, "distance":5},
+				{"persistent":false, "distance":6},
+				{"persistent":true}
+			]},
+			"apply": {"model": "block/acacia_leaves"}
 		},
-		{
+		{	"when": { "OR": [
+				{"persistent":false, "distance":1},
+				{"persistent":false, "distance":2},
+				{"persistent":false, "distance":3},
+				{"persistent":false, "distance":4},
+				{"persistent":false, "distance":5},
+				{"persistent":false, "distance":6},
+				{"persistent":true}
+			]},
 			"apply": [
 				{"model": "block/leaves/acacia_leaves/top0"},
 				{"model": "block/leaves/acacia_leaves/top1"},
@@ -12,12 +27,39 @@
 				{"model": "block/leaves/acacia_leaves/top3"}
 			]
 		},
-		{
+		{	"when": { "OR": [
+				{"persistent":false, "distance":1},
+				{"persistent":false, "distance":2},
+				{"persistent":false, "distance":3},
+				{"persistent":false, "distance":4},
+				{"persistent":false, "distance":5},
+				{"persistent":false, "distance":6},
+				{"persistent":true}
+			]},
 			"apply": [
 				{"model": "block/leaves/acacia_leaves/bottom0"},
 				{"model": "block/leaves/acacia_leaves/bottom1"},
 				{"model": "block/leaves/acacia_leaves/bottom2"},
 				{"model": "block/leaves/acacia_leaves/bottom3"}
+			]
+		},
+		{	"when": {"persistent":false, "distance":7}, 
+			"apply": {"model": "block/dead_acacia_leaves"}
+		},
+		{	"when": {"persistent":false, "distance":7},
+			"apply": [
+				{"model": "block/leaves/dead_acacia_leaves/top0"},
+				{"model": "block/leaves/dead_acacia_leaves/top1"},
+				{"model": "block/leaves/dead_acacia_leaves/top2"},
+				{"model": "block/leaves/dead_acacia_leaves/top3"}
+			]
+		},
+		{	"when":{"persistent":false, "distance":7},
+			"apply": [
+				{"model": "block/leaves/dead_acacia_leaves/bottom0"},
+				{"model": "block/leaves/dead_acacia_leaves/bottom1"},
+				{"model": "block/leaves/dead_acacia_leaves/bottom2"},
+				{"model": "block/leaves/dead_acacia_leaves/bottom3"}
 			]
 		}
 	]
