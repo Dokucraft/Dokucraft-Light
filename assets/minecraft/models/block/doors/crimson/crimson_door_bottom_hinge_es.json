@@ -1,10 +1,10 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made by WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "block/crimson_door_bottom",
-		"2": "block/crimson_door_sides",
-		"particle": "block/crimson_door_bottom"
+		"0": "block/doors/crimson_door_bottom",
+		"2": "block/doors/crimson_door_sides",
+		"particle": "block/doors/crimson_door_bottom"
 	},
 	"elements": [
 		{
@@ -13,9 +13,9 @@
 			"to": [3, 16, 15],
 			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 6.89815, 7.75926]},
 			"faces": {
-				"north": {"uv": [3, 0, 6, 16], "texture": "#2", "cullface": "south"},
+				"north": {"uv": [3, 0, 6, 16], "texture": "#2", "cullface": "north"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"south": {"uv": [3, 0, 6, 16], "texture": "#2", "cullface": "north"},
+				"south": {"uv": [3, 0, 6, 16], "texture": "#2", "cullface": "south"},
 				"west": {"uv": [16, 0, 0, 16], "texture": "#0"},
 				"up": {"uv": [0, 0, 3, 16], "rotation": 180, "texture": "#2", "cullface": "up"},
 				"down": {"uv": [9, 0, 12, 16], "texture": "#2", "cullface": "down"}
@@ -368,7 +368,7 @@
 			"faces": {
 				"north": {"uv": [7, 8.5, 7.5, 10.5], "texture": "#0"},
 				"east": {"uv": [0, 8.5, 7.5, 10.5], "texture": "#0"},
-				"south": {"uv": [0, 8.5, 3.5, 10.5], "texture": "#0", "cullface": "north"},
+				"south": {"uv": [0, 8.5, 3.5, 10.5], "texture": "#0", "cullface": "south"},
 				"west": {"uv": [0, 8.5, 7.5, 10.5], "texture": "#0"},
 				"up": {"uv": [0, 8.5, 7.5, 9], "rotation": 270, "texture": "#0"},
 				"down": {"uv": [0, 8.5, 7.5, 10.5], "rotation": 270, "texture": "#0"}

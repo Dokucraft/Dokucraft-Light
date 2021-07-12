@@ -2,9 +2,9 @@
 	"credit": "Made By WantedRobot",
 	"parent": "block/thin_block",
 	"textures": {
-		"sides": "block/jungle_trapdoor_rim",
-		"texture": "block/jungle_trapdoor",
-		"particle": "block/jungle_trapdoor"
+		"sides": "block/trap_doors/jungle_trapdoor_rim",
+		"texture": "block/trap_doors/jungle_trapdoor",
+		"particle": "block/trap_doors/jungle_trapdoor"
 	},
 	"elements": [
 		{

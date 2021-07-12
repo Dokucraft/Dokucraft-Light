@@ -2,9 +2,9 @@
 	"credit": "Made By WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"bottom": "block/jungle_door_bottom",
-		"particle": "block/jungle_door_bottom",
-		"sides": "block/jungle_door_sides"
+		"bottom": "block/doors/jungle_door_bottom",
+		"particle": "block/doors/jungle_door_bottom",
+		"sides": "block/doors/jungle_door_sides"
 	},
 	"elements": [
 		{

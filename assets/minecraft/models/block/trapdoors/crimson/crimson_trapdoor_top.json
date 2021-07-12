@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "block/crimson_trapdoor",
-		"3": "block/crimson_trapdoor_rim",
-		"particle": "block/crimson_trapdoor"
+		"1": "block/trap_doors/crimson_trapdoor",
+		"3": "block/trap_doors/crimson_trapdoor_rim",
+		"particle": "block/trap_doors/crimson_trapdoor"
 	},
 	"elements": [
 		{

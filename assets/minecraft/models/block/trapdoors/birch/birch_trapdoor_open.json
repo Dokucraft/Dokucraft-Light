@@ -1,7 +1,7 @@
 {
     "parent": "block/template_trapdoor_open",
     "textures": {
-        "texture": "block/birch_trapdoor",
-		"1": "block/birch_trapdoor_rim"
+        "texture": "block/trap_doors/birch_trapdoor",
+		"1": "block/trap_doors/birch_trapdoor_rim"
     }
 }

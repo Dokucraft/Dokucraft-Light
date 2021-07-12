@@ -1,10 +1,10 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made by WantedRobot",
 	"textures": {
-		"0": "block/warped_door_bottom",
-		"1": "block/warped_door_sides",
-		"2": "block/warped_door_top",
-		"particle": "block/warped_door_bottom"
+		"0": "block/doors/warped_door_bottom",
+		"1": "block/doors/warped_door_sides",
+		"2": "block/doors/warped_door_top",
+		"particle": "block/doors/warped_door_bottom"
 	},
 	"elements": [
 		{
@@ -14,7 +14,7 @@
 			"faces": {
 				"north": {"uv": [11, 9, 15, 10], "texture": "#0"},
 				"east": {"uv": [0, 9, 15, 10], "texture": "#0"},
-				"south": {"uv": [0.5, 9, 4.5, 10], "texture": "#0", "cullface": "north"},
+				"south": {"uv": [0.5, 9, 4.5, 10], "texture": "#0"},
 				"west": {"uv": [0, 9, 15, 10], "texture": "#0"},
 				"up": {"uv": [0.5, 9, 15, 10], "rotation": 270, "texture": "#0"},
 				"down": {"uv": [0.5, 9, 15, 10], "rotation": 270, "texture": "#0"}

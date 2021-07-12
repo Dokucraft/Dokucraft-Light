@@ -3,9 +3,9 @@
 	"parent": "block/thin_block",
 	"ambientocclusion": false,
 	"textures": {
-		"sides": "block/oak_trapdoor_rim",
-		"texture": "block/oak_trapdoor",
-		"particle": "block/oak_trapdoor"
+		"sides": "block/trap_doors/oak_trapdoor_rim",
+		"texture": "block/trap_doors/oak_trapdoor",
+		"particle": "block/trap_doors/oak_trapdoor"
 	},
 	"elements": [
 		{

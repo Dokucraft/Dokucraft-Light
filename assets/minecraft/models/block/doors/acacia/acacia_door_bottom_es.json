@@ -2,9 +2,9 @@
 	"credit": "Made by WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "block/acacia_door_bottom",
-		"1_bottom": "block/acacia_door_bottom",
-		"1_sides": "block/acacia_door_sides"
+		"particle": "block/doors/acacia_door_bottom",
+		"1_bottom": "block/doors/acacia_door_bottom",
+		"1_sides": "block/doors/acacia_door_sides"
 	},
 	"elements": [
 		{

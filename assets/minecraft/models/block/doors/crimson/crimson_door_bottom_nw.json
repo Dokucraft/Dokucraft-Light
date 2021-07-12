@@ -1,10 +1,10 @@
 {
-	"credit": "Made By WantedRobot",
+	"credit": "Made by WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "block/crimson_door_bottom",
-		"2": "block/crimson_door_sides",
-		"particle": "block/crimson_door_bottom"
+		"0": "block/doors/crimson_door_bottom",
+		"2": "block/doors/crimson_door_sides",
+		"particle": "block/doors/crimson_door_bottom"
 	},
 	"elements": [
 		{

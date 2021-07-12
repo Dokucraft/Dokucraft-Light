@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/warped_door_bottom",
-		"1": "block/warped_door_sides",
-		"2": "block/warped_door_top",
-		"particle": "block/warped_door_bottom"
+		"0": "block/doors/warped_door_bottom",
+		"1": "block/doors/warped_door_sides",
+		"2": "block/doors/warped_door_top",
+		"particle": "block/doors/warped_door_bottom"
 	},
 	"elements": [
 		{

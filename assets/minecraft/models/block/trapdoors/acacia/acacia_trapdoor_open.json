@@ -2,9 +2,9 @@
 	"credit": "Made By WantedRobot",
 	"parent": "block/thin_block",
 	"textures": {
-		"1": "block/acacia_trapdoor_rim",
-		"texture": "block/acacia_trapdoor",
-		"particle": "block/acacia_trapdoor"
+		"1": "block/trap_doors/acacia_trapdoor_rim",
+		"texture": "block/trap_doors/acacia_trapdoor",
+		"particle": "block/trap_doors/acacia_trapdoor"
 	},
 	"elements": [
 		{

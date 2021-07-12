@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/thin_block",
 	"textures": {
-		"sides": "block/iron_trapdoor_rim",
-		"particle": "block/iron_trapdoor",
-		"texture": "block/iron_trapdoor"
+		"sides": "block/trap_doors/iron_trapdoor_rim",
+		"particle": "block/trap_doors/iron_trapdoor",
+		"texture": "block/trap_doors/iron_trapdoor"
 	},
 	"elements": [
 		{

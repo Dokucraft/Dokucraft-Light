@@ -3,10 +3,10 @@
 	"parent": "block/door_bottom_template",
 	"ambientocclusion": false,
 	"textures": {
-		"2": "block/spruce_door_bottom",
-		"4": "block/spruce_door_top",
-		"particle": "block/spruce_door_top",
-		"1_sides": "block/spruce_door_sides"
+		"2": "block/doors/spruce_door_bottom",
+		"4": "block/doors/spruce_door_top",
+		"particle": "block/doors/spruce_door_top",
+		"1_sides": "block/doors/spruce_door_sides"
 	},
 	"elements": [
 		{

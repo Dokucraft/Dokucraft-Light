@@ -2,9 +2,9 @@
 	"credit": "Made By WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"2": "block/iron_door_bottom",
-		"4": "block/iron_door_sides",
-		"particle": "block/iron_door_bottom"
+		"2": "block/doors/iron_door_bottom",
+		"4": "block/doors/iron_door_sides",
+		"particle": "block/doors/iron_door_bottom"
 	},
 	"elements": [
 		{
