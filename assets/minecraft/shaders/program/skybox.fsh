@@ -29,9 +29,8 @@ vec3 sampleSkybox(sampler2D skyboxSampler, vec3 direction) {
 	float l = max(max(abs(direction.x), abs(direction.y)), abs(direction.z));
 	vec3 dir = direction / l;
 	vec3 absDir = abs(dir);
-	
+
 	vec2 skyboxUV;
-	vec4 backgroundColor;
 	if (absDir.x >= absDir.y && absDir.x > absDir.z) {
 		if (dir.x > 0) {
 			skyboxUV = vec2(0, 0.5) + (dir.zy * vec2(1, -1) + 1) / 2 / vec2(3, 2);
@@ -71,7 +70,7 @@ void main() {
 	bool isNether = dot(temp, temp) < FUDGE;
 
 	if (far > 50 && realDepth > far / 2 - 5) {
-		
+
 		vec3 daySkybox = sampleSkybox(SkyBoxDaySampler, direction);
 		vec3 nightSkybox = sampleSkybox(SkyBoxNightSampler, direction);
 
@@ -86,15 +85,12 @@ void main() {
         float ndusq = clamp(dot(view, vec3(0.0, 1.0, 0.0)), 0.0, 1.0);
         ndusq = ndusq * ndusq;
 
-		vec4 finalColor = linear_fog(vec4(skyColor, 1), pow(1.0 - ndusq, 8.0), 0.0, 1.0, fogColor / fogColor.a);
-		
+		vec4 finalColor = linear_fog(vec4(skyColor, 1), pow(1.0 - ndusq, 6.0), 0.0, 1.2, fogColor / fogColor.a);
+
 		fragColor = vec4(mix(
 			finalColor.rgb,
 			fragColor.rgb,
 			fragColor.a
 		), 1);
-		
-
 	}
-	
 }
