@@ -1,5 +1,1 @@
-{ "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "minecraft:block/blackstone/2"
-  }
-}
+{ "parent": "block/cube_all", "textures": { "all": "block/blackstone/2" } }
