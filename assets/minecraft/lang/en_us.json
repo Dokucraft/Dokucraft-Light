@@ -130,9 +130,9 @@
 
   "item.minecraft.music_disc_11.desc": "What the Forest Taught Me",
 
-  "menu.singleplayer":  "§r󰀆           逡 Singleplayer             󰀄",
-  "menu.multiplayer": "§r󰀆            逢 Multiplayer              󰀄",
-  "menu.online":    "§r󰀆        連 Minecraft Realms           󰀄",
+  "menu.singleplayer":  "§r󰀆          逡 Singleplayer            󰀄",
+  "menu.multiplayer": "§r󰀆           逢 Multiplayer             󰀄",
+  "menu.online":    "§r󰀆       連 Minecraft Realms          󰀄",
   "selectServer.direct": "Direct Connect",
 
   "item.minecraft.apple": "Apple §r󰀁󰀁",
