@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/template_spawn_egg_model",
+    "textures": {
+        "texture": "minecraft:item/rabbit_spawn_egg"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 3435
+            },
+            "model": "item/killer_bunny_spawn_egg"
+        }
+    ]
+}
