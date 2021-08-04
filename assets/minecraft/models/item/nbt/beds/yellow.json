@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/nbt/beds/bed_sleeping",
+  "textures": {
+    "0": "entity/bed/yellow",
+    "particle": "entity/bed/yellow"
+  }
+}
