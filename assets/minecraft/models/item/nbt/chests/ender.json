@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/nbt/chests/chest_open",
+  "textures": {
+    "0": "entity/chest/ender",
+    "particle": "entity/chest/ender"
+  }
+}
