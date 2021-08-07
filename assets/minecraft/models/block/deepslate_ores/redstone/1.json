@@ -1,0 +1,5 @@
+{ "parent": "block/cube_all",
+  "textures": {
+    "all": "block/deepslate_ores/redstone/1"
+  }
+}

@@ -1,0 +1,10 @@
+{ "variants": {
+    "": [
+      { "model": "block/deepslate_ores/copper/0" },
+      { "model": "block/deepslate_ores/copper/1" },
+      { "model": "block/deepslate_ores/copper/2" },
+      { "model": "block/deepslate_ores/copper/3" },
+      { "model": "block/deepslate_ores/copper/4" }
+    ]
+  }
+}

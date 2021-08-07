@@ -1,0 +1,10 @@
+{ "variants": {
+    "": [
+      { "model": "block/deepslate_ores/emerald/0" },
+      { "model": "block/deepslate_ores/emerald/1" },
+      { "model": "block/deepslate_ores/emerald/2" },
+      { "model": "block/deepslate_ores/emerald/3" },
+      { "model": "block/deepslate_ores/emerald/4" }
+    ]
+  }
+}
