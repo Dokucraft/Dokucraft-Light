@@ -28,4 +28,7 @@ void main() {
         discard;
     }
     fragColor = color * ColorModulator;
+        if (isHorizon > 0.5) {
+        fragColor.a = 0;
+    }
 }
