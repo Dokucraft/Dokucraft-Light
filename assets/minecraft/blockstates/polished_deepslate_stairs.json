@@ -1,0 +1,283 @@
+{ "variants": {
+    "facing=east,half=bottom,shape=inner_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "y": 270, "uvlock": true }
+    ],
+    "facing=east,half=bottom,shape=inner_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0" },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1" },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2" },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3" },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4" }
+    ],
+    "facing=east,half=bottom,shape=outer_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "y": 270, "uvlock": true }
+    ],
+    "facing=east,half=bottom,shape=outer_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0" },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1" },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2" },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3" },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4" }
+    ],
+    "facing=east,half=bottom,shape=straight": [
+      { "model": "minecraft:block/deepslate/polished/stairs/0" },
+      { "model": "minecraft:block/deepslate/polished/stairs/1" },
+      { "model": "minecraft:block/deepslate/polished/stairs/2" },
+      { "model": "minecraft:block/deepslate/polished/stairs/3" },
+      { "model": "minecraft:block/deepslate/polished/stairs/4" }
+    ],
+    "facing=east,half=top,shape=inner_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "x": 180, "uvlock": true }
+    ],
+    "facing=east,half=top,shape=inner_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "x": 180, "y": 90, "uvlock": true }
+    ],
+    "facing=east,half=top,shape=outer_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "x": 180, "uvlock": true }
+    ],
+    "facing=east,half=top,shape=outer_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "x": 180, "y": 90, "uvlock": true }
+    ],
+    "facing=east,half=top,shape=straight": [
+      { "model": "minecraft:block/deepslate/polished/stairs/0", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/4", "x": 180, "uvlock": true }
+    ],
+    "facing=north,half=bottom,shape=inner_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "y": 180, "uvlock": true }
+    ],
+    "facing=north,half=bottom,shape=inner_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "y": 270, "uvlock": true }
+    ],
+    "facing=north,half=bottom,shape=outer_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "y": 180, "uvlock": true }
+    ],
+    "facing=north,half=bottom,shape=outer_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "y": 270, "uvlock": true }
+    ],
+    "facing=north,half=bottom,shape=straight": [
+      { "model": "minecraft:block/deepslate/polished/stairs/0", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/1", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/4", "y": 270, "uvlock": true }
+    ],
+    "facing=north,half=top,shape=inner_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "x": 180, "y": 270, "uvlock": true }
+    ],
+    "facing=north,half=top,shape=inner_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "x": 180, "uvlock": true }
+    ],
+    "facing=north,half=top,shape=outer_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "x": 180, "y": 270, "uvlock": true }
+    ],
+    "facing=north,half=top,shape=outer_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "x": 180, "uvlock": true }
+    ],
+    "facing=north,half=top,shape=straight": [
+      { "model": "minecraft:block/deepslate/polished/stairs/0", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/4", "x": 180, "y": 270, "uvlock": true }
+    ],
+    "facing=south,half=bottom,shape=inner_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0" },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1" },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2" },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3" },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4" }
+    ],
+    "facing=south,half=bottom,shape=inner_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "y": 90, "uvlock": true }
+    ],
+    "facing=south,half=bottom,shape=outer_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0" },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1" },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2" },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3" },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4" }
+    ],
+    "facing=south,half=bottom,shape=outer_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "y": 90, "uvlock": true }
+    ],
+    "facing=south,half=bottom,shape=straight": [
+      { "model": "minecraft:block/deepslate/polished/stairs/0", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/1", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/4", "y": 90, "uvlock": true }
+    ],
+    "facing=south,half=top,shape=inner_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "x": 180, "y": 90, "uvlock": true }
+    ],
+    "facing=south,half=top,shape=inner_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "x": 180, "y": 180, "uvlock": true }
+    ],
+    "facing=south,half=top,shape=outer_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "x": 180, "y": 90, "uvlock": true }
+    ],
+    "facing=south,half=top,shape=outer_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "x": 180, "y": 180, "uvlock": true }
+    ],
+    "facing=south,half=top,shape=straight": [
+      { "model": "minecraft:block/deepslate/polished/stairs/0", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/4", "x": 180, "y": 90, "uvlock": true }
+    ],
+    "facing=west,half=bottom,shape=inner_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "y": 90, "uvlock": true }
+    ],
+    "facing=west,half=bottom,shape=inner_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "y": 180, "uvlock": true }
+    ],
+    "facing=west,half=bottom,shape=outer_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "y": 90, "uvlock": true }
+    ],
+    "facing=west,half=bottom,shape=outer_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "y": 180, "uvlock": true }
+    ],
+    "facing=west,half=bottom,shape=straight": [
+      { "model": "minecraft:block/deepslate/polished/stairs/0", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/1", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/4", "y": 180, "uvlock": true }
+    ],
+    "facing=west,half=top,shape=inner_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "x": 180, "y": 180, "uvlock": true }
+    ],
+    "facing=west,half=top,shape=inner_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/0", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/inner/4", "x": 180, "y": 270, "uvlock": true }
+    ],
+    "facing=west,half=top,shape=outer_left": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "x": 180, "y": 180, "uvlock": true }
+    ],
+    "facing=west,half=top,shape=outer_right": [
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/0", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/outer/4", "x": 180, "y": 270, "uvlock": true }
+    ],
+    "facing=west,half=top,shape=straight": [
+      { "model": "minecraft:block/deepslate/polished/stairs/0", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/1", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/deepslate/polished/stairs/4", "x": 180, "y": 180, "uvlock": true }
+    ]
+  }
+}

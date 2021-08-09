@@ -1,0 +1,7 @@
+{ "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "minecraft:block/deepslate/tiles/2",
+    "top": "minecraft:block/deepslate/tiles/2",
+    "side": "minecraft:block/deepslate/tiles/2"
+  }
+}

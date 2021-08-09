@@ -1,0 +1,7 @@
+{ "variants": {
+    "": [
+      { "model": "minecraft:block/deepslate/cobbled/0" },
+      { "model": "minecraft:block/deepslate/cobbled/1" }
+    ]
+  }
+}

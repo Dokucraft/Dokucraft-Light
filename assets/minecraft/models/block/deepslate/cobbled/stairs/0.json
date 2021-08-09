@@ -1,0 +1,7 @@
+{ "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "minecraft:block/deepslate/cobbled/0",
+    "top": "minecraft:block/deepslate/cobbled/0",
+    "side": "minecraft:block/deepslate/cobbled/0"
+  }
+}

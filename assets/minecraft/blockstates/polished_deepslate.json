@@ -1,0 +1,10 @@
+{ "variants": {
+    "": [
+      { "model": "minecraft:block/deepslate/polished/0" },
+      { "model": "minecraft:block/deepslate/polished/1" },
+      { "model": "minecraft:block/deepslate/polished/2" },
+      { "model": "minecraft:block/deepslate/polished/3" },
+      { "model": "minecraft:block/deepslate/polished/4" }
+    ]
+  }
+}
