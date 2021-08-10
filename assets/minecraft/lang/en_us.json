@@ -162,6 +162,25 @@
   "item.minecraft.suspicious_stew": "Suspicious Stew §r󰀁󰀁󰀁",
   "item.minecraft.sweet_berries": "Sweet Berries §r󰀁",
   "item.minecraft.tropical_fish": "Tropical Fish §r󰀂",
+  "item.minecraft.glow_berries": "Glow Berries §r󰀁",
   "block.minecraft.cake": "Cake §r󰀁󰀁󰀁󰀁󰀁󰀁󰀁",
-  "item.minecraft.glow_berries": "Glow Berries §r󰀁"
+
+  "block.minecraft.coal_block": "Coal Block",
+  "block.minecraft.emerald_block": "Emerald Block",
+  "block.minecraft.redstone_block": "Redstone Block",
+  "block.minecraft.gold_block": "Gold Block",
+  "block.minecraft.iron_block": "Iron Block",
+  "block.minecraft.smooth_quartz": "Smooth Quartz Block",
+  "block.minecraft.nether_quartz_ore": "Quartz Ore",
+  "block.minecraft.quartz_block": "Quartz Block",
+  "block.minecraft.chiseled_quartz_block": "Chiseled Quartz Block",
+  "block.minecraft.netherite_block": "Netherite Block",
+  "block.minecraft.comparator": "Comparator",
+  "block.minecraft.repeater": "Repeater",
+  "block.minecraft.amethyst_block": "Amethyst Block",
+  "block.minecraft.copper_block": "Copper Block",
+  "block.minecraft.waxed_copper_block": "Waxed Copper Block",
+  "block.minecraft.raw_iron_block": "Raw Iron Block",
+  "block.minecraft.raw_copper_block": "Raw Copper Block",
+  "block.minecraft.raw_gold_block": "Raw Gold Block"
 }
