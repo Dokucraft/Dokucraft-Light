@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/template_spawn_egg_model",
     "textures": {
-        "texture": "minecraft:item/shulker_spawn_egg"
+        "texture": "minecraft:item/spawn_eggs/shulker_spawn_egg"
     }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/template_spawn_egg_model",
     "textures": {
-        "texture": "minecraft:item/skeleton_spawn_egg"
+        "texture": "minecraft:item/spawn_eggs/skeleton_spawn_egg"
     },
     "overrides": [
         {

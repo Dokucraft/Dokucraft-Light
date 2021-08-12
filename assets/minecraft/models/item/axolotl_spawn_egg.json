@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/template_spawn_egg_model",
     "textures": {
-        "texture": "minecraft:item/axolotl_spawn_egg"
+        "texture": "minecraft:item/spawn_eggs/axolotl_spawn_egg"
     }
 }
