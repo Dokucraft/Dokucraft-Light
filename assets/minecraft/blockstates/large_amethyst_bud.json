@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=down": [
+      {"model": "block/amethyst/large/0", "x": 180},
+      {"model": "block/amethyst/large/1", "x": 180},
+      {"model": "block/amethyst/large/2", "x": 180}
+    ],
+    "facing=east": [
+      {"model": "block/amethyst/large/0","x": 90,"y": 90},
+      {"model": "block/amethyst/large/1","x": 90,"y": 90},
+      {"model": "block/amethyst/large/2","x": 90,"y": 90}
+    ],
+    "facing=north": [
+      {"model": "block/amethyst/large/0","x": 90},
+      {"model": "block/amethyst/large/1","x": 90},
+      {"model": "block/amethyst/large/2","x": 90}
+    ],
+    "facing=south": [
+      {"model": "block/amethyst/large/0","x": 90,"y": 180},
+      {"model": "block/amethyst/large/1","x": 90,"y": 180},
+      {"model": "block/amethyst/large/2","x": 90,"y": 180}
+    ],
+    "facing=up": [
+      {"model": "block/amethyst/large/0"},
+      {"model": "block/amethyst/large/1"},
+      {"model": "block/amethyst/large/2"}
+    ],
+    "facing=west": [
+      {"model": "block/amethyst/large/0","x": 90,"y": 270},
+      {"model": "block/amethyst/large/1","x": 90,"y": 270},
+      {"model": "block/amethyst/large/2","x": 90,"y": 270}
+    ]
+  }
+}

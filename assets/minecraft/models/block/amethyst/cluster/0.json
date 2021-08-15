@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "particle": "block/amethyst_cluster",
+        "cross": "block/amethyst_cluster"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross_3",
+    "textures": {
+        "particle": "block/large_amethyst_bud",
+        "cross": "block/large_amethyst_bud"
+    }
+}
