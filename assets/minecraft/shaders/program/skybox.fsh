@@ -31,6 +31,7 @@ vec3 sampleSkybox(sampler2D skyboxSampler, vec3 direction) {
 	vec3 absDir = abs(dir);
 
 	vec2 skyboxUV;
+	vec4 backgroundColor;
 	if (absDir.x >= absDir.y && absDir.x > absDir.z) {
 		if (dir.x > 0) {
 			skyboxUV = vec2(0, 0.5) + (dir.zy * vec2(1, -1) + 1) / 2 / vec2(3, 2);
