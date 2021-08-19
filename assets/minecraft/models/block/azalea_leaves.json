@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves_custom",
+  "textures": {
+    "all": "minecraft:block/azalea_leaves"
+  }
+}

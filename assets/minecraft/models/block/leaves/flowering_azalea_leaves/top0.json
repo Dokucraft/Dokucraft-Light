@@ -1,0 +1,7 @@
+{
+	"parent": "block/leaves/leaves_top0",
+	"textures": {
+		"particle": "block/flowering_azalea_leaves",
+		"all": "block/flowering_azalea_leaves"
+	}
+}
