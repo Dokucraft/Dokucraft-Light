@@ -1,6 +1,7 @@
 {
-    "parent": "block/cube_all",
+    "parent": "block/cube_column",
     "textures": {
-        "all": "block/smooth_red_sandstone_slab_sides"
+        "side": "block/smooth_red_sandstone_slab_sides",
+				"top": "block/smooth_red_sandstone_bottom"
     }
 }
