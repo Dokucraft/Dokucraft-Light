@@ -2,6 +2,7 @@
     "parent": "block/cube_column",
     "textures": {
         "side": "block/smooth_red_sandstone_slab_sides",
-				"top": "block/smooth_red_sandstone_bottom"
+		"up": "block/smooth_red_sandstone_bottom",
+        "down": "block/smooth_red_sandstone_bottom"
     }
 }
