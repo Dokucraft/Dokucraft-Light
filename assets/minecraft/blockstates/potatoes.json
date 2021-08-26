@@ -1,0 +1,52 @@
+{ "multipart": [
+    { "when": { "age": 0 },
+      "apply": [
+        { "model": "block/potatoes_stage0" },
+		{ "model": "block/crop/potatoes_stage0_mirrored" }
+      ]
+    },
+	{ "when": { "age": 1 },
+      "apply": [
+        { "model": "block/potatoes_stage0" },
+		{ "model": "block/crop/potatoes_stage0_mirrored" }
+      ]
+    },
+	{ "when": { "age": 2 },
+      "apply": [
+        { "model": "block/potatoes_stage1" },
+		{ "model": "block/crop/potatoes_stage1_mirrored" }
+      ]
+    },
+	{ "when": { "age": 3 },
+      "apply": [
+        { "model": "block/potatoes_stage1" },
+		{ "model": "block/crop/potatoes_stage1_mirrored" }
+      ]
+    },
+	{ "when": { "age": 4 },
+      "apply": [
+        { "model": "block/potatoes_stage2" },
+		{ "model": "block/crop/potatoes_stage2_mirrored" }
+      ]
+    },
+	{ "when": { "age": 5 },
+      "apply": [
+        { "model": "block/potatoes_stage2" },
+		{ "model": "block/crop/potatoes_stage2_mirrored" }
+      ]
+    },
+	{ "when": { "age": 6 },
+      "apply": [
+        { "model": "block/potatoes_stage2" },
+		{ "model": "block/crop/potatoes_stage2_mirrored" }
+      ]
+    },
+	{ "when": { "age": 7 },
+      "apply": [
+        { "model": "block/potatoes_stage3" },
+		{ "model": "block/crop/potatoes_stage3_mirrored" }
+      ]
+    },	
+    { "apply": { "model": "block/roots/crop_roots" } }
+  ]
+}

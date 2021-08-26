@@ -1,6 +1,6 @@
 {
-    "parent": "block/crop_mirrored",
+    "parent": "block/wheat/wheat_mirrored",
     "textures": {
-        "crop": "block/wheat_stage7"
+        "crop": "block/wheat/wheat_stage7"
     }
 }

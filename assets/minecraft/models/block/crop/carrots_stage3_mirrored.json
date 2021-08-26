@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop_mirrored",
+  "textures": {
+    "crop": "minecraft:block/carrots_stage3"
+  }
+}
