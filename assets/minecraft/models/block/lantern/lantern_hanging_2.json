@@ -2,7 +2,7 @@
 	"credit": "Made by WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"1": "block/lantern",
+		"1": "block/lantern_hanging",
 		"particle": "block/lantern"
 	},
 	"elements": [

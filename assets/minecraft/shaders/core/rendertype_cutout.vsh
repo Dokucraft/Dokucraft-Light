@@ -60,7 +60,7 @@ void main() {
     float alpha = texture(Sampler0, UV0).a;
     if (abs(alpha - 141.0 / 255.0) < 0.001) {
         
-        float time = GameTime * SWAYING_SPEED + dot(floor(Position), vec3(1)) * 1234.0;
+        float time = (1.0 + fract(dot(floor(Position), vec3(1))) / 2.0) * GameTime * SWAYING_SPEED + dot(floor(Position), vec3(1)) * 1234.0;
         vec3 newForward = normalize(vec3(
             sin(time) * SWAYING_AMOUNT,
             sin(time * PHI) * SWAYING_AMOUNT,
