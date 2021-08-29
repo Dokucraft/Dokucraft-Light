@@ -1,7 +1,7 @@
 {
 	"parent": "block/leaves/leaves_bottom2",
 	"textures": {
-		"particle": "block/dead_spruce_leaves",
-		"all": "block/dead_spruce_leaves"
+		"particle": "block/leaves/dead_spruce_leaves",
+		"all": "block/leaves/dead_spruce_leaves"
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"parent": "block/leaves/leaves_bottom1",
 	"textures": {
-		"particle": "block/dark_oak_leaves",
-		"all": "block/dark_oak_leaves"
+		"particle": "block/leaves/dark_oak_leaves",
+		"all": "block/leaves/dark_oak_leaves"
 	}
 }

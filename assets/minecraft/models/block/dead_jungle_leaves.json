@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/leaves",
   "textures": {
-    "all": "minecraft:block/dead_jungle_leaves"
+    "all": "minecraft:block/leaves/dead_jungle_leaves"
   }
 }

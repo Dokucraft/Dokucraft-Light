@@ -2,7 +2,7 @@
 	"credit": "Made by WantedRobot",
 	"parent": "block/block",
 	"textures": {
-		"particle": "block/birch_leaves"
+		"particle": "block/leaves/birch_leaves"
 	},
 	"elements": [
 		{

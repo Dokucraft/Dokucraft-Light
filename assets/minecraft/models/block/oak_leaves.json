@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/leaves_custom",
   "textures": {
-    "all": "minecraft:block/oak_leaves"
+    "all": "minecraft:block/leaves/oak_leaves"
   }
 }

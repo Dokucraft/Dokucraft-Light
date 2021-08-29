@@ -2,7 +2,7 @@
 	"credit": "Made by WantedRobot",
 	"parent": "block/block",
 	"textures": {
-		"particle": "block/jungle_leaves"
+		"particle": "block/leaves/jungle_leaves"
 	},
 	"elements": [
 		{
