@@ -1,52 +1,172 @@
 {
-    "variants": {
-		"layers=1":  [
-			{ "model": "block/snow/snow_layer_1" },
-			{ "model": "block/snow/snow_layer_1", "y": 90 },
-			{ "model": "block/snow/snow_layer_1", "y": 180 },
-			{ "model": "block/snow/snow_layer_1", "y": 270 }
-		],
-        "layers=2":  [
-        	{ "model": "block/snow/snow_layer_2" },
-        	{ "model": "block/snow/snow_layer_2", "y": 90 },
-        	{ "model": "block/snow/snow_layer_2", "y": 180 },
-        	{ "model": "block/snow/snow_layer_2", "y": 270 }
-        ],
-        "layers=3":  [
-        	{ "model": "block/snow/snow_layer_3" },
-        	{ "model": "block/snow/snow_layer_3", "y": 90 },
-        	{ "model": "block/snow/snow_layer_3", "y": 180 },
-        	{ "model": "block/snow/snow_layer_3", "y": 270 }
-        ],
-        "layers=4":  [
-        	{ "model": "block/snow/snow_layer_4" },
-        	{ "model": "block/snow/snow_layer_4", "y": 90 },
-        	{ "model": "block/snow/snow_layer_4", "y": 180 },
-        	{ "model": "block/snow/snow_layer_4", "y": 270 }
-        ],
-        "layers=5":  [
-        	{ "model": "block/snow/snow_layer_5" },
-        	{ "model": "block/snow/snow_layer_5", "y": 90 },
-        	{ "model": "block/snow/snow_layer_5", "y": 180 },
-        	{ "model": "block/snow/snow_layer_5", "y": 270 }
-        ],
-        "layers=6":  [
-        	{ "model": "block/snow/snow_layer_6" },
-        	{ "model": "block/snow/snow_layer_6", "y": 90 },
-        	{ "model": "block/snow/snow_layer_6", "y": 180 },
-        	{ "model": "block/snow/snow_layer_6", "y": 270 }
-        ],
-        "layers=7":  [
-        	{ "model": "block/snow/snow_layer_7" },
-        	{ "model": "block/snow/snow_layer_7", "y": 90 },
-        	{ "model": "block/snow/snow_layer_7", "y": 180 },
-        	{ "model": "block/snow/snow_layer_7", "y": 270 }
-        ],
-        "layers=8":  [
-        	{ "model": "block/snow/snow_layer_8" },
-        	{ "model": "block/snow/snow_layer_8", "y": 90 },
-        	{ "model": "block/snow/snow_layer_8", "y": 180 },
-        	{ "model": "block/snow/snow_layer_8", "y": 270 }
-        ]
-    }
+    "multipart":
+    [
+        {
+            "apply":
+            {
+                "model": "block/snow_overlay"
+            }
+        },
+        {
+            "when":
+            {
+                "layers": 1
+            },
+            "apply":
+            [
+                {
+                    "model": "block/snow_height2"
+                },
+                {
+                    "model": "block/snow_height2",
+                    "y": 90
+                },
+                {
+                    "model": "block/snow_height2",
+                    "y": 180
+                },
+                {
+                    "model": "block/snow_height2",
+                    "y": 270
+                }
+            ]
+        },
+        {
+            "when":
+            {
+                "layers": 2
+            },
+            "apply":
+            [
+                {
+                    "model": "block/snow_height4"
+                },
+                {
+                    "model": "block/snow_height4",
+                    "y": 90
+                },
+                {
+                    "model": "block/snow_height4",
+                    "y": 180
+                },
+                {
+                    "model": "block/snow_height4",
+                    "y": 270
+                }
+            ]
+        },
+        {
+            "when":
+            {
+                "layers": 3
+            },
+            "apply":
+            [
+                {
+                    "model": "block/snow_height6"
+                },
+                {
+                    "model": "block/snow_height6",
+                    "y": 90
+                },
+                {
+                    "model": "block/snow_height6",
+                    "y": 180
+                },
+                {
+                    "model": "block/snow_height6",
+                    "y": 270
+                }
+            ]
+        },
+        {
+            "when":
+            {
+                "layers": 4
+            },
+            "apply":
+            [
+                {
+                    "model": "block/snow_height8"
+                },
+                {
+                    "model": "block/snow_height8",
+                    "y": 90
+                },
+                {
+                    "model": "block/snow_height8",
+                    "y": 180
+                },
+                {
+                    "model": "block/snow_height8",
+                    "y": 270
+                }
+            ]
+        },
+        {
+            "when":
+            {
+                "layers": 5
+            },
+            "apply":
+            [
+                {
+                    "model": "block/snow_height10"
+                },
+                {
+                    "model": "block/snow_height10",
+                    "y": 90
+                },
+                {
+                    "model": "block/snow_height10",
+                    "y": 180
+                },
+                {
+                    "model": "block/snow_height10",
+                    "y": 270
+                }
+            ]
+        },
+        {
+            "when":
+            {
+                "layers": 6
+            },
+            "apply":
+            [
+                {"model": "block/snow_height12"},
+                {"model": "block/snow_height12","y": 90},
+                {"model": "block/snow_height12","y": 180},
+                {"model": "block/snow_height12","y": 270}
+            ]
+        },
+        {
+            "when":
+            {
+                "layers": 7
+            },
+            "apply":
+            [
+                {"model": "block/snow_height14"},
+                {"model": "block/snow_height14","y": 90},
+                {"model": "block/snow_height14","y": 180},
+                {"model": "block/snow_height14","y": 270}
+            ]
+        },
+        {
+            "when":
+            {
+                "layers": 8
+            },
+            "apply":
+            [
+                {
+                    "model": "block/snow_block"
+                },
+                {"model": "block/snow_block","y": 90},
+                {"model": "block/snow_block","y": 180},
+                {"model": "block/snow_block","y": 270}
+            ]
+        }
+    ]
 }
