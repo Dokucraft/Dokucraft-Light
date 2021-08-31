@@ -8,6 +8,7 @@ uniform mat4 ProjMat;
 
 out vec4 vertexColor;
 out float isHorizon;
+out float isSpyglass;
 
 #define HORIZONDIST 128
 
@@ -20,13 +21,10 @@ out float isHorizon;
 #define FIRST_BLACK vec4(0, 0, 0, 0.8)
 #define FIRST_GRAY vec4(0.5, 0.5, 0.5, 0.5)
 #define FIRST_WHITE vec4(1, 1, 1, 0.8)
-//
-
 #define HOVER_COLOR vec4(1.0,0.83,0.96,0.50196)
-
 #define RECIPE_BOOK_MISSING_COLOR vec4(1.0,0.1,0.23,0.38824)
 
-//#define BETA_TOOLTIPS
+//#define TOOLTIPS
 #define TOOLTIPS_BACKGROUND_COLOR vec4(0, 0, 0, 0.8)
 #define TOOLTIPS_LIGHT_COLOR vec4(0.988, 0.988, 0.98, 0.7)
 #define TOOLTIPS_DARK_COLOR vec4(0.737, 0.737, 0.718, 0.5)
@@ -36,8 +34,6 @@ out float isHorizon;
 #define SLIDER_SHADOW_COLOR vec4(0.702, 0.702, 0.682, 1.0)
 
 //out vec3 a;
-
-//
 
 //fix for float ==
 bool aproxEqualLow(float a, float b)
@@ -55,12 +51,14 @@ bool aproxEqualV3(vec3 a, vec3 b)
 
 void main() {
     isHorizon = 0.0;
+    isSpyglass = 0;
     if ((ModelViewMat * vec4(Position, 1.0)).z > -HORIZONDIST - 10.0) {
         isHorizon = 1.0;
     }
-	
+	if ((ModelViewMat * vec4(Position, 1.0)).z < -2050 && (ModelViewMat * vec4(Position, 1.0)).z > -2100) {
+        isSpyglass = 1;
+    }
 	vertexColor = Color;
-	
 	
 	vec3 offset = vec3(0.0);
 	
@@ -197,10 +195,6 @@ void main() {
 			vertexColor = SLIDER_LIGHT_COLOR;
 		}
 	}
-	
-
-	
-    //a = posWithoutOffset; //debuging
 	
     gl_Position = ProjMat * ModelViewMat * vec4(Position + offset, 1.0);
 }
