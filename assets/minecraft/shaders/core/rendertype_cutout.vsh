@@ -41,23 +41,24 @@ void main() {
     float xs = 0.0;
     float ys = 0.0;
     float zs = 0.0;
-    if (texture(Sampler0, UV0).a * 255 == 1.0 || texture(Sampler0, UV0).a * 255 == 253.0 ) {
+    vec4 texcol = texture(Sampler0, UV0); 
+    if (texcol.a * 255 == 1.0 || texcol.a * 255 == 253.0 ) {
         xs = sin(position.x + position.y + animation) * -1.0;
         zs = cos(position.z + position.y + animation) * -1.0;
 
-    } else if (texture(Sampler0, UV0).a * 255 == 2.0) {
+    } else if (texcol.a * 255 == 2.0 || texcol.a * 255 == 252.0 ) {
         xs = sin(position.x + position.y + animation) * -2.0;
         zs = cos(position.z + position.y + animation) * -2.0;
 
-    } else if (texture(Sampler0, UV0).a * 255 == 3.0) {
+    } else if (texcol.a * 255 == 3.0 || texcol.a * 255 == 251.0 ) {
         xs = sin(position.x + position.y + animation) * -1.0;
         zs = cos(position.z + position.y + animation) * -1.0;
         ys = sin(position.y + (animation / 1.5)) / 9.0;
     }
 
     gl_Position = ProjMat * ModelViewMat * (vec4(position, 1.0) + vec4(xs / 32.0, ys, zs / 32.0, 0.0));
-
-    float alpha = texture(Sampler0, UV0).a;
+    position += vec4(xs / 32.0, ys, zs / 32.0, 0.0);
+    float alpha = texcol.a;
     if (abs(alpha - 141.0 / 255.0) < 0.001) {
         
         float time = (1.0 + fract(dot(floor(Position), vec3(1))) / 2.0) * GameTime * SWAYING_SPEED + dot(floor(Position), vec3(1)) * 1234.0;
@@ -69,6 +70,7 @@ void main() {
         
         vec3 relativePos = fract(Position);
         if (relativePos.y > EPSILON) {
+            relativePos += vec3(xs / 32.0, ys, zs / 32.0);
             relativePos -= vec3(0.5, 1, 0.5);
             relativePos = tbn(newForward, vec3(0, 1, 0)) * relativePos;
             vec3 newPos = relativePos + vec3(0.5, 1, 0.5);
