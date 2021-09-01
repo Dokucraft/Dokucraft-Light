@@ -57,7 +57,6 @@ void main() {
     }
 
     gl_Position = ProjMat * ModelViewMat * (vec4(position, 1.0) + vec4(xs / 32.0, ys, zs / 32.0, 0.0));
-    position += vec4(xs / 32.0, ys, zs / 32.0, 0.0);
     float alpha = texcol.a;
     if (abs(alpha - 141.0 / 255.0) < 0.001) {
         
