@@ -2,7 +2,7 @@
 	"credit": "Made By WantedRobot",
 	"ambientocclusion": false,
 	"textures": {
-		"3": "block/potted_plants/poppy"
+		"3": "block/plants/poppy/5"
 	},
 	"elements": [
 		{
