@@ -1039,9 +1039,8 @@
 			"translation": [0, 1, -1]
 		},
 		"firstperson_lefthand": {
-			"rotation": [-69, -45, -131],
-			"translation": [0, 0.5, -1],
-			"scale": [-1, -1, -1]
+			"rotation": [-46, -45, 67],
+			"translation": [0, 0.5, -1]
 		}
 	},
 	"groups": [
