@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross_3",
+  "textures": {
+    "cross": "minecraft:block/hanging_roots_2"
+  }
+}
