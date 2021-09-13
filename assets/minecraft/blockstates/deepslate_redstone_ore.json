@@ -1,10 +1,18 @@
-{ "variants": {
-    "": [
+{
+  "variants": {
+    "lit=false": [
+      { "model": "block/deepslate_ores/redstone_off/0" },
+      { "model": "block/deepslate_ores/redstone_off/1" },
+      { "model": "block/deepslate_ores/redstone_off/2" },
+      { "model": "block/deepslate_ores/redstone_off/3" },
+      { "model": "block/deepslate_ores/redstone_off/4" }
+    ],
+  "lit=true": [
       { "model": "block/deepslate_ores/redstone/0" },
       { "model": "block/deepslate_ores/redstone/1" },
       { "model": "block/deepslate_ores/redstone/2" },
       { "model": "block/deepslate_ores/redstone/3" },
-      { "model": "block/deepslate_ores/redstone/4" }
+      { "model": "block/deepslate_ores/redstone/4" }    
     ]
   }
 }
