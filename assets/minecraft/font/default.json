@@ -28,6 +28,21 @@
             ]
         },
         {
+            "type": "bitmap",
+            "file": "icons:banner-icons.png",
+            "ascent": 14,
+            "height": 20,
+            "chars": [
+                "\u5117\u5118\u5119\u511A\u511B\u511C",
+                "\u511D\u511E\u511F\u5120\u5121\u5122",
+                "\u5123\u5124\u5125\u5126\u5127\u5128",
+                "\u5129\u512A\u512B\u512C\u512D\u512E",
+                "\u512F\u5130\u5131\u5132\u5133\u5134",
+                "\u5135\u5136\u5137\u5138\u5139\u513A",
+                "\u513B\u513C\u513D\u513E\u513F\u5140"
+            ]
+        },
+        {
          "type": "ttf",
          "file": "minecraft:negative_spaces.ttf",
          "shift": [0.0, 0.0],
