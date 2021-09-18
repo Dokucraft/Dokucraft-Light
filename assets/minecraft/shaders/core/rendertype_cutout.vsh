@@ -57,7 +57,7 @@ void main() {
 
     gl_Position = ProjMat * ModelViewMat * (vec4(position, 1.0) + vec4(xs / 32.0, ys, zs / 32.0, 0.0));
     float alpha = texcol.a;
-    if (abs(alpha - 141.0 / 255.0) < 0.001) {
+    if (abs(alpha - 141.0 / 255.0) < 0.001 || abs(alpha - 24.0 / 255.0) < 0.001) {
         
         float time = (1.0 + fract(dot(floor(Position), vec3(1))) / 2.0) * GameTime * SWAYING_SPEED + dot(floor(Position), vec3(1)) * 1234.0;
         vec3 newForward = normalize(vec3(
