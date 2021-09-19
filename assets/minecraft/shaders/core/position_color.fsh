@@ -27,7 +27,7 @@ void main() {
       if ((hoverUv.x == 17 || hoverUv.x == 0) || (hoverUv.y == 17 || hoverUv.y == 0)) {
         fragColor = vec4(0.988, 0.988, 0.98, 0.8); //outline
       } else {
-        fragColor = vec4(1, 1, 1, ); //inside
+        fragColor = vec4(0, 0, 0, 0.2); //inside
       }
     }
 	if (isHorizon > 0.5) {fragColor.a = 0;}
