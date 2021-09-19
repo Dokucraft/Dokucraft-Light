@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "type=bottom": [
+    { "model": "minecraft:block/end_stone_brick_slab" },
+    { "model": "minecraft:block/end_stone_brick_slab_2" }
+  ],
+    "type=double": {
+      "model": "minecraft:block/double_slab/end_stone_slab_double"
+    },
+    "type=top": [
+      { "model": "minecraft:block/end_stone_brick_slab_top" },
+      { "model": "minecraft:block/end_stone_brick_slab_top_2" }
+    ]
+  }
+}
