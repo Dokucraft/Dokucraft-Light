@@ -9,19 +9,20 @@ uniform mat4 ProjMat;
 out vec4 vertexColor;
 out float isHorizon;
 out float isSpyglass;
+out vec2 uv;
+flat out int customType;
 
 #define HORIZONDIST 128
 
 //settings
 
-#define LOADING_BG_DARK_COLOR vec3(0.161, 0.122, 0.094) //no alpha cuz it makes no sense and alpha is "procedural"
+#define LOADING_BG_DARK_COLOR vec3(0.161, 0.122, 0.094)
 #define LOADING_BG_COLOR vec3(0.161, 0.122, 0.094)
 
 //might be usefull for replacing search bar
 #define FIRST_BLACK vec4(0, 0, 0, 0.8)
 #define FIRST_GRAY vec4(0.5, 0.5, 0.5, 0.5)
 #define FIRST_WHITE vec4(1, 1, 1, 0.8)
-#define HOVER_COLOR vec4(1.0,0.83,0.96,0.50196)
 #define RECIPE_BOOK_MISSING_COLOR vec4(1.0,0.1,0.23,0.38824)
 
 //#define TOOLTIPS
@@ -52,6 +53,7 @@ bool aproxEqualV3(vec3 a, vec3 b)
 void main() {
     isHorizon = 0.0;
     isSpyglass = 0;
+    customType = 0;
     if ((ModelViewMat * vec4(Position, 1.0)).z > -HORIZONDIST - 10.0) {
         isHorizon = 1.0;
     }
@@ -169,7 +171,23 @@ void main() {
 		//is hover?
 		if(aproxEqual(Color.a,0.50196) && gl_VertexID > -1 && gl_VertexID < 4)
 		{
-			vertexColor = HOVER_COLOR;
+			customType = 1;
+            
+            switch(gl_VertexID % 4)
+            {
+            case 0:
+                uv = vec2(0.0);
+                break;
+            case 1:
+                uv = vec2(0.0,18.0);
+                break;
+            case 2:
+                uv = vec2(18.0);
+                break;
+            case 3:
+                uv = vec2(18.0,0.0);
+                break;
+            }
 		}
 	}
 	
