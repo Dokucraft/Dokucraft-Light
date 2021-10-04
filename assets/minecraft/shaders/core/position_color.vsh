@@ -5,6 +5,7 @@ in vec4 Color;
 
 uniform mat4 ModelViewMat;
 uniform mat4 ProjMat;
+uniform float GameTime;
 
 out vec4 vertexColor;
 out float isHorizon;
@@ -27,8 +28,8 @@ flat out int customType;
 
 //#define TOOLTIPS
 #define TOOLTIPS_BACKGROUND_COLOR vec4(0, 0, 0, 0.8)
-#define TOOLTIPS_LIGHT_COLOR vec4(0.988, 0.988, 0.98, 0.7)
-#define TOOLTIPS_DARK_COLOR vec4(0.737, 0.737, 0.718, 0.5)
+//#define TOOLTIPS_LIGHT_COLOR vec4(0.988, 0.988, 0.98, 0.7)
+//#define TOOLTIPS_DARK_COLOR vec4(0.737, 0.737, 0.718, 0.5)
 
 #define OUTLINE_SLIDERS
 #define SLIDER_LIGHT_COLOR vec4(0.114, 0.106, 0.094, 1.0)
@@ -128,16 +129,26 @@ void main() {
 			//is outline?
 			else if(aproxEqual(Color.a,0.31373))
 			{
+				customType = 2;
+				uv = vec2(0.0);
+				if (gl_VertexID == 28 || gl_VertexID == 32 || gl_VertexID == 31 || gl_VertexID == 35 || (gl_VertexID >= 24 && gl_VertexID <= 27)) {
+					uv.x = 1.0;
+				} else if (gl_VertexID == 29 || gl_VertexID == 33 || gl_VertexID == 30 || gl_VertexID == 34 || (gl_VertexID >= 20 && gl_VertexID <= 23)) {
+					uv.x = -1.0;
+				}
+
 				//is outline light?
 				if(aproxEqual(Color.b,1.0) && aproxEqual(Color.r,0.31373))
 				{
-					vertexColor = TOOLTIPS_LIGHT_COLOR;
+					//vertexColor = TOOLTIPS_LIGHT_COLOR;
+					uv.y = -1.0;
 				}
-				
+
 				//is outline dark?
 				else if(aproxEqual(Color.b,0.49804) && aproxEqual(Color.r,0.15686))
 				{
-					vertexColor = TOOLTIPS_DARK_COLOR;
+					//vertexColor = TOOLTIPS_DARK_COLOR;
+					uv.y = 1.0;
 				}
 			}
 		#endif
@@ -172,20 +183,30 @@ void main() {
 		if(aproxEqual(Color.a,0.50196) && gl_VertexID > -1 && gl_VertexID < 4)
 		{
 			customType = 1;
-            
+			float padding = 1.0;
+			if (sin(GameTime * 6000.0) > 0) padding += 1.0;
+
             switch(gl_VertexID % 4)
             {
             case 0:
-                uv = vec2(0.0);
+                uv = vec2(1.0, -1.0);
+                offset.x = padding;
+                offset.y = -padding;
                 break;
             case 1:
-                uv = vec2(0.0,18.0);
+                uv = vec2(-1.0, -1.0);
+                offset.x = -padding;
+                offset.y = -padding;
                 break;
             case 2:
-                uv = vec2(18.0);
+                uv = vec2(-1.0, 1.0);
+                offset.x = -padding;
+                offset.y = padding;
                 break;
             case 3:
-                uv = vec2(18.0,0.0);
+                uv = vec2(1.0, 1.0);
+                offset.x = padding;
+                offset.y = padding;
                 break;
             }
 		}
