@@ -21,14 +21,14 @@
                 },
 				{
 					"name": "SkyBoxDaySampler",
-                    "id": "skybox-day",
+                    "id": "skybox_day",
                     "width": 1,
                     "height": 1,
                     "bilinear": false
 				},
 				{
 					"name": "SkyBoxNightSampler",
-                    "id": "skybox-night",
+                    "id": "skybox_night",
                     "width": 1,
                     "height": 1,
                     "bilinear": false

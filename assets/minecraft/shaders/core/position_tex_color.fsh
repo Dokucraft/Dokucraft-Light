@@ -5,7 +5,7 @@
 uniform sampler2D Sampler0;
 
 uniform vec4 ColorModulator;
-uniform vec2 ScreenSize;
+// uniform vec2 ScreenSize;
 
 in vec2 texCoord0;
 in vec4 vertexColor;

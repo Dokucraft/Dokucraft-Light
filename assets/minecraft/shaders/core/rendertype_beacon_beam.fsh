@@ -3,7 +3,7 @@
 #moj_import <utils.glsl>
 
 uniform sampler2D Sampler0;
-uniform sampler2D Sampler2;
+// uniform sampler2D Sampler2;
 
 uniform vec4 ColorModulator;
 
