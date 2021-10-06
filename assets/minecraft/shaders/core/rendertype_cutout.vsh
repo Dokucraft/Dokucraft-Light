@@ -53,6 +53,9 @@ void main() {
     } else if (texcol.a * 255 == 3.0 || texcol.a * 255 == 254.0 ) {
         xs = sin(position.x + position.y + animation) * -0.5;
         zs = cos(position.z + position.y + animation) * -0.5;
+    } else if (texcol.a * 255 == 11.0) { // very weak, delayed sway used for the bottom of the torch fire
+        xs = sin(position.x + position.y + animation - 1.0) * -0.5;
+        zs = cos(position.z + position.y + animation - 1.0) * -0.5;
     }
 
     gl_Position = ProjMat * ModelViewMat * (vec4(position, 1.0) + vec4(xs / 32.0, ys, zs / 32.0, 0.0));
