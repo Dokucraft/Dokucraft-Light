@@ -53,6 +53,9 @@ void main() {
     } else if (texcol.a * 255 == 3.0 || texcol.a * 255 == 254.0 ) {
         xs = sin(position.x + position.y + animation) * -0.5;
         zs = cos(position.z + position.y + animation) * -0.5;
+    } else if (texcol.a * 255 == 4.0 || texcol.a * 255 == 251.0 ) { // half intensity sway for the connection between the upper and lower halves of the fern
+        xs = sin(position.x + position.y + animation) * -0.25;
+        zs = cos(position.z + position.y + animation) * -0.25;
     } else if (texcol.a * 255 == 11.0) { // very weak, delayed sway used for the bottom of the torch fire
         xs = sin(position.x + position.y + animation - 1.0) * -0.5;
         zs = cos(position.z + position.y + animation - 1.0) * -0.5;
