@@ -1,5 +1,1 @@
-{ "parent": "minecraft:block/deepslate/column_sides",
-  "textures": {
-    "0": "minecraft:block/deepslate/sides/1"
-  }
-}
+{"parent":"minecraft:block/deepslate/column_sides","textures":{"0":"minecraft:block/deepslate/sides/1"}}

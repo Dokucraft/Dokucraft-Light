@@ -1,12 +1,1 @@
-{
-  "textures": [
-    "minecraft:current_down/0",
-    "minecraft:current_down/1",
-    "minecraft:current_down/2",
-    "minecraft:current_down/3",
-    "minecraft:current_down/4",
-    "minecraft:current_down/5",
-    "minecraft:current_down/6",
-    "minecraft:current_down/7"
-  ]
-}
+{"textures":["minecraft:current_down/0","minecraft:current_down/1","minecraft:current_down/2","minecraft:current_down/3","minecraft:current_down/4","minecraft:current_down/5","minecraft:current_down/6","minecraft:current_down/7"]}

@@ -1,6 +1,1 @@
-{
-  "textures": [
-    "minecraft:damage_indicator/0",
-    "minecraft:damage_indicator/1"
-  ]
-}
+{"textures":["minecraft:damage_indicator/0","minecraft:damage_indicator/1"]}

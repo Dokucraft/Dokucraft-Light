@@ -1,8 +1,1 @@
-{ "parent": "block/dirt_path/dirt_path_template",
-  "textures": {
-    "top": "block/path/4",
-    "side": "block/dirt_path_side",
-    "bottom": "block/dirt",
-    "particle": "block/dirt"
-  }
-}
+{"parent":"block/dirt_path/dirt_path_template","textures":{"top":"block/path/4","side":"block/dirt_path_side","bottom":"block/dirt","particle":"block/dirt"}}

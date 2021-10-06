@@ -1,11 +1,1 @@
-{
-  "language.name": "Igbo",
-  "language.region": "Naigeria",
-  "language.code": "ig_ng",
-  "merchant.level.4": "\u00a7f\u1ecckachamara",
-  "merchant.level.5": "\u00a7fNna ukwu",
-  "merchant.trades": "\u00a7fAh\u1ecba",
-  "menu.singleplayer": "\u00a7f\u9021 Single Game",
-  "menu.multiplayer": "\u00a7f\u9022 Online Game",
-  "menu.online": "\u00a7f\u9023 Minecraft Realms"
-}
+{"language.name":"Igbo","language.region":"Naigeria","language.code":"ig_ng","merchant.level.4":"§fỌkachamara","merchant.level.5":"§fNna ukwu","merchant.trades":"§fAhịa","menu.singleplayer":"§f逡 Single Game","menu.multiplayer":"§f逢 Online Game","menu.online":"§f連 Minecraft Realms"}

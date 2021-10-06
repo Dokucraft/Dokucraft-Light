@@ -1,8 +1,1 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "block/birch_planks_underwater",
-        "top": "block/birch_planks_underwater",
-        "side": "block/birch_planks_underwater"
-    }
-}
+{"parent":"block/stairs","textures":{"bottom":"block/birch_planks_underwater","top":"block/birch_planks_underwater","side":"block/birch_planks_underwater"}}

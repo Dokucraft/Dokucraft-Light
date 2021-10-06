@@ -1,7 +1,1 @@
-{
-	"parent": "block/leaves/leaves_top3",
-	"textures": {
-		"particle": "block/leaves/jungle_leaves",
-		"all": "block/leaves/jungle_leaves"
-	}
-}
+{"parent":"block/leaves/leaves_top3","textures":{"particle":"block/leaves/jungle_leaves","all":"block/leaves/jungle_leaves"}}

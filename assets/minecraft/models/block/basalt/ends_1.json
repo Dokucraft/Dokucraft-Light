@@ -1,5 +1,1 @@
-{ "parent": "block/basalt/ends",
-	"textures": {
-		"0": "block/basalt/ends_1"
-	}
-}
+{"parent":"block/basalt/ends","textures":{"0":"block/basalt/ends_1"}}

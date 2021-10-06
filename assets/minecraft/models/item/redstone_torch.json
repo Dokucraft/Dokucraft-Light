@@ -1,4 +1,1 @@
-{
-    "parent": "block/redstone_torch/redstone_torch",
-    "gui_light": "front"
-}
+{"parent":"block/redstone_torch/redstone_torch","gui_light":"front"}

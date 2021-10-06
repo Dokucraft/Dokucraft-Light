@@ -1,6 +1,1 @@
-{
-    "parent": "block/buttons/button_inventory",
-    "textures": {
-        "texture": "block/buttons/blackstone_button"
-    }
-}
+{"parent":"block/buttons/button_inventory","textures":{"texture":"block/buttons/blackstone_button"}}

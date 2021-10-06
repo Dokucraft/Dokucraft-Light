@@ -1,5 +1,1 @@
-{
-	"textures": {
-		"particle": "block/sunflower_bottom"
-	}
-}
+{"textures":{"particle":"block/sunflower_bottom"}}

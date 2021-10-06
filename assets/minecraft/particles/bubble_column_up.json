@@ -1,13 +1,1 @@
-{
-  "textures": [
-    "minecraft:bubble_column_up/0",
-    "minecraft:bubble_column_up/1",
-    "minecraft:bubble_column_up/2",
-    "minecraft:bubble_column_up/3",
-    "minecraft:bubble_column_up/4",
-    "minecraft:bubble_column_up/5",
-    "minecraft:bubble_column_up/6",
-    "minecraft:bubble_column_up/7"
-
-  ]
-}
+{"textures":["minecraft:bubble_column_up/0","minecraft:bubble_column_up/1","minecraft:bubble_column_up/2","minecraft:bubble_column_up/3","minecraft:bubble_column_up/4","minecraft:bubble_column_up/5","minecraft:bubble_column_up/6","minecraft:bubble_column_up/7"]}

@@ -1,8 +1,1 @@
-{
-  "textures": [
-    "minecraft:rain/0",
-    "minecraft:rain/1",
-    "minecraft:rain/2",
-    "minecraft:rain/3"
-  ]
-}
+{"textures":["minecraft:rain/0","minecraft:rain/1","minecraft:rain/2","minecraft:rain/3"]}

@@ -1,7 +1,1 @@
-{
-	"credit": "Made By WantedRobot",
-	"parent": "block/pressure_plate_down",
-	"textures": {
-		"texture": "block/oak_pressure_plate"
-	}
-}
+{"parent":"block/pressure_plate_down","textures":{"texture":"block/oak_pressure_plate"}}

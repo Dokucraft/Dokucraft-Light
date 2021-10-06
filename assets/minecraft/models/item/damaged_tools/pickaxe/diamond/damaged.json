@@ -1,5 +1,1 @@
-{ "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "minecraft:item/damaged_tools/pickaxe/diamond/damaged"
-  }
-}
+{"parent":"minecraft:item/handheld","textures":{"layer0":"minecraft:item/damaged_tools/pickaxe/diamond/damaged"}}

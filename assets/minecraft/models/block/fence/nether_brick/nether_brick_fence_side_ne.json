@@ -1,7 +1,1 @@
-{
-    "parent": "block/fence/fence_side_ne",
-    "textures": {
-        "particle": "block/nether_bricks",
-        "0": "block/fence/nether_brick_fence"
-    }
-}
+{"parent":"block/fence/fence_side_ne","textures":{"particle":"block/nether_bricks","0":"block/fence/nether_brick_fence"}}

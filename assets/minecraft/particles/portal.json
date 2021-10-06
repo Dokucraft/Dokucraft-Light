@@ -1,12 +1,1 @@
-{
-  "textures": [
-    "minecraft:portal/0",
-    "minecraft:portal/1",
-    "minecraft:portal/2",
-    "minecraft:portal/3",
-    "minecraft:portal/4",
-    "minecraft:portal/5",
-    "minecraft:portal/6",
-    "minecraft:portal/7"
-  ]
-}
+{"textures":["minecraft:portal/0","minecraft:portal/1","minecraft:portal/2","minecraft:portal/3","minecraft:portal/4","minecraft:portal/5","minecraft:portal/6","minecraft:portal/7"]}

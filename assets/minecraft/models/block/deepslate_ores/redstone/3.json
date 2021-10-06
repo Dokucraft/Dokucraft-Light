@@ -1,5 +1,1 @@
-{ "parent": "block/cube_all",
-  "textures": {
-    "all": "block/deepslate_ores/redstone/3"
-  }
-}
+{"parent":"block/cube_all","textures":{"all":"block/deepslate_ores/redstone/3"}}

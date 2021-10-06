@@ -1,9 +1,1 @@
-{
-	"credit": "Made By SyndiShanX",
-	"parent": "block/stairs/stairs_outer",
-	"textures": {
-		"top": "block/smooth_red_sandstone_stair_top",
-		"side": "block/smooth_red_sandstone_stair_corner",
-		"bottom": "block/smooth_red_sandstone_bottom"
-	}
-}
+{"parent":"block/stairs/stairs_outer","textures":{"top":"block/smooth_red_sandstone_stair_top","side":"block/smooth_red_sandstone_stair_corner","bottom":"block/smooth_red_sandstone_bottom"}}

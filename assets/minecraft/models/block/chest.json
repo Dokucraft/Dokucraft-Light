@@ -1,5 +1,1 @@
-{
-  "textures": {
-    "particle": "minecraft:particle/chest/chest"
-  }
-}
+{"textures":{"particle":"minecraft:particle/chest/chest"}}

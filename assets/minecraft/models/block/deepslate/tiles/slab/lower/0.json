@@ -1,7 +1,1 @@
-{ "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "minecraft:block/deepslate/tiles/0",
-    "top": "minecraft:block/deepslate/tiles/0",
-    "side": "minecraft:block/deepslate/tiles/0"
-  }
-}
+{"parent":"minecraft:block/slab","textures":{"bottom":"minecraft:block/deepslate/tiles/0","top":"minecraft:block/deepslate/tiles/0","side":"minecraft:block/deepslate/tiles/0"}}

@@ -1,5 +1,1 @@
-{ "parent": "block/cube_all",
-  "textures": {
-    "all": "block/deepslate_ores/emerald/0"
-  }
-}
+{"parent":"block/cube_all","textures":{"all":"block/deepslate_ores/emerald/0"}}

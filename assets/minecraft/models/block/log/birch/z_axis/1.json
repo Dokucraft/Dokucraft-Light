@@ -1,7 +1,1 @@
-{
-    "parent": "block/log/template_log_z",
-    "textures": {
-        "end": "block/log/birch/1",
-        "side": "block/birch_log"
-    }
-}
+{"parent":"block/log/template_log_z","textures":{"end":"block/log/birch/1","side":"block/birch_log"}}

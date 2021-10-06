@@ -1,7 +1,1 @@
-{
-  "parent": "minecraft:block/template_wall_post_fix",
-  "textures": {
-    "post": "minecraft:block/walls/polished_blackstone/post",
-    "post_tb": "minecraft:block/walls/polished_blackstone/post_tb"
-  }
-}
+{"parent":"minecraft:block/template_wall_post_fix","textures":{"post":"minecraft:block/walls/polished_blackstone/post","post_tb":"minecraft:block/walls/polished_blackstone/post_tb"}}

@@ -1,5 +1,1 @@
-{ "parent": "block/fruit_stems/templates/lower_stem",
-  "textures": {
-    "stem": "block/pumpkin_stem/lower_stem_1"
-  }
-}
+{"parent":"block/fruit_stems/templates/lower_stem","textures":{"stem":"block/pumpkin_stem/lower_stem_1"}}

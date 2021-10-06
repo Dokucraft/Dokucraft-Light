@@ -1,5 +1,1 @@
-{
-  "textures": {
-    "particle": "minecraft:item/skull_creeper"
-  }
-}
+{"textures":{"particle":"minecraft:item/skull_creeper"}}

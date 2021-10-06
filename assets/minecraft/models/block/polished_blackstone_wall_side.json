@@ -1,7 +1,1 @@
-{
-  "parent": "minecraft:block/template_wall_side_fix",
-  "textures": {
-    "side": "minecraft:block/walls/polished_blackstone/side",
-    "side_2": "minecraft:block/walls/polished_blackstone/side_2"
-  }
-}
+{"parent":"minecraft:block/template_wall_side_fix","textures":{"side":"minecraft:block/walls/polished_blackstone/side","side_2":"minecraft:block/walls/polished_blackstone/side_2"}}

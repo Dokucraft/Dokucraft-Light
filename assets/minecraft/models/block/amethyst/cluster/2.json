@@ -1,7 +1,1 @@
-{
-    "parent": "block/cross_3",
-    "textures": {
-        "particle": "block/amethyst_cluster",
-        "cross": "block/amethyst_cluster"
-    }
-}
+{"parent":"block/cross_3","textures":{"particle":"block/amethyst_cluster","cross":"block/amethyst_cluster"}}

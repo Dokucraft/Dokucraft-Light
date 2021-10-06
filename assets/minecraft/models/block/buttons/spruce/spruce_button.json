@@ -1,6 +1,1 @@
-{
-    "parent": "block/button",
-    "textures": {
-        "texture": "block/buttons/spruce_button"
-    }
-}
+{"parent":"block/button","textures":{"texture":"block/buttons/spruce_button"}}

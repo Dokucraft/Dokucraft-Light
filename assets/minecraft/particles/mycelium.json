@@ -1,7 +1,1 @@
-{
-  "textures": [
-    "minecraft:mycelium/0",
-    "minecraft:mycelium/1",
-    "minecraft:mycelium/2"
-  ]
-}
+{"textures":["minecraft:mycelium/0","minecraft:mycelium/1","minecraft:mycelium/2"]}

@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "minecraft:item/clock/clock_22"
-  }
-}
+{"parent":"minecraft:item/generated","textures":{"layer0":"minecraft:item/clock/clock_22"}}

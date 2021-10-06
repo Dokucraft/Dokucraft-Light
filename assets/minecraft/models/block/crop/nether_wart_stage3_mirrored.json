@@ -1,6 +1,1 @@
-{
-    "parent": "block/crop_mirrored",
-    "textures": {
-        "crop": "block/nether_wart_stage3"
-    }
-}
+{"parent":"block/crop_mirrored","textures":{"crop":"block/nether_wart_stage3"}}

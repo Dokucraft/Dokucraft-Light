@@ -1,5 +1,1 @@
-{ "parent": "block/cube_all",
-  "textures": {
-    "all": "block/deepslate_ores/lapis/1/2"
-  }
-}
+{"parent":"block/cube_all","textures":{"all":"block/deepslate_ores/lapis/1/2"}}

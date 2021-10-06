@@ -1,8 +1,1 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "minecraft:block/end_stone_stairs",
-    "top": "minecraft:block/end_stone_stairs",
-    "side": "minecraft:block/end_stone_stairs"
-  }
-}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"minecraft:block/end_stone_stairs","top":"minecraft:block/end_stone_stairs","side":"minecraft:block/end_stone_stairs"}}

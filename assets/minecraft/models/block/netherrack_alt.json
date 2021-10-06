@@ -1,6 +1,1 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "block/netherrack_alt"
-    }
-}
+{"parent":"block/cube_all","textures":{"all":"block/netherrack_alt"}}
