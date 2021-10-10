@@ -20,7 +20,6 @@ uniform vec3 Light1_Direction;
 
 out float vertexDistance;
 out vec4 vertexColor;
-out vec4 lightMapColor;
 out vec4 lightColor;
 out vec4 overlayColor;
 out vec2 texCoord0;
