@@ -24,7 +24,7 @@ void main() {
   vec4 color = vertexColor;
   if (color.a == 0.0) {discard;}
   if (isSpyglass > 0.5 && distance(color.rgb, vec3(0, 0, 0)) < 0.01) {
-    fragColor = vec4(1, 0, 0, 1); // backgound colour
+    fragColor = vec4(0, 0, 0, 1); // backgound colour
     return;
   }
   if (customType == 1) { // Item hover highlight
@@ -39,9 +39,6 @@ void main() {
     return;
   } else if (customType == 2) { // Tooltip outline
     fragColor = vec4(TOOLTIP_OUTLINE_COLOR.rgb, TOOLTIP_OUTLINE_COLOR.a * abs(1.0 - (0.5 + uv.x * 0.5) - (0.5 + uv.y * 0.5)));
-    return;
-  } else if (customType == 3) { // Item durability bar
-    fragColor = vertexColor;
     return;
   } else {
     fragColor = color * ColorModulator;

@@ -234,14 +234,6 @@ void main() {
 			vertexColor = SLIDER_LIGHT_COLOR;
 		}
 	}
-
-	// if (customType == 0 && Position.z == 0) {
-	// 	vertexColor = vec4(ModelViewMat[3][0],
-	// 					   ModelViewMat[3][1],
-	// 					   ModelViewMat[3][2],
-	// 					   vertexColor.a);
-	// 	customType = 3;
-	// }
 	
     gl_Position = ProjMat * ModelViewMat * vec4(Position + offset, 1.0);
 }
