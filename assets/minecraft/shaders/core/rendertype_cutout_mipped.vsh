@@ -43,7 +43,7 @@ void main() {
 	float ys = 0.0;
 	float zs = 0.0;
 	int alpha = int(textureLod(Sampler0, UV0, 0).a * 255 + 0.5);
-	if (alpha == 18 || alpha == 253.0 ) {
+	if (alpha == 18 || alpha == 253 ) {
 		xs = sin(position.x + position.y + animation) * -1.0;
 		zs = cos(position.z + position.y + animation) * -1.0;
 	} else if (alpha == 19 || alpha == 252 ) {

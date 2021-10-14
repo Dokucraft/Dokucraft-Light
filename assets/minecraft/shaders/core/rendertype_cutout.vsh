@@ -53,7 +53,7 @@ void main() {
         4  -> 21
         11 -> 22
   */
-  if (alpha == 18 || alpha == 253.0 ) {
+  if (alpha == 18 || alpha == 253 ) {
     xs = sin(position.x + position.y + animation) * -1.0;
     zs = cos(position.z + position.y + animation) * -1.0;
   } else if (alpha == 19 || alpha == 252 ) {
