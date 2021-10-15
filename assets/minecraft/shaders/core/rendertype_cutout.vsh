@@ -35,6 +35,14 @@ mat3 tbn(vec3 normal, vec3 up) {
   return mat3(tangent, bitangent, normal);
 }
 
+float rsin(float v) {
+  return (sin(v) + sin(2 * v) + sin(3 * v) + 2 * sin(3 * v - 3) - 0.15) / 2.22;
+}
+
+float rcos(float v) {
+  return (cos(v) + cos(2 * v) + cos(3 * v) + 2 * cos(3 * v - 3) + 0.2) / 1.91;
+}
+
 void main() {
   vec3 position = Position + ChunkOffset;
   float animation = GameTime * 4000.0;
@@ -54,20 +62,20 @@ void main() {
         11 -> 22
   */
   if (alpha == 18 || alpha == 253 ) {
-    xs = sin(position.x + position.y + animation) * -1.0;
-    zs = cos(position.z + position.y + animation) * -1.0;
+    xs = rsin((position.x + position.y + animation) / 2) * -1.0;
+    zs = rcos((position.z + position.y + animation) / 2) * -1.0;
   } else if (alpha == 19 || alpha == 252 ) {
-    xs = sin(position.x + position.y + animation) * -2.0;
-    zs = cos(position.z + position.y + animation) * -2.0;
+    xs = rsin((position.x + position.y + animation) / 2) * -2.0;
+    zs = rcos((position.z + position.y + animation) / 2) * -2.0;
   } else if (alpha == 20 || alpha == 254 ) {
-    xs = sin(position.x + position.y + animation) * -0.5;
-    zs = cos(position.z + position.y + animation) * -0.5;
+    xs = rsin((position.x + position.y + animation) / 2) * -0.5;
+    zs = rcos((position.z + position.y + animation) / 2) * -0.5;
   } else if (alpha == 21 || alpha == 251 ) { // half intensity sway for the connection between the upper and lower halves of the fern
-    xs = sin(position.x + position.y + animation) * -0.25;
-    zs = cos(position.z + position.y + animation) * -0.25;
+    xs = rsin((position.x + position.y + animation) / 2) * -0.25;
+    zs = rcos((position.z + position.y + animation) / 2) * -0.25;
   } else if (alpha == 22) { // very weak, delayed sway used for the bottom of the torch fire
-    xs = sin(position.x + position.y + animation - 1.0) * -0.5;
-    zs = cos(position.z + position.y + animation - 1.0) * -0.5;
+    xs = rsin((position.x + position.y + animation) / 2 - 1.0) * -0.5;
+    zs = rcos((position.z + position.y + animation) / 2 - 1.0) * -0.5;
   }
 
   gl_Position = ProjMat * ModelViewMat * (vec4(position, 1.0) + vec4(xs / 32.0, ys, zs / 32.0, 0.0));
