@@ -51,16 +51,6 @@ void main() {
   float ys = 0.0;
   float zs = 0.0;
   int alpha = int(textureLod(Sampler0, UV0, 0).a * 255 + 0.5);
-  /*
-    Fix for Optifine breaking some things
-      Optifine clamps alpha values <=16 to 0, so don't use alpha values below 17 in shaders
-      These alpha values were changed:
-        1  -> 18
-        2  -> 19
-        3  -> 20
-        4  -> 21
-        11 -> 22
-  */
   if (alpha == 18 || alpha == 253 ) {
     xs = rsin((position.x + position.y + animation) / 2) * -1.0;
     zs = rcos((position.z + position.y + animation) / 2) * -1.0;
@@ -70,9 +60,6 @@ void main() {
   } else if (alpha == 20 || alpha == 254 ) {
     xs = rsin((position.x + position.y + animation) / 2) * -0.5;
     zs = rcos((position.z + position.y + animation) / 2) * -0.5;
-  } else if (alpha == 21 || alpha == 251 ) { // half intensity sway for the connection between the upper and lower halves of the fern
-    xs = rsin((position.x + position.y + animation) / 2) * -0.25;
-    zs = rcos((position.z + position.y + animation) / 2) * -0.25;
   } else if (alpha == 22) { // very weak, delayed sway used for the bottom of the torch fire
     xs = rsin((position.x + position.y + animation) / 2 - 1.0) * -0.5;
     zs = rcos((position.z + position.y + animation) / 2 - 1.0) * -0.5;

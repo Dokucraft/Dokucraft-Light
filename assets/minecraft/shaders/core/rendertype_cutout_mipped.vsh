@@ -60,9 +60,6 @@ void main() {
   } else if (alpha == 20 || alpha == 254 ) {
     xs = rsin((position.x + position.y + animation) / 2) * -0.5;
     zs = rcos((position.z + position.y + animation) / 2) * -0.5;
-  } else if (alpha == 21 || alpha == 251 ) { // half intensity sway for the connection between the upper and lower halves of the fern
-    xs = rsin((position.x + position.y + animation) / 2) * -0.25;
-    zs = rcos((position.z + position.y + animation) / 2) * -0.25;
   } else if (alpha == 22) { // very weak, delayed sway used for the bottom of the torch fire
     xs = rsin((position.x + position.y + animation) / 2 - 1.0) * -0.5;
     zs = rcos((position.z + position.y + animation) / 2 - 1.0) * -0.5;
