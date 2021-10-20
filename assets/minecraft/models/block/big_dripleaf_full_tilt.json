@@ -1,0 +1,75 @@
+{
+	"credit": "Made by WantedRobot",
+	"parent": "block/block",
+	"textures": {
+		"top": "block/big_dripleaf_top",
+		"stem": "block/big_dripleaf_stem_full_tilt",
+		"side": "block/big_dripleaf_side",
+		"tip": "block/big_dripleaf_tip"
+	},
+	"elements": [
+		{
+			"from": [0, 15.25, 0],
+			"to": [16, 15.25, 16],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 15.25, 16]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#top"}
+			}
+		},
+		{
+			"from": [0, -0.063, 4.68558],
+			"to": [16, 3.937, 4.68558],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 1.937, 4.68558]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 4], "texture": "#tip"},
+				"south": {"uv": [0, 0, 16, 4], "texture": "#tip"}
+			}
+		},
+		{
+			"from": [0, 11.25, 0],
+			"to": [0.002, 15.25, 16],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 15.25, 16]},
+			"faces": {
+				"east": {"uv": [16, 0, 0, 4], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 4], "texture": "#side", "cullface": "west"}
+			}
+		},
+		{
+			"from": [15.998, 11.25, 0],
+			"to": [16, 15.25, 16],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 15.25, 16]},
+			"faces": {
+				"east": {"uv": [16, 0, 0, 4], "texture": "#side", "cullface": "east"},
+				"west": {"uv": [0, 0, 16, 4], "texture": "#side"}
+			}
+		},
+		{
+			"from": [2.74632, 0, 11.99113],
+			"to": [13.24632, 16, 11.99113],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.98745, 8, 12]},
+			"faces": {
+				"north": {"uv": [12.5, 0, 2, 16], "texture": "#stem"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#stem"},
+				"south": {"uv": [2, 0, 12.5, 16], "texture": "#stem"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#stem"}
+			}
+		},
+		{
+			"from": [7.97857, 0, 6.75888],
+			"to": [7.97857, 16, 17.25888],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.98745, 8, 12]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0], "texture": "#stem"},
+				"east": {"uv": [12.5, 0, 2, 16], "texture": "#stem"},
+				"south": {"uv": [0, 0, 0, 0], "texture": "#stem"},
+				"west": {"uv": [2, 0, 12.5, 16], "texture": "#stem"}
+			}
+		}
+	]
+}
