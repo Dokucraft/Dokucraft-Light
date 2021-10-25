@@ -21,12 +21,10 @@ in vec4 glpos;
 out vec4 fragColor;
 
 void main() {
-    discardControlGLPos(gl_FragCoord.xy, glpos);
-    vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
-    float alpha = textureLod(Sampler0, texCoord0, 0.0).a * 255.0;
-    color = make_emissive(color, lightColor, vertexDistance, alpha);
-    if (color.a < 0.5) {
-        discard;
-    }
-    fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
+  discardControlGLPos(gl_FragCoord.xy, glpos);
+  vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
+  float alpha = textureLod(Sampler0, texCoord0, 0.0).a * 255.0;
+  color = make_emissive(color, lightColor, vertexDistance, alpha);
+  if (color.a < 0.5) discard;
+  fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
 }
