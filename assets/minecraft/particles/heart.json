@@ -1,8 +1,1 @@
-{
-  "textures": [
-    "minecraft:hearts/0",
-    "minecraft:hearts/1",
-    "minecraft:hearts/2",
-    "minecraft:hearts/3"
-  ]
-}
+{"textures":["minecraft:hearts/0","minecraft:hearts/1","minecraft:hearts/2","minecraft:hearts/3"]}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "level=1": { "model": "block/cauldron/powder_snow/cauldron_level1" },
+        "level=2": { "model": "block/cauldron/powder_snow/cauldron_level2" },
+        "level=3": { "model": "block/cauldron/powder_snow/cauldron_level3" }
+    }
+}

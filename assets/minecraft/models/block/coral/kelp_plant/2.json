@@ -1,6 +1,1 @@
-{
-    "parent": "block/cross_3",
-    "textures": {
-        "cross": "block/kelp_plant"
-    }
-}
+{"parent":"block/cross_3","textures":{"cross":"block/kelp_plant"}}

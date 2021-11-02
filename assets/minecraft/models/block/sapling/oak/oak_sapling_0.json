@@ -1,6 +1,1 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "block/oak_sapling_0"
-    }
-}
+{"parent":"block/cross","textures":{"cross":"block/oak_sapling_0"}}

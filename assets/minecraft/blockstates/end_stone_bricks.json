@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/end_stone_bricks", "y": 90  },
+      { "model": "minecraft:block/end_stone_bricks", "y": 180  },
+      { "model": "minecraft:block/end_stone_bricks", "y": 270  },
+      { "model": "minecraft:block/end_stone_bricks_2", "y": 90 },
+      { "model": "minecraft:block/end_stone_bricks_2", "y": 180 },
+      { "model": "minecraft:block/end_stone_bricks_2", "y": 270 },
+      { "model": "minecraft:block/end_stone_bricks_3", "y": 90 },
+      { "model": "minecraft:block/end_stone_bricks_3", "y": 180 },
+      { "model": "minecraft:block/end_stone_bricks_3", "y": 270 }
+    ]
+  }
+}

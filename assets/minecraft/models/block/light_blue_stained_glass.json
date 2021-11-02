@@ -1,6 +1,1 @@
-{
-    "parent": "block/glass_block_template",
-    "textures": {
-        "all": "block/light_blue_stained_glass"
-    }
-}
+{"parent":"block/glass_block_template","textures":{"all":"block/light_blue_stained_glass"}}

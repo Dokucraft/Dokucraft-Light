@@ -1,6 +1,1 @@
-{
-    "parent": "block/cross_2",
-    "textures": {
-        "cross": "block/dead_brain_coral"
-    }
-}
+{"parent":"block/cross_2","textures":{"cross":"block/dead_brain_coral"}}

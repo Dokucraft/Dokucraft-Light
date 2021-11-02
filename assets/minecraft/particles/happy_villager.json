@@ -1,7 +1,1 @@
-{
-  "textures": [
-    "minecraft:happy_villager/0",
-    "minecraft:happy_villager/1",
-    "minecraft:happy_villager/2"
-  ]
-}
+{"textures":["minecraft:happy_villager/0","minecraft:happy_villager/1","minecraft:happy_villager/2"]}

@@ -1,9 +1,0 @@
-{
-	"credit": "Made By WantedRobot",
-	"parent": "block/inner_stairs",
-	"textures": {
-		"bottom": "block/sandstone_bottom",
-		"top": "block/sandstone_stair_corner",
-		"side": "block/sandstone"
-	}
-}

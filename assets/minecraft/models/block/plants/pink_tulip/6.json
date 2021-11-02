@@ -1,6 +1,1 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "block/plants/pink_tulip/2"
-    }
-}
+{"parent":"block/cross","textures":{"cross":"block/plants/pink_tulip/2"}}

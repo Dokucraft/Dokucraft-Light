@@ -1,5 +1,1 @@
-{ "parent": "block/basalt/sides",
-	"textures": {
-		"0": "block/basalt/sides_5"
-	}
-}
+{"parent":"block/basalt/sides","textures":{"0":"block/basalt/sides_5"}}

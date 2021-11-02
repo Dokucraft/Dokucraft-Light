@@ -1,15 +1,1 @@
-{
-  "textures": [
-    "minecraft:soul_0",
-    "minecraft:soul_1",
-    "minecraft:soul_2",
-    "minecraft:soul_3",
-    "minecraft:soul_4",
-    "minecraft:soul_5",
-    "minecraft:soul_6",
-    "minecraft:soul_7",
-    "minecraft:soul_8",
-    "minecraft:soul_9",
-    "minecraft:soul_10"
-  ]
-}
+{"textures":["minecraft:soul/0","minecraft:soul/1","minecraft:soul/2","minecraft:soul/3","minecraft:soul/4","minecraft:soul/5","minecraft:soul/6","minecraft:soul/7","minecraft:soul/8","minecraft:soul/9","minecraft:soul/10"]}

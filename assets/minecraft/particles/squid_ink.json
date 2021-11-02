@@ -1,12 +1,1 @@
-{
-  "textures": [
-    "minecraft:squid_ink/0",
-    "minecraft:squid_ink/1",
-    "minecraft:squid_ink/2",
-    "minecraft:squid_ink/3",
-    "minecraft:squid_ink/4",
-    "minecraft:squid_ink/5",
-    "minecraft:squid_ink/6",
-    "minecraft:squid_ink/7"
-  ]
-}
+{"textures":["minecraft:squid_ink/0","minecraft:squid_ink/1","minecraft:squid_ink/2","minecraft:squid_ink/3","minecraft:squid_ink/4","minecraft:squid_ink/5","minecraft:squid_ink/6","minecraft:squid_ink/7"]}

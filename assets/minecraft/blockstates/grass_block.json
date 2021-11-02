@@ -27,10 +27,15 @@
         { "model": "block/grass_block_snow/9" }
       ]
     },
-    { "apply": [
-        { "model": "block/roots/0" },
-        { "model": "block/roots/1" },
-        { "model": "block/roots/2" }
+    { "when": { "snowy": "false" },
+      "apply": [
+        { "model": "block/empty", "weight": 1500 },
+        { "model": "block/grass_block/flowers", "weight": 1 },
+        { "model": "block/grass_block/flowers1", "weight": 1 },
+        { "model": "block/grass_block/flowers2", "weight": 1 },
+        { "model": "block/grass_block/flowers3", "weight": 1 },
+        { "model": "block/grass_block/flowers4", "weight": 1 },
+        { "model": "block/grass_block/flowers5", "weight": 1 }
       ]
     }
   ]

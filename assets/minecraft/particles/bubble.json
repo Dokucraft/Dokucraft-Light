@@ -1,12 +1,1 @@
-{
-  "textures": [
-    "minecraft:bubble/0",
-    "minecraft:bubble/1",
-    "minecraft:bubble/2",
-    "minecraft:bubble/3",
-    "minecraft:bubble/4",
-    "minecraft:bubble/5",
-    "minecraft:bubble/6",
-    "minecraft:bubble/7"
-  ]
-}
+{"textures":["minecraft:bubble/0","minecraft:bubble/1","minecraft:bubble/2","minecraft:bubble/3","minecraft:bubble/4","minecraft:bubble/5","minecraft:bubble/6","minecraft:bubble/7"]}

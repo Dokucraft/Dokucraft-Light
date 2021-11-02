@@ -1,7 +1,1 @@
-{
-    "parent": "block/fence/fence_post",
-    "textures": {
-        "particle": "block/warped_planks",
-        "0": "block/fence/warped_fence"
-    }
-}
+{"parent":"block/fence/fence_post","textures":{"particle":"block/warped_planks","0":"block/fence/warped_fence"}}

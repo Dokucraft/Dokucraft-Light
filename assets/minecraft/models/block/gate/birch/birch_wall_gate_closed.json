@@ -1,7 +1,1 @@
-{
-    "parent": "block/gate/wall_gate_closed",
-    "textures": {
-        "particle": "block/birch_planks",
-        "0": "block/gate/birch_fence_gate"
-    }
-}
+{"parent":"block/gate/wall_gate_closed","textures":{"particle":"block/birch_planks","0":"block/gate/birch_fence_gate"}}

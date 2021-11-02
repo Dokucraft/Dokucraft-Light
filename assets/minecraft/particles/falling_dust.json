@@ -1,12 +1,1 @@
-{
-  "textures": [
-  	"minecraft:falling_dust/0",
-  	"minecraft:falling_dust/1",
-  	"minecraft:falling_dust/2",
-  	"minecraft:falling_dust/3",
-    "minecraft:falling_dust/4",
-    "minecraft:falling_dust/5",
-    "minecraft:falling_dust/6",
-    "minecraft:falling_dust/7"
-  ]
-}
+{"textures":["minecraft:falling_dust/0","minecraft:falling_dust/1","minecraft:falling_dust/2","minecraft:falling_dust/3","minecraft:falling_dust/4","minecraft:falling_dust/5","minecraft:falling_dust/6","minecraft:falling_dust/7"]}

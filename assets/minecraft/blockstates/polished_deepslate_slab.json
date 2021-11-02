@@ -1,0 +1,24 @@
+{ "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/deepslate/polished/slab/lower/0" },
+      { "model": "minecraft:block/deepslate/polished/slab/lower/1" },
+      { "model": "minecraft:block/deepslate/polished/slab/lower/2" },
+      { "model": "minecraft:block/deepslate/polished/slab/lower/3" },
+      { "model": "minecraft:block/deepslate/polished/slab/lower/4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/deepslate/polished/0" },
+      { "model": "minecraft:block/deepslate/polished/1" },
+      { "model": "minecraft:block/deepslate/polished/2" },
+      { "model": "minecraft:block/deepslate/polished/3" },
+      { "model": "minecraft:block/deepslate/polished/4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/deepslate/polished/slab/upper/0" },
+      { "model": "minecraft:block/deepslate/polished/slab/upper/1" },
+      { "model": "minecraft:block/deepslate/polished/slab/upper/2" },
+      { "model": "minecraft:block/deepslate/polished/slab/upper/3" },
+      { "model": "minecraft:block/deepslate/polished/slab/upper/4" }
+    ]
+  }
+}

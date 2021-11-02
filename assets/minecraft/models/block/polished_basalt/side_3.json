@@ -1,5 +1,1 @@
-{ "parent": "block/polished_basalt/side",
-	"textures": {
-		"0": "block/polished_basalt/side_3"
-	}
-}
+{"parent":"block/polished_basalt/side","textures":{"0":"block/polished_basalt/side_3"}}

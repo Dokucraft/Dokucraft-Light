@@ -1,0 +1,18 @@
+{ "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/deepslate/tiles/slab/lower/0", "weight": 8 },
+      { "model": "minecraft:block/deepslate/tiles/slab/lower/1", "weight": 8 },
+      { "model": "minecraft:block/deepslate/tiles/slab/lower/2", "weight": 14 }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/deepslate/tiles/0", "weight": 8 },
+      { "model": "minecraft:block/deepslate/tiles/1", "weight": 8 },
+      { "model": "minecraft:block/deepslate/tiles/2", "weight": 14 }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/deepslate/tiles/slab/upper/0", "weight": 8 },
+      { "model": "minecraft:block/deepslate/tiles/slab/upper/1", "weight": 8 },
+      { "model": "minecraft:block/deepslate/tiles/slab/upper/2", "weight": 14 }
+    ]
+  }
+}

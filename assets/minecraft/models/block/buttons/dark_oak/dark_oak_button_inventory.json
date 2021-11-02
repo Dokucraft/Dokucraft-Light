@@ -1,6 +1,1 @@
-{
-    "parent": "block/buttons/button_inventory",
-    "textures": {
-        "texture": "block/buttons/dark_oak_button"
-    }
-}
+{"parent":"block/buttons/button_inventory","textures":{"texture":"block/buttons/dark_oak_button"}}

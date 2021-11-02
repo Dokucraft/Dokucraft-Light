@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:block/leaves_custom",
-  "textures": {
-    "all": "minecraft:block/dark_oak_leaves"
-  }
-}
+{"parent":"minecraft:block/leaves_custom","textures":{"all":"minecraft:block/leaves/dark_oak_leaves"}}

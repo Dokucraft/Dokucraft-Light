@@ -1,6 +1,1 @@
-{
-    "parent": "block/fence/fence_inventory",
-    "textures": {
-        "texture": "block/fence/crimson_fence"
-    }
-}
+{"parent":"block/fence/fence_inventory","textures":{"texture":"block/fence/crimson_fence"}}

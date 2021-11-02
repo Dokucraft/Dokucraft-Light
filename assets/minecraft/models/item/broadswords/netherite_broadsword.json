@@ -1,5 +1,1 @@
-{ "parent": "minecraft:item/broadswords/broadsword",
-  "textures": {
-    "layer0": "minecraft:item/netherite_broadsword"
-  }
-}
+{"parent":"minecraft:item/broadswords/broadsword","textures":{"layer0":"minecraft:item/netherite_broadsword"}}

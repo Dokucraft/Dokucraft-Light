@@ -1,7 +1,1 @@
-{
-    "parent": "block/fence/fence_gate_open",
-    "textures": {
-        "particle": "block/warped_planks",
-        "0": "block/gate/warped_fence_gate"
-    }
-}
+{"parent":"block/fence/fence_gate_open","textures":{"particle":"block/warped_planks","0":"block/gate/warped_fence_gate"}}

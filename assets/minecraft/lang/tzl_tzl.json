@@ -1,15 +1,1 @@
-{
-  "language.name": "Talossan",
-  "language.region": "Talossa",
-  "language.code": "tzl",
-  "container.crafting": "\u00a7fFabricaziun",
-  "entity.minecraft.villager.farmer": "\u00a7fPour",
-  "entity.minecraft.villager.fisherman": "\u00a7fPes'cheir",
-  "entity.minecraft.villager.librarian": "\u00a7fL\u00fcverveu",
-  "entity.minecraft.villager.none": "\u00a7fViatxaist",
-  "entity.minecraft.villager.shepherd": "\u00a7fPastour",
-  "entity.minecraft.villager": "\u00a7fViatxaist",
-  "menu.singleplayer": "\u00a7f\u9021 Viens xhuadeir",
-  "menu.multiplayer": "\u00a7f\u9022 Mutixhuadeir",
-  "menu.online": "\u00a7f\u9023 Minecraft Realms"
-}
+{"language.name":"Talossan","language.region":"Talossa","language.code":"tzl","container.crafting":"§fFabricaziun","entity.minecraft.villager.farmer":"§fPour","entity.minecraft.villager.fisherman":"§fPes'cheir","entity.minecraft.villager.librarian":"§fLüverveu","entity.minecraft.villager.none":"§fViatxaist","entity.minecraft.villager.shepherd":"§fPastour","entity.minecraft.villager":"§fViatxaist","menu.singleplayer":"§f逡 Viens xhuadeir","menu.multiplayer":"§f逢 Mutixhuadeir","menu.online":"§f連 Minecraft Realms"}

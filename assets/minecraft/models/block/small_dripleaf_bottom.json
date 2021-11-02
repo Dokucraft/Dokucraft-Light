@@ -1,0 +1,28 @@
+{
+	"credit": "Made by WantedRobot",
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/small_dripleaf_stem_bottom",
+		"stem": "block/small_dripleaf_stem_bottom"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 8],
+			"to": [12, 16, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [5, 0, 13, 16], "texture": "#stem"},
+				"south": {"uv": [5, 0, 13, 16], "texture": "#stem"}
+			}
+		},
+		{
+			"from": [4, 0, 8],
+			"to": [12, 16, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [5, 0, 13, 16], "texture": "#stem"},
+				"south": {"uv": [5, 0, 13, 16], "texture": "#stem"}
+			}
+		}
+	]
+}

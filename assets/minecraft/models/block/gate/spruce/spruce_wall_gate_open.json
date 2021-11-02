@@ -1,7 +1,1 @@
-{
-    "parent": "block/gate/wall_gate_open",
-    "textures": {
-        "particle": "block/spruce_planks",
-        "0": "block/gate/spruce_fence_gate"
-    }
-}
+{"parent":"block/gate/wall_gate_open","textures":{"particle":"block/spruce_planks","0":"block/gate/spruce_fence_gate"}}

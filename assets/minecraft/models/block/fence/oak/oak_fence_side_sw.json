@@ -1,7 +1,1 @@
-{
-    "parent": "block/fence/fence_side_sw",
-    "textures": {
-        "particle": "block/oak_planks",
-        "0": "block/fence/oak_fence"
-    }
-}
+{"parent":"block/fence/fence_side_sw","textures":{"particle":"block/oak_planks","0":"block/fence/oak_fence"}}

@@ -1,0 +1,1 @@
+{"parent":"minecraft:item/template_spawn_egg_model","textures":{"texture":"minecraft:item/spawn_eggs/skeleton_spawn_egg"},"overrides":[{"predicate":{"custom_model_data":3435},"model":"item/iron_golem_spawn_egg"},{"predicate":{"custom_model_data":3436},"model":"item/snow_golem_spawn_egg"}]}

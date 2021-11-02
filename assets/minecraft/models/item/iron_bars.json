@@ -1,6 +1,1 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "item/iron_bars"
-    }
-}
+{"parent":"item/generated","textures":{"layer0":"item/iron_bars"}}

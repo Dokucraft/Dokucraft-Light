@@ -1,5 +1,1 @@
-{ "parent": "block/fruit_stems/templates/stem_connection",
-  "textures": {
-    "stem": "block/pumpkin_stem/stem_connection_2"
-  }
-}
+{"parent":"block/fruit_stems/templates/stem_connection","textures":{"stem":"block/pumpkin_stem/stem_connection_2"}}

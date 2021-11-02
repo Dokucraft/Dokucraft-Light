@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/hanging_roots/0" },
+      { "model": "minecraft:block/hanging_roots/1" },
+      { "model": "minecraft:block/hanging_roots/2" },
+      { "model": "minecraft:block/hanging_roots/3" },
+      { "model": "minecraft:block/hanging_roots/4" },
+      { "model": "minecraft:block/hanging_roots/5" }
+    ]
+  }
+}

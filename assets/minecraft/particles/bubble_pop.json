@@ -1,9 +1,1 @@
-{
-  "textures": [
-    "minecraft:bubble_pop/0",
-    "minecraft:bubble_pop/1",
-    "minecraft:bubble_pop/2",
-    "minecraft:bubble_pop/3",
-    "minecraft:bubble_pop/4"
-  ]
-}
+{"textures":["minecraft:bubble_pop/0","minecraft:bubble_pop/1","minecraft:bubble_pop/2","minecraft:bubble_pop/3","minecraft:bubble_pop/4"]}

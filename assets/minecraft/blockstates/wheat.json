@@ -1,12 +1,113 @@
 {
-    "variants": {
-        "age=0": { "model": "block/wheat/wheat_stage0" },
-        "age=1": { "model": "block/wheat/wheat_stage1" },
-        "age=2": { "model": "block/wheat/wheat_stage2" },
-        "age=3": { "model": "block/wheat/wheat_stage3" },
-        "age=4": { "model": "block/wheat/wheat_stage4" },
-        "age=5": { "model": "block/wheat/wheat_stage5" },
-        "age=6": { "model": "block/wheat/wheat_stage6" },
-        "age=7": { "model": "block/wheat/wheat_stage7" }
-    }
+	"multipart":[
+		{
+			"when":{
+				"age":0
+			},
+			"apply":[
+				{
+					"model":"block/wheat/wheat_stage0"
+				},
+				{
+					"model":"block/wheat/wheat_stage0_mirrored"
+				}
+			]
+		},
+		{
+			"when":{
+				"age":1
+			},
+			"apply":[
+				{
+					"model":"block/wheat/wheat_stage1"
+				},
+				{
+					"model":"block/wheat/wheat_stage1_mirrored"
+				}
+			]
+		},
+		{
+			"when":{
+				"age":2
+			},
+			"apply":[
+				{
+					"model":"block/wheat/wheat_stage2"
+				},
+				{
+					"model":"block/wheat/wheat_stage2_mirrored"
+				}
+			]
+		},
+		{
+			"when":{
+				"age":3
+			},
+			"apply":[
+				{
+					"model":"block/wheat/wheat_stage3"
+				},
+				{
+					"model":"block/wheat/wheat_stage3_mirrored"
+				}
+			]
+		},
+		{
+			"when":{
+				"age":4
+			},
+			"apply":[
+				{
+					"model":"block/wheat/wheat_stage4"
+				},
+				{
+					"model":"block/wheat/wheat_stage4_mirrored"
+				}
+			]
+		},
+		{
+			"when":{
+				"age":5
+			},
+			"apply":[
+				{
+					"model":"block/wheat/wheat_stage5"
+				},
+				{
+					"model":"block/wheat/wheat_stage5_mirrored"
+				}
+			]
+		},
+		{
+			"when":{
+				"age":6
+			},
+			"apply":[
+				{
+					"model":"block/wheat/wheat_stage6"
+				},
+				{
+					"model":"block/wheat/wheat_stage6_mirrored"
+				}
+			]
+		},
+		{
+			"when":{
+				"age":7
+			},
+			"apply":[
+				{
+					"model":"block/wheat/wheat_stage7"
+				},
+				{
+					"model":"block/wheat/wheat_stage7_mirrored"
+				}
+			]
+		},
+		{
+			"apply":{
+				"model":"block/roots/crop_roots"
+			}
+		}
+	]
 }

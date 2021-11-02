@@ -1,6 +1,1 @@
-{
-    "parent": "block/cross_3",
-    "textures": {
-        "cross": "block/wither_rose"
-    }
-}
+{"parent":"block/cross_3","textures":{"cross":"block/wither_rose"}}

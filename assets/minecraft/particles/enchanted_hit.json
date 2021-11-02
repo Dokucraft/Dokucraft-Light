@@ -1,6 +1,1 @@
-{
-  "textures": [
-    "minecraft:enchanted_hit/0",
-    "minecraft:enchanted_hit/1"
-  ]
-}
+{"textures":["minecraft:enchanted_hit/0","minecraft:enchanted_hit/1"]}

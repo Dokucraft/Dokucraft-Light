@@ -1,6 +1,1 @@
-{ "parent": "block/fern/templates/high_3_left",
-  "textures": {
-    "upper": "block/fern_upper_2",
-    "lower": "block/fern_lower_2"
-  }
-}
+{"parent":"block/fern/templates/high_3_left","textures":{"upper":"block/fern_2","lower":"block/fern_2"}}

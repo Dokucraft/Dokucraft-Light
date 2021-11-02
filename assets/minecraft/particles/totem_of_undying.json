@@ -1,11 +1,1 @@
-{
-  "textures": [
-    "minecraft:totem_of_undying/7",
-    "minecraft:totem_of_undying/6",
-    "minecraft:totem_of_undying/5",
-    "minecraft:totem_of_undying/4",
-    "minecraft:totem_of_undying/3",
-    "minecraft:totem_of_undying/2",
-    "minecraft:totem_of_undying/1"
-  ]
-}
+{"textures":["minecraft:totem_of_undying/7","minecraft:totem_of_undying/6","minecraft:totem_of_undying/5","minecraft:totem_of_undying/4","minecraft:totem_of_undying/3","minecraft:totem_of_undying/2","minecraft:totem_of_undying/1"]}

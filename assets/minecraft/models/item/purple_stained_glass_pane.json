@@ -1,6 +1,1 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "block/purple_stained_glass_pane"
-    }
-}
+{"parent":"item/generated","textures":{"layer0":"block/purple_stained_glass_pane"}}

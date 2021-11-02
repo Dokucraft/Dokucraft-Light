@@ -1,7 +1,1 @@
-{
-    "parent": "block/template_glass_pane_side_west",
-    "textures": {
-        "edge": "block/gray_stained_glass_pane_top",
-        "pane": "block/gray_stained_glass_pane"
-    }
-}
+{"parent":"block/template_glass_pane_side_west","textures":{"edge":"block/gray_stained_glass_pane_top","pane":"block/gray_stained_glass_pane"}}

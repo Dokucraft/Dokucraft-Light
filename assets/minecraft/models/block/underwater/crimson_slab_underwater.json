@@ -1,8 +1,1 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "block/crimson_planks_underwater",
-        "top": "block/crimson_planks_underwater",
-        "side": "block/crimson_planks_underwater"
-    }
-}
+{"parent":"block/slab","textures":{"bottom":"block/crimson_planks_underwater","top":"block/crimson_planks_underwater","side":"block/crimson_planks_underwater"}}

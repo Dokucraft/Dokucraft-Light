@@ -1,8 +1,1 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "block/acacia_planks_underwater",
-        "top": "block/acacia_planks_underwater",
-        "side": "block/acacia_planks_underwater"
-    }
-}
+{"parent":"block/outer_stairs","textures":{"bottom":"block/acacia_planks_underwater","top":"block/acacia_planks_underwater","side":"block/acacia_planks_underwater"}}

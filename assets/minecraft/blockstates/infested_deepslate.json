@@ -1,0 +1,54 @@
+{ "multipart": [
+    { "when": { "axis": "x" },
+      "apply": [
+        { "model": "minecraft:block/deepslate/sides/0", "x": 90, "y": 90 },
+        { "model": "minecraft:block/deepslate/sides/1", "x": 90, "y": 90 },
+        { "model": "minecraft:block/deepslate/sides/2", "x": 90, "y": 90 },
+        { "model": "minecraft:block/deepslate/sides/3", "x": 90, "y": 90 },
+        { "model": "minecraft:block/deepslate/sides/4", "x": 90, "y": 90 }
+      ]
+    },
+    { "when": { "axis": "x" },
+      "apply": [
+        { "model": "minecraft:block/deepslate/ends/0", "x": 90, "y": 90 },
+        { "model": "minecraft:block/deepslate/ends/1", "x": 90, "y": 90 },
+        { "model": "minecraft:block/deepslate/ends/2", "x": 90, "y": 90 },
+        { "model": "minecraft:block/deepslate/ends/3", "x": 90, "y": 90 }
+      ]
+    },
+    { "when": { "axis": "y" },
+      "apply": [
+        { "model": "minecraft:block/deepslate/sides/0" },
+        { "model": "minecraft:block/deepslate/sides/1" },
+        { "model": "minecraft:block/deepslate/sides/2" },
+        { "model": "minecraft:block/deepslate/sides/3" },
+        { "model": "minecraft:block/deepslate/sides/4" }
+      ]
+    },
+    { "when": { "axis": "y" },
+      "apply": [
+        { "model": "minecraft:block/deepslate/ends/0" },
+        { "model": "minecraft:block/deepslate/ends/1" },
+        { "model": "minecraft:block/deepslate/ends/2" },
+        { "model": "minecraft:block/deepslate/ends/3" }
+      ]
+    },
+    { "when": { "axis": "z" },
+      "apply": [
+        { "model": "minecraft:block/deepslate/sides/0", "x": 90 },
+        { "model": "minecraft:block/deepslate/sides/1", "x": 90 },
+        { "model": "minecraft:block/deepslate/sides/2", "x": 90 },
+        { "model": "minecraft:block/deepslate/sides/3", "x": 90 },
+        { "model": "minecraft:block/deepslate/sides/4", "x": 90 }
+      ]
+    },
+    { "when": { "axis": "z" },
+      "apply": [
+        { "model": "minecraft:block/deepslate/ends/0", "x": 90 },
+        { "model": "minecraft:block/deepslate/ends/1", "x": 90 },
+        { "model": "minecraft:block/deepslate/ends/2", "x": 90 },
+        { "model": "minecraft:block/deepslate/ends/3", "x": 90 }
+      ]
+    }
+  ]
+}
