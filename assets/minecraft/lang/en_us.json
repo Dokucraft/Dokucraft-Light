@@ -816,11 +816,17 @@
     "block.minecraft.banner.piglin.magenta": "儾 §dMagenta",
     "block.minecraft.banner.piglin.orange": "儾 §6Orange",
     "block.minecraft.banner.piglin.white": "儾 §fWhite",
-  "options.graphics.fabulous": "§cFabulous!",
+    "options.graphics.fabulous": "§cFabulous!",
     "options.graphics.fabulous.tooltip": "§r󰀆 §cFabulous!§r\n §a+§r Custom skybox.\n §a+§r Draws weather, clouds and particles behind translucent blocks and water.\n\n§r󰀆 §eFancy§r\n §a+§r Waving leaves.\n §c-§r Custom skybox turn off.\n §c-§r Weather, clouds, and particles may not appear behind translucent blocks or water.\n\n§r󰀆 §aFast§r\n §c-§r Waving leaves turn off.\n §c-§r Reduces the amount of visible rain and snow.",
     "options.graphics.fancy": "§eFancy",
     "options.graphics.fancy.tooltip": "§r󰀆 §cFabulous!§r\n §a+§r Custom skybox.\n §a+§r Draws weather, clouds and particles behind translucent blocks and water.\n\n§r󰀆 §eFancy§r\n §a+§r Waving leaves.\n §c-§r Custom skybox turn off.\n §c-§r Weather, clouds, and particles may not appear behind translucent blocks or water.\n\n§r󰀆 §aFast§r\n §c-§r Waving leaves turn off.\n §c-§r Reduces the amount of visible rain and snow.",
     "options.graphics.fast": "§aFast",
-    "options.graphics.fast.tooltip": "§r󰀆 §cFabulous!§r\n §a+§r Custom skybox.\n §a+§r Draws weather, clouds and particles behind translucent blocks and water.\n\n§r󰀆 §eFancy§r\n §a+§r Waving leaves.\n §c-§r Custom skybox turn off.\n §c-§r Weather, clouds, and particles may not appear behind translucent blocks or water.\n\n§r󰀆 §aFast§r\n §c-§r Waving leaves turn off.\n §c-§r Reduces the amount of visible rain and snow."
-
+    "options.graphics.fast.tooltip": "§r󰀆 §cFabulous!§r\n §a+§r Custom skybox.\n §a+§r Draws weather, clouds and particles behind translucent blocks and water.\n\n§r󰀆 §eFancy§r\n §a+§r Waving leaves.\n §c-§r Custom skybox turn off.\n §c-§r Weather, clouds, and particles may not appear behind translucent blocks or water.\n\n§r󰀆 §aFast§r\n §c-§r Waving leaves turn off.\n §c-§r Reduces the amount of visible rain and snow.",
+    "key.categories.movement": "§r󰀆 §6§nMovement§r §r󰀆",
+    "key.categories.misc": "§r󰀆 §6§nMiscellaneous§r §r󰀆",
+    "key.categories.multiplayer": "§r󰀆 §6§nMultiplayer§r §r󰀆",
+    "key.categories.gameplay": "§r󰀆 §6§nGameplay§r §r󰀆",
+    "key.categories.ui": "§r󰀆 §6§nGame Interface§r §r󰀆",
+    "key.categories.inventory": "§r󰀆 §6§nInventory§r §r󰀆",
+    "key.categories.creative": "§r󰀆 §6§nCreative Mode§r §r󰀆"
 }
