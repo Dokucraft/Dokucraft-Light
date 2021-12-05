@@ -1,0 +1,393 @@
+{
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"submodels": [
+				{
+					"id": "body_x",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"submodels": [
+						{
+							"id": "body_y",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"submodels": [
+								{
+									"id": "body2",
+									"invertAxis": "xy",
+									"translate": [0, -16, 0],
+									"boxes": [
+										{"coordinates": [-6, -6, -8, 12, 12, 16], "textureOffset": [0, 0]},
+										{"coordinates": [-6, 6, -6, 12, 2, 12], "textureOffset": [16, 40]},
+										{"coordinates": [-6, -8, -6, 12, 2, 12], "textureOffset": [16, 40]},
+										{"coordinates": [6, -6, -6, 2, 12, 12], "textureOffset": [0, 28]}
+									],
+									"submodels": [
+										{
+											"id": "body_flipped",
+											"invertAxis": "xy",
+											"translate": [0, -8, 0],
+											"mirrorTexture": "u",
+											"submodels": [
+												{
+													"id": "body_sub_1",
+													"invertAxis": "xy",
+													"translate": [0, 0, 0],
+													"mirrorTexture": "u",
+													"boxes": [
+														{"coordinates": [-8, 2, -6, 2, 12, 12], "textureOffset": [0, 28]}
+													]
+												}
+											]
+										},
+										{
+											"id": "eye2",
+											"invertAxis": "xy",
+											"translate": [0, 15.5, -8.25],
+											"boxes": [
+												{"coordinates": [-1, -17, 0, 2, 2, 1], "textureOffset": [8, 0]}
+											]
+										},
+										{
+											"id": "tail1b",
+											"invertAxis": "xy",
+											"translate": [0, 16, 0],
+											"boxes": [
+												{"coordinates": [-2, -18, 7, 4, 4, 8], "textureOffset": [40, 0]}
+											],
+											"submodels": [
+												{
+													"id": "tail2b",
+													"invertAxis": "xy",
+													"translate": [-1.5, -0.5, 14],
+													"boxes": [
+														{"coordinates": [0, -17, 0, 3, 3, 7], "textureOffset": [0, 54]}
+													],
+													"submodels": [
+														{
+															"id": "tail3b",
+															"invertAxis": "xy",
+															"translate": [0.5, -0.5, 6],
+															"boxes": [
+																{"coordinates": [0, -16, 0, 2, 2, 6], "textureOffset": [41, 32]},
+																{"coordinates": [0, -19.5, 3, 1, 9, 9], "textureOffset": [25, 19]}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"id": "spine1b",
+											"invertAxis": "xy",
+											"translate": [0, 10.5, 7],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine2b",
+											"invertAxis": "xy",
+											"translate": [0, 10.5, -7],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine3b",
+											"invertAxis": "xy",
+											"translate": [-7, 10.5, 0],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine4b",
+											"invertAxis": "xy",
+											"translate": [7, 10.5, 0],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine5b",
+											"invertAxis": "xy",
+											"translate": [7, 0, -7],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine6b",
+											"invertAxis": "xy",
+											"translate": [-7, 0, -7],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine7b",
+											"invertAxis": "xy",
+											"translate": [-7, 0, 7],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine8b",
+											"invertAxis": "xy",
+											"translate": [7, 0, 7],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine9b",
+											"invertAxis": "xy",
+											"translate": [0, -10.5, 7],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine10b",
+											"invertAxis": "xy",
+											"translate": [0, -10.5, -7],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine12b",
+											"invertAxis": "xy",
+											"translate": [7, -10.5, 0],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										},
+										{
+											"id": "spine11b",
+											"invertAxis": "xy",
+											"translate": [-7, -10.5, 0],
+											"boxes": [
+												{"coordinates": [-1, -4.5, -1, 2, 9, 2], "textureOffset": [0, 0]}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"body_x.rx": "-body.rx",
+					"body_y.ry": "-body.ry",
+					"body2.rx": "body.rx",
+					"body2.ry": "body.ry",
+					
+					"spine1b.rx": "spine1.rx",
+					"spine1b.ry": "spine1.ry",
+					"spine1b.rz": "spine1.rz",
+					"spine1b.tx": "spine1.tx",
+					"spine1b.ty": "spine1.ty-16",
+					"spine1b.tz": "spine1.tz",
+					
+					"spine2b.rx": "spine2.rx",
+					"spine2b.rz": "spine2.ry",
+					"spine2b.rz": "spine2.rz",
+					"spine2b.ty": "spine2.ty-16",
+					"spine2b.tz": "spine2.tz",
+					
+					"spine3b.rx": "spine3.rx",
+					"spine3b.ry": "spine3.ry",
+					"spine3b.rz": "spine3.rz",
+					"spine3b.tx": "spine3.tx",
+					"spine3b.ty": "spine3.ty-16",
+					"spine3b.tz": "spine3.tz",
+					
+					"spine4b.rx": "spine4.rx",
+					"spine4b.ry": "spine4.ry",
+					"spine4b.rz": "spine4.rz",
+					"spine4b.tx": "spine4.tx",
+					"spine4b.ty": "spine4.ty-16",
+					"spine4b.tz": "spine4.tz",
+					
+					"spine5b.rx": "spine5.rx",
+					"spine5b.ry": "spine5.ry",
+					"spine5b.rz": "spine5.rz",
+					"spine5b.tx": "spine5.tx",
+					"spine5b.ty": "spine5.ty-16",
+					"spine5b.tz": "spine5.tz",
+					
+					"spine6b.rx": "spine6.rx",
+					"spine6b.ry": "spine6.ry",
+					"spine6b.rz": "spine6.rz",
+					"spine6b.tx": "spine6.tx",
+					"spine6b.ty": "spine6.ty-16",
+					"spine6b.tz": "spine6.tz",
+					
+					"spine7b.rx": "spine7.rx",
+					"spine7b.ry": "spine7.ry",
+					"spine7b.rz": "spine7.rz",
+					"spine7b.tx": "spine7.tx",
+					"spine7b.ty": "spine7.ty-16",
+					"spine7b.tz": "spine7.tz",
+					
+					"spine8b.rx": "spine8.rx",
+					"spine8b.ry": "spine8.ry",
+					"spine8b.rz": "spine8.rz",
+					"spine8b.tx": "spine8.tx",
+					"spine8b.ty": "spine8.ty-16",
+					"spine8b.tz": "spine8.tz",
+					
+					"spine9b.rx": "spine9.rx",
+					"spine9b.ry": "spine9.ry",
+					"spine9b.rz": "spine9.rz",
+					"spine9b.tx": "spine9.tx",
+					"spine9b.ty": "spine9.ty-16",
+					"spine9b.tz": "spine9.tz",
+					
+					"spine10b.rx": "spine10.rx",
+					"spine10b.ry": "spine10.ry",
+					"spine10b.rz": "spine10.rz",
+					"spine10b.tx": "spine10.tx",
+					"spine10b.ty": "spine10.ty-16",
+					"spine10b.tz": "spine10.tz",
+					
+					"spine11b.rx": "spine11.rx",
+					"spine11b.ry": "spine11.ry",
+					"spine11b.rz": "spine11.rz",
+					"spine11b.tx": "spine11.tx",
+					"spine11b.ty": "spine11.ty-16",
+					"spine11b.tz": "spine11.tz",
+					
+					"spine12b.rx": "spine12.rx",
+					"spine12b.ry": "spine12.ry",
+					"spine12b.rz": "spine12.rz",
+					"spine12b.tx": "spine12.tx",
+					"spine12b.ty": "spine12.ty-16",
+					"spine12b.tz": "spine12.tz",
+					
+					"tail1b.rx": "tail1.rx",
+					"tail1b.ry": "tail1.ry",
+					"tail1b.rz": "tail1.rz",
+					
+					"tail2b.rx": "tail2.rx",
+					"tail2b.ry": "tail2.ry",
+					"tail2b.rz": "tail2.rz",
+					
+					"tail3b.rx": "tail3.rx",
+					"tail3b.ry": "tail3.ry",
+					"tail3b.rz": "tail3.rz",
+					
+					"eye2.tx": "eye.tx",
+					"eye2.ty": "eye.ty-16",
+					"eye2.tz": "eye.tz"
+				}
+			]
+		},
+		{
+			"part": "eye",
+			"id": "eye",
+			"invertAxis": "xy",
+			"translate": [0, -23.5, 8.25]
+		},
+		{
+			"part": "tail1",
+			"id": "tail1",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "tail2",
+			"id": "tail2",
+			"invertAxis": "xy",
+			"translate": [-1.5, -23.5, -14]
+		},
+		{
+			"part": "tail3",
+			"id": "tail3",
+			"invertAxis": "xy",
+			"translate": [-1, -23, -20]
+		},
+		{
+			"part": "spine1",
+			"id": "spine1",
+			"invertAxis": "xy",
+			"translate": [0, -12.5, 7]
+		},
+		{
+			"part": "spine2",
+			"id": "spine2",
+			"invertAxis": "xy",
+			"translate": [0, -12.5, 7]
+		},
+		{
+			"part": "spine3",
+			"id": "spine3",
+			"invertAxis": "xy",
+			"translate": [7, -12.5, 0]
+		},
+		{
+			"part": "spine4",
+			"id": "spine4",
+			"invertAxis": "xy",
+			"translate": [-7, -12.5, 0]
+		},
+		{
+			"part": "spine5",
+			"id": "spine5",
+			"invertAxis": "xy",
+			"translate": [-7, -5.5, 7]
+		},
+		{
+			"part": "spine6",
+			"id": "spine6",
+			"invertAxis": "xy",
+			"translate": [7, -5.5, 7]
+		},
+		{
+			"part": "spine7",
+			"id": "spine7",
+			"invertAxis": "xy",
+			"translate": [7, -5.5, -7]
+		},
+		{
+			"part": "spine8",
+			"id": "spine8",
+			"invertAxis": "xy",
+			"translate": [-7, -5.5, -7]
+		},
+		{
+			"part": "spine9",
+			"id": "spine9",
+			"invertAxis": "xy",
+			"translate": [0, 1.5, -7]
+		},
+		{
+			"part": "spine10",
+			"id": "spine10",
+			"invertAxis": "xy",
+			"translate": [0, 1.5, 7]
+		},
+		{
+			"part": "spine11",
+			"id": "spine11",
+			"invertAxis": "xy",
+			"translate": [7, 1.5, 0]
+		},
+		{
+			"part": "spine12",
+			"id": "spine12",
+			"invertAxis": "xy",
+			"translate": [-7, 1.5, 0]
+		}
+	]
+}
