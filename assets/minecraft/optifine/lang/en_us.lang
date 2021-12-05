@@ -653,7 +653,7 @@ of.options.SMART_ANIMATIONS.tooltip.7=Especially useful for big mod packs and HD
 # Animations
 
 of.options.animation.allOn=All §2ON§r
-of.options.animation.allOFF=All §4OFF§r
+of.options.animation.allOff=All §4OFF§r
 of.options.animation.dynamic=Dynamic
 
 of.options.ANIMATED_WATER=Water Animated
