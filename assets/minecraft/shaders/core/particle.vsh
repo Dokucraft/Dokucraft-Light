@@ -1,6 +1,7 @@
 #version 150
 
 #moj_import <light.glsl>
+#moj_import <fog.glsl>
 
 in vec3 Position;
 in vec2 UV0;
@@ -20,7 +21,7 @@ out vec4 lightColor;
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
-    vertexDistance = length((ModelViewMat * vec4(Position, 1.0)).xyz);
+    vertexDistance = cylindrical_distance(ModelViewMat, Position);
     texCoord0 = UV0;
     vertexColor = Color;
 	lightColor = minecraft_sample_lightmap(Sampler2, UV2);

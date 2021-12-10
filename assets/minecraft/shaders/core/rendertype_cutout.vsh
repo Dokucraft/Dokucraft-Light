@@ -1,6 +1,7 @@
 #version 150
 
 #moj_import <light.glsl>
+#moj_import <fog.glsl>
 
 const float PHI = 1.61803398875;
 const float SWAYING_AMOUNT = 0.1;
@@ -51,23 +52,8 @@ void main() {
   float ys = 0.0;
   float zs = 0.0;
   int alpha = int(textureLod(Sampler0, UV0, 0).a * 255 + 0.5);
-  if (alpha == 18 || alpha == 253 ) {
-    xs = rsin((position.x + position.y + animation) / 2) * -1.0;
-    zs = rcos((position.z + position.y + animation) / 2) * -1.0;
-  } else if (alpha == 19 || alpha == 252 ) {
-    xs = rsin((position.x + position.y + animation) / 2) * -2.0;
-    zs = rcos((position.z + position.y + animation) / 2) * -2.0;
-  } else if (alpha == 20 || alpha == 254 ) {
-    xs = rsin((position.x + position.y + animation) / 2) * -0.5;
-    zs = rcos((position.z + position.y + animation) / 2) * -0.5;
-  } else if (alpha == 22) { // very weak, delayed sway used for the bottom of the torch fire
-    xs = rsin((position.x + position.y + animation) / 2 - 1.0) * -0.5;
-    zs = rcos((position.z + position.y + animation) / 2 - 1.0) * -0.5;
-  }
 
-  gl_Position = ProjMat * ModelViewMat * (vec4(position, 1.0) + vec4(xs / 32.0, ys, zs / 32.0, 0.0));
   if (alpha == 141 || alpha == 24) {
-
     float time = (1.0 + fract(dot(floor(Position), vec3(1))) / 2.0) * GameTime * SWAYING_SPEED + dot(floor(Position), vec3(1)) * 1234.0;
     vec3 newForward = normalize(vec3(
       sin(time) * SWAYING_AMOUNT,
@@ -80,13 +66,29 @@ void main() {
       relativePos += vec3(xs / 32.0, ys, zs / 32.0);
       relativePos -= vec3(0.5, 1, 0.5);
       relativePos = tbn(newForward, vec3(0, 1, 0)) * relativePos;
-      vec3 newPos = relativePos + vec3(0.5, 1, 0.5);
-      gl_Position = ProjMat * ModelViewMat * vec4(floor(Position) + newPos + ChunkOffset, 1.0);
+      vec4 swayedPos = vec4(floor(Position) + relativePos + vec3(0.5, 1, 0.5) + ChunkOffset, 1.0);
+      gl_Position = ProjMat * ModelViewMat * swayedPos;
+      vertexDistance = cylindrical_distance(ModelViewMat, swayedPos.xyz);
     }
-    
+  } else {
+    if (alpha == 18 || alpha == 253 ) {
+      xs = rsin((position.x + position.y + animation) / 2) * -1.0;
+      zs = rcos((position.z + position.y + animation) / 2) * -1.0;
+    } else if (alpha == 19 || alpha == 252 ) {
+      xs = rsin((position.x + position.y + animation) / 2) * -2.0;
+      zs = rcos((position.z + position.y + animation) / 2) * -2.0;
+    } else if (alpha == 20 || alpha == 254 ) {
+      xs = rsin((position.x + position.y + animation) / 2) * -0.5;
+      zs = rcos((position.z + position.y + animation) / 2) * -0.5;
+    } else if (alpha == 22) { // very weak, delayed sway used for the bottom of the torch fire
+      xs = rsin((position.x + position.y + animation) / 2 - 1.0) * -0.5;
+      zs = rcos((position.z + position.y + animation) / 2 - 1.0) * -0.5;
+    }
+    vec4 wavedPos = vec4(position, 1.0) + vec4(xs / 32.0, ys, zs / 32.0, 0.0);
+    gl_Position = ProjMat * ModelViewMat * wavedPos;
+    vertexDistance = cylindrical_distance(ModelViewMat, wavedPos.xyz);
   }
 
-  vertexDistance = length((ModelViewMat * vec4(Position + ChunkOffset, 1.0)).xyz);
   vertexColor = Color;
   lightColor = minecraft_sample_lightmap(Sampler2, UV2);
   texCoord0 = UV0;
