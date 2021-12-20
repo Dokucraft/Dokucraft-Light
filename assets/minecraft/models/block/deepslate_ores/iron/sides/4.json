@@ -1,0 +1,5 @@
+{ "parent": "minecraft:block/deepslate/column_sides",
+  "textures": {
+    "0": "minecraft:block/deepslate_ores/iron/sides/4"
+  }
+}

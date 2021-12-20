@@ -1,0 +1,5 @@
+{ "parent": "minecraft:block/deepslate/column_ends",
+  "textures": {
+    "0": "minecraft:block/deepslate_ores/emerald/ends/1"
+  }
+}

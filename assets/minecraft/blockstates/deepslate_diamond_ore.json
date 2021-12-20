@@ -1,10 +1,13 @@
-{ "variants": {
-    "": [
-      { "model": "block/deepslate_ores/diamond/0" },
-      { "model": "block/deepslate_ores/diamond/1" },
-      { "model": "block/deepslate_ores/diamond/2" },
-      { "model": "block/deepslate_ores/diamond/3" },
-      { "model": "block/deepslate_ores/diamond/4" }
-    ]
-  }
+{ "multipart": [
+    { "apply": [
+        { "model": "minecraft:block/deepslate_ores/diamond/sides/0" },
+        { "model": "minecraft:block/deepslate_ores/diamond/sides/1" }
+      ]
+    },
+    { "apply": [
+        { "model": "minecraft:block/deepslate_ores/diamond/ends/0" },
+        { "model": "minecraft:block/deepslate_ores/diamond/ends/1" }
+      ]
+    }
+  ]
 }
