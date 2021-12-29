@@ -1,1 +1,1 @@
-{"parent":"block/fence/fence_gate_closed","textures":{"particle":"block/crimson_planks","0":"block/gate/crimson_fence_gate"}}
+{"parent":"block/gate/fence_gate_closed","textures":{"particle":"block/crimson_planks","0":"block/gate/crimson_fence_gate"}}
