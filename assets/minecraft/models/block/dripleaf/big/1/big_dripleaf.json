@@ -1,0 +1,10 @@
+{
+	"parent": "minecraft:block/dripleaf/big/big_dripleaf",
+	"textures": {
+		"top": "minecraft:block/dripleaf/big/top/1",
+		"stem": "minecraft:block/dripleaf/big/stem",
+		"side": "minecraft:block/dripleaf/big/side/1",
+		"tip": "minecraft:block/dripleaf/big/tip/1",
+		"particle": "minecraft:block/dripleaf/big/top/1"
+	}
+}

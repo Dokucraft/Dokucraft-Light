@@ -1,0 +1,8 @@
+{
+  "variants": {
+		"facing=north": { "model": "minecraft:block/dripleaf/big/big_dripleaf_stem" },
+    "facing=east": { "model": "minecraft:block/dripleaf/big/big_dripleaf_stem", "y": 90 },
+    "facing=south": { "model": "minecraft:block/dripleaf/big/big_dripleaf_stem", "y": 180 },
+    "facing=west": { "model": "minecraft:block/dripleaf/big/big_dripleaf_stem", "y": 270 }
+  }
+}

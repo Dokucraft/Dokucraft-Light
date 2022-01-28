@@ -1,0 +1,10 @@
+{
+	"parent": "minecraft:block/dripleaf/big/big_dripleaf_partial_tilt",
+	"textures": {
+		"top": "minecraft:block/dripleaf/big/top/3",
+		"stem": "minecraft:block/dripleaf/big/stem",
+		"side": "minecraft:block/dripleaf/big/side/3",
+		"tip": "minecraft:block/dripleaf/big/tip/3",
+		"particle": "minecraft:block/dripleaf/big/top/3"
+	}
+}
