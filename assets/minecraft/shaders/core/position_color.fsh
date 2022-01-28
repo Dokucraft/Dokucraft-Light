@@ -1,6 +1,7 @@
 #version 150
 
 #moj_import <utils.glsl>
+#moj_import <flavor.glsl>
 
 in vec4 vertexColor;
 in float isHorizon;
@@ -13,9 +14,6 @@ uniform vec2 ScreenSize;
 uniform mat4 ModelViewMat;
 
 out vec4 fragColor;
-
-#define HOVER_OUTLINE_COLOR vec4(0.988, 0.988, 0.988, 1.0)
-#define TOOLTIP_OUTLINE_COLOR vec4(0.988, 0.988, 0.988, 1.0)
 
 void main() {
   if (isHorizon > 0.5) {
