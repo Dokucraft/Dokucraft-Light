@@ -1,15 +1,16 @@
 {
+	"credit": "Made by SyndiShanX",
 	"parent": "item/door",
 	"ambientocclusion": false,
 	"textures": {
-		"bottom": "block/doors/spruce_door_bottom",
 		"top": "block/doors/spruce_door_top",
+		"bottom": "block/doors/spruce_door_bottom",
 		"sides": "block/doors/spruce_door_sides",
 		"particle": "block/doors/spruce_door_top"
 	},
 	"elements": [
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 14, 5.5],
 			"to": [0.25, 16, 6.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -21,7 +22,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 14, 0.5],
 			"to": [0.25, 16, 1.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -33,7 +34,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 16.5, 1],
 			"to": [0.25, 17.5, 2],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -46,7 +47,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 16, 0.5],
 			"to": [0.25, 17, 1.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -58,7 +59,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 16.5, 5],
 			"to": [0.25, 17.5, 6],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -71,7 +72,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 16, 5.5],
 			"to": [0.25, 17, 6.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -83,7 +84,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 13.5, 5],
 			"to": [0.25, 14.5, 6],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -96,7 +97,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 13.5, 1],
 			"to": [0.25, 14.5, 2],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -109,7 +110,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 13, 1.5],
 			"to": [0.25, 14, 5.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -122,7 +123,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 17, 1.5],
 			"to": [0.25, 18, 5.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -135,7 +136,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0, 12.5, 2],
 			"to": [0.25, 13, 5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -147,7 +148,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [-0.25, 12, 3],
 			"to": [0.5, 13.5, 4],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -160,7 +161,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 14, 5.5],
 			"to": [5, 16, 6.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -172,7 +173,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 14, 0.5],
 			"to": [5, 16, 1.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -184,7 +185,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 16.5, 1],
 			"to": [5, 17.5, 2],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -197,7 +198,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 16, 0.5],
 			"to": [5, 17, 1.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -209,7 +210,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 16.5, 5],
 			"to": [5, 17.5, 6],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -222,7 +223,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 16, 5.5],
 			"to": [5, 17, 6.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -234,7 +235,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 13.5, 5],
 			"to": [5, 14.5, 6],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -247,7 +248,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 13.5, 1],
 			"to": [5, 14.5, 2],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -260,7 +261,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 13, 1.5],
 			"to": [5, 14, 5.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -273,7 +274,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 17, 1.5],
 			"to": [5, 18, 5.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -286,7 +287,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.75, 12.5, 2],
 			"to": [5, 13, 5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -298,7 +299,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [4.5, 12, 3],
 			"to": [5.25, 13.5, 4],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -311,7 +312,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [0.25, 18.5, 2.5],
 			"to": [4.75, 18.75, 4.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -324,7 +325,7 @@
 			}
 		},
 		{
-			"name": "Door Handle",
+			"name": "Door Top Handle",
 			"from": [-0.25, 17.5, 2],
 			"to": [5.25, 18.5, 5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -338,7 +339,49 @@
 			}
 		},
 		{
-			"name": "Door Top Bracket",
+			"name": "Door Top Metal",
+			"from": [0, 29.5, 7.5],
+			"to": [5, 30.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
+			"faces": {
+				"north": {"uv": [8.5, 2.5, 7.5, 1.5], "texture": "#top"},
+				"east": {"uv": [8.5, 2.5, 7.5, 1.5], "texture": "#top"},
+				"south": {"uv": [8.5, 2.5, 7.5, 1.5], "texture": "#top"},
+				"west": {"uv": [8.5, 2.5, 7.5, 1.5], "texture": "#top", "cullface": "west"},
+				"up": {"uv": [8.5, 2.5, 7.5, 1.5], "rotation": 180, "texture": "#top"},
+				"down": {"uv": [8.5, 2.5, 7.5, 1.5], "rotation": 180, "texture": "#top"}
+			}
+		},
+		{
+			"name": "Door Top Metal",
+			"from": [0.25, 29.5, 12.5],
+			"to": [4.75, 30.5, 13.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
+			"faces": {
+				"north": {"uv": [3.5, 2.5, 2.5, 1.5], "texture": "#top"},
+				"east": {"uv": [3.5, 2.5, 2.5, 1.5], "texture": "#top"},
+				"south": {"uv": [3.5, 2.5, 2.5, 1.5], "texture": "#top"},
+				"west": {"uv": [3.5, 2.5, 2.5, 1.5], "texture": "#top"},
+				"up": {"uv": [3.5, 2.5, 2.5, 1.5], "rotation": 180, "texture": "#top"},
+				"down": {"uv": [3.5, 2.5, 2.5, 1.5], "rotation": 180, "texture": "#top"}
+			}
+		},
+		{
+			"name": "Door Top Metal",
+			"from": [0.25, 29.5, 2.5],
+			"to": [4.75, 30.5, 3.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
+			"faces": {
+				"north": {"uv": [13.5, 1.5, 12.5, 2.5], "texture": "#top"},
+				"east": {"uv": [13.5, 1.5, 12.5, 2.5], "texture": "#top"},
+				"south": {"uv": [13.5, 1.5, 12.5, 2.5], "texture": "#top"},
+				"west": {"uv": [13.5, 1.5, 12.5, 2.5], "texture": "#top"},
+				"up": {"uv": [13.5, 1.5, 12.5, 2], "rotation": 270, "texture": "#top"},
+				"down": {"uv": [13.5, 1.5, 12.5, 2.5], "rotation": 180, "texture": "#top"}
+			}
+		},
+		{
+			"name": "Door Top Metal",
 			"from": [0.75, 26, 0],
 			"to": [4.25, 28, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -351,7 +394,7 @@
 			}
 		},
 		{
-			"name": "Door Top Bracket",
+			"name": "Door Top Metal",
 			"from": [0.75, 18, 0],
 			"to": [4.25, 20, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
@@ -497,48 +540,6 @@
 			}
 		},
 		{
-			"name": "Door Top Metal",
-			"from": [0.25, 29.5, 12.5],
-			"to": [4.75, 30.5, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
-			"faces": {
-				"north": {"uv": [3.5, 2.5, 2.5, 1.5], "texture": "#top"},
-				"east": {"uv": [3.5, 2.5, 2.5, 1.5], "texture": "#top"},
-				"south": {"uv": [3.5, 2.5, 2.5, 1.5], "texture": "#top"},
-				"west": {"uv": [3.5, 2.5, 2.5, 1.5], "texture": "#top"},
-				"up": {"uv": [3.5, 2.5, 2.5, 1.5], "rotation": 180, "texture": "#top"},
-				"down": {"uv": [3.5, 2.5, 2.5, 1.5], "rotation": 180, "texture": "#top"}
-			}
-		},
-		{
-			"name": "Door Top Metal",
-			"from": [0, 29.5, 7.5],
-			"to": [5, 30.5, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
-			"faces": {
-				"north": {"uv": [8.5, 2.5, 7.5, 1.5], "texture": "#top"},
-				"east": {"uv": [8.5, 2.5, 7.5, 1.5], "texture": "#top"},
-				"south": {"uv": [8.5, 2.5, 7.5, 1.5], "texture": "#top"},
-				"west": {"uv": [8.5, 2.5, 7.5, 1.5], "texture": "#top", "cullface": "west"},
-				"up": {"uv": [8.5, 2.5, 7.5, 1.5], "rotation": 180, "texture": "#top"},
-				"down": {"uv": [8.5, 2.5, 7.5, 1.5], "rotation": 180, "texture": "#top"}
-			}
-		},
-		{
-			"name": "Door Top Metal",
-			"from": [0.25, 29.5, 2.5],
-			"to": [4.75, 30.5, 3.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 8, 8]},
-			"faces": {
-				"north": {"uv": [13.5, 1.5, 12.5, 2.5], "texture": "#top"},
-				"east": {"uv": [13.5, 1.5, 12.5, 2.5], "texture": "#top"},
-				"south": {"uv": [13.5, 1.5, 12.5, 2.5], "texture": "#top"},
-				"west": {"uv": [13.5, 1.5, 12.5, 2.5], "texture": "#top"},
-				"up": {"uv": [13.5, 1.5, 12.5, 2], "rotation": 270, "texture": "#top"},
-				"down": {"uv": [13.5, 1.5, 12.5, 2.5], "rotation": 180, "texture": "#top"}
-			}
-		},
-		{
 			"name": "Door Bottom Plank",
 			"from": [1, 6, 13],
 			"to": [4, 12, 16],
@@ -672,7 +673,7 @@
 			}
 		},
 		{
-			"name": "Door Bottom Bracket",
+			"name": "Door Bottom Metal",
 			"from": [0.75, 12, 0],
 			"to": [4.25, 14, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 8.44444, 8.25]},
@@ -685,7 +686,7 @@
 			}
 		},
 		{
-			"name": "Door Bottom Bracket",
+			"name": "Door Bottom Metal",
 			"from": [0.75, 4, 0],
 			"to": [4.25, 6, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 8.44444, 8.25]},
@@ -777,7 +778,7 @@
 		},
 		{
 			"name": "Bottom",
-			"origin": [2.5, 8.44444, 8.25],
+			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]
 		}

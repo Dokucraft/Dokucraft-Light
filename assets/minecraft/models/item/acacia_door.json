@@ -1,9 +1,10 @@
 {
+	"credit": "Made by SyndiShanX",
 	"parent": "item/door",
 	"ambientocclusion": false,
 	"textures": {
-		"bottom": "block/doors/acacia_door_bottom",
 		"top": "block/doors/acacia_door_top",
+		"bottom": "block/doors/acacia_door_bottom",
 		"sides": "block/doors/acacia_door_sides",
 		"particle": "block/doors/acacia_door_top"
 	},
@@ -98,7 +99,7 @@
 			}
 		},
 		{
-			"name": "Door Bar",
+			"name": "Door Top Bar",
 			"from": [1, 16, 0],
 			"to": [4, 17, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 5.25, 8.68269]},
@@ -112,7 +113,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Top Bar",
 			"from": [0.75, 16, 3],
 			"to": [4.25, 17, 5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 5.25, 8.68269]},
@@ -126,7 +127,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Top Bar",
 			"from": [0.75, 16, 11],
 			"to": [4.25, 17, 13],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 5.25, 8.68269]},
@@ -140,7 +141,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Top Bar",
 			"from": [0.75, 17, 3.5],
 			"to": [4.25, 17.5, 4.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 5.25, 8.68269]},
@@ -153,7 +154,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Top Bar",
 			"from": [0.75, 17, 11.5],
 			"to": [4.25, 17.5, 12.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 5.25, 8.68269]},
@@ -255,7 +256,7 @@
 			}
 		},
 		{
-			"name": "Door Bar",
+			"name": "Door Bottom Bar",
 			"from": [1, 15, 0],
 			"to": [4, 16, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 10.5, 9.07292]},
@@ -269,7 +270,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Bottom Bar",
 			"from": [0.75, 15, 3],
 			"to": [4.25, 16, 5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 10.5, 9.07292]},
@@ -283,7 +284,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Bottom Bar",
 			"from": [0.75, 15, 11],
 			"to": [4.25, 16, 13],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 10.5, 9.07292]},
@@ -297,7 +298,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Bottom Bar",
 			"from": [0.75, 14.5, 3.5],
 			"to": [4.25, 15, 4.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 10.5, 9.07292]},
@@ -310,7 +311,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Bottom Bar",
 			"from": [0.75, 14.5, 11.5],
 			"to": [4.25, 15, 12.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 10.5, 9.07292]},

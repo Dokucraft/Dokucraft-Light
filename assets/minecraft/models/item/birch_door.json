@@ -1,9 +1,10 @@
 {
+	"credit": "Made by SyndiShanX",
 	"parent": "item/door",
 	"ambientocclusion": false,
 	"textures": {
-		"bottom": "block/doors/birch_door_bottom",
 		"top": "block/doors/birch_door_top",
+		"bottom": "block/doors/birch_door_bottom",
 		"sides": "block/doors/birch_door_sides",
 		"particle": "block/doors/birch_door_top"
 	},
@@ -271,7 +272,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Bottom Bar",
 			"from": [0.5, 8, 3.5],
 			"to": [4.5, 10.5, 5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 10.11667, 8.85833]},
@@ -285,7 +286,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Bottom Bar",
 			"from": [0.5, 8, 11],
 			"to": [4.5, 10.5, 12.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 10.11667, 8.85833]},
@@ -299,7 +300,7 @@
 			}
 		},
 		{
-			"name": "Door Bar",
+			"name": "Door Bottom Bar",
 			"from": [0.75, 8.5, -0.25],
 			"to": [4.25, 11, 16.25],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 10.11667, 8.85833]},

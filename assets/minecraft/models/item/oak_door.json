@@ -1,9 +1,10 @@
 {
+	"credit": "Made by SyndiShanX",
 	"parent": "item/door",
 	"ambientocclusion": false,
 	"textures": {
-		"bottom": "block/doors/oak_door_bottom",
 		"top": "block/doors/oak_door_top",
+		"bottom": "block/doors/oak_door_bottom",
 		"sides": "block/doors/oak_door_sides",
 		"particle": "block/doors/oak_door_top"
 	},
@@ -286,7 +287,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Bottom Bar",
 			"from": [0.5, 12, 3.5],
 			"to": [4.5, 14.75, 5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 7.1, 8.46667]},
@@ -300,7 +301,7 @@
 			}
 		},
 		{
-			"name": "Door Bar Metal",
+			"name": "Door Bottom Bar",
 			"from": [0.5, 12, 11],
 			"to": [4.5, 14.75, 12.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 7.1, 8.46667]},
@@ -311,6 +312,20 @@
 				"west": {"uv": [3.5, 1.25, 5, 4], "texture": "#bottom"},
 				"up": {"uv": [3.5, 1, 5, 1.5], "rotation": 270, "texture": "#bottom"},
 				"down": {"uv": [3.5, 3.5, 5, 4], "rotation": 270, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Bar",
+			"from": [0.75, 12.5, 0.01],
+			"to": [4.25, 15, 15.99],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 7.1, 8.46667]},
+			"faces": {
+				"north": {"uv": [6.25, 1, 9.75, 3.5], "texture": "#bottom"},
+				"east": {"uv": [5, 1, 11, 3.5], "texture": "#bottom"},
+				"south": {"uv": [6.25, 1, 9.75, 3.5], "texture": "#bottom"},
+				"west": {"uv": [11, 1, 5, 3.5], "texture": "#bottom"},
+				"up": {"uv": [5, 1, 11, 1.5], "rotation": 270, "texture": "#bottom"},
+				"down": {"uv": [5, 3, 11, 3.5], "rotation": 270, "texture": "#bottom"}
 			}
 		},
 		{
@@ -337,20 +352,6 @@
 				"west": {"uv": [5, 9, 2.5, 10.5], "texture": "#bottom"},
 				"up": {"uv": [2.5, 9, 5, 9.5], "rotation": 270, "texture": "#bottom"},
 				"down": {"uv": [2.5, 10, 5, 10.5], "rotation": 90, "texture": "#bottom"}
-			}
-		},
-		{
-			"name": "Door Bar",
-			"from": [0.75, 12.5, 0.01],
-			"to": [4.25, 15, 15.99],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 7.1, 8.46667]},
-			"faces": {
-				"north": {"uv": [6.25, 1, 9.75, 3.5], "texture": "#bottom"},
-				"east": {"uv": [5, 1, 11, 3.5], "texture": "#bottom"},
-				"south": {"uv": [6.25, 1, 9.75, 3.5], "texture": "#bottom"},
-				"west": {"uv": [11, 1, 5, 3.5], "texture": "#bottom"},
-				"up": {"uv": [5, 1, 11, 1.5], "rotation": 270, "texture": "#bottom"},
-				"down": {"uv": [5, 3, 11, 3.5], "rotation": 270, "texture": "#bottom"}
 			}
 		},
 		{
@@ -486,7 +487,7 @@
 		},
 		{
 			"name": "Bottom",
-			"origin": [2.5, 7.1, 8.46667],
+			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
 		}
