@@ -1,5 +1,7 @@
 #version 150
 
+#moj_import <flavor.glsl>
+
 in vec3 Position;
 in vec4 Color;
 
@@ -14,11 +16,6 @@ out vec2 uv;
 flat out int customType;
 
 #define HORIZONDIST 128
-
-//settings
-
-#define LOADING_BG_DARK_COLOR vec3(0.161, 0.122, 0.094)
-#define LOADING_BG_COLOR vec3(0.161, 0.122, 0.094)
 
 //might be usefull for replacing search bar
 #define FIRST_BLACK vec4(0, 0, 0, 0.8)
