@@ -11,7 +11,6 @@
 			"name": "Door Top",
 			"from": [0.25, 0, 3],
 			"to": [2.75, 14, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [10.5, -8, 9]},
 			"faces": {
 				"east": {"uv": [2, 2, 14, 16], "texture": "#top"},
 				"west": {"uv": [14, 2, 2, 16], "texture": "#top"},
@@ -22,7 +21,6 @@
 			"name": "Door Window Frame",
 			"from": [0, 10, 7.5],
 			"to": [3, 11, 10.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [9.5, 5, 9, 5.5], "texture": "#top"},
 				"east": {"uv": [6.5, 5, 9.5, 6], "texture": "#top"},
@@ -36,7 +34,6 @@
 			"name": "Door Window Frame",
 			"from": [0, 1.5, 10],
 			"to": [3, 10.5, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [15, 3.5, 12, 12.5], "texture": "#sides"},
 				"east": {"uv": [6, 5.5, 7, 14.5], "texture": "#top"},
@@ -50,7 +47,6 @@
 			"name": "Door Window Frame",
 			"from": [0, 1.5, 7],
 			"to": [3, 10.5, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [10, 5.5, 9.5, 14.5], "texture": "#top"},
 				"east": {"uv": [9, 5.5, 10, 14.5], "texture": "#top"},
@@ -64,7 +60,6 @@
 			"name": "Door Window Frame",
 			"from": [0, 1, 7.5],
 			"to": [3, 2, 10.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [9.5, 14.5, 9, 15], "texture": "#top"},
 				"east": {"uv": [6.5, 14, 9.5, 15], "texture": "#top"},
@@ -78,7 +73,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 0, 1],
 			"to": [3, 14, 3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [6, 2, 9, 16], "texture": "#sides"},
 				"east": {"uv": [14, 2.5, 16, 16], "texture": "#top"},
@@ -91,7 +85,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 5, 3],
 			"to": [3, 7, 3.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"east": {"uv": [2.5, 9, 2, 11], "texture": "#top"},
 				"south": {"uv": [14, 9, 13.5, 11], "texture": "#top"},
@@ -104,7 +97,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 5, 14.5],
 			"to": [3, 7, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [2.5, 9, 2, 11], "texture": "#top"},
 				"east": {"uv": [2.5, 9, 2, 11], "texture": "#top"},
@@ -117,7 +109,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 5.5, 3.5],
 			"to": [3, 6.5, 14.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"east": {"uv": [2.5, 9.5, 13.5, 10.5], "texture": "#top"},
 				"west": {"uv": [13.5, 9.5, 2.5, 10.5], "texture": "#top"},
@@ -129,7 +120,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 2.5, 13.5],
 			"to": [3, 4, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [3.5, 12, 3, 13.5], "texture": "#top"},
 				"east": {"uv": [14, 12, 12.5, 13.5], "texture": "#top"},
@@ -142,7 +132,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 2.5, 3],
 			"to": [3, 4, 4.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"east": {"uv": [3.5, 12, 2, 13.5], "texture": "#top"},
 				"south": {"uv": [13, 12, 12.5, 13.5], "texture": "#top"},
@@ -155,7 +144,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 8.5, 3],
 			"to": [3, 10, 4.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"east": {"uv": [3.5, 6, 2, 7.5], "texture": "#top"},
 				"south": {"uv": [13, 6, 12.5, 7.5], "texture": "#top"},
@@ -168,7 +156,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 13.5, 8],
 			"to": [3, 14, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [9, 2, 8.5, 2.5], "texture": "#top"},
 				"east": {"uv": [7, 2, 9, 2.5], "texture": "#top"},
@@ -181,7 +168,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 11, 8.5],
 			"to": [3, 13.5, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [8.5, 2.5, 8, 5], "texture": "#top"},
 				"east": {"uv": [7.5, 2.5, 8.5, 5], "texture": "#top"},
@@ -193,7 +179,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 8.5, 13.5],
 			"to": [3, 10, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [3.5, 6, 3, 7.5], "texture": "#top"},
 				"east": {"uv": [14, 6, 12.5, 7.5], "texture": "#top"},
@@ -206,7 +191,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 13.5, 14],
 			"to": [3, 14, 14.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [3, 2, 2.5, 2.5], "texture": "#top"},
 				"east": {"uv": [3, 2, 2.5, 2.5], "texture": "#top"},
@@ -218,7 +202,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 13.5, 3.5],
 			"to": [3, 14, 4],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"east": {"uv": [13.5, 2, 13, 2.5], "texture": "#top"},
 				"south": {"uv": [13.5, 2, 13, 2.5], "texture": "#top"},
@@ -230,7 +213,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 13, 3],
 			"to": [3, 14, 3.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"east": {"uv": [14, 2, 13.5, 3], "texture": "#top"},
 				"south": {"uv": [14, 2.5, 13.5, 3], "texture": "#top"},
@@ -242,7 +224,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 14, 1],
 			"to": [3, 16, 17],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [6, 0, 9, 2], "texture": "#sides"},
 				"east": {"uv": [0, 0, 16, 2], "texture": "#top"},
@@ -256,7 +237,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 13, 14.5],
 			"to": [3, 14, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [2.5, 2.5, 2, 3], "texture": "#top"},
 				"east": {"uv": [2.5, 2, 2, 3], "texture": "#top"},
@@ -268,7 +248,6 @@
 			"name": "Door Top Frame",
 			"from": [0, 0, 15],
 			"to": [3, 14, 17],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, -8, 9]},
 			"faces": {
 				"north": {"uv": [2, 2, 1.5, 16], "texture": "#top"},
 				"east": {"uv": [0, 2.5, 2, 16], "texture": "#top"},

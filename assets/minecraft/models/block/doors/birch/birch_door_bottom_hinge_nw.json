@@ -11,7 +11,6 @@
 			"name": "Door Bottom Frame",
 			"from": [0, 2, 15],
 			"to": [3, 16, 17],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 10, 23]},
 			"faces": {
 				"north": {"uv": [14, 0, 14.5, 14], "texture": "#bottom"},
 				"east": {"uv": [16, 0, 14, 14], "texture": "#bottom"},
@@ -23,7 +22,6 @@
 			"name": "Door Bottom Frame",
 			"from": [0, 0, 1],
 			"to": [3, 2, 17],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8, 9]},
 			"faces": {
 				"north": {"uv": [3, 14, 6, 16], "texture": "#sides"},
 				"east": {"uv": [16, 14, 0, 16], "texture": "#bottom"},
@@ -37,7 +35,6 @@
 			"name": "Door Bottom Frame",
 			"from": [0, 2, 1],
 			"to": [3, 16, 3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 10, 9]},
 			"faces": {
 				"north": {"uv": [3, 0, 6, 14], "texture": "#sides"},
 				"east": {"uv": [2, 0, 0, 14], "texture": "#bottom"},
@@ -49,7 +46,6 @@
 			"name": "Door Bottom Hinge",
 			"from": [-0.25, 5.5, 3],
 			"to": [3.25, 7, 3.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.75, 14.5, 9.5]},
 			"faces": {
 				"east": {"uv": [2, 9, 2.5, 10.5], "texture": "#bottom"},
 				"south": {"uv": [2, 9, 2.5, 10.5], "texture": "#bottom"},
@@ -62,7 +58,6 @@
 			"name": "Door Bottom Hinge",
 			"from": [-0.25, 5, 0.75],
 			"to": [3.25, 7.5, 3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.75, 14.5, 9]},
 			"faces": {
 				"north": {"uv": [12, 0, 15, 2.5], "texture": "#sides"},
 				"east": {"uv": [2, 8.5, 0, 11], "texture": "#bottom"},
@@ -76,7 +71,6 @@
 			"name": "Door Bottom Bar",
 			"from": [-0.5, 8, 12],
 			"to": [3.5, 10.5, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, 18, 20.5]},
 			"faces": {
 				"north": {"uv": [3.5, 5.5, 4, 8], "texture": "#bottom"},
 				"east": {"uv": [5, 5.5, 3.5, 8], "texture": "#bottom"},
@@ -90,7 +84,6 @@
 			"name": "Door Bottom Bar",
 			"from": [-0.5, 8, 4.5],
 			"to": [3.5, 10.5, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, 18, 13]},
 			"faces": {
 				"north": {"uv": [3.5, 5.5, 4, 8], "texture": "#bottom"},
 				"east": {"uv": [5, 5.5, 3.5, 8], "texture": "#bottom"},
@@ -104,7 +97,6 @@
 			"name": "Door Bottom Bar",
 			"from": [-0.25, 8.5, 0.75],
 			"to": [3.25, 11, 17.25],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.75, 18, 11]},
 			"faces": {
 				"north": {"uv": [12.5, 5, 16, 7.5], "texture": "#bottom"},
 				"east": {"uv": [5, 5, 11, 7.5], "texture": "#bottom"},
@@ -118,7 +110,6 @@
 			"name": "Door Bottom Window",
 			"from": [1, 13, 5],
 			"to": [2, 16, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 8, 9]},
 			"faces": {
 				"east": {"uv": [4, 0, 12, 3], "texture": "#bottom"},
 				"west": {"uv": [4, 0, 12, 3], "texture": "#bottom"}
@@ -128,7 +119,6 @@
 			"name": "Door Window Frame",
 			"from": [0, 12.5, 4],
 			"to": [3, 16, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 10, 11]},
 			"faces": {
 				"north": {"uv": [12.5, 0, 13, 3.5], "texture": "#bottom"},
 				"east": {"uv": [12, 0, 13, 3.5], "texture": "#bottom"},
@@ -141,7 +131,6 @@
 			"name": "Door Window Frame",
 			"from": [0, 12, 4.5],
 			"to": [3, 13, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8.5, 11]},
 			"faces": {
 				"north": {"uv": [12, 3, 12.5, 4], "texture": "#bottom"},
 				"east": {"uv": [3.5, 3, 12.5, 4], "texture": "#bottom"},
@@ -155,7 +144,6 @@
 			"name": "Door Window Frame",
 			"from": [0, 12.5, 13],
 			"to": [3, 16, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 10, 20]},
 			"faces": {
 				"north": {"uv": [9, 9, 12, 12.5], "texture": "#sides"},
 				"east": {"uv": [3, 0, 4, 3.5], "texture": "#bottom"},
@@ -168,7 +156,6 @@
 			"name": "Door Bottom Plank",
 			"from": [0.25, 13, 14],
 			"to": [2.75, 16, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 10, 22]},
 			"faces": {
 				"east": {"uv": [2, 0, 3, 3], "texture": "#bottom"},
 				"west": {"uv": [13, 0, 14, 3], "texture": "#bottom"}
@@ -178,7 +165,6 @@
 			"name": "Door Bottom Plank",
 			"from": [0.25, 13, 3],
 			"to": [2.75, 16, 4],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 10, 11]},
 			"faces": {
 				"east": {"uv": [13, 0, 14, 3], "texture": "#bottom"},
 				"west": {"uv": [2, 0, 3, 3], "texture": "#bottom"}
@@ -188,7 +174,6 @@
 			"name": "Door Bottom Plank",
 			"from": [0.25, 2, 3],
 			"to": [2.75, 13, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 10, 11]},
 			"faces": {
 				"east": {"uv": [14, 3, 2, 14], "texture": "#bottom"},
 				"west": {"uv": [2, 3, 14, 14], "texture": "#bottom"}

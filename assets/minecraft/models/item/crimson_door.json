@@ -5,15 +5,13 @@
 	"textures": {
 		"top": "block/doors/crimson_door_top",
 		"bottom": "block/doors/crimson_door_bottom",
-		"sides": "block/doors/crimson_door_sides",
-		"particle": "block/doors/crimson_door_top"
+		"sides": "block/doors/crimson_door_sides"
 	},
 	"elements": [
 		{
 			"name": "Door Top",
 			"from": [1, 16, 0],
 			"to": [4, 32, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [6, 0, 9, 16], "texture": "#sides"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#top"},
@@ -27,7 +25,6 @@
 			"name": "Door Top Hinge",
 			"from": [0.5, 24.5, 8.5],
 			"to": [4.5, 26.5, 16.25],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [7, 5.5, 7.5, 7.5], "texture": "#top"},
 				"east": {"uv": [0, 5.5, 7.5, 7.5], "texture": "#top"},
@@ -41,7 +38,6 @@
 			"name": "Door Top Hinge",
 			"from": [0.5, 25, 1],
 			"to": [4.5, 26, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [14.5, 6, 15, 7], "texture": "#top"},
 				"east": {"uv": [7.5, 6, 15, 7], "texture": "#top"},
@@ -55,7 +51,6 @@
 			"name": "Door Top Hinge",
 			"from": [0.75, 24.5, 2],
 			"to": [4.25, 26.5, 3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [13, 5.5, 14, 7.5], "texture": "#top"},
 				"east": {"uv": [13, 5.5, 14, 7.5], "texture": "#top"},
@@ -69,7 +64,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 28.5, 12.5],
 			"to": [4.25, 29, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [2.5, 3, 3.5, 3.5], "texture": "#top"},
 				"east": {"uv": [2.5, 3, 3.5, 3.5], "texture": "#top"},
@@ -83,7 +77,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 27, 12],
 			"to": [4.25, 28.5, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [3, 3.5, 4, 5], "texture": "#top"},
 				"east": {"uv": [3, 3.5, 4, 5], "texture": "#top"},
@@ -97,7 +90,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 28, 13],
 			"to": [4.25, 28.5, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [2, 3.5, 3, 4], "texture": "#top"},
 				"east": {"uv": [2, 3.5, 3, 4], "texture": "#top"},
@@ -111,7 +103,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 24, 12.5],
 			"to": [4.25, 27, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [2, 5, 3.5, 8], "texture": "#top"},
 				"east": {"uv": [2, 5, 3.5, 8], "texture": "#top"},
@@ -125,7 +116,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 23.5, 13],
 			"to": [4.25, 27.5, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [2.5, 4.5, 3, 8.5], "texture": "#top"},
 				"east": {"uv": [2.5, 4.5, 3, 8.5], "texture": "#top"},
@@ -139,7 +129,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 22, 12.5],
 			"to": [4.25, 22.5, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [2.5, 9.5, 3.5, 10], "texture": "#top"},
 				"east": {"uv": [2.5, 9.5, 3.5, 10], "texture": "#top"},
@@ -153,7 +142,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 22.5, 12],
 			"to": [4.25, 24, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [3, 8, 4, 9.5], "texture": "#top"},
 				"east": {"uv": [3, 8, 4, 9.5], "texture": "#top"},
@@ -167,7 +155,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 22.5, 13],
 			"to": [4.25, 23, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [2, 9, 3, 9.5], "texture": "#top"},
 				"east": {"uv": [2, 9, 3, 9.5], "texture": "#top"},
@@ -181,7 +168,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 26.5, 8],
 			"to": [4.25, 28, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [7, 4, 8, 5.5], "texture": "#top"},
 				"east": {"uv": [7, 4, 8, 5.5], "texture": "#top"},
@@ -195,7 +181,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 24, 9],
 			"to": [4.25, 27, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [6.5, 5, 7, 8], "texture": "#top"},
 				"east": {"uv": [6.5, 5, 7, 8], "texture": "#top"},
@@ -209,7 +194,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 27.5, 9],
 			"to": [4.25, 28, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [6, 4, 7, 4.5], "texture": "#top"},
 				"east": {"uv": [6, 4, 7, 4.5], "texture": "#top"},
@@ -223,7 +207,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 28, 8.5],
 			"to": [4.25, 28.5, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [6.5, 3.5, 7.5, 4], "texture": "#top"},
 				"east": {"uv": [6.5, 3.5, 7.5, 4], "texture": "#top"},
@@ -237,7 +220,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 23, 8],
 			"to": [4.25, 24.5, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [7, 7.5, 8, 9], "texture": "#top"},
 				"east": {"uv": [7, 7.5, 8, 9], "texture": "#top"},
@@ -251,7 +233,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 23, 9],
 			"to": [4.25, 23.5, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [6, 8.5, 7, 9], "texture": "#top"},
 				"east": {"uv": [6, 8.5, 7, 9], "texture": "#top"},
@@ -265,7 +246,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 22.5, 8.5],
 			"to": [4.25, 23, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [6.5, 9, 7.5, 9.5], "texture": "#top"},
 				"east": {"uv": [6.5, 9, 7.5, 9.5], "texture": "#top"},
@@ -279,7 +259,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 26.5, 5],
 			"to": [4.25, 27, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [10, 5, 11, 5.5], "texture": "#top"},
 				"east": {"uv": [10, 5, 11, 5.5], "texture": "#top"},
@@ -293,7 +272,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 27, 4.5],
 			"to": [4.25, 27.5, 5.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [10.5, 4.5, 11.5, 5], "texture": "#top"},
 				"east": {"uv": [10.5, 4.5, 11.5, 5], "texture": "#top"},
@@ -307,7 +285,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 27.5, 5],
 			"to": [4.25, 28, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [10, 4, 11, 4.5], "texture": "#top"},
 				"east": {"uv": [10, 4, 11, 4.5], "texture": "#top"},
@@ -321,7 +298,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 24.5, 5.5],
 			"to": [4.25, 26.5, 6.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [9.5, 5.5, 10.5, 7.5], "texture": "#top"},
 				"east": {"uv": [9.5, 5.5, 10.5, 7.5], "texture": "#top"},
@@ -335,7 +311,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 24, 5],
 			"to": [4.25, 24.5, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [10, 7.5, 11, 8], "texture": "#top"},
 				"east": {"uv": [10, 7.5, 11, 8], "texture": "#top"},
@@ -349,7 +324,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 23.5, 4.5],
 			"to": [4.25, 24, 5.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [10.5, 8, 11.5, 8.5], "texture": "#top"},
 				"east": {"uv": [10.5, 8, 11.5, 8.5], "texture": "#top"},
@@ -363,7 +337,6 @@
 			"name": "Door Top Metal",
 			"from": [0.75, 23, 5],
 			"to": [4.25, 23.5, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 9.10185, 8.75926]},
 			"faces": {
 				"north": {"uv": [10, 8.5, 11, 9], "texture": "#top"},
 				"east": {"uv": [10, 8.5, 11, 9], "texture": "#top"},
@@ -377,7 +350,6 @@
 			"name": "Door Bottom",
 			"from": [1, 0, 0],
 			"to": [4, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [3, 0, 6, 16], "texture": "#sides", "cullface": "north"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#bottom"},
@@ -391,7 +363,6 @@
 			"name": "Door Bottom Hinge",
 			"from": [0.5, 5.5, 8.5],
 			"to": [4.5, 7.5, 16.25],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [7, 8.5, 7.5, 10.5], "texture": "#bottom"},
 				"east": {"uv": [0, 8.5, 7.5, 10.5], "texture": "#bottom"},
@@ -405,7 +376,6 @@
 			"name": "Door Bottom Hinge",
 			"from": [0.5, 6, 1],
 			"to": [4.5, 7, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [14.5, 9, 15, 10], "texture": "#bottom"},
 				"east": {"uv": [7.5, 9, 15, 10], "texture": "#bottom"},
@@ -418,7 +388,6 @@
 			"name": "Door Bottom Hinge",
 			"from": [0.75, 5.5, 2],
 			"to": [4.25, 7.5, 3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [13, 8.5, 14, 10.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [13, 8.5, 14, 10.5], "texture": "#bottom"},
@@ -432,7 +401,6 @@
 			"name": "Door Bottom Handle",
 			"from": [0.75, 15.5, 1.5],
 			"to": [4.25, 16.5, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [11, 0, 14.5, 0.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [4.5, 9, 8, 10], "texture": "#bottom"},
@@ -446,7 +414,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 4, 5],
 			"to": [4.25, 4.5, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [10, 11.5, 11, 12], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [10, 11.5, 11, 12], "texture": "#bottom"},
@@ -460,7 +427,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 4.5, 4.5],
 			"to": [4.25, 5, 5.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [10.5, 11, 11.5, 11.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [10.5, 11, 11.5, 11.5], "texture": "#bottom"},
@@ -474,7 +440,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 5, 5],
 			"to": [4.25, 5.5, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [10, 10.5, 11, 11], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [10, 10.5, 11, 11], "texture": "#bottom"},
@@ -488,7 +453,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 8.5, 5],
 			"to": [4.25, 9, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [10, 7, 11, 7.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [10, 7, 11, 7.5], "texture": "#bottom"},
@@ -502,7 +466,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 8, 4.5],
 			"to": [4.25, 8.5, 5.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [10.5, 7.5, 11.5, 8], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [10.5, 7.5, 11.5, 8], "texture": "#bottom"},
@@ -516,7 +479,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 7.5, 5],
 			"to": [4.25, 8, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [10, 8, 11, 8.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [10, 8, 11, 8.5], "texture": "#bottom"},
@@ -530,7 +492,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 5.5, 5.5],
 			"to": [4.25, 7.5, 6.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [9.5, 8.5, 10.5, 10.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [9.5, 8.5, 10.5, 10.5], "texture": "#bottom"},
@@ -544,7 +505,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 3.5, 8.5],
 			"to": [4.25, 4, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [6.5, 12, 7.5, 12.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [6.5, 12, 7.5, 12.5], "texture": "#bottom"},
@@ -557,7 +517,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 4, 9],
 			"to": [4.25, 4.5, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"east": {"uv": [6, 11.5, 7, 12], "texture": "#bottom"},
 				"south": {"uv": [6, 11.5, 7, 12], "rotation": 180, "texture": "#bottom"},
@@ -570,7 +529,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 5, 9],
 			"to": [4.25, 8, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"east": {"uv": [6.5, 8, 7, 11], "texture": "#bottom"},
 				"south": {"uv": [6.5, 8, 7, 11], "rotation": 180, "texture": "#bottom"},
@@ -583,7 +541,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 4, 8],
 			"to": [4.25, 5.5, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [7, 10.5, 8, 12], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [7, 10.5, 8, 12], "texture": "#bottom"},
@@ -597,7 +554,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 9, 8.5],
 			"to": [4.25, 9.5, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [6.5, 6.5, 7.5, 7], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [6.5, 6.5, 7.5, 7], "texture": "#bottom"},
@@ -610,7 +566,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 8.5, 9],
 			"to": [4.25, 9, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"east": {"uv": [6, 7, 7, 7.5], "texture": "#bottom"},
 				"south": {"uv": [6, 7, 7, 7.5], "rotation": 180, "texture": "#bottom"},
@@ -623,7 +578,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 7.5, 8],
 			"to": [4.25, 9, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [7, 7, 8, 8.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [7, 7, 8, 8.5], "texture": "#bottom"},
@@ -637,7 +591,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 3.5, 13],
 			"to": [4.25, 4, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"east": {"uv": [2, 12, 3, 12.5], "texture": "#bottom"},
 				"south": {"uv": [2, 12, 3, 12.5], "rotation": 180, "texture": "#bottom"},
@@ -650,7 +603,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 3.5, 12],
 			"to": [4.25, 5, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [3, 11, 4, 12.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [3, 11, 4, 12.5], "texture": "#bottom"},
@@ -664,7 +616,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 3, 12.5],
 			"to": [4.25, 3.5, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [2.5, 12.5, 3.5, 13], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [2.5, 12.5, 3.5, 13], "texture": "#bottom"},
@@ -677,7 +628,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 4.5, 13],
 			"to": [4.25, 8.5, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"east": {"uv": [2.5, 7.5, 3, 11.5], "texture": "#bottom"},
 				"south": {"uv": [2.5, 7.5, 3, 11.5], "rotation": 180, "texture": "#bottom"},
@@ -690,7 +640,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 9, 13],
 			"to": [4.25, 9.5, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"east": {"uv": [2, 6.5, 3, 7], "texture": "#bottom"},
 				"south": {"uv": [2, 6.5, 3, 7], "rotation": 180, "texture": "#bottom"},
@@ -703,7 +652,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 8, 12],
 			"to": [4.25, 9.5, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [3, 6.5, 4, 8], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [3, 6.5, 4, 8], "texture": "#bottom"},
@@ -717,7 +665,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 9.5, 12.5],
 			"to": [4.25, 10, 13.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [2.5, 6, 3.5, 6.5], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [2.5, 6, 3.5, 6.5], "texture": "#bottom"},
@@ -730,7 +677,6 @@
 			"name": "Door Bottom Metal",
 			"from": [0.75, 5, 12.5],
 			"to": [4.25, 8, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 6.89815, 8.75926]},
 			"faces": {
 				"north": {"uv": [2, 8, 3.5, 11], "rotation": 180, "texture": "#bottom"},
 				"east": {"uv": [2, 8, 3.5, 11], "texture": "#bottom"},

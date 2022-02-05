@@ -5,8 +5,7 @@
 	"textures": {
 		"top": "block/doors/warped_door_top",
 		"bottom": "block/doors/warped_door_bottom",
-		"sides": "block/doors/warped_door_sides",
-		"particle": "block/doors/warped_door_top"
+		"sides": "block/doors/warped_door_sides"
 	},
 	"elements": [
 		{

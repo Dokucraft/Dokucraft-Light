@@ -1,1 +1,1 @@
-{"parent":"block/template_trapdoor_bottom","textures":{"texture":"block/trap_doors/birch_trapdoor","1":"block/trap_doors/birch_trapdoor_rim"}}
+{"parent":"block/template_trapdoor_bottom","textures":{"trapdoor":"block/trapdoors/birch_trapdoor","sides":"block/trapdoors/birch_trapdoor_rim"}}

@@ -11,7 +11,6 @@
 			"name": "Door Top Plank",
 			"from": [0, 0, 10.5],
 			"to": [3, 16, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [4, 0, 4.5, 16], "texture": "#top"},
 				"east": {"uv": [0, 0, 4.5, 16], "texture": "#top"},
@@ -25,7 +24,6 @@
 			"name": "Door Top Plank",
 			"from": [0.25, 0, 3],
 			"to": [2.75, 16, 10.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"east": {"uv": [4.5, 0, 12, 16], "texture": "#top"},
 				"west": {"uv": [12, 0, 4.5, 16], "texture": "#top"},
@@ -37,7 +35,6 @@
 			"name": "Door Top Plank",
 			"from": [0, 0, -1],
 			"to": [3, 16, 3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [6, 0, 9, 16], "texture": "#sides", "cullface": "north"},
 				"east": {"uv": [12, 0, 16, 16], "texture": "#top"},
@@ -51,7 +48,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 11, 6],
 			"to": [3, 12, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [8.5, 4, 9, 4.5], "texture": "#top"},
 				"east": {"uv": [7, 4, 9, 5], "texture": "#top"},
@@ -65,7 +61,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 12, 6.5],
 			"to": [3, 12.5, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [8, 3.5, 8.5, 4], "texture": "#top"},
 				"east": {"uv": [7.5, 3.5, 8.5, 4], "texture": "#top"},
@@ -78,7 +73,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 9.5, 8.5],
 			"to": [3, 10.5, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [12, 7, 15, 8], "texture": "#sides"},
 				"east": {"uv": [5.5, 5.5, 6.5, 6.5], "texture": "#top"},
@@ -92,7 +86,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 10, 8],
 			"to": [3, 11, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [12, 6, 15, 7], "texture": "#sides"},
 				"east": {"uv": [6, 5, 7, 6], "texture": "#top"},
@@ -106,7 +99,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 10.5, 7.5],
 			"to": [3, 11.5, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [12, 7, 15, 8], "texture": "#sides"},
 				"east": {"uv": [6.5, 4.5, 7.5, 5.5], "texture": "#top"},
@@ -120,7 +112,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 10.5, 5.5],
 			"to": [3, 11.5, 6.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [9, 4.5, 9.5, 5], "texture": "#top"},
 				"east": {"uv": [8.5, 4.5, 9.5, 5.5], "texture": "#top"},
@@ -134,7 +125,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 10, 5],
 			"to": [3, 11, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [9.5, 5, 10, 5.5], "texture": "#top"},
 				"east": {"uv": [9, 5, 10, 6], "texture": "#top"},
@@ -148,7 +138,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 9.5, 4.5],
 			"to": [3, 10.5, 5.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [10, 5.5, 10.5, 6], "texture": "#top"},
 				"east": {"uv": [9.5, 5.5, 10.5, 6.5], "texture": "#top"},
@@ -162,7 +151,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 4.5, 4],
 			"to": [3, 10, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [10.5, 6, 11, 11.5], "texture": "#top"},
 				"east": {"uv": [10, 6, 11, 11.5], "texture": "#top"},
@@ -176,7 +164,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 4.5, 9],
 			"to": [3, 10, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [12, 0, 15, 5.5], "texture": "#sides"},
 				"east": {"uv": [5, 6, 6, 11.5], "texture": "#top"},
@@ -190,7 +177,6 @@
 			"name": "Door Top Window Frame",
 			"from": [0, 4, 4.5],
 			"to": [3, 5.5, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.28571, 6.96429]},
 			"faces": {
 				"north": {"uv": [10, 11.5, 10.5, 12], "texture": "#top"},
 				"east": {"uv": [5.5, 10.5, 10.5, 12], "texture": "#top"},

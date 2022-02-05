@@ -11,7 +11,6 @@
 			"name": "Door Top Plank",
 			"from": [1, 0, 12],
 			"to": [4, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8, 21.5]},
 			"faces": {
 				"north": {"uv": [12, 0, 12.5, 16], "texture": "#top"},
 				"east": {"uv": [16, 0, 12, 16], "texture": "#top"},
@@ -25,7 +24,6 @@
 			"name": "Door Top Plank",
 			"from": [1, 0, 0],
 			"to": [4, 16, 4.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8, 8]},
 			"faces": {
 				"north": {"uv": [9, 0, 6, 16], "texture": "#sides", "cullface": "north"},
 				"east": {"uv": [4.5, 0, 0, 16], "texture": "#top"},

@@ -11,7 +11,6 @@
 			"name": "Door Top",
 			"from": [0, 0, -1],
 			"to": [3, 16, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [6, 0, 9, 16], "texture": "#sides"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#top"},
@@ -25,7 +24,6 @@
 			"name": "Door Top Hinge",
 			"from": [-0.5, 9, 0],
 			"to": [3.5, 10, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [14.5, 6, 15, 7], "texture": "#top"},
 				"east": {"uv": [7.5, 6, 15, 7], "texture": "#top"},
@@ -39,7 +37,6 @@
 			"name": "Door Top Hinge",
 			"from": [-0.5, 8.5, 7.5],
 			"to": [3.5, 10.5, 15.25],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [7, 5.5, 7.5, 7.5], "texture": "#top"},
 				"east": {"uv": [0, 5.5, 7.5, 7.5], "texture": "#top"},
@@ -53,7 +50,6 @@
 			"name": "Door Top Hinge",
 			"from": [-0.25, 8.5, 1],
 			"to": [3.25, 10.5, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [13, 5.5, 14, 7.5], "texture": "#top"},
 				"east": {"uv": [13, 5.5, 14, 7.5], "texture": "#top"},
@@ -67,7 +63,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 12.5, 11.5],
 			"to": [3.25, 13, 12.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [2.5, 3, 3.5, 3.5], "texture": "#top"},
 				"east": {"uv": [2.5, 3, 3.5, 3.5], "texture": "#top"},
@@ -81,7 +76,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 11, 11],
 			"to": [3.25, 12.5, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [3, 3.5, 4, 5], "texture": "#top"},
 				"east": {"uv": [3, 3.5, 4, 5], "texture": "#top"},
@@ -95,7 +89,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 12, 12],
 			"to": [3.25, 12.5, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [2, 3.5, 3, 4], "texture": "#top"},
 				"east": {"uv": [2, 3.5, 3, 4], "texture": "#top"},
@@ -109,7 +102,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 8, 11.5],
 			"to": [3.25, 11, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [2, 5, 3.5, 8], "texture": "#top"},
 				"east": {"uv": [2, 5, 3.5, 8], "texture": "#top"},
@@ -123,7 +115,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 7.5, 12],
 			"to": [3.25, 11.5, 12.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [2.5, 4.5, 3, 8.5], "texture": "#top"},
 				"east": {"uv": [2.5, 4.5, 3, 8.5], "texture": "#top"},
@@ -137,7 +128,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 6, 11.5],
 			"to": [3.25, 6.5, 12.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [2.5, 9.5, 3.5, 10], "texture": "#top"},
 				"east": {"uv": [2.5, 9.5, 3.5, 10], "texture": "#top"},
@@ -151,7 +141,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 6.5, 11],
 			"to": [3.25, 8, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [3, 8, 4, 9.5], "texture": "#top"},
 				"east": {"uv": [3, 8, 4, 9.5], "texture": "#top"},
@@ -165,7 +154,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 6.5, 12],
 			"to": [3.25, 7, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [2, 9, 3, 9.5], "texture": "#top"},
 				"east": {"uv": [2, 9, 3, 9.5], "texture": "#top"},
@@ -179,7 +167,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 10.5, 7],
 			"to": [3.25, 12, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [7, 4, 8, 5.5], "texture": "#top"},
 				"east": {"uv": [7, 4, 8, 5.5], "texture": "#top"},
@@ -193,7 +180,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 8, 8],
 			"to": [3.25, 11, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [6.5, 5, 7, 8], "texture": "#top"},
 				"east": {"uv": [6.5, 5, 7, 8], "texture": "#top"},
@@ -207,7 +193,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 11.5, 8],
 			"to": [3.25, 12, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [6, 4, 7, 4.5], "texture": "#top"},
 				"east": {"uv": [6, 4, 7, 4.5], "texture": "#top"},
@@ -221,7 +206,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 12, 7.5],
 			"to": [3.25, 12.5, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [6.5, 3.5, 7.5, 4], "texture": "#top"},
 				"east": {"uv": [6.5, 3.5, 7.5, 4], "texture": "#top"},
@@ -235,7 +219,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 7, 7],
 			"to": [3.25, 8.5, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [7, 7.5, 8, 9], "texture": "#top"},
 				"east": {"uv": [7, 7.5, 8, 9], "texture": "#top"},
@@ -249,7 +232,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 7, 8],
 			"to": [3.25, 7.5, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [6, 8.5, 7, 9], "texture": "#top"},
 				"east": {"uv": [6, 8.5, 7, 9], "texture": "#top"},
@@ -263,7 +245,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 6.5, 7.5],
 			"to": [3.25, 7, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [6.5, 9, 7.5, 9.5], "texture": "#top"},
 				"east": {"uv": [6.5, 9, 7.5, 9.5], "texture": "#top"},
@@ -277,7 +258,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 10.5, 4],
 			"to": [3.25, 11, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [10, 5, 11, 5.5], "texture": "#top"},
 				"east": {"uv": [10, 5, 11, 5.5], "texture": "#top"},
@@ -291,7 +271,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 11, 3.5],
 			"to": [3.25, 11.5, 4.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [10.5, 4.5, 11.5, 5], "texture": "#top"},
 				"east": {"uv": [10.5, 4.5, 11.5, 5], "texture": "#top"},
@@ -305,7 +284,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 11.5, 4],
 			"to": [3.25, 12, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [10, 4, 11, 4.5], "texture": "#top"},
 				"east": {"uv": [10, 4, 11, 4.5], "texture": "#top"},
@@ -319,7 +297,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 8.5, 4.5],
 			"to": [3.25, 10.5, 5.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [9.5, 5.5, 10.5, 7.5], "texture": "#top"},
 				"east": {"uv": [9.5, 5.5, 10.5, 7.5], "texture": "#top"},
@@ -333,7 +310,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 8, 4],
 			"to": [3.25, 8.5, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [10, 7.5, 11, 8], "texture": "#top"},
 				"east": {"uv": [10, 7.5, 11, 8], "texture": "#top"},
@@ -347,7 +323,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 7.5, 3.5],
 			"to": [3.25, 8, 4.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [10.5, 8, 11.5, 8.5], "texture": "#top"},
 				"east": {"uv": [10.5, 8, 11.5, 8.5], "texture": "#top"},
@@ -361,7 +336,6 @@
 			"name": "Door Top Metal",
 			"from": [-0.25, 7, 4],
 			"to": [3.25, 7.5, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 9.10185, 7.75926]},
 			"faces": {
 				"north": {"uv": [10, 8.5, 11, 9], "texture": "#top"},
 				"east": {"uv": [10, 8.5, 11, 9], "texture": "#top"},
