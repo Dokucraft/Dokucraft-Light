@@ -1,1 +1,1 @@
-{"parent":"block/torch/torch","gui_light":"front"}
+{"parent":"block/torch/torch","gui_light":"front","textures":{"fire":"item/torch_fire"}}

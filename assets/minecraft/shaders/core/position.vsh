@@ -6,7 +6,7 @@ in vec3 Position;
 
 uniform mat4 ModelViewMat;
 uniform mat4 ProjMat;
-// uniform float FogEnd;
+uniform int FogShape;
 
 out mat4 ProjInv;
 out float isSky;
@@ -46,5 +46,5 @@ void main() {
     }
 
     ProjInv = inverse(ProjMat * ModelViewMat);
-    vertexDistance = cylindrical_distance(ModelViewMat, Position);
+    vertexDistance = fog_distance(ModelViewMat, Position, FogShape);
 }
