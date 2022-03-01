@@ -12,6 +12,7 @@ uniform sampler2D Sampler2;
 
 uniform mat4 ModelViewMat;
 uniform mat4 ProjMat;
+uniform int FogShape;
 
 out float vertexDistance;
 out vec2 texCoord0;
@@ -21,7 +22,7 @@ out vec4 lightColor;
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
-    vertexDistance = cylindrical_distance(ModelViewMat, Position);
+    vertexDistance = fog_distance(ModelViewMat, Position, FogShape);
     texCoord0 = UV0;
     vertexColor = Color;
 	lightColor = minecraft_sample_lightmap(Sampler2, UV2);

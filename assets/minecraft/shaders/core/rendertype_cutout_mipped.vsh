@@ -22,6 +22,7 @@ uniform float GameTime;
 uniform mat4 ModelViewMat;
 uniform mat4 ProjMat;
 uniform vec3 ChunkOffset;
+uniform int FogShape;
 
 out float vertexDistance;
 out vec4 vertexColor;
@@ -61,7 +62,7 @@ void main() {
       relativePos = tbn(newForward, vec3(0, 1, 0)) * relativePos;
       vec4 swayedPos = vec4(floor(Position) + relativePos + vec3(0.5, 1, 0.5) + ChunkOffset, 1.0);
       gl_Position = ProjMat * ModelViewMat * swayedPos;
-      vertexDistance = cylindrical_distance(ModelViewMat, swayedPos.xyz);
+      vertexDistance = fog_distance(ModelViewMat, swayedPos.xyz, FogShape);
     }
   } else {
     if (alpha == 18 || alpha == 253 ) {
@@ -79,7 +80,7 @@ void main() {
     }
     vec4 wavedPos = vec4(position, 1.0) + vec4(xs / 32.0, ys, zs / 32.0, 0.0);
     gl_Position = ProjMat * ModelViewMat * wavedPos;
-    vertexDistance = cylindrical_distance(ModelViewMat, wavedPos.xyz);
+    vertexDistance = fog_distance(ModelViewMat, wavedPos.xyz, FogShape);
   }
 
 	vertexColor = Color;
