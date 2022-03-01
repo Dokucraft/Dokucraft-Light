@@ -1,0 +1,45 @@
+{
+    "textures": {
+        "particle": "#trapdoor",
+        "side": "#sides"
+    },
+    "elements": [{
+            "from": [0, 13, 0],
+            "to": [16, 16, 16],
+            "faces": {
+                "north": {
+                    "uv": [0, 0, 3, 16],
+                    "rotation": 90,
+                    "texture": "#sides",
+                    "cullface": "north"
+                },
+                "east": {
+                    "uv": [0, 0, 3, 16],
+                    "rotation": 90,
+                    "texture": "#sides",
+                    "cullface": "east"
+                },
+                "south": {
+                    "uv": [0, 0, 3, 16],
+                    "rotation": 90,
+                    "texture": "#sides",
+                    "cullface": "south"
+                },
+                "west": {
+                    "uv": [0, 0, 3, 16],
+                    "rotation": 90,
+                    "texture": "#sides",
+                    "cullface": "west"
+                },
+                "up": {
+                    "uv": [0, 16, 16, 0],
+                    "texture": "#trapdoor"
+                },
+                "down": {
+                    "uv": [0, 0, 16, 16],
+                    "texture": "#trapdoor"
+                }
+            }
+        }
+    ]
+}
