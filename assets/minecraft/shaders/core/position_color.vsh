@@ -1,6 +1,6 @@
 #version 150
 
-#moj_import <flavor.glsl>
+#moj_import <../flavor.glsl>
 
 in vec3 Position;
 in vec4 Color;

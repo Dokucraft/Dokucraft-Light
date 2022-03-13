@@ -1,7 +1,7 @@
 #version 150
 
 #moj_import <utils.glsl>
-#moj_import <flavor.glsl>
+#moj_import <../flavor.glsl>
 
 in vec4 vertexColor;
 in float isHorizon;

@@ -1,0 +1,12 @@
+
+// Remove this line to disable the waving animation for things like plants, leaves, and fire
+#define ENABLE_WAVING
+
+// Controls how much things like plants, leaves, and fire wave
+#define WAVE_MULTIPLIER 1.0
+
+// Remove this line to disable the swaying animation for hanging lanterns
+#define ENABLE_LANTERN_SWAY
+
+// Controls how much hanging lanterns sway
+#define LANTERN_SWAY_MULTIPLIER 1.0
