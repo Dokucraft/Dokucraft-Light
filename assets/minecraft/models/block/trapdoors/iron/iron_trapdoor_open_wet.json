@@ -202,7 +202,7 @@
 			"to": [13.5, 13.5, 15.75],
 			"faces": {
 				"north": {"uv": [2.5, 2.5, 13.5, 13.5], "texture": "#trapdoor"},
-				"south": {"uv": [2.5, 2.5, 13.5, 13.5], "texture": "#trapdoor"}
+				"south": {"uv": [2.5, 13.5, 13.5, 2.5], "texture": "#trapdoor"}
 			}
 		},
 		{

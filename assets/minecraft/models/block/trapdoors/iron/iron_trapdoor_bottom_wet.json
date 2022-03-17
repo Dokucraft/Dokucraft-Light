@@ -202,7 +202,7 @@
 			"to": [13.5, 2.75, 13.5],
 			"faces": {
 				"up": {"uv": [2.5, 2.5, 13.5, 13.5], "texture": "#trapdoor"},
-				"down": {"uv": [2.5, 2.5, 13.5, 13.5], "rotation": 180, "texture": "#trapdoor"}
+				"down": {"uv": [2.5, 13.5, 13.5, 2.5], "texture": "#trapdoor"}
 			}
 		},
 		{
