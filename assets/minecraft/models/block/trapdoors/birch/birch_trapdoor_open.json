@@ -10,14 +10,14 @@
 	"elements": [
 		{
 			"name": "Window Frame",
-			"from": [3.5, 12, 13],
-			"to": [12.5, 13, 16],
+			"from": [3.5, 11.5, 13],
+			"to": [12.5, 12.5, 16],
 			"faces": {
-				"north": {"uv": [3.5, 12, 12.5, 13], "rotation": 180, "texture": "#trapdoor"},
-				"east": {"uv": [12, 12.5, 12.5, 13], "rotation": 180, "texture": "#trapdoor"},
-				"south": {"uv": [3.5, 13, 12.5, 12], "texture": "#trapdoor"},
-				"west": {"uv": [3.5, 12.5, 4, 13], "texture": "#trapdoor"},
-				"up": {"uv": [3.5, 12.5, 12.5, 13], "rotation": 180, "texture": "#trapdoor"},
+				"north": {"uv": [3.5, 11.5, 12.5, 12.5], "rotation": 180, "texture": "#trapdoor"},
+				"east": {"uv": [12, 11.5, 12.5, 12.5], "rotation": 180, "texture": "#trapdoor"},
+				"south": {"uv": [3.5, 12.5, 12.5, 11.5], "texture": "#trapdoor"},
+				"west": {"uv": [3.5, 11.5, 4, 12.5], "texture": "#trapdoor"},
+				"up": {"uv": [3.5, 12, 12.5, 12.5], "rotation": 180, "texture": "#trapdoor"},
 				"down": {"uv": [0, 12.5, 3, 3.5], "rotation": 270, "texture": "#sides"}
 			}
 		},
@@ -42,7 +42,8 @@
 				"north": {"uv": [3, 4, 4, 12], "rotation": 180, "texture": "#trapdoor"},
 				"east": {"uv": [0, 12, 3, 4], "rotation": 180, "texture": "#sides"},
 				"south": {"uv": [3, 12, 4, 4], "texture": "#trapdoor"},
-				"west": {"uv": [3, 4, 3.5, 12], "texture": "#trapdoor"}
+				"west": {"uv": [3, 12, 3.5, 4], "texture": "#trapdoor"},
+				"up": {"uv": [3, 11.5, 4, 12], "texture": "#trapdoor"}
 			}
 		},
 		{
@@ -53,29 +54,8 @@
 				"north": {"uv": [12, 4, 13, 12], "rotation": 180, "texture": "#trapdoor"},
 				"east": {"uv": [12.5, 4, 13, 12], "rotation": 180, "texture": "#trapdoor"},
 				"south": {"uv": [12, 12, 13, 4], "texture": "#trapdoor"},
-				"west": {"uv": [0, 4, 3, 12], "texture": "#sides"}
-			}
-		},
-		{
-			"name": "Window Frame",
-			"from": [3, 12, 13],
-			"to": [3.5, 12.5, 16],
-			"faces": {
-				"north": {"uv": [3, 12, 3.5, 12.5], "rotation": 180, "texture": "#trapdoor"},
-				"south": {"uv": [3, 12.5, 3.5, 12], "texture": "#trapdoor"},
-				"west": {"uv": [3, 12, 3.5, 12.5], "rotation": 270, "texture": "#trapdoor"},
-				"up": {"uv": [3, 12, 3.5, 12.5], "texture": "#trapdoor"}
-			}
-		},
-		{
-			"name": "Window Frame",
-			"from": [12.5, 12, 13],
-			"to": [13, 12.5, 16],
-			"faces": {
-				"north": {"uv": [12.5, 12, 13, 12.5], "rotation": 180, "texture": "#trapdoor"},
-				"east": {"uv": [12.5, 12, 13, 12.5], "rotation": 90, "texture": "#trapdoor"},
-				"south": {"uv": [12.5, 12.5, 13, 12], "texture": "#trapdoor"},
-				"up": {"uv": [12.5, 12, 13, 12.5], "texture": "#trapdoor"}
+				"west": {"uv": [0, 4, 3, 12], "texture": "#sides"},
+				"up": {"uv": [12, 11.5, 13, 12], "texture": "#trapdoor"}
 			}
 		},
 		{
@@ -102,13 +82,26 @@
 		},
 		{
 			"name": "Window Frame",
-			"from": [4, 13, 13],
+			"from": [4, 13.5, 13],
 			"to": [12, 14, 16],
 			"faces": {
-				"north": {"uv": [4, 13, 12, 14], "rotation": 180, "texture": "#trapdoor"},
-				"east": {"uv": [11.5, 13, 12, 14], "rotation": 180, "texture": "#trapdoor"},
-				"south": {"uv": [4, 14, 12, 13], "texture": "#trapdoor"},
-				"west": {"uv": [4, 14, 4.5, 13], "texture": "#trapdoor"}
+				"north": {"uv": [4, 13.5, 12, 14], "rotation": 180, "texture": "#trapdoor"},
+				"east": {"uv": [11.5, 13.5, 12, 14], "rotation": 180, "texture": "#trapdoor"},
+				"south": {"uv": [4, 14, 12, 13.5], "texture": "#trapdoor"},
+				"west": {"uv": [4, 14, 4.5, 13.5], "texture": "#trapdoor"},
+				"down": {"uv": [4, 13.5, 12, 14], "rotation": 180, "texture": "#trapdoor"}
+			}
+		},
+		{
+			"name": "Window Frame",
+			"from": [5.5, 13, 13],
+			"to": [10.5, 13.5, 16],
+			"faces": {
+				"north": {"uv": [5.5, 13, 10.5, 13.5], "rotation": 180, "texture": "#trapdoor"},
+				"east": {"uv": [10, 13, 10.5, 13.5], "rotation": 180, "texture": "#trapdoor"},
+				"south": {"uv": [5.5, 13.5, 10.5, 13], "texture": "#trapdoor"},
+				"west": {"uv": [5.5, 13.5, 6, 13], "texture": "#trapdoor"},
+				"down": {"uv": [5.5, 13, 10.5, 13.5], "rotation": 180, "texture": "#trapdoor"}
 			}
 		},
 		{
@@ -179,13 +172,13 @@
 					"name": "Window Frame",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+					"children": [0, 1, 2, 3, 4, 5, 6, 7]
 				},
+				8,
 				9,
 				10,
 				11,
-				12,
-				13
+				12
 			]
 		}
 	]
