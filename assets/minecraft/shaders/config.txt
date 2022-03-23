@@ -1,4 +1,8 @@
 
+// ============================================================================
+//  Waving & swaying animations
+// ============================================================================
+
 // Remove this line to disable the waving animation for things like plants, leaves, and fire
 #define ENABLE_WAVING
 
@@ -10,3 +14,22 @@
 
 // Controls how much hanging lanterns sway
 #define LANTERN_SWAY_MULTIPLIER 1.0
+
+
+
+// ============================================================================
+//  Parallax subsurface
+// ============================================================================
+
+// Remove this line to disable the parallax subsurface effect (used on blue/packed ice, diamond blocks, diamond ore, etc.) - Also disables all other PSS settings
+// Disabling it may improve performance on lower-end graphics cards
+#define ENABLE_PARALLAX_SUBSURFACE
+
+// Remove this line to disable the SSE shallow angle artifact fix
+// The fix makes the surface more visible when viewed at very shallow angles, disabling it will make the subsurface always visible, which can lead to some strange effects in certain cases
+// The performance impact of this should be tiny, you probably won't notice the difference
+#define ENABLE_PSS_SHALLOW_ANGLE_FIX
+
+// Remove this line to disable the chromatic aberration effect in the subsurface
+// Disabling it may improve performance on lower-end graphics cards
+#define ENABLE_PSS_CHROMATIC_ABERRATION
