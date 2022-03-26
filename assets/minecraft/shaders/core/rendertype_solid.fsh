@@ -30,7 +30,7 @@ out vec4 fragColor;
 
 #ifdef ENABLE_PARALLAX_SUBSURFACE
   vec2 parallax(vec2 texCoords, vec3 viewDir, vec3 norm, float depthScale) {
-    return texCoords + (viewDir.zy / viewDir.x * vec2(abs(norm.x), norm.x) - viewDir.xz / viewDir.y * abs(norm.y) - viewDir.xy / viewDir.z * vec2(abs(norm.z), -norm.z)) * tileSize * depthScale;
+    return texCoords + (viewDir.zy / viewDir.x * vec2(abs(norm.x), norm.x) - viewDir.xz / viewDir.y * vec2(norm.y, abs(norm.y)) - viewDir.xy / viewDir.z * vec2(abs(norm.z), -norm.z)) * tileSize * depthScale;
   }
 #endif
 
