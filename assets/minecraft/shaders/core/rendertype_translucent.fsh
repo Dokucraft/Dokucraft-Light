@@ -18,13 +18,23 @@ in vec2 texCoord0;
 in vec4 normal;
 
 #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
-  in float fresnel;
+  #ifdef ENABLE_FRAGMENT_FRESNEL
+    in vec3 wpos;
+    in vec3 wnorm;
+  #else
+    in float fresnel;
+  #endif
 #endif
 
 out vec4 fragColor;
 
 void main() {
   #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
+    #ifdef ENABLE_FRAGMENT_FRESNEL
+      float fresnel = 1.0 - abs(dot(normalize(-wpos), wnorm));
+      fresnel *= fresnel;
+    #endif
+
     vec4 color = texture(Sampler0, texCoord0);
 
     #ifdef ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR

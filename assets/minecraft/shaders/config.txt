@@ -43,5 +43,8 @@
 // Remove this line to disable the Fresnel effect on translucent materials (water, stained/tinted glass, honey/slime block, etc.)
 #define ENABLE_FRESNEL_EFFECT
 
+// Removing this line will make the Fresnel effect perform better, but it will look slightly incorrect in some cases
+#define ENABLE_FRAGMENT_FRESNEL
+
 // Remove this line to disable the desaturation of the biome color on highlights on translucent materials (used to make the highlights on water look better)
 #define ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR

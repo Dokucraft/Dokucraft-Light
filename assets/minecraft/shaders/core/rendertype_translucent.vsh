@@ -24,21 +24,33 @@ out vec2 texCoord0;
 out vec4 normal;
 
 #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
-  out float fresnel;
+  #ifdef ENABLE_FRAGMENT_FRESNEL
+    out vec3 wpos;
+    out vec3 wnorm;
+  #else
+    out float fresnel;
+  #endif
 #endif
 
 void main() {
-  vec3 pos = Position + ChunkOffset;
-  gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
+  #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
+    #ifdef ENABLE_FRAGMENT_FRESNEL
+      wpos = Position + ChunkOffset;
+      wnorm = Normal;
+    #else
+      vec3 wpos = Position + ChunkOffset;
+      fresnel = 1.0 - abs(dot(normalize(-wpos), Normal));
+      fresnel *= fresnel;
+    #endif
+  #else
+    vec3 wpos = Position + ChunkOffset;
+  #endif
 
-  vertexDistance = fog_distance(ModelViewMat, pos, FogShape);
+  gl_Position = ProjMat * ModelViewMat * vec4(wpos, 1.0);
+
+  vertexDistance = fog_distance(ModelViewMat, wpos, FogShape);
   vertexColor = Color;
   lightColor = minecraft_sample_lightmap(Sampler2, UV2);
   texCoord0 = UV0;
   normal = ProjMat * ModelViewMat * vec4(Normal, 0.0);
-
-  #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
-    fresnel = 1.0 - abs(dot(normalize(-pos), Normal));
-    fresnel *= fresnel;
-  #endif
 }
