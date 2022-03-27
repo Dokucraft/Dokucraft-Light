@@ -33,3 +33,15 @@
 // Remove this line to disable the chromatic aberration effect in the subsurface
 // Disabling it may improve performance on lower-end graphics cards
 #define ENABLE_PSS_CHROMATIC_ABERRATION
+
+
+
+// ============================================================================
+//  Translucent materials
+// ============================================================================
+
+// Remove this line to disable the Fresnel effect on translucent materials (water, stained/tinted glass, honey/slime block, etc.)
+#define ENABLE_FRESNEL_EFFECT
+
+// Remove this line to disable the desaturation of the biome color on highlights on translucent materials (used to make the highlights on water look better)
+#define ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR
