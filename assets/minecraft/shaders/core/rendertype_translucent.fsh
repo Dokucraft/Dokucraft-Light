@@ -30,24 +30,28 @@ out vec4 fragColor;
 
 void main() {
   #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
-    #ifdef ENABLE_FRAGMENT_FRESNEL
-      float fresnel = 1.0 - abs(dot(normalize(-wpos), wnorm));
-      fresnel *= fresnel;
-    #endif
-
     vec4 color = texture(Sampler0, texCoord0);
 
-    #ifdef ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR
-      color = mix(color * vertexColor * ColorModulator, color, color.r * color.g * color.b * (1 - fresnel)) * lightColor;
-    #else
+    if (color.a >= 0.4 && color.a < 0.9) {
+      #ifdef ENABLE_FRAGMENT_FRESNEL
+        float fresnel = 1.0 - abs(dot(normalize(-wpos), wnorm));
+        fresnel *= fresnel;
+      #endif
+
+      #ifdef ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR
+        color = mix(color * vertexColor * ColorModulator, color, color.r * color.g * color.b * (1 - fresnel)) * lightColor;
+      #else
+        color *= vertexColor * ColorModulator * lightColor;
+      #endif
+
+      #ifdef ENABLE_FRESNEL_EFFECT
+        color.a = mix(color.a, 1, fresnel);
+      #endif
+    } else {
       color *= vertexColor * ColorModulator * lightColor;
-    #endif
+    }
   #else
     vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator * lightColor;
-  #endif
-
-  #ifdef ENABLE_FRESNEL_EFFECT
-    color.a = mix(color.a, 1, fresnel);
   #endif
 
   fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
