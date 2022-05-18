@@ -16,6 +16,10 @@
 // Requires ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
 // #define ENABLE_AURORAS
 
+// Controls the colors of the auroras
+// Requires ENABLE_AURORAS
+#define AURORA_COLOR vec3(0.465, 2, 0.833)
+
 // Uncomment this line to enable the north star
 // No noticeable impact on performance
 // Requires ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
@@ -154,20 +158,20 @@ const float FUDGE = 0.01;
 
 /* ------------------------------------------------------------------------- */
 
+mat4 rotationMatrix(vec3 axis, float angle) {
+    axis = normalize(axis);
+    float s = sin(angle);
+    float c = cos(angle);
+    float oc = 1.0 - c;
+    
+    return mat4(oc * axis.x * axis.x + c,           oc * axis.x * axis.y - axis.z * s,  oc * axis.z * axis.x + axis.y * s,  0.0,
+                oc * axis.x * axis.y + axis.z * s,  oc * axis.y * axis.y + c,           oc * axis.y * axis.z - axis.x * s,  0.0,
+                oc * axis.z * axis.x - axis.y * s,  oc * axis.y * axis.z + axis.x * s,  oc * axis.z * axis.z + c,           0.0,
+                0.0,                                0.0,                                0.0,                                1.0);
+}
+
 #ifdef ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
   #define M_PI 3.141592653589793
-
-  mat4 rotationMatrix(vec3 axis, float angle) {
-      axis = normalize(axis);
-      float s = sin(angle);
-      float c = cos(angle);
-      float oc = 1.0 - c;
-      
-      return mat4(oc * axis.x * axis.x + c,           oc * axis.x * axis.y - axis.z * s,  oc * axis.z * axis.x + axis.y * s,  0.0,
-                  oc * axis.x * axis.y + axis.z * s,  oc * axis.y * axis.y + c,           oc * axis.y * axis.z - axis.x * s,  0.0,
-                  oc * axis.z * axis.x - axis.y * s,  oc * axis.y * axis.z + axis.x * s,  oc * axis.z * axis.z + c,           0.0,
-                  0.0,                                0.0,                                0.0,                                1.0);
-  }
 
   vec3 rotate(vec3 v, vec3 axis, float angle) {
     mat4 m = rotationMatrix(axis, angle);
@@ -359,6 +363,7 @@ const float FUDGE = 0.01;
       return clamp(1./pow(rz*29., 1.3),0.,.55);
     }
 
+    #define INV_AURORA_COLOR vec3(1) / AURORA_COLOR
     vec3 aurora(vec3 direction, float time) {
       vec3 col = vec3(0);
       vec3 avgCol = vec3(0);
@@ -367,9 +372,7 @@ const float FUDGE = 0.01;
         float of = 0.006*hash21(gl_FragCoord.xy)*smoothstep(0.,15., i);
         float pt = (.8+pow(i,1.4)*.002)/(direction.y*2.+0.4) - of;
         vec3 bpos = pt*direction;
-        vec2 p = bpos.zx;
-        float rzt = triNoise2d(p, 0.06, time);
-        avgCol = mix(avgCol, (sin(1.-vec3(2.15,-.5, 1.2)+i*0.043)*0.5+0.5)*rzt, 0.5);
+        avgCol = mix(avgCol, (sin(1.-INV_AURORA_COLOR+i*0.043)*0.5+0.5)*triNoise2d(bpos.zx, 0.06, time), 0.5);
         col += avgCol*exp2(-i*0.065 - 2.5)*smoothstep(0.,5., i);
       }
 
@@ -464,11 +467,11 @@ void main() {
         #endif
 
         #ifdef ENABLE_AURORAS
-          + aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1, -0.95, dot(nd, sunDir))
+          + aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir))
         #endif
       ;
     #else
-      vec3 nightSkybox = sampleSkybox(SkyBoxNightSampler, direction);
+      vec3 nightSkybox = sampleSkybox(SkyBoxNightSampler, (rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(normalize(direction), 1.0)).xyz);
     #endif
 
     #ifdef ENABLE_REDDENING
