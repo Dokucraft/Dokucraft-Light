@@ -1,147 +1,120 @@
 {
   "multipart": [
-    {
-      "when": {
-        "up": "true"
-      },
+    { "when": { "up": "true" },
+			"apply": [
+				{ "model": "block/cobblestone/wall/post/0", "weight":30 },
+				{ "model": "block/cobblestone/wall/post/1", "weight":20 },
+				{ "model": "block/cobblestone/wall/post/2", "weight":20 },
+				{ "model": "block/cobblestone/wall/post/3", "weight":20 },
+				{ "model": "block/cobblestone/wall/post/4", "weight":40 },
+				{ "model": "block/cobblestone/wall/post/5", "weight":20 },
+				{ "model": "block/cobblestone/wall/post/6", "weight":5 },
+				{ "model": "block/cobblestone/wall/post/7", "weight":20 },
+				{ "model": "block/cobblestone/wall/post/8", "weight":5 }
+			]
+		},
+    { "when": { "north": "low" },
       "apply": [
-        { "model": "block/cobblestone_wall_post/cobblestone_wall_post0", "weight":30 },
-		{ "model": "block/cobblestone_wall_post/cobblestone_wall_post1", "weight":20 },
-		{ "model": "block/cobblestone_wall_post/cobblestone_wall_post2", "weight":20 },
-		{ "model": "block/cobblestone_wall_post/cobblestone_wall_post3", "weight":20 },
-		{ "model": "block/cobblestone_wall_post/cobblestone_wall_post4", "weight":40 },
-		{ "model": "block/cobblestone_wall_post/cobblestone_wall_post5", "weight":20 },
-		{ "model": "block/cobblestone_wall_post/cobblestone_wall_post6", "weight":5 },
-		{ "model": "block/cobblestone_wall_post/cobblestone_wall_post7", "weight":20 },
-		{ "model": "block/cobblestone_wall_post/cobblestone_wall_post8", "weight":5 }
+        { "model": "block/cobblestone/wall/side/0", "weight":30, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side/1", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side/2", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side/3", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side/4", "weight":40, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side/5", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side/6", "weight":5, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side/7", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side/8", "weight":5, "uvlock": true }
       ]
     },
-    {
-      "when": {
-        "north": "low"
-      },
+    { "when": { "east": "low" },
       "apply": [
-        { "model": "block/cobblestone_wall_side/cobblestone_wall_side0", "weight":30, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side1", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side2", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side3", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side4", "weight":40, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side5", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side6", "weight":5, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side7", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side8", "weight":5, "uvlock": true }
+        { "model": "block/cobblestone/wall/side/0", "weight":30, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side/1", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side/2", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side/3", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side/4", "weight":40, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side/5", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side/6", "weight":5, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side/7", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side/8", "weight":5, "uvlock": true, "y": 90 }
       ]
     },
-    {
-      "when": {
-        "east": "low"
-      },
+    { "when": { "south": "low" },
       "apply": [
-        { "model": "block/cobblestone_wall_side/cobblestone_wall_side0", "weight":30, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side1", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side2", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side3", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side4", "weight":40, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side5", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side6", "weight":5, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side7", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side8", "weight":5, "uvlock": true, "y": 90 }
+        { "model": "block/cobblestone/wall/side/0", "weight":30, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side/1", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side/2", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side/3", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side/4", "weight":40, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side/5", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side/6", "weight":5, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side/7", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side/8", "weight":5, "uvlock": true, "y": 180 }
       ]
     },
-    {
-      "when": {
-        "south": "low"
-      },
+    { "when": { "west": "low" },
       "apply": [
-        { "model": "block/cobblestone_wall_side/cobblestone_wall_side0", "weight":30, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side1", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side2", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side3", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side4", "weight":40, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side5", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side6", "weight":5, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side7", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side8", "weight":5, "uvlock": true, "y": 180 }
+        { "model": "block/cobblestone/wall/side/0", "weight":30, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side/1", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side/2", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side/3", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side/4", "weight":40, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side/5", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side/6", "weight":5, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side/7", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side/8", "weight":5, "uvlock": true, "y": 270 }
       ]
     },
-    {
-      "when": {
-        "west": "low"
-      },
+    { "when": { "north": "tall" },
       "apply": [
-        { "model": "block/cobblestone_wall_side/cobblestone_wall_side0", "weight":30, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side1", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side2", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side3", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side4", "weight":40, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side5", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side6", "weight":5, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side7", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side/cobblestone_wall_side8", "weight":5, "uvlock": true, "y": 270 }
+        { "model": "block/cobblestone/wall/side_tall/0", "weight":30, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side_tall/1", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side_tall/2", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side_tall/3", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side_tall/4", "weight":40, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side_tall/5", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side_tall/6", "weight":5, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side_tall/7", "weight":20, "uvlock": true },
+				{ "model": "block/cobblestone/wall/side_tall/8", "weight":5, "uvlock": true }
       ]
     },
-    {
-      "when": {
-        "north": "tall"
-      },
+    { "when": { "east": "tall" },
       "apply": [
-        { "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall0", "weight":30, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall1", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall2", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall3", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall4", "weight":40, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall5", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall6", "weight":5, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall7", "weight":20, "uvlock": true },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall8", "weight":5, "uvlock": true }
+        { "model": "block/cobblestone/wall/side_tall/0", "weight":30, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side_tall/1", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side_tall/2", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side_tall/3", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side_tall/4", "weight":40, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side_tall/5", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side_tall/6", "weight":5, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side_tall/7", "weight":20, "uvlock": true, "y": 90 },
+				{ "model": "block/cobblestone/wall/side_tall/8", "weight":5, "uvlock": true, "y": 90 }
       ]
     },
-    {
-      "when": {
-        "east": "tall"
-      },
+    { "when": { "south": "tall" },
       "apply": [
-        { "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall0", "weight":30, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall1", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall2", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall3", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall4", "weight":40, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall5", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall6", "weight":5, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall7", "weight":20, "uvlock": true, "y": 90 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall8", "weight":5, "uvlock": true, "y": 90 }
+        { "model": "block/cobblestone/wall/side_tall/0", "weight":30, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side_tall/1", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side_tall/2", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side_tall/3", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side_tall/4", "weight":40, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side_tall/5", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side_tall/6", "weight":5, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side_tall/7", "weight":20, "uvlock": true, "y": 180 },
+				{ "model": "block/cobblestone/wall/side_tall/8", "weight":5, "uvlock": true, "y": 180 }
       ]
     },
-    {
-      "when": {
-        "south": "tall"
-      },
+    { "when": { "west": "tall" },
       "apply": [
-        { "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall0", "weight":30, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall1", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall2", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall3", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall4", "weight":40, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall5", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall6", "weight":5, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall7", "weight":20, "uvlock": true, "y": 180 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall8", "weight":5, "uvlock": true, "y": 180 }
-      ]
-    },
-    {
-      "when": {
-        "west": "tall"
-      },
-      "apply": [
-        { "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall0", "weight":30, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall1", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall2", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall3", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall4", "weight":40, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall5", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall6", "weight":5, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall7", "weight":20, "uvlock": true, "y": 270 },
-		{ "model": "block/cobblestone_wall_side_tall/cobblestone_wall_side_tall8", "weight":5, "uvlock": true, "y": 270 }
+        { "model": "block/cobblestone/wall/side_tall/0", "weight":30, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side_tall/1", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side_tall/2", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side_tall/3", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side_tall/4", "weight":40, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side_tall/5", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side_tall/6", "weight":5, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side_tall/7", "weight":20, "uvlock": true, "y": 270 },
+				{ "model": "block/cobblestone/wall/side_tall/8", "weight":5, "uvlock": true, "y": 270 }
       ]
     }
   ]
