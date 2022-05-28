@@ -11,19 +11,18 @@
 // Medium impact on performance on most graphics cards
 // #define ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
 
+// Remove this line to disable the north star
+// No noticeable impact on performance
+// Requires ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
+#define ENABLE_NORTH_STAR
+
 // Uncomment this line to enable auroras at night
 // Major impact on performance on most graphics cards
-// Requires ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
 // #define ENABLE_AURORAS
 
 // Controls the colors of the auroras
 // Requires ENABLE_AURORAS
 #define AURORA_COLOR vec3(0.465, 2, 0.833)
-
-// Remove this line to disable the north star
-// No noticeable impact on performance
-// Requires ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
-#define ENABLE_NORTH_STAR
 
 /* ------------------------------------------------------------------------- */
 
@@ -170,6 +169,14 @@ mat4 rotationMatrix(vec3 axis, float angle) {
                 0.0,                                0.0,                                0.0,                                1.0);
 }
 
+#if defined(ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY) || defined(ENABLE_AURORAS)
+  float hash21(vec2 p) {
+    p = fract(p * vec2(123.34, 456.21));
+    p += dot(p, p + 45.32);
+    return fract(p.x * p.y);
+  }
+#endif
+
 #ifdef ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
   #define M_PI 3.141592653589793
 
@@ -203,12 +210,6 @@ mat4 rotationMatrix(vec3 axis, float angle) {
     return noiseVal / 0.7;
   }
 
-  float hash21(vec2 p) {
-    p = fract(p * vec2(123.34, 456.21));
-    p += dot(p, p + 45.32);
-    return fract(p.x * p.y);
-  }
-
   float star(vec2 uv, float maxVal) {
     float d = length(uv);
     return min((0.1 / d /* + max(0.0, 1.0 - abs(uv.x * uv.y * 5000))*2 */) * smoothstep(1, 0.1, d), maxVal);
@@ -232,6 +233,7 @@ mat4 rotationMatrix(vec3 axis, float angle) {
     }
     return col / 9 * pow(1.0 - abs(direction.y), bandPow) * (1 - maskOpacity * smoothstep(-0.25, 0.5, vec3(flownoise(normalize(direction + maskOffset) * 2))));
   }
+#endif
 
 /* ------------------------------ Auroras ---------------------------------- */
 // Auroras by nimitz 2017 (twitter: @stormoid)
@@ -239,53 +241,51 @@ mat4 rotationMatrix(vec3 axis, float angle) {
 // Modified to get the time from the sun direction, remove the unnecessary
 // ray origin vector, and to return a vec3 instead of vec4.
 
-  #ifdef ENABLE_AURORAS
-    mat2 mm2(in float a){float c = cos(a), s = sin(a);return mat2(c,s,-s,c);}
-    mat2 m2 = mat2(0.95534, 0.29552, -0.29552, 0.95534);
-    float tri(in float x){return clamp(abs(fract(x)-.5),0.01,0.49);}
-    vec2 tri2(in vec2 p){return vec2(tri(p.x)+tri(p.y),tri(p.y+tri(p.x)));}
+#ifdef ENABLE_AURORAS
+  mat2 mm2(in float a){float c = cos(a), s = sin(a);return mat2(c,s,-s,c);}
+  mat2 m2 = mat2(0.95534, 0.29552, -0.29552, 0.95534);
+  float tri(in float x){return clamp(abs(fract(x)-.5),0.01,0.49);}
+  vec2 tri2(in vec2 p){return vec2(tri(p.x)+tri(p.y),tri(p.y+tri(p.x)));}
 
-    float triNoise2d(in vec2 p, float spd, float time) {
-      float z=1.8;
-      float z2=2.5;
-      float rz = 0.0;
-      p *= mm2(p.x*0.06);
-      vec2 bp = p;
-      for (float i = 0.0; i < 5.0; i++) {
-        vec2 dg = tri2(bp*1.85)*.75;
-        dg *= mm2(time*spd);
-        p -= dg/z2;
-        bp *= 1.3;
-        z2 *= .45;
-        z *= .42;
-        p *= 1.21 + (rz-1.0)*.02;
-        rz += tri(p.x+tri(p.y))*z;
-        p*= -m2;
-      }
-      return clamp(1./pow(rz*29., 1.3),0.,.55);
+  float triNoise2d(in vec2 p, float spd, float time) {
+    float z=1.8;
+    float z2=2.5;
+    float rz = 0.0;
+    p *= mm2(p.x*0.06);
+    vec2 bp = p;
+    for (float i = 0.0; i < 5.0; i++) {
+      vec2 dg = tri2(bp*1.85)*.75;
+      dg *= mm2(time*spd);
+      p -= dg/z2;
+      bp *= 1.3;
+      z2 *= .45;
+      z *= .42;
+      p *= 1.21 + (rz-1.0)*.02;
+      rz += tri(p.x+tri(p.y))*z;
+      p*= -m2;
+    }
+    return clamp(1./pow(rz*29., 1.3),0.,.55);
+  }
+
+  #define INV_AURORA_COLOR vec3(1) / AURORA_COLOR
+  vec3 aurora(vec3 direction, float time) {
+    vec3 col = vec3(0);
+    vec3 avgCol = vec3(0);
+
+    for (float i = 0.0; i < 50.0; i++) {
+      float of = 0.006*hash21(gl_FragCoord.xy)*smoothstep(0.,15., i);
+      float pt = (.8+pow(i,1.4)*.002)/(direction.y*2.+0.4) - of;
+      vec3 bpos = pt*direction;
+      avgCol = mix(avgCol, (sin(1.-INV_AURORA_COLOR+i*0.043)*0.5+0.5)*triNoise2d(bpos.zx, 0.06, time), 0.5);
+      col += avgCol*exp2(-i*0.065 - 2.5)*smoothstep(0.,5., i);
     }
 
-    #define INV_AURORA_COLOR vec3(1) / AURORA_COLOR
-    vec3 aurora(vec3 direction, float time) {
-      vec3 col = vec3(0);
-      vec3 avgCol = vec3(0);
-
-      for (float i = 0.0; i < 50.0; i++) {
-        float of = 0.006*hash21(gl_FragCoord.xy)*smoothstep(0.,15., i);
-        float pt = (.8+pow(i,1.4)*.002)/(direction.y*2.+0.4) - of;
-        vec3 bpos = pt*direction;
-        avgCol = mix(avgCol, (sin(1.-INV_AURORA_COLOR+i*0.043)*0.5+0.5)*triNoise2d(bpos.zx, 0.06, time), 0.5);
-        col += avgCol*exp2(-i*0.065 - 2.5)*smoothstep(0.,5., i);
-      }
-
-      col *= clamp(direction.y*15.+.4,0.,1.);
-      return col*1.8;
-    }
-  #endif
+    col *= clamp(direction.y*15.+.4,0.,1.);
+    return col*1.8;
+  }
+#endif
 
 /* ------------------------------------------------------------------------- */
-
-#endif
 
 
 float linearizeDepth(float depth) {
@@ -342,38 +342,50 @@ void main() {
     vec3 daySkybox = sampleSkybox(SkyBoxDaySampler, direction);
 
     #ifdef ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
-      float sunAngle = atan(sunDir.y, sunDir.x);
-      mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
-      vec3 nd = normalize(direction);
-      vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
+      vec3 nightSkybox = vec3(0);
 
-      #ifdef ENABLE_NORTH_STAR
-        vec3 nsp = normalize(normalize(vec3(0, 0.6, 1)) - nd);
-      #endif
-
-      vec3 nightSkybox =
-        // Galactic disk
-          starfield(rotate(ndr, vec3(1, 0, 0), 2.4), 96, 6, 0.75, 25) * 3
-        // Nearby stars
-        + starfield(rotate(ndr, vec3(0.7, 0.3, -0.6), 1.2), 32, 2, 1, 3)
-        + starfield(rotate(ndr, vec3(-0.8, 0.2, -0.5), 0.3), 16, 2, 1, 9)
-        + starfield(rotate(ndr, vec3(-0.9, 0.8, 0.4), 2.1), 40, 2, 1, 13) * 1.1
-        // Distant stars/galaxies
-        + starfield(rotate(ndr, vec3(1), 1.5), 160, 1, 1, 31)
-        // Nebulae
-        + vec3(0.2, 0.5, 0.9) * smoothstep(0.2, 1, flownoise(ndr * 2 + 46) * 0.5 + 0.5) * 0.4
-        + vec3(0.8, 0.1, 0.9) * smoothstep(0.1, 1.1, flownoise(ndr * 2 + 14) * 0.5 + 0.5) * 0.1
+      if (timeOfDay < 0.1) {
+        float sunAngle = atan(sunDir.y, sunDir.x);
+        mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
+        vec3 nd = normalize(direction);
+        vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
 
         #ifdef ENABLE_NORTH_STAR
-          + max(vec3(1 - abs(nsp.x * nsp.y * 100000)) * 2, 0) * smoothstep(0.025, 0.0025, length(nsp.xy)) * vec3(0.5, 0.75, 1)
+          vec3 nsp = normalize(normalize(vec3(0, 0.6, 1)) - nd);
         #endif
 
-        #ifdef ENABLE_AURORAS
-          + aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir))
-        #endif
-      ;
+        nightSkybox =
+          // Galactic disk
+            starfield(rotate(ndr, vec3(1, 0, 0), 2.4), 96, 6, 0.75, 25) * 3
+          // Nearby stars
+          + starfield(rotate(ndr, vec3(0.7, 0.3, -0.6), 1.2), 32, 2, 1, 3)
+          + starfield(rotate(ndr, vec3(-0.8, 0.2, -0.5), 0.3), 16, 2, 1, 9)
+          + starfield(rotate(ndr, vec3(-0.9, 0.8, 0.4), 2.1), 40, 2, 1, 13) * 1.1
+          // Distant stars/galaxies
+          + starfield(rotate(ndr, vec3(1), 1.5), 160, 1, 1, 31)
+          // Nebulae
+          + vec3(0.2, 0.5, 0.9) * smoothstep(0.2, 1, flownoise(ndr * 2 + 46) * 0.5 + 0.5) * 0.4
+          + vec3(0.8, 0.1, 0.9) * smoothstep(0.1, 1.1, flownoise(ndr * 2 + 14) * 0.5 + 0.5) * 0.1
+
+          #ifdef ENABLE_NORTH_STAR
+            + max(vec3(1 - abs(nsp.x * nsp.y * 150000)) * 2, 0) * smoothstep(0.0175, 0.00175, length(nsp.xy)) * vec3(0.5, 0.75, 1)
+          #endif
+
+          #ifdef ENABLE_AURORAS
+            + aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir))
+          #endif
+        ;
+      }
     #else
       vec3 nightSkybox = sampleSkybox(SkyBoxNightSampler, (rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(normalize(direction), 1.0)).xyz);
+
+      #ifdef ENABLE_AURORAS
+        if (timeOfDay < 0.1) {
+          float sunAngle = atan(sunDir.y, sunDir.x);
+          vec3 nd = normalize(direction);
+          nightSkybox += aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir));
+        }
+      #endif
     #endif
 
     #ifdef ENABLE_REDDENING
