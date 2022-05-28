@@ -21,5 +21,6 @@ void main() {
     if (color.a < 0.1) {
         discard;
     }
-    fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
+    fragColor = vec4(mix(color.rgb, FogColor.rgb, 0.5), color.a);
+    fragColor.a *= smoothstep(FogEnd + 48, FogStart - 16, vertexDistance);
 }
