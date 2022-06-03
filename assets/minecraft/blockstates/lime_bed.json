@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "part=head": {"model": "minecraft:block/lime_bed_head"},
+    "part=foot": {"model": "minecraft:block/lime_bed_foot"}
+  }
+}
