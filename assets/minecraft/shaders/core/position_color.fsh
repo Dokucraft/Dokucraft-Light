@@ -22,7 +22,7 @@ void main() {
   vec4 color = vertexColor;
   if (color.a == 0.0) {discard;}
   if (isSpyglass > 0.5 && distance(color.rgb, vec3(0, 0, 0)) < 0.01) {
-    fragColor = vec4(0, 0, 0, 1); // backgound colour
+    fragColor = vec4(0, 0, 0, 0.9); // backgound colour
     return;
   }
   if (customType == 1) { // Item hover highlight

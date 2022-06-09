@@ -18,7 +18,7 @@
 
 // Uncomment this line to enable auroras at night
 // Major impact on performance on most graphics cards
-// #define ENABLE_AURORAS
+#define ENABLE_AURORAS
 
 // Controls the colors of the auroras
 // Requires ENABLE_AURORAS
