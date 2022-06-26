@@ -1,1 +1,39 @@
-{"providers":[{"type":"bitmap","file":"icons:food.png","ascent":7,"height":9,"chars":["󰀀󰀁󰀂󰀃󰀅"]},{"type":"bitmap","file":"icons:main_menu.png","ascent":8,"height":9,"chars":["󰀆󰀄"]},{"type":"bitmap","file":"icons:hearts.png","ascent":8,"height":9,"chars":["󰀇󰀈󰀉󰀊󰀋󰀌󰀍󰀎󰀏"]},{"type":"bitmap","file":"icons:banner-icons.png","ascent":14,"height":20,"chars":["儗儘儙儚儛儜","儝儞償儠儡儢","儣儤儥儦儧儨","儩優儫儬儭儮","儯儰儱儲儳儴","儵儶儷儸儹儺","儻儼儽儾儿兀"]},{"type":"ttf","file":"minecraft:negative_spaces.ttf","shift":[0.0,0.0],"size":10.0,"oversample":1.0}]}
+{
+    "providers": [
+        { 
+          "type": "bitmap", 
+          "file": "icons:gui/food.png", 
+          "ascent": 7, 
+          "height": 9, 
+          "chars": ["󰀀󰀁󰀂󰀃󰀅"] 
+        },
+        { 
+          "type": "bitmap", 
+          "file": "icons:menu/main_menu.png", 
+          "ascent": 8, 
+          "height": 9, 
+          "chars": ["󰀆󰀄"] 
+        },
+        { 
+          "type": "bitmap", 
+          "file": "icons:gui/hearts.png", 
+          "ascent": 8, 
+          "height": 9, 
+          "chars": ["󰀇󰀈󰀉󰀊󰀋󰀌󰀍󰀎󰀏"] 
+        },
+        { 
+          "type": "bitmap", 
+          "file": "icons:banner-icons.png", 
+          "ascent": 14, 
+          "height": 20, 
+          "chars": ["儗儘儙儚儛儜", "儝儞償儠儡儢", "儣儤儥儦儧儨", "儩優儫儬儭儮", "儯儰儱儲儳儴", "儵儶儷儸儹儺", "儻儼儽儾儿兀"]  
+        },
+        { 
+          "type": "ttf", 
+        "file": "minecraft:negative_spaces.ttf", 
+        "shift": [0.0, 0.0], 
+        "size": 10.0, 
+        "oversample": 1.0 
+        }
+    ]
+}
