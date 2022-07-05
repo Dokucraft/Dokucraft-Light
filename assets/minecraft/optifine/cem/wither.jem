@@ -1,0 +1,195 @@
+{
+  "models": 
+  [
+###################	Effects 	###########
+###################	Soulsand	###########
+    {
+      "part": "body1",
+      "attach": True,
+      "model": "soulsandbase.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "this.ry": "if(age < 180, -age/1000*cos(time*1), 0)",
+	  "this.sy": "if(age < 180, 1, 0)",
+	  "this.sx": "if(age < 180, 1, 0)",
+	  "this.sz": "if(age < 180, 1, 0)"
+    	}
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": True,
+      "model": "soulsandchest.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "this.rx": "if(age < 220, -age/1000*cos(time*1.2), 0)",
+	  "this.ry": "if(age < 220, age/1000*cos(time*1), 0)",
+	  "this.rx": "if(age < 220, age/3000*cos(time*1.1), 0)",
+	  "this.sy": "if(age < 220, 1, 0)",
+	  "this.sx": "if(age < 220, 1, 0)",
+	  "this.sz": "if(age < 220, 1, 0)"
+    	}
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": True,
+      "model": "soulsandleft.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "this.rx": "if(age < 210, age/1000*cos(time*1), 0)",
+	  "this.ry": "if(age < 210, -age/1000*cos(time*0.8), 0)",
+	  "this.sy": "if(age < 210, 1, 0)",
+	  "this.sx": "if(age < 210, 1, 0)",
+	  "this.sz": "if(age < 210, 1, 0)"
+    	}
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": True,
+      "model": "soulsandright.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "this.rx": "if(age < 200, age/1000*cos(time*1), 0)",
+	  "this.ry": "if(age < 200, age/1000*cos(time*0.8), 0)",
+	  "this.sy": "if(age < 200, 1, 0)",
+	  "this.sx": "if(age < 200, 1, 0)",
+	  "this.sz": "if(age < 200, 1, 0)"
+    	}
+      ]
+    },
+    {
+      "part": "body2",
+      "attach": True,
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "part.sy": "if(age < 180, 0, 1)",
+	  "part.sx": "if(age < 180, 0, 1)",
+	  "part.sz": "if(age < 180, 0, 1)"
+    	}
+      ]
+    },
+    {
+      "part": "body3",
+      "attach": True,
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "part.sy": "if(age < 180, 0, 1)",
+	  "part.sx": "if(age < 180, 0, 1)",
+	  "part.sz": "if(age < 180, 0, 1)"
+    	}
+      ]
+######################	Heads	################
+    },
+    {
+      "part": "body1",
+      "attach": True,
+      "model": "centerhead.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "this.rx": "if(age < 220, 0.1*cos(time+10), 0)",
+	  "this.rz": "if(age < 220, 0.1*cos(time+10), 0)",
+	  "this.sy": "if(age < 220, 1, 0)",
+	  "this.sx": "if(age < 220, 1, 0)",
+	  "this.sz": "if(age < 220, 1, 0)"
+    	}
+      ]
+    },
+    {
+      "part": "head1",
+      "attach": True,
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "part.sy": "if(age < 220, 0, 1)",
+	  "part.sx": "if(age < 220, 0, 1)",
+	  "part.sz": "if(age < 220, 0, 1)"
+    	}
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": True,
+      "model": "righthead.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "this.rx": "if(age < 200, 0.1*cos(time+10), 0)",
+	  "this.sy": "if(age < 200, 1, 0)",
+	  "this.sx": "if(age < 200, 1, 0)",
+	  "this.sz": "if(age < 200, 1, 0)"
+    	}
+      ]
+    },
+    {
+      "part": "head2",
+      "attach": True,
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "part.sy": "if(age < 200, 0, 1)",
+	  "part.sx": "if(age < 200, 0, 1)",
+	  "part.sz": "if(age < 200, 0, 1)"
+    	}
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": True,
+      "model": "lefthead.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "this.rx": "if(age < 210, 0.1*cos(time+10), 0)",
+	  "this.sy": "if(age < 210, 1, 0)",
+	  "this.sx": "if(age < 210, 1, 0)",
+	  "this.sz": "if(age < 210, 1, 0)"
+    	}
+      ]
+    },
+    {
+      "part": "head3",
+      "attach": True,
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations":
+      [
+    	{
+	  "part.sy": "if(age < 210, 0, 1)",
+	  "part.sx": "if(age < 210, 0, 1)",
+	  "part.sz": "if(age < 210, 0, 1)"
+    	}
+      ]
+    }
+  ]
+}
