@@ -19,11 +19,22 @@ in vec2 texCoord0;
 in vec4 normal;
 in vec4 glpos;
 
+#ifdef ENABLE_BETTER_LAVA
+  in float noiseValue;
+  in vec2 tileUVLava;
+
+  flat in int customType;
+  flat in int randomTile;
+#endif
+
 #ifdef ENABLE_PARALLAX_SUBSURFACE
   in vec3 pos;
   in vec3 wnorm;
-  in vec2 tileSize;
-  in vec2 tileUV;
+  in vec2 tileUVPara;
+#endif
+
+#if defined(ENABLE_BETTER_LAVA) || defined(ENABLE_PARALLAX_SUBSURFACE)
+  flat in vec2 tileSize;
 #endif
 
 out vec4 fragColor;
@@ -40,10 +51,23 @@ void main() {
   if (color.a < 0.5) discard;
   float oa = textureLod(Sampler0, texCoord0, 0.0).a * 255.0;
 
-  #ifdef ENABLE_PARALLAX_SUBSURFACE
+  #if defined(ENABLE_BETTER_LAVA) || defined(ENABLE_PARALLAX_SUBSURFACE)
     int alpha = int(floor(oa + 0.5));
+  #endif
+
+  #ifdef ENABLE_BETTER_LAVA
+    if (alpha == 247) {
+      vec2 uuv = texCoord0 - tileUVLava * vec2(LAVA_VARIANT_COUNT, 2) * tileSize + tileUVLava * tileSize + vec2(tileSize.x * randomTile, 0);
+      vec3 uc = texture(Sampler0, uuv).rgb;
+      vec3 lc = texture(Sampler0, uuv + vec2(0, tileSize.y)).rgb;
+      fragColor = linear_fog(vec4(mix(uc, lc, noiseValue), 1) * vertexColor * ColorModulator, vertexDistance, FogStart, FogEnd, FogColor);
+      return;
+    }
+  #endif
+
+  #ifdef ENABLE_PARALLAX_SUBSURFACE
     if (alpha == 248) {
-      vec2 tileOrigin = texCoord0 - tileUV * tileSize;
+      vec2 tileOrigin = texCoord0 - tileUVPara * tileSize;
       vec4 t1c = texture(Sampler0, texCoord0 + vec2(tileSize.x, 0));
       vec4 t3c = texture(Sampler0, texCoord0 + tileSize);
       float omh = 1.0 - t1c.r;

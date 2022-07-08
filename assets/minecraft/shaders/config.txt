@@ -70,3 +70,17 @@
 // Remove the two slashes at the start of this line to enable the pixelization filter
 // #define ENABLE_END_SKY_PIXELIZATION
 #define END_SKY_PIXELIZATION_RESOLUTION 512
+
+
+
+// ============================================================================
+//  Better lava
+// ============================================================================
+
+// Remove the two slashes at the start of this line to enable better lava.
+// Better lava also requires the lava_still_alt.png texture to be renamed to lava_still.png
+// This effect randomizes the texture on each block of lava and varies the glow of it over time and position
+// #define ENABLE_BETTER_LAVA
+
+// Only change this value if you add or remove lava texture variants
+#define LAVA_VARIANT_COUNT 5
