@@ -11,7 +11,6 @@
 
 // End sky colors
 #define END_SKY_RIFT_COLOR vec3(1.0, 0.1, 0.3)
-#define END_SKY_RIFT_EDGE_COLOR vec3(24.0, 80.0, 40.0)
 
 #define END_SKY_STARS_OUTSIDE_BASE_COLOR vec3(0.9, 0.6, 0.9)
 #define END_SKY_STARS_OUTSIDE_COLOR_VARIANCE vec3(0.1, 0.2, 0.1)

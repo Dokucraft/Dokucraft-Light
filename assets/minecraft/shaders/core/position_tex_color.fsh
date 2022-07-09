@@ -152,7 +152,7 @@ void main() {
       fragColor = vec4(
 
         #ifdef ENABLE_END_SKY_RIFT_GLOW
-          END_SKY_RIFT_COLOR * (riftGlow + pow(riftGlow + 0.2, 16) * END_SKY_RIFT_EDGE_COLOR)
+          END_SKY_RIFT_COLOR * (riftGlow + pow(riftGlow + 0.2, 16) * ((vec3(1.0) - END_SKY_RIFT_COLOR) * 66.66667 + vec3(20.0)))
         #else
           vec3(0)
         #endif
@@ -167,8 +167,8 @@ void main() {
 
         #ifdef ENABLE_END_SKY_STARS_INSIDE_RIFT
           + ( // Inside rift
-              starfield(riftND, 130, 1, 1, 25, 0, 1, 0, 0, END_SKY_STARS_INSIDE_BASE_COLOR, END_SKY_STARS_INSIDE_COLOR_VARIANCE)// * vec3(0.2, 2, 3)
-            + starfield(riftND, 32, 1, 1, 25, 1, 3, 1, gt * 60, END_SKY_STARS_INSIDE_BASE_COLOR, END_SKY_STARS_INSIDE_COLOR_VARIANCE)// * vec3(1, 2, 3)
+              starfield(riftND, 130, 1, 1, 25, 0, 1, 0, 0, END_SKY_STARS_INSIDE_BASE_COLOR, END_SKY_STARS_INSIDE_COLOR_VARIANCE)
+            + starfield(riftND, 32, 1, 1, 25, 1, 3, 1, gt * 60, END_SKY_STARS_INSIDE_BASE_COLOR, END_SKY_STARS_INSIDE_COLOR_VARIANCE)
             + END_SKY_NEBULAE_INSIDE_COLOR * smoothstep(0.2, 1, flownoise(riftND * 2 + 63) * 0.5 + 0.5) * 0.4
           ) * (1 - riftMask)
         #endif
