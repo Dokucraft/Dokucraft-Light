@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/mud/0", "weight":30 },
+      { "model": "minecraft:block/mud/1", "weight":30 },
+      { "model": "minecraft:block/mud/2", "weight":30 },
+      { "model": "minecraft:block/mud/3", "weight":30 },
+      { "model": "minecraft:block/mud/4", "weight":30 },
+      { "model": "minecraft:block/mud/5", "weight":10 },
+      { "model": "minecraft:block/mud/6", "weight":10 },
+      { "model": "minecraft:block/mud/7", "weight":10 }
+    ]
+  }
+}
