@@ -1,1 +1,12 @@
-{"parent":"minecraft:block/cube","textures":{"particle":"block/fletching_table_bottom","down":"block/fletching_table_bottom","up":"block/fletching_table_top","north":"block/fletching_table_front","east":"block/fletching_table_side_1","west":"block/fletching_table_side_2","south":"block/fletching_table_side_3"}}
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"particle": "block/fletching_table_bottom",
+		"down": "block/fletching_table_bottom",
+		"up": "block/fletching_table_top",
+		"north": "block/fletching_table_side_1",
+		"east": "block/fletching_table_side_2",
+		"west": "block/fletching_table_side_3",
+		"south": "block/fletching_table_side_4"
+	}
+}
