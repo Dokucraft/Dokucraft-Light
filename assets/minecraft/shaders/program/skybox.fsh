@@ -336,6 +336,7 @@ void main() {
 
   vec3 temp = fragColor.rgb - vec3(0.157, 0.024, 0.024);
   bool isNether = dot(temp, temp) < FUDGE;
+  vec3 nd = normalize(direction);
 
   if (far > 50 && realDepth > far / 2 - 5) {
 
@@ -347,7 +348,6 @@ void main() {
       if (timeOfDay < 0.1) {
         float sunAngle = atan(sunDir.y, sunDir.x);
         mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
-        vec3 nd = normalize(direction);
         vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
 
         #ifdef ENABLE_NORTH_STAR
@@ -377,23 +377,22 @@ void main() {
         ;
       }
     #else
-      vec3 nightSkybox = sampleSkybox(SkyBoxNightSampler, (rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(normalize(direction), 1.0)).xyz);
+      vec3 nightSkybox = sampleSkybox(SkyBoxNightSampler, (rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(nd, 1.0)).xyz);
 
       #ifdef ENABLE_AURORAS
         if (timeOfDay < 0.1) {
           float sunAngle = atan(sunDir.y, sunDir.x);
-          vec3 nd = normalize(direction);
           nightSkybox += aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir));
         }
       #endif
     #endif
 
     #ifdef ENABLE_REDDENING
-      float hm = (1.5 + clamp(dot(normalize(direction), vec3(0, -1, 0)) * 2, -1.5, 0.5)) / 2;
+      float hm = (1.5 + clamp(dot(nd, vec3(0, -1, 0)) * 2, -1.5, 0.5)) / 2;
       vec3 horizon = vec3(0.728308,0.04059,0.036865);
-      float rm = max(0, (1 + dot(normalize(direction), normalize(sunDir))) / 2);
+      float rm = max(0, (1 + dot(nd, normalize(sunDir))) / 2);
       rm *= rm * (max(0.75, 1 - abs(timeOfDay)) - 0.75) * 4;
-      daySkybox = mix(daySkybox, mix(BlendColor(daySkybox, horizon), horizon, hm), rm);
+      daySkybox = mix(daySkybox, mix(BlendColor(daySkybox, horizon), horizon, hm) / (1 - pow(smoothstep(-5, 3, dot(nd, sunDir)), 4) * vec3(1, 0.48, 0.24)), rm);
     #endif
 
     float factor = smoothstep(-0.1, 0.1, timeOfDay);
