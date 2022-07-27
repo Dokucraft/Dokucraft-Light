@@ -1,0 +1,15 @@
+name: Zip Pack
+on: [push]
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Dokucraft-Light
+          path: |
+            **/*
+            !.gitignore
+            !.git/**/*
+            !.github/**/*
