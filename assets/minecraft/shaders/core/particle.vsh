@@ -58,7 +58,7 @@ void main() {
 
   vec4 testColor = floor(texelFetch(Sampler0, ivec2(uv - corner), 0) * 255);
 
-  if (testColor == vec4(0, 0, 255, 0) && Color != vec4(1)) { // Note
+  if (testColor == vec4(0, 0, 255, 26) && Color != vec4(1)) { // Note
     uv -= vec2(48, 32) * corner;
 
     int id = int(24 - round(getHue(Color.rgb) * 24)) % NOTES_COUNT; // Red note - C
