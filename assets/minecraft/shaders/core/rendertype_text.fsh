@@ -20,7 +20,6 @@ in vec4 vertexPos;
 in vec4 glpos;
 in vec2 texCoord0;
 in float vertexDistance;
-in float shadow;
 
 out vec4 fragColor;
 
@@ -38,13 +37,6 @@ void main() {
   }
 
   vec4 color = texture(Sampler0, texCoord0);
-
-  gl_FragDepth = gl_FragCoord.z - 0.001;
-  if (color.a <= 0.1 && shadow != 0) {
-    color = texture(Sampler0, texCoord0 + vec2(-1) / textureSize(Sampler0, 0));
-    color.rgb /= 4;
-    gl_FragDepth = gl_FragCoord.z;
-  }
 
   if (color.a < 0.1) {
     discard;
