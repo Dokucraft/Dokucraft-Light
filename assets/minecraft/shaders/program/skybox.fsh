@@ -281,7 +281,7 @@ mat4 rotationMatrix(vec3 axis, float angle) {
     }
 
     col *= clamp(direction.y*15.+.4,0.,1.);
-    return col*1.8;
+    return max(vec3(0), col*1.8);
   }
 #endif
 
