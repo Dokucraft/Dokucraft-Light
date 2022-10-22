@@ -3,8 +3,7 @@
         "type=bottom,waterlogged=false": { "model": "block/warped_slab" },
         "type=top,waterlogged=false"   : { "model": "block/warped_slab_top" },
         "type=double,waterlogged=false": { "model": "block/double_slab/warped_slab_double" },
-
-		"type=bottom,waterlogged=true": { "model": "block/underwater/warped_slab_underwater" },
+				"type=bottom,waterlogged=true": { "model": "block/underwater/warped_slab_underwater" },
         "type=top,waterlogged=true"   : { "model": "block/underwater/warped_slab_top_underwater" }
     }
 }
