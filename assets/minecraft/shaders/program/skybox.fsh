@@ -340,7 +340,7 @@ void main() {
 
   if (far > 50 && realDepth > far / 2 - 5) {
 
-    vec3 daySkybox = sampleSkybox(SkyBoxDaySampler, direction);
+    vec3 daySkybox = sampleSkybox(SkyBoxDaySampler, (vec4(direction, 1) * rotationMatrix(vec3(0, 1, 0), 1.3)).xyz);
 
     #ifdef ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
       vec3 nightSkybox = vec3(0);
