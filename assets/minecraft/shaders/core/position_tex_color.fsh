@@ -8,7 +8,7 @@ uniform sampler2D Sampler0;
 
 uniform vec4 ColorModulator;
 
-#ifdef ENABLE_CUSTOM_END_SKY
+#if CUSTOM_END_SKY >= 1
   uniform float GameTime;
 #endif
 
@@ -18,7 +18,7 @@ in vec4 Pos;
 in float isNeg;
 in vec2 ScrSize;
 
-#ifdef ENABLE_CUSTOM_END_SKY
+#if CUSTOM_END_SKY >= 1
   in vec3 direction;
 #endif
 
@@ -28,7 +28,7 @@ out vec4 fragColor;
 #define CHANGE_SPEED 3 //Panoramas changing speed of background transitions; Decimal.
 #define TIMES 2        //Amount of full cycles on one turnover; Integer.
 
-#ifdef ENABLE_CUSTOM_END_SKY
+#if CUSTOM_END_SKY >= 1
   #define M_PI 3.141592653589793
 
   mat4 rotationMatrix(vec3 axis, float angle) {
@@ -131,7 +131,7 @@ void main() {
     discard;
   }
 
-  #ifdef ENABLE_CUSTOM_END_SKY
+  #if CUSTOM_END_SKY == 1 // Otherworldy Rift End sky
     if (floor(vertexColor.r * 255 + 0.5) == 40) {
       float gt = GameTime * 80;
       vec3 nd = normalize(direction);
@@ -173,6 +173,37 @@ void main() {
           ) * (1 - riftMask)
         #endif
 
+      , 1);
+    } else {
+      fragColor = color * ColorModulator;
+    }
+  #elif CUSTOM_END_SKY == 2 // Cloudy End sky
+    if (floor(vertexColor.r * 255 + 0.5) == 40) {
+      float gt = GameTime * 64;
+      vec3 nd = normalize(direction);
+
+      #ifdef ENABLE_END_SKY_PIXELIZATION
+        nd /= max(abs(nd.x), max(abs(nd.y), abs(nd.z)));
+        nd = normalize((floor(nd * END_SKY_PIXELIZATION_RESOLUTION + 0.5) + 0.5) / END_SKY_PIXELIZATION_RESOLUTION);
+      #endif
+
+      float starMask = smoothstep(-0.2, 0.3, smoothstep(0, 1, abs(dot(vec3(0,1,0), nd))) * (0.5 + (flownoise(nd * 2 + 11 + gt) + flownoise(nd * 6 + 11 - gt * 1.25) * 0.5 + flownoise(nd * 12 + 11 + vec3(0, gt * 1.5, 0)) * 0.25 + flownoise(nd * 24 + 11 - vec3(0, gt * 2, 0)) * 0.125) / 3.5));
+
+      fragColor = vec4(
+
+        smoothstep(-1, -0.5, dot(vec3(0,1,0), nd)) * END_SKY_2_BASE_COLOR + mix(
+
+          // Strong clouds
+          mix(END_SKY_2_STRONG_CLOUDS_COLOR, mix(vec3(0.6,0.4,1.2), vec3(0.7, 0.8, 1.6), smoothstep(-0.5, 0.5, flownoise(nd))), smoothstep(0.3, 1.0, starMask)),
+
+          // Stars
+            starfield(rotate(nd, vec3(1, 0, 0), 2.4), 48, 1, 1, 25, 0, 1, 0, 0, END_SKY_2_STARS_BASE_COLOR, END_SKY_2_STARS_COLOR_VARIANCE)
+          + starfield(rotate(nd, vec3(1, 0, 0), 2.4 + M_PI / 2), 32, 1, 1, 12, 0, 1, 0, 0, END_SKY_2_STARS_BASE_COLOR, END_SKY_2_STARS_COLOR_VARIANCE)
+
+          // Weak clouds
+          + END_SKY_2_WEAK_CLOUDS_COLOR * smoothstep(0.1, 1.1, flownoise(nd * 2 + 14) * 0.5 + 0.5) * 0.2
+
+        , starMask)
       , 1);
     } else {
       fragColor = color * ColorModulator;

@@ -55,19 +55,19 @@
 //  End sky
 // ============================================================================
 
-// Remove the two slashes at the start of this line to enable the custom end sky
-// #define ENABLE_CUSTOM_END_SKY
+// Set this valus to 1 to enable the Otherworldly Rift End sky, set it to 2 to enable the Cloudy End sky
+#define CUSTOM_END_SKY 0
 
-// Remove this line to disable the glow around the rift in the end sky
+// Remove this line to disable the glow around the rift in the End sky
 #define ENABLE_END_SKY_RIFT_GLOW
 
-// Remove this line to disable the stars outside of the rift in the end sky
+// Remove this line to disable the stars outside of the rift in the End sky
 #define ENABLE_END_SKY_STARS_OUTSIDE_RIFT
 
-// Remove this line to disable the stars inside the rift in the end sky
+// Remove this line to disable the stars inside the rift in the End sky
 #define ENABLE_END_SKY_STARS_INSIDE_RIFT
 
-// Remove the two slashes at the start of this line to enable the pixelization filter
+// Remove the two slashes at the start of this line to enable the pixelization filter for the custom End sky
 // #define ENABLE_END_SKY_PIXELIZATION
 #define END_SKY_PIXELIZATION_RESOLUTION 512
 
