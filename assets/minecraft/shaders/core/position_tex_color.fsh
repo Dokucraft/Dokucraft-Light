@@ -194,7 +194,7 @@ void main() {
         smoothstep(-1, -0.5, dot(vec3(0,1,0), nd)) * END_SKY_2_BASE_COLOR + mix(
 
           // Strong clouds
-          mix(END_SKY_2_STRONG_CLOUDS_COLOR, mix(END_SKY_2_STRONG_CLOUDS_COLOR_1, END_SKY_2_STRONG_CLOUDS_COLOR_2, smoothstep(-0.5, 0.5, flownoise(nd))), smoothstep(0.3, 1.0, starMask)),
+          mix(END_SKY_2_STRONG_CLOUDS_PRIMARY_COLOR, mix(END_SKY_2_STRONG_CLOUDS_COLOR_1, END_SKY_2_STRONG_CLOUDS_COLOR_2, smoothstep(-0.5, 0.5, flownoise(nd))), smoothstep(0.3, 1.0, starMask)),
 
           // Stars
             starfield(rotate(nd, vec3(1, 0, 0), 2.4), 48, 1, 1, 25, 0, 1, 0, 0, END_SKY_2_STARS_BASE_COLOR, END_SKY_2_STARS_COLOR_VARIANCE)
