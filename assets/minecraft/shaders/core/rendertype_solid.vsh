@@ -64,13 +64,16 @@ void main() {
   normal = ProjMat * ModelViewMat * vec4(Normal, 0.0);
   glpos = gl_Position;
 
+  #if defined(ENABLE_PARALLAX_SUBSURFACE) || defined(ENABLE_BETTER_LAVA)
+    int vidm4 = gl_VertexID % 4;
+  #endif
+
   #ifdef ENABLE_PARALLAX_SUBSURFACE
     wnorm = Normal;
     tileSize = vec2(32) / vec2(textureSize(Sampler0, 0));
 
     vec2 tileScaleTexCoord = texCoord0 / tileSize;
     vec2 distTLTileVert = tileScaleTexCoord - floor(tileScaleTexCoord);
-    int vidm4 = gl_VertexID % 4;
     tileUVPara = mix(distTLTileVert, vec2(1), ivec2(int((vidm4 == 2 || vidm4 == 3) && distTLTileVert.x < 0.001), int((vidm4 == 1 || vidm4 == 2) && distTLTileVert.y < 0.001)));
   #endif
 
