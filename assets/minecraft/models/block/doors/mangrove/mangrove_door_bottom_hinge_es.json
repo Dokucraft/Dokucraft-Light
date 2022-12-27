@@ -1,0 +1,238 @@
+{
+	"credit": "Made by SyndiShanX",
+	"ambientocclusion": false,
+	"textures": {
+		"bottom": "block/doors/mangrove_door_bottom",
+		"sides": "block/doors/mangrove_door_sides",
+		"particle": "block/doors/mangrove_door_bottom"
+	},
+	"elements": [
+		{
+			"name": "Door Bottom Plank",
+			"from": [0, 0, -1],
+			"to": [3, 16, 3],
+			"faces": {
+				"north": {"uv": [3, 0, 6, 16], "texture": "#sides", "cullface": "south"},
+				"east": {"uv": [12, 0, 16, 16], "texture": "#bottom"},
+				"south": {"uv": [12, 0, 12.5, 16], "texture": "#bottom"},
+				"west": {"uv": [16, 0, 12, 16], "texture": "#bottom"},
+				"down": {"uv": [0, 4, 3, 0], "rotation": 180, "texture": "#sides", "cullface": "down"}
+			}
+		},
+		{
+			"name": "Door Bottom Plank",
+			"from": [0.25, 0, 3],
+			"to": [2.75, 16, 10.5],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0], "texture": "#bottom"},
+				"east": {"uv": [4.5, 0, 12, 16], "texture": "#bottom"},
+				"south": {"uv": [0, 0, 0, 0], "texture": "#bottom"},
+				"west": {"uv": [12, 0, 4.5, 16], "texture": "#bottom"},
+				"down": {"uv": [0, 12, 3, 4.5], "rotation": 180, "texture": "#sides", "cullface": "down"}
+			}
+		},
+		{
+			"name": "Door Bottom Plank",
+			"from": [0, 0, 10.5],
+			"to": [3, 16, 15],
+			"faces": {
+				"north": {"uv": [4.5, 0, 4, 16], "texture": "#bottom"},
+				"east": {"uv": [0, 0, 4.5, 16], "texture": "#bottom"},
+				"south": {"uv": [6, 0, 3, 16], "texture": "#sides", "cullface": "north"},
+				"west": {"uv": [4.5, 0, 0, 16], "texture": "#bottom"},
+				"down": {"uv": [0, 16, 3, 11.5], "rotation": 180, "texture": "#sides", "cullface": "down"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 6, 3],
+			"to": [3.25, 6.5, 4],
+			"faces": {
+				"north": {"uv": [11.5, 9.5, 12, 10], "texture": "#bottom"},
+				"east": {"uv": [11, 9.5, 12, 10], "texture": "#bottom"},
+				"south": {"uv": [11, 9.5, 11.5, 10], "texture": "#bottom"},
+				"west": {"uv": [11, 10, 12, 9.5], "rotation": 180, "texture": "#bottom"},
+				"down": {"uv": [11, 9.5, 12, 10], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 6.5, 3.5],
+			"to": [3.25, 7, 4.5],
+			"faces": {
+				"east": {"uv": [10.5, 9, 11.5, 9.5], "texture": "#bottom"},
+				"west": {"uv": [10.5, 9.5, 11.5, 9], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [11.5, 9, 10.5, 9.5], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [10.5, 9, 11.5, 9.5], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 7, 2],
+			"to": [3.25, 7.5, 2.5],
+			"faces": {
+				"north": {"uv": [12.5, 8.5, 13, 9], "texture": "#bottom"},
+				"east": {"uv": [12.5, 8.5, 13, 9], "texture": "#bottom"},
+				"west": {"uv": [12.5, 9, 13, 8.5], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [13, 8.5, 12.5, 9], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [12.5, 8.5, 13, 9], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 6.5, 2.5],
+			"to": [3.25, 7.5, 3.5],
+			"faces": {
+				"north": {"uv": [12, 8.5, 12.5, 9.5], "texture": "#bottom"},
+				"east": {"uv": [11.5, 8.5, 12.5, 9.5], "texture": "#bottom"},
+				"south": {"uv": [11.5, 8.5, 12, 9.5], "texture": "#bottom"},
+				"west": {"uv": [11.5, 9.5, 12.5, 8.5], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [12.5, 8.5, 11.5, 9], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [11.5, 9, 12.5, 9.5], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 6.5, 4.5],
+			"to": [3.25, 7.5, 5],
+			"faces": {
+				"north": {"uv": [10, 8.5, 10.5, 9.5], "texture": "#bottom"},
+				"east": {"uv": [10, 8.5, 10.5, 9.5], "texture": "#bottom"},
+				"south": {"uv": [10, 8.5, 10.5, 9.5], "texture": "#bottom"},
+				"west": {"uv": [10, 9.5, 10.5, 8.5], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [10.5, 8.5, 10, 9], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [10, 9, 10.5, 9.5], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 8, 2],
+			"to": [3.25, 8.5, 2.5],
+			"faces": {
+				"north": {"uv": [12.5, 7.5, 13, 8], "texture": "#bottom"},
+				"east": {"uv": [12.5, 7.5, 13, 8], "texture": "#bottom"},
+				"west": {"uv": [12.5, 8, 13, 7.5], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [13, 7.5, 12.5, 8], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [12.5, 7.5, 13, 8], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 8, 3],
+			"to": [3.25, 8.5, 3.5],
+			"faces": {
+				"east": {"uv": [11.5, 7.5, 12, 8], "texture": "#bottom"},
+				"south": {"uv": [11.5, 7.5, 12, 8], "texture": "#bottom"},
+				"west": {"uv": [11.5, 8, 12, 7.5], "rotation": 180, "texture": "#bottom"},
+				"down": {"uv": [11.5, 7.5, 12, 8], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 8, 4.5],
+			"to": [3.25, 8.5, 5],
+			"faces": {
+				"north": {"uv": [10, 7.5, 10.5, 8], "texture": "#bottom"},
+				"east": {"uv": [10, 7.5, 10.5, 8], "texture": "#bottom"},
+				"west": {"uv": [10, 8, 10.5, 7.5], "rotation": 180, "texture": "#bottom"},
+				"down": {"uv": [10, 7.5, 10.5, 8], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 7, 5],
+			"to": [3.25, 8.5, 11],
+			"faces": {
+				"north": {"uv": [9.5, 7.5, 10, 9], "texture": "#bottom"},
+				"east": {"uv": [4, 7.5, 10, 9], "texture": "#bottom"},
+				"west": {"uv": [4, 9, 10, 7.5], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [10, 7.5, 4, 8], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [4, 8.5, 10, 9], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 8, 2.5],
+			"to": [3.25, 9, 3],
+			"faces": {
+				"north": {"uv": [12, 7, 12.5, 8], "texture": "#bottom"},
+				"east": {"uv": [12, 7, 12.5, 8], "texture": "#bottom"},
+				"west": {"uv": [12, 8, 12.5, 7], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [12.5, 7, 12, 7.5], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [12, 7.5, 12.5, 8], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 8.5, 4],
+			"to": [3.25, 9, 5],
+			"faces": {
+				"east": {"uv": [10, 7, 11, 7.5], "texture": "#bottom"},
+				"south": {"uv": [10, 7, 10.5, 7.5], "texture": "#bottom"},
+				"west": {"uv": [10, 7.5, 11, 7], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [11, 7, 10, 7.5], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [10, 7, 11, 7.5], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 6.5, 11],
+			"to": [3.25, 9, 15.25],
+			"faces": {
+				"north": {"uv": [3.5, 7, 4, 9.5], "texture": "#bottom"},
+				"east": {"uv": [0, 7, 4, 9.5], "texture": "#bottom"},
+				"south": {"uv": [9, 0, 11.5, 3.5], "rotation": 90, "texture": "#sides"},
+				"west": {"uv": [0, 9.5, 4, 7], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [4, 7, 0, 7.5], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [0, 9, 4, 9.5], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Hinge",
+			"from": [-0.25, 8.5, 3],
+			"to": [3.25, 9.5, 4],
+			"faces": {
+				"north": {"uv": [11.5, 6.5, 12, 7.5], "texture": "#bottom"},
+				"east": {"uv": [11, 6.5, 12, 7.5], "texture": "#bottom"},
+				"south": {"uv": [11, 6.5, 11.5, 7.5], "texture": "#bottom"},
+				"west": {"uv": [11, 7.5, 12, 6.5], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [12, 6.5, 11, 7], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [11, 7, 12, 7.5], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Metal",
+			"from": [-0.25, 1, 0],
+			"to": [3.25, 2, 1],
+			"faces": {
+				"north": {"uv": [14.5, 14, 15, 15], "texture": "#bottom"},
+				"east": {"uv": [14, 14, 15, 15], "texture": "#bottom"},
+				"south": {"uv": [14, 14, 14.5, 15], "texture": "#bottom"},
+				"west": {"uv": [14, 15, 15, 14], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [15, 14, 14, 14.5], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [14, 14.5, 15, 15], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Metal",
+			"from": [-0.25, 1, 13],
+			"to": [3.25, 2, 14],
+			"faces": {
+				"north": {"uv": [1.5, 14, 2, 15], "texture": "#bottom"},
+				"east": {"uv": [1, 14, 2, 15], "texture": "#bottom"},
+				"south": {"uv": [1, 14, 1.5, 15], "texture": "#bottom"},
+				"west": {"uv": [1, 15, 2, 14], "rotation": 180, "texture": "#bottom"},
+				"up": {"uv": [2, 14, 1, 14.5], "rotation": 90, "texture": "#bottom"},
+				"down": {"uv": [1, 14.5, 2, 15], "rotation": 90, "texture": "#bottom"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Bottom",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+		}
+	]
+}
