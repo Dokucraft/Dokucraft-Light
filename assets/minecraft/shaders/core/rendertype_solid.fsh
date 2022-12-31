@@ -74,7 +74,8 @@ void main() {
       vec3 np = normalize(-pos);
       vec2 ps = vec2(1) / vec2(textureSize(Sampler0, 0));
       vec2 tsmps = tileSize - ps;
-      vec4 colMod = vertexColor * ColorModulator * lightColor;
+      vec4 colModUnlit = vertexColor * ColorModulator;
+      vec4 colMod = colModUnlit * lightColor;
 
       #ifdef ENABLE_PSS_SHALLOW_ANGLE_FIX
         // Mix in more of the surface color at very shallow angles to hide some artifacts
@@ -96,7 +97,7 @@ void main() {
         #else
           vec3 dcol = textureLod(Sampler0, dg + vec2(0, tileSize.y), 0).rgb;
         #endif
-        color = mix(color * colMod, vec4(mix(dcol * colMod.rgb, dcol, textureLod(Sampler0, dg + vec2(tileSize.x, 0), 0).b), 1), ssa);
+        color = mix(color * mix(colMod, colModUnlit, t3c.b), vec4(mix(dcol * colMod.rgb, dcol, textureLod(Sampler0, dg + vec2(tileSize.x, 0), 0).b), 1), ssa);
 
       } else { // Repeat texture instead of clamping
         vec2 dg = tileOrigin + clamp(mod(parallax(texCoord0, np, wnorm, omh * 0.44) - tileOrigin, tileSize), ps, tsmps);
@@ -109,7 +110,7 @@ void main() {
         #else
           vec3 dcol = textureLod(Sampler0, dg + vec2(0, tileSize.y), 0).rgb;
         #endif
-        color = mix(color * colMod, vec4(mix(dcol * colMod.rgb, dcol, textureLod(Sampler0, dg + vec2(tileSize.x, 0), 0).b), 1), ssa);
+        color = mix(color * mix(colMod, colModUnlit, t3c.b), vec4(mix(dcol * colMod.rgb, dcol, textureLod(Sampler0, dg + vec2(tileSize.x, 0), 0).b), 1), ssa);
       }
     } else {
       color = make_emissive(color * vertexColor * ColorModulator, lightColor, vertexDistance, oa);
