@@ -1,32 +1,19 @@
-{
-	"sources": [
-		{
-			"type": "directory",
-			"source": "entity",
-			"prefix": "entity/"
+{ "sources": [
+		{ "type": "single",
+			"resource": "entity/lead_knot"
 		},
-		{
-			"type": "directory",
+		{ "type": "single",
+			"resource": "entity/end_crystal/end_crystal"
+		},
+		{ "type": "directory",
 			"source": "entity/boat",
 			"prefix": "entity/boat/"
 		},
-		{
-			"type": "directory",
+		{ "type": "directory",
 			"source": "entity/chest_boat",
 			"prefix": "entity/chest_boat/"
 		},
-		{
-			"type": "directory",
-			"source": "particle/bed",
-			"prefix": "particle/bed/"
-		},
-		{
-			"type": "directory",
-			"source": "particle/banner",
-			"prefix": "particle/banner/"
-		},
-		{
-			"type": "directory",
+		{ "type": "directory",
 			"source": "particle/chest",
 			"prefix": "particle/chest/"
 		}

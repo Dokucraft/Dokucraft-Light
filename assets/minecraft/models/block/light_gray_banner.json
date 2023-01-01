@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "minecraft:particle/banner/light_gray_banner"
+    "particle": "minecraft:block/light_gray_wool"
   }
 }

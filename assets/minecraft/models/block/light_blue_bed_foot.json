@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "minecraft:particle/bed/light_blue_bed_foot"
+    "particle": "minecraft:block/light_blue_wool"
   }
 }
