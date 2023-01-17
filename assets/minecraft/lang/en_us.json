@@ -22,7 +22,7 @@
   "container.grindstone_title": "§fRepair & Disenchant",
   "container.cartography_table": "§fCartography Table",
   "container.smoker": "§fSmoker",
-  "container.stonecutter": "§fStonecutter",
+  "container.stonecutter": "",
   "container.blast_furnace": "§fBlast Furnace",
   "itemGroup.buildingBlocks": "§fBuilding Blocks",
   "itemGroup.decorations": "§fDecoration Blocks",
