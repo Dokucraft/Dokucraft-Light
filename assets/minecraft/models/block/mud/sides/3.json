@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_not_top",
+  "textures": {
+    "0": "minecraft:block/mud/3"
+  }
+}

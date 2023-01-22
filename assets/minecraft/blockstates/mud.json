@@ -1,14 +1,22 @@
-{
-  "variants": {
-    "": [
-      { "model": "minecraft:block/mud/0", "weight":30 },
-      { "model": "minecraft:block/mud/1", "weight":30 },
-      { "model": "minecraft:block/mud/2", "weight":30 },
-      { "model": "minecraft:block/mud/3", "weight":30 },
-      { "model": "minecraft:block/mud/4", "weight":30 },
-      { "model": "minecraft:block/mud/5", "weight":10 },
-      { "model": "minecraft:block/mud/6", "weight":10 },
-      { "model": "minecraft:block/mud/7", "weight":10 }
-    ]
-  }
+{ "multipart": [
+    { "apply": [
+        { "model": "minecraft:block/mud/top/0", "weight":30 },
+        { "model": "minecraft:block/mud/top/1", "weight":30 },
+        { "model": "minecraft:block/mud/top/2", "weight":30 },
+        { "model": "minecraft:block/mud/top/3", "weight":30 },
+        { "model": "minecraft:block/mud/top/4", "weight":30 },
+        { "model": "minecraft:block/mud/top/5", "weight":10 },
+        { "model": "minecraft:block/mud/top/6", "weight":10 },
+        { "model": "minecraft:block/mud/top/7", "weight":10 }
+      ]
+    },
+    { "apply": [
+        { "model": "minecraft:block/mud/sides/0" },
+        { "model": "minecraft:block/mud/sides/1" },
+        { "model": "minecraft:block/mud/sides/2" },
+        { "model": "minecraft:block/mud/sides/3" },
+        { "model": "minecraft:block/mud/sides/4" }
+      ]
+    }
+  ]
 }
