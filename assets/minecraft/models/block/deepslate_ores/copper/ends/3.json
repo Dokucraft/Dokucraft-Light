@@ -1,4 +1,4 @@
-{ "parent": "minecraft:block/deepslate/column_ends",
+{ "parent": "minecraft:block/column_ends",
   "textures": {
     "0": "minecraft:block/deepslate_ores/copper/ends/3"
   }
