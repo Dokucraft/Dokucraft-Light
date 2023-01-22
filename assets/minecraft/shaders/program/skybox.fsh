@@ -7,13 +7,15 @@
 // Very small impact on performance on most graphics cards
 #define ENABLE_REDDENING
 
-// Uncomment this line to enable the experimental procedural night sky
-// Medium impact on performance on most graphics cards
-// #define ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
+// Controls what night sky to render.
+// 0: The regular purple-ish Dokucraft night sky texture.
+// 1: Draw a night sky completely without using any textures, only math.
+// 2: Same as 1, but includes a layer of fog that gets lit up by the moon. (WIP)
+#define NIGHT_SKY 0
 
 // Remove this line to disable the north star
 // No noticeable impact on performance
-// Requires ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
+// Requires NIGHT_SKY being set to 1 or 2
 #define ENABLE_NORTH_STAR
 
 // Uncomment this line to enable auroras at night
@@ -169,7 +171,7 @@ mat4 rotationMatrix(vec3 axis, float angle) {
                 0.0,                                0.0,                                0.0,                                1.0);
 }
 
-#if defined(ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY) || defined(ENABLE_AURORAS)
+#if NIGHT_SKY >= 1 || defined(ENABLE_AURORAS)
   float hash21(vec2 p) {
     p = fract(p * vec2(123.34, 456.21));
     p += dot(p, p + 45.32);
@@ -177,7 +179,7 @@ mat4 rotationMatrix(vec3 axis, float angle) {
   }
 #endif
 
-#ifdef ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
+#if NIGHT_SKY >= 1
   #define M_PI 3.141592653589793
 
   vec3 rotate(vec3 v, vec3 axis, float angle) {
@@ -342,41 +344,7 @@ void main() {
 
     vec3 daySkybox = sampleSkybox(SkyBoxDaySampler, (vec4(direction, 1) * rotationMatrix(vec3(0, 1, 0), 1.3)).xyz);
 
-    #ifdef ENABLE_EXPERIMENTAL_PROCEDURAL_NIGHT_SKY
-      vec3 nightSkybox = vec3(0);
-
-      if (timeOfDay < 0.1) {
-        float sunAngle = atan(sunDir.y, sunDir.x);
-        mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
-        vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
-
-        #ifdef ENABLE_NORTH_STAR
-          vec3 nsp = normalize(normalize(vec3(0, 0.6, 1)) - nd);
-        #endif
-
-        nightSkybox =
-          // Galactic disk
-            starfield(rotate(ndr, vec3(1, 0, 0), 2.4), 96, 6, 0.75, 25) * 3
-          // Nearby stars
-          + starfield(rotate(ndr, vec3(0.7, 0.3, -0.6), 1.2), 32, 2, 1, 3)
-          + starfield(rotate(ndr, vec3(-0.8, 0.2, -0.5), 0.3), 16, 2, 1, 9)
-          + starfield(rotate(ndr, vec3(-0.9, 0.8, 0.4), 2.1), 40, 2, 1, 13) * 1.1
-          // Distant stars/galaxies
-          + starfield(rotate(ndr, vec3(1), 1.5), 160, 1, 1, 31)
-          // Nebulae
-          + vec3(0.2, 0.5, 0.9) * smoothstep(0.2, 1, flownoise(ndr * 2 + 46) * 0.5 + 0.5) * 0.4
-          + vec3(0.8, 0.1, 0.9) * smoothstep(0.1, 1.1, flownoise(ndr * 2 + 14) * 0.5 + 0.5) * 0.1
-
-          #ifdef ENABLE_NORTH_STAR
-            + max(vec3(1 - abs(nsp.x * nsp.y * 150000)) * 2, 0) * smoothstep(0.0175, 0.00175, length(nsp.xy)) * vec3(0.5, 0.75, 1)
-          #endif
-
-          #ifdef ENABLE_AURORAS
-            + aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir))
-          #endif
-        ;
-      }
-    #else
+    #if NIGHT_SKY == 0
       vec3 nightSkybox = sampleSkybox(SkyBoxNightSampler, (rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(nd, 1.0)).xyz);
 
       #ifdef ENABLE_AURORAS
@@ -385,6 +353,87 @@ void main() {
           nightSkybox += aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir));
         }
       #endif
+    #else
+      vec3 nightSkybox = vec3(0);
+
+      if (timeOfDay < 0.1) {
+        #if NIGHT_SKY == 1
+          float sunAngle = atan(sunDir.y, sunDir.x);
+          mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
+          vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
+
+          #ifdef ENABLE_NORTH_STAR
+            vec3 nsp = normalize(normalize(vec3(0, 0.6, 1)) - nd);
+          #endif
+
+          nightSkybox =
+            // Galactic disk
+              starfield(rotate(ndr, vec3(1, 0, 0), 2.4), 96, 6, 0.75, 25) * 3
+            // Nearby stars
+            + starfield(rotate(ndr, vec3(0.7, 0.3, -0.6), 1.2), 32, 2, 1, 3)
+            + starfield(rotate(ndr, vec3(-0.8, 0.2, -0.5), 0.3), 16, 2, 1, 9)
+            + starfield(rotate(ndr, vec3(-0.9, 0.8, 0.4), 2.1), 40, 2, 1, 13) * 1.1
+            // Distant stars/galaxies
+            + starfield(rotate(ndr, vec3(1), 1.5), 160, 1, 1, 31)
+            // Nebulae
+            + vec3(0.2, 0.5, 0.9) * smoothstep(0.2, 1, flownoise(ndr * 2 + 46) * 0.5 + 0.5) * 0.4
+            + vec3(0.8, 0.1, 0.9) * smoothstep(0.1, 1.1, flownoise(ndr * 2 + 14) * 0.5 + 0.5) * 0.1
+
+            #ifdef ENABLE_NORTH_STAR
+              + max(vec3(1 - abs(nsp.x * nsp.y * 150000)) * 2, 0) * smoothstep(0.0175, 0.00175, length(nsp.xy)) * vec3(0.5, 0.75, 1)
+            #endif
+
+            #ifdef ENABLE_AURORAS
+              + aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir))
+            #endif
+          ;
+        #elif NIGHT_SKY == 2
+          float sunAngle = atan(sunDir.y, sunDir.x);
+          mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle);
+          vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
+
+          float distHorizon = 1.0 - abs(dot(nd, vec3(0, 1, 0)));
+          float distMoon = max(0, dot(ndr, vec3(-1, 0, 0)));
+          float fogDensity = mix(0.1, 0.9, distHorizon);
+
+          vec3 fogLayer =
+            // Base fog
+              vec3(0.243, 0.325, 0.392)
+            // Moonlit fog
+            + mix(vec3(0.156, 0.274, 0.38), vec3(0.737, 0.76, 0.745), distMoon) * distMoon * distMoon
+          ;
+
+          #ifdef ENABLE_NORTH_STAR
+            vec3 nsp = normalize(normalize(vec3(0, 0.6, 1)) - nd);
+          #endif
+
+          nightSkybox =
+            // Galactic disk
+              starfield(rotate(ndr, vec3(1, 0, 0), 2.4), 96, 6, 0.75, 25) * 3
+            // Nearby stars
+            + starfield(rotate(ndr, vec3(0.7, 0.3, -0.6), 1.2), 32, 2, 1, 3)
+            + starfield(rotate(ndr, vec3(-0.8, 0.2, -0.5), 0.3), 16, 2, 1, 9)
+            + starfield(rotate(ndr, vec3(-0.9, 0.8, 0.4), 2.1), 40, 2, 1, 13) * 1.1
+            // Distant stars/galaxies
+            + starfield(rotate(ndr, vec3(1), 1.5), 160, 1, 1, 31)
+            // Nebulae
+            + vec3(0.2, 0.5, 0.9) * smoothstep(0.2, 1, flownoise(ndr * 2 + 46) * 0.5 + 0.5) * 0.08
+            + vec3(0.8, 0.1, 0.9) * smoothstep(0.1, 1.1, flownoise(ndr * 2 + 14) * 0.5 + 0.5) * 0.02
+
+            #ifdef ENABLE_NORTH_STAR
+              + max(vec3(1 - abs(nsp.x * nsp.y * 150000)) * 2, 0) * smoothstep(0.0175, 0.00175, length(nsp.xy)) * vec3(0.5, 0.75, 1)
+            #endif
+          ;
+
+          nightSkybox =
+            mix(min(vec3(1), nightSkybox), fogLayer, fogDensity)
+
+            #ifdef ENABLE_AURORAS
+              + aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir))
+            #endif
+          ;
+        #endif
+      }
     #endif
 
     #ifdef ENABLE_REDDENING
