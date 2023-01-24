@@ -23,6 +23,7 @@
   "container.cartography_table": "§fCartography Table",
   "container.smoker": "§fSmoker",
   "container.stonecutter": "",
+	"container.upgrade": "§fUpgrade Gear",
   "container.blast_furnace": "§fBlast Furnace",
   "itemGroup.buildingBlocks": "§fBuilding Blocks",
   "itemGroup.decorations": "§fDecoration Blocks",
