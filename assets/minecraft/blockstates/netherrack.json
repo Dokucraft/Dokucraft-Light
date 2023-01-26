@@ -1,12 +1,13 @@
-{ "variants": {
+{
+	"variants": {
     "": [
-      { "model": "block/netherrack/netherrack", "weight": 825 },
-      { "model": "block/netherrack/netherrack_alt", "weight": 825 },
-      { "model": "block/netherrack/netherrack_eyes", "weight": 800 },
-      { "model": "block/netherrack/netherrack_big_eye", "weight": 25 },
-      { "model": "block/netherrack/netherrack_big_eye_2", "weight": 25 },
-      { "model": "block/netherrack/netherrack_theeth", "weight": 5 },
-      { "model": "block/netherrack/netherrack_theeth_2", "weight": 5 }
+      { "model": "block/netherrack/0", "weight": 825 },
+      { "model": "block/netherrack/1", "weight": 825 },
+      { "model": "block/netherrack/2", "weight": 800 },
+      { "model": "block/netherrack/3", "weight": 25 },
+      { "model": "block/netherrack/4", "weight": 25 },
+      { "model": "block/netherrack/5", "weight": 5 },
+      { "model": "block/netherrack/6", "weight": 5 }
     ]
   }
 }
