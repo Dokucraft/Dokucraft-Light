@@ -52,6 +52,17 @@
 
 
 // ============================================================================
+//  Overworld sky
+// ============================================================================
+
+// Remove the two slashes at the start of this line to allow the post shaders to check what the current moon phase is.
+// Enabling this will completely remove the regular moon. To get the moon back, enable it in the settings in the program/skybox.fsh shader.
+// Incompatible with Optifine's Custom Sky feature.
+// #define ENABLE_POST_MOON_PHASES
+
+
+
+// ============================================================================
 //  End sky
 // ============================================================================
 

@@ -18,6 +18,7 @@ out mat4 projInv;
 out vec4 fogColor;
 out vec3 up;
 out vec3 sunDir;
+out float moonPhase;
 
 #define FPRECISION 4000000.0
 #define PROJNEAR 0.05
@@ -98,4 +99,6 @@ void main() {
   vec2 squareUV = (texCoord - 0.5) / (OutSize.yy / OutSize.xy);
 
   direction = (projInv * vec4(outPos.xy * (far - near), far + near, far - near)).xyz;
+
+  moonPhase = texture(DiffuseSampler, start + 26.0 * inc).x;
 }

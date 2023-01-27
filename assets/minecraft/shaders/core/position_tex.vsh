@@ -1,5 +1,7 @@
 #version 150
 
+#moj_import <../config.txt>
+
 in vec3 Position;
 in vec2 UV0;
 
@@ -14,6 +16,10 @@ out vec3 c2;
 out vec3 c3;
 out vec2 texCoord0;
 out float isSun;
+
+#ifdef ENABLE_POST_MOON_PHASES
+  flat out float moonPhase;
+#endif
 
 #define SUNSIZE 60
 #define SUNDIST 110
@@ -54,8 +60,21 @@ void main() {
         }
       }
       ProjInv = inverse(ProjMat * ModelViewMat);
-    } else {
+    } else { // Moon
       isSun = 0.5;
+
+      #ifdef ENABLE_POST_MOON_PHASES
+        candidate = vec4(-2.0 * OVERLAYSCALE, -OVERLAYSCALE, 0.0, 1.0);
+
+        int vidm4 = gl_VertexID % 4;
+        if (vidm4 == 2) {
+          moonPhase = UV0.x / 2.0 + UV0.y;
+          candidate.x = OVERLAYSCALE;
+          candidate.y = 2.0 * OVERLAYSCALE;
+        } else if (vidm4 == 1) {
+          candidate.x = OVERLAYSCALE;
+        }
+      #endif
     }
   }
 

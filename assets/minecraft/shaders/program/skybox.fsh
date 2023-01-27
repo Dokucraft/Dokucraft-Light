@@ -26,6 +26,15 @@
 // Requires ENABLE_AURORAS
 #define AURORA_COLOR vec3(0.465, 2, 0.833)
 
+// Remove the two slashes at the start of this line to draw a moon as a part of the sky.
+// This requires MoonSampler to be set up properly in program/skybox.json and in post/transparency.json
+// For moon phases to work properly and to hide the regular moon, enable ENABLE_POST_MOON_PHASES in config.txt
+// #define ENABLE_POST_MOON
+
+// Use this to change the size of the moon.
+// Requires ENABLE_POST_MOON
+#define MOON_SCALE 0.3
+
 /* ------------------------------------------------------------------------- */
 
 
@@ -34,6 +43,10 @@ uniform sampler2D DepthSampler;
 uniform sampler2D SkyBoxDaySampler;
 uniform sampler2D SkyBoxNightSampler;
 uniform vec2 OutSize;
+
+#ifdef ENABLE_POST_MOON
+  uniform sampler2D MoonSampler;
+#endif
 
 in vec2 texCoord;
 in vec2 oneTexel;
@@ -45,6 +58,15 @@ in mat4 projInv;
 in vec4 fogColor;
 in vec3 up;
 in vec3 sunDir;
+
+/* Moon phases:
+    0.0:  Full Moon
+    0.25: Third Quarter
+    0.5:  New Moon
+    0.75: First Quarter
+  There are 8 of them, and it wraps around at 1.0 so that 1.0 turns into 0.0
+*/
+in float moonPhase;
 
 out vec4 fragColor;
 
@@ -300,7 +322,6 @@ vec3 sampleSkybox(sampler2D skyboxSampler, vec3 direction) {
   vec3 absDir = abs(dir);
 
   vec2 skyboxUV;
-  vec4 backgroundColor;
   if (absDir.x >= absDir.y && absDir.x > absDir.z) {
     if (dir.x > 0) {
       skyboxUV = vec2(0, 0.5) + (dir.zy * vec2(1, -1) + 1) / 2 / vec2(3, 2);
@@ -322,6 +343,21 @@ vec3 sampleSkybox(sampler2D skyboxSampler, vec3 direction) {
   }
   return texture(skyboxSampler, skyboxUV).rgb;
 }
+
+#ifdef ENABLE_POST_MOON
+  vec2 getMoonUV(vec3 direction) {
+    float l = max(max(abs(direction.x), abs(direction.y)), abs(direction.z));
+    vec3 dir = direction / l;
+
+    vec2 moonUV;
+    if (dir.x > 0) {
+      moonUV = vec2(0);
+    } else {
+      moonUV = (-dir.zy + 1) / 2;
+    }
+    return clamp((moonUV - vec2(0.5)) / MOON_SCALE + vec2(0.5), vec2(0), vec2(1));
+  }
+#endif
 
 vec4 linear_fog(vec4 inColor, float vertexDistance, float fogStart, float fogEnd, vec4 fogColor) {
   if (vertexDistance <= fogStart) {
@@ -392,17 +428,6 @@ void main() {
           mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle);
           vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
 
-          float distHorizon = 1.0 - abs(dot(nd, vec3(0, 1, 0)));
-          float distMoon = max(0, dot(ndr, vec3(-1, 0, 0)));
-          float fogDensity = mix(0.1, 0.9, distHorizon);
-
-          vec3 fogLayer =
-            // Base fog
-              vec3(0.243, 0.325, 0.392)
-            // Moonlit fog
-            + mix(vec3(0.156, 0.274, 0.38), vec3(0.737, 0.76, 0.745), distMoon) * distMoon * distMoon
-          ;
-
           #ifdef ENABLE_NORTH_STAR
             vec3 nsp = normalize(normalize(vec3(0, 0.6, 1)) - nd);
           #endif
@@ -425,11 +450,59 @@ void main() {
             #endif
           ;
 
+          float distHorizon = 1.0 - abs(dot(nd, vec3(0, 1, 0)));
+          float distMoon = max(0, dot(ndr, vec3(-1, 0, 0)));
+          float fogDensity = mix(0.1, 0.9, distHorizon);
+
+          #ifdef ENABLE_POST_MOON
+            // vec4 moon = sampleMoon(MoonSampler, (rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(nd, 1.0)).xyz);
+            vec2 moonUV = getMoonUV((rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(nd, 1.0)).xyz);
+            vec4 moon = texture(MoonSampler, moonUV);
+
+            // Moon radius in UV space: 0.95 / 2 = 0.475
+            vec2 moonNormXY = (moonUV - vec2(0.5)) / 0.475;
+            vec3 moonNorm = normalize(vec3(moonNormXY, 1.0 - length(moonNormXY)));
+            vec3 fakeSunDir = rotate(vec3(0, 0, 1), vec3(0.5, 0.5, 0), M_PI * 2 * moonPhase);
+
+            // Add shading to the moon based on moon phase
+            moon.rgb *= smoothstep(-0.3, 0.3, dot(moonNorm, fakeSunDir));
+
+            vec3 fogLayer =
+              // Base fog
+                vec3(0.243, 0.325, 0.392)
+              // Moonlit fog
+              + mix(vec3(0.156, 0.274, 0.38), vec3(0.737, 0.76, 0.745), distMoon) * distMoon * distMoon * (fakeSunDir.z + 2.0) / 3.0
+            ;
+          #else
+            vec3 fogLayer =
+              // Base fog
+                vec3(0.243, 0.325, 0.392)
+              // Moonlit fog
+              + mix(vec3(0.156, 0.274, 0.38), vec3(0.737, 0.76, 0.745), distMoon) * distMoon * distMoon
+            ;
+          #endif
+
           nightSkybox =
-            mix(min(vec3(1), nightSkybox), fogLayer, fogDensity)
+            mix(
+              #ifdef ENABLE_POST_MOON
+                mix(
+                  min(vec3(1), nightSkybox),
+                  moon.rgb,
+                  moon.a
+                ),
+              #else
+                min(vec3(1), nightSkybox),
+              #endif
+              fogLayer,
+              fogDensity
+            )
 
             #ifdef ENABLE_AURORAS
-              + aurora(nd, sunAngle * 1000) * 0.5 * smoothstep(-1.025, -0.9, dot(nd, sunDir))
+              + aurora(nd, sunAngle * 1000) * 0.5
+
+              #ifndef ENABLE_POST_MOON
+                * smoothstep(-1.025, -0.9, dot(nd, sunDir))
+              #endif
             #endif
           ;
         #endif
