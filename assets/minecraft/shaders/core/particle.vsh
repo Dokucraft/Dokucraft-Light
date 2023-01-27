@@ -20,6 +20,7 @@ out float vertexDistance;
 out vec2 texCoord0;
 out vec4 vertexColor;
 out vec4 lightColor;
+out vec4 glpos;
 
 float getHue(vec3 rgb) {
   vec3 hsv = vec3(0.0);
@@ -67,4 +68,6 @@ void main() {
     gl_Position += vec4((corner * 2 - 1), 1, 0) * vec4(0.1, -0.1, 0, 0) * ProjMat; // Expand Note
     texCoord0 = uv / texSize;
   }
+
+  glpos = gl_Position;
 }
