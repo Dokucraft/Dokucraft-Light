@@ -10,7 +10,7 @@
 	"elements": [
 		{
 			"name": "Trapdoor Plank",
-			"from": [11.5, 13, 0],
+			"from": [11.6, 13, 0],
 			"to": [16, 16, 16],
 			"faces": {
 				"north": {"uv": [3, 0, 6, 4.5], "rotation": 270, "texture": "#sides"},
@@ -23,8 +23,8 @@
 		},
 		{
 			"name": "Trapdoor Plank",
-			"from": [4.5, 13.25, 0],
-			"to": [11.5, 15.75, 16],
+			"from": [4.4, 13.25, 0],
+			"to": [11.6, 15.75, 16],
 			"faces": {
 				"north": {"uv": [3, 4.5, 6, 11.5], "rotation": 270, "texture": "#sides"},
 				"south": {"uv": [3, 4.5, 6, 11.5], "rotation": 90, "texture": "#sides"},
@@ -35,7 +35,7 @@
 		{
 			"name": "Trapdoor Plank",
 			"from": [0, 13, 0],
-			"to": [4.5, 16, 16],
+			"to": [4.4, 16, 16],
 			"faces": {
 				"north": {"uv": [3, 11.5, 6, 16], "rotation": 270, "texture": "#sides"},
 				"east": {"uv": [0, 0, 3, 16], "rotation": 90, "texture": "#sides"},
