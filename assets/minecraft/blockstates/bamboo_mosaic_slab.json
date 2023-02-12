@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "type=bottom,waterlogged=false": { "model": "block/bamboo_mosaic_slab" },
+        "type=top,waterlogged=false"   : { "model": "block/bamboo_mosaic_slab_top" },
+        "type=double,waterlogged=false": { "model": "block/bamboo_mosaic" },
+				"type=bottom,waterlogged=true": { "model": "block/underwater/bamboo_mosaic_slab_underwater" },
+        "type=top,waterlogged=true"   : { "model": "block/underwater/bamboo_mosaic_slab_top_underwater" }
+    }
+}

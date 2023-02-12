@@ -1,0 +1,110 @@
+{
+	"credit": "Made by SyndiShanX",
+	"ambientocclusion": false,
+	"textures": {
+		"fence": "block/fence/bamboo_fence"
+	},
+	"elements": [
+		{
+			"name": "Post",
+			"from": [6.5, 0, -1.5],
+			"to": [9.5, 16, 1.5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"south": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"west": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"up": {"uv": [3, 0, 6, 3], "texture": "#fence"},
+				"down": {"uv": [6, 0, 9, 3], "texture": "#fence"}
+			}
+		},
+		{
+			"name": "Post",
+			"from": [6.5, 0, 14.5],
+			"to": [9.5, 16, 17.5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"south": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"west": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"up": {"uv": [3, 0, 6, 3], "texture": "#fence"},
+				"down": {"uv": [6, 0, 9, 3], "texture": "#fence"}
+			}
+		},
+		{
+			"name": "Top Bar 1",
+			"from": [7, 12, 8],
+			"to": [9, 14.5, 14.5],
+			"faces": {
+				"east": {"uv": [9.5, 3, 16, 5.5], "texture": "#fence"},
+				"west": {"uv": [3, 3, 9.5, 5.5], "texture": "#fence"},
+				"up": {"uv": [3, 7.5, 9.5, 5.5], "rotation": 90, "texture": "#fence"},
+				"down": {"uv": [3, 7.5, 9.5, 5.5], "rotation": 90, "texture": "#fence"}
+			}
+		},
+		{
+			"name": "Top Bar 2",
+			"from": [7, 12, 1.5],
+			"to": [9, 14.5, 8],
+			"faces": {
+				"east": {"uv": [3, 3, 9.5, 5.5], "texture": "#fence"},
+				"west": {"uv": [9.5, 3, 16, 5.5], "texture": "#fence"},
+				"up": {"uv": [3, 5.5, 9.5, 7.5], "rotation": 270, "texture": "#fence"},
+				"down": {"uv": [3, 5.5, 9.5, 7.5], "rotation": 270, "texture": "#fence"}
+			}
+		},
+		{
+			"name": "Bottom Bar 1",
+			"from": [7, 6, 1.5],
+			"to": [9, 8.5, 8],
+			"faces": {
+				"east": {"uv": [3, 3, 9.5, 5.5], "texture": "#fence"},
+				"west": {"uv": [9.5, 3, 16, 5.5], "texture": "#fence"},
+				"up": {"uv": [3, 5.5, 9.5, 7.5], "rotation": 270, "texture": "#fence"},
+				"down": {"uv": [3, 5.5, 9.5, 7.5], "rotation": 270, "texture": "#fence"}
+			}
+		},
+		{
+			"name": "Bottom Bar 2",
+			"from": [7, 6, 8],
+			"to": [9, 8.5, 14.5],
+			"faces": {
+				"east": {"uv": [9.5, 3, 16, 5.5], "texture": "#fence"},
+				"west": {"uv": [3, 3, 9.5, 5.5], "texture": "#fence"},
+				"up": {"uv": [3, 7.5, 9.5, 5.5], "rotation": 90, "texture": "#fence"},
+				"down": {"uv": [3, 7.5, 9.5, 5.5], "rotation": 90, "texture": "#fence"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 20, 0],
+			"translation": [0, 1.5, -1],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 20, 0],
+			"translation": [0, 1.5, -1],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 20, 0],
+			"scale": [0.45, 0.45, 0.45]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 20, 0],
+			"scale": [0.45, 0.45, 0.45]
+		},
+		"ground": {
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

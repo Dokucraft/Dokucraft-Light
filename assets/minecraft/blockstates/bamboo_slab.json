@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "type=bottom,waterlogged=false": { "model": "block/bamboo_slab" },
+        "type=top,waterlogged=false"   : { "model": "block/bamboo_slab_top" },
+        "type=double,waterlogged=false": { "model": "block/bamboo_planks" },
+				"type=bottom,waterlogged=true": { "model": "block/underwater/bamboo_slab_underwater" },
+        "type=top,waterlogged=true"   : { "model": "block/underwater/bamboo_slab_top_underwater" }
+    }
+}

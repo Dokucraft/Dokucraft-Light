@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "block/bamboo/block/stripped_bamboo_block_x"
+    },
+    "axis=y": {
+      "model": "block/bamboo/block/stripped_bamboo_block_y"
+    },
+    "axis=z": {
+      "model": "block/bamboo/block/stripped_bamboo_block_z"
+    }
+  }
+}

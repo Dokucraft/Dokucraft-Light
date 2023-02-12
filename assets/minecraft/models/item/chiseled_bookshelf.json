@@ -1,0 +1,23 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"ends": "block/bookshelf_ends",
+		"sides": "block/chiseled_bookshelf/side",
+		"front": "block/chiseled_bookshelf/empty_0"
+	},
+	"elements": [
+		{
+			"name": "Bookshelf",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#sides"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#sides"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#sides"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#ends"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#ends"}
+			}
+		}
+	]
+}

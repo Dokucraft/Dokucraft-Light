@@ -1,0 +1,23 @@
+{
+	"credit": "Made by SyndiShanX",
+	"ambientocclusion": false,
+	"textures": {
+		"fence": "block/fence/bamboo_fence",
+		"particle": "block/bamboo_planks"
+	},
+	"elements": [
+		{
+			"name": "post",
+			"from": [6.5, 0, 6.5],
+			"to": [9.5, 16, 9.5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"south": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"west": {"uv": [0, 0, 3, 16], "texture": "#fence"},
+				"up": {"uv": [3, 0, 6, 3], "texture": "#fence"},
+				"down": {"uv": [6, 0, 9, 3], "texture": "#fence"}
+			}
+		}
+	]
+}

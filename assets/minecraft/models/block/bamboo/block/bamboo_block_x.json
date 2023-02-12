@@ -1,0 +1,7 @@
+{
+  "parent": "block/bamboo/block/bamboo_template_x",
+  "textures": {
+    "ends": "block/bamboo_block_top",
+    "sides": "block/bamboo_block"
+  }
+}
