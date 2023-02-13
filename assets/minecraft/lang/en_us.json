@@ -23,7 +23,7 @@
   "container.cartography_table": "§fCartography Table",
   "container.smoker": "§fSmoker",
   "container.stonecutter": "",
-	"container.upgrade": "   §fUpgrade Gear",
+  "container.upgrade": "   §fUpgrade Gear",
   "container.blast_furnace": "§fBlast Furnace",
   "itemGroup.buildingBlocks": "§fBuilding Blocks",
   "itemGroup.decorations": "§fDecoration Blocks",
@@ -834,5 +834,8 @@
   "itemGroup.functional": "§fFunctional Blocks",
   "itemGroup.spawnEggs": "§fSpawn Eggs",
   "itemGroup.consumables": "§fConsumables",
-  "itemGroup.crafting": "§fCrafting"
+  "itemGroup.crafting": "§fCrafting",
+  "itemGroup.coloredBlocks": "§fColored Blocks",
+  "itemGroup.foodAndDrink": "§fFood & Drinks",
+  "itemGroup.ingredients": "§fIngredients"
 }
