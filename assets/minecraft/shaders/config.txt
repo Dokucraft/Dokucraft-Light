@@ -55,6 +55,11 @@
 //  Overworld sky
 // ============================================================================
 
+// Remove the two slashes at the start of this line to disable the regular sun drawn using core shaders.
+// Removing the regular sun means the sun can be drawn in the post shader instead, which allows it to use various extra effects.
+// To draw the sun using post shaders, enable the option for it in program/skybox.fsh.
+// #define DISABLE_CORE_SUN
+
 // Remove the two slashes at the start of this line to allow the post shaders to check what the current moon phase is.
 // Enabling this will completely remove the regular moon. To get the moon back, enable it in the settings in the program/skybox.fsh shader.
 // Incompatible with Optifine's Custom Sky feature.

@@ -26,6 +26,15 @@
 // Requires ENABLE_AURORAS
 #define AURORA_COLOR vec3(0.465, 2, 0.833)
 
+// Remove the two slashes at the start of this line to draw a sun as a part of the sky.
+// To disable the regular sun, make sure to enable the same setting in confix.txt.
+// This does not currently use a texture. The shape of the sun is calculated based on the time of day.
+// #define ENABLE_POST_SUN
+
+// Controls the speed of the sun's animation.
+// Requires ENABLE_POST_SUN
+#define SUN_ANIM_SPEED 0.5
+
 // Remove the two slashes at the start of this line to draw a moon as a part of the sky.
 // This requires MoonSampler to be set up properly in program/skybox.json and in post/transparency.json
 // For moon phases to work properly and to hide the regular moon, enable ENABLE_POST_MOON_PHASES in config.txt
@@ -181,6 +190,8 @@ const float FUDGE = 0.01;
 
 /* ------------------------------------------------------------------------- */
 
+#define M_PI 3.141592653589793
+
 mat4 rotationMatrix(vec3 axis, float angle) {
     axis = normalize(axis);
     float s = sin(angle);
@@ -202,8 +213,6 @@ mat4 rotationMatrix(vec3 axis, float angle) {
 #endif
 
 #if NIGHT_SKY >= 1
-  #define M_PI 3.141592653589793
-
   vec3 rotate(vec3 v, vec3 axis, float angle) {
     mat4 m = rotationMatrix(axis, angle);
     return (m * vec4(v, 1.0)).xyz;
@@ -368,6 +377,11 @@ vec4 linear_fog(vec4 inColor, float vertexDistance, float fogStart, float fogEnd
   return vec4(mix(inColor.rgb, fogColor.rgb, fogValue * fogColor.a), inColor.a);
 }
 
+float rayOpacity(vec2 dir, vec2 ref, float time, float seedA, float seedB) {
+  float ca = dot(normalize(dir), ref);
+  return clamp((0.48 + 0.16 * sin( ca * seedA + time)) + (0.29 + 0.23 * cos(-ca * seedB + time)), 0.0, 1.0);
+}
+
 void main() {
   float realDepth = linearizeDepth(texture(DepthSampler, texCoord).r);
   fragColor = texture(DiffuseSampler, texCoord);
@@ -377,6 +391,15 @@ void main() {
   vec3 nd = normalize(direction);
 
   if (far > 50 && realDepth > far / 2 - 5) {
+
+    #if defined(ENABLE_POST_SUN) || NIGHT_SKY == 1 || NIGHT_SKY == 2
+      float sunAngle = atan(sunDir.y, sunDir.x);
+    #endif
+
+    #if NIGHT_SKY == 1 || NIGHT_SKY == 2
+      mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
+      vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
+    #endif
 
     vec3 daySkybox = sampleSkybox(SkyBoxDaySampler, (vec4(direction, 1) * rotationMatrix(vec3(0, 1, 0), 1.3)).xyz);
 
@@ -394,10 +417,6 @@ void main() {
 
       if (timeOfDay < 0.1) {
         #if NIGHT_SKY == 1
-          float sunAngle = atan(sunDir.y, sunDir.x);
-          mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
-          vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
-
           #ifdef ENABLE_NORTH_STAR
             vec3 nsp = normalize(normalize(vec3(0, 0.6, 1)) - nd);
           #endif
@@ -424,10 +443,6 @@ void main() {
             #endif
           ;
         #elif NIGHT_SKY == 2
-          float sunAngle = atan(sunDir.y, sunDir.x);
-          mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle);
-          vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
-
           #ifdef ENABLE_NORTH_STAR
             vec3 nsp = normalize(normalize(vec3(0, 0.6, 1)) - nd);
           #endif
@@ -519,7 +534,32 @@ void main() {
 
     float factor = smoothstep(-0.1, 0.1, timeOfDay);
 
-    vec3 skyColor = mix(nightSkybox, daySkybox, factor);
+    #ifdef ENABLE_POST_SUN
+      vec3 wsd = (rotationMatrix(vec3(0, 0, -1), M_PI - atan(sunDir.y, sunDir.x)) * vec4(nd, 1.0)).xyz;
+      vec2 sunUV;
+      if (wsd.x > 0) {
+        sunUV = vec2(0);
+      } else {
+        sunUV = (-wsd.zy + 1) / 2 - vec2(0.5);
+      }
+
+      float raysX = rayOpacity(sunUV, vec2(1, 0), sunAngle * 350 * SUN_ANIM_SPEED, 36.2214, 21.1139);
+      float raysY = rayOpacity(sunUV, vec2(0, 1), sunAngle * 350 * SUN_ANIM_SPEED, 26.1953, 34.9584);
+      float sa = atan(sunUV.y, sunUV.x);
+      vec2 raysMask = abs(sunUV);
+      float rays = mix(raysX, raysY, clamp(pow(1 - (raysMask.y - raysMask.x) * 2, 10), 0, 1)) + 0.17 * (
+        sin(sa * 7 + sunAngle * 250 * SUN_ANIM_SPEED) +
+        sin(sa * 5 - sunAngle * 169 * SUN_ANIM_SPEED) +
+        2
+      );
+
+      float distSun = dot(wsd, vec3(-1, 0, 0)) * 0.995;
+      float sunOpacity = smoothstep(0.995, 0.99999, distSun) + pow(rays, smoothstep(1, 0.97, distSun)) * smoothstep(0.97, 1, distSun);
+
+      vec3 skyColor = mix(mix(nightSkybox, daySkybox, factor), mix(vec3(1, 0.1, 0), vec3(2), sunOpacity), sunOpacity * sunOpacity);
+    #else
+      vec3 skyColor = mix(nightSkybox, daySkybox, factor);
+    #endif
 
     vec4 screenPos = gl_FragCoord;
     screenPos.xy = (screenPos.xy / OutSize - vec2(0.5)) * 2.0;
