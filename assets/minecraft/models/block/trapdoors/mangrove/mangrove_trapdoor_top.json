@@ -3,9 +3,9 @@
 	"parent": "block/thin_block",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "block/trapdoors/mangrove_trapdoor",
 		"trapdoor": "block/trapdoors/mangrove_trapdoor",
-		"sides": "block/trapdoors/mangrove_trapdoor_rim"
+		"sides": "block/trapdoors/mangrove_trapdoor_rim",
+		"particle": "block/trapdoors/mangrove_trapdoor"
 	},
 	"elements": [
 		{

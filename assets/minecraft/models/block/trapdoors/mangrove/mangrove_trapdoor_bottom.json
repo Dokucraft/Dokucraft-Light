@@ -3,9 +3,9 @@
 	"parent": "block/thin_block",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "block/trapdoors/mangrove_trapdoor",
 		"trapdoor": "block/trapdoors/mangrove_trapdoor",
-		"sides": "block/trapdoors/mangrove_trapdoor_rim"
+		"sides": "block/trapdoors/mangrove_trapdoor_rim",
+		"particle": "block/trapdoors/mangrove_trapdoor"
 	},
 	"elements": [
 		{
@@ -278,7 +278,7 @@
 			"faces": {
 				"north": {"uv": [11, 3.5, 13.5, 4], "texture": "#trapdoor"},
 				"east": {"uv": [11, 0, 11.5, 4], "rotation": 270, "texture": "#trapdoor"},
-				"south": {"uv": [8.5, 0, 6, 3.5], "texture": "#trapdoor"},
+				"south": {"uv": [8.5, 0, 6, 3.5], "texture": "#sides"},
 				"west": {"uv": [13, 0, 13.5, 4], "rotation": 90, "texture": "#trapdoor"},
 				"up": {"uv": [11, 0, 13.5, 4], "rotation": 180, "texture": "#trapdoor"},
 				"down": {"uv": [11, 4, 13.5, 0], "rotation": 180, "texture": "#trapdoor"}
