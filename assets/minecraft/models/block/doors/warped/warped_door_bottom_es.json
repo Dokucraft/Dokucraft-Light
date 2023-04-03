@@ -38,7 +38,7 @@
 			"from": [0.5, 6, -0.25],
 			"to": [4.5, 7, 15],
 			"faces": {
-				"north": {"uv": [4.5, 9, 0.5, 10], "texture": "#bottom", "cullface": "north"},
+				"north": {"uv": [4.5, 9, 0.5, 10], "texture": "#bottom"},
 				"east": {"uv": [15, 9, 0, 10], "texture": "#bottom"},
 				"south": {"uv": [15, 9, 11, 10], "texture": "#bottom"},
 				"west": {"uv": [15, 9, 0, 10], "texture": "#bottom"},
