@@ -38,10 +38,16 @@ void main() {
         fresnel *= fresnel;
       #endif
 
+      vec4 vc = vertexColor;
+
+      #if defined(ENABLE_FRESNEL_EFFECT) && defined(ENABLE_FRESNEL_BRIGHTNESS_COMPENSATION)
+        vc.rgb *= mix(1, (color.a + 1) / 2, fresnel);
+      #endif
+
       #ifdef ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR
-        color = mix(color * vertexColor * ColorModulator, color, color.r * color.g * color.b * (1 - fresnel)) * lightColor;
+        color = mix(color * vc * ColorModulator, color, color.r * color.g * color.b * (1 - fresnel)) * lightColor;
       #else
-        color *= vertexColor * ColorModulator * lightColor;
+        color *= vc * ColorModulator * lightColor;
       #endif
 
       #ifdef ENABLE_FRESNEL_EFFECT
