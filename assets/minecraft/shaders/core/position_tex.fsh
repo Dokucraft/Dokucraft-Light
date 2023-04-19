@@ -14,7 +14,10 @@ in vec3 c1;
 in vec3 c2;
 in vec3 c3;
 in vec2 texCoord0;
+in vec4 vertexColor;
 in float isSun;
+in float isNeg;
+in vec2 ScrSize;
 
 #ifdef ENABLE_POST_MOON_PHASES
   flat in float moonPhase;
@@ -24,6 +27,22 @@ out vec4 fragColor;
 
 #define PRECISIONSCALE 1000.0
 #define MAGICSUNSIZE 3.0
+
+#define POSITION_TEX
+
+// A single iteration of Bob Jenkins' One-At-A-Time hashing algorithm.
+int hash(int x) {
+    x += ( x << 10 );
+    x ^= ( x >>  6 );
+    x += ( x <<  3 );
+    x ^= ( x >> 11 );
+    x += ( x << 15 );
+    return x;
+}
+
+int noise(ivec2 v, int seed) {
+    return hash(v.x ^ hash(v.y + seed) ^ seed);
+}
 
 void main() {
   gl_FragDepth = gl_FragCoord.z;
@@ -82,6 +101,11 @@ void main() {
 
   else {
     color = texture(Sampler0, texCoord0) * ColorModulator;
+  }
+
+  if (textureSize(Sampler0, 0) == vec2(160)) {
+    #moj_import <menus-enchanted.glsl>
+    color *= ColorModulator;
   }
 
   if (color.a == 0.0) {

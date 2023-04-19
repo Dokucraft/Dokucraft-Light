@@ -15,7 +15,10 @@ out vec3 c1;
 out vec3 c2;
 out vec3 c3;
 out vec2 texCoord0;
+out vec4 vertexColor;
 out float isSun;
+out float isNeg;
+out vec2 ScrSize;
 
 #ifdef ENABLE_POST_MOON_PHASES
   flat out float moonPhase;
@@ -80,4 +83,6 @@ void main() {
 
   gl_Position = candidate;
   texCoord0 = UV0;
+  isNeg = float(UV0.y < 0);
+  ScrSize = 2 / vec2(ProjMat[0][0], -ProjMat[1][1]);
 }

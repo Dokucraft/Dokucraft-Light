@@ -123,7 +123,7 @@ void main() {
     if (texSize.x != texSize.y) {
       #moj_import <background-transitions.glsl>
     }
-  } else if (textureSize(Sampler0, 0) == vec2(160)) {
+  } else if (texSize == vec2(160)) {
     #moj_import <menus-enchanted.glsl>
   }
 

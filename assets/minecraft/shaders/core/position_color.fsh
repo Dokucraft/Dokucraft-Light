@@ -36,7 +36,7 @@ void main() {
     }
     return;
   } else if (customType == 2) { // Tooltip outline
-    fragColor = vec4(TOOLTIP_OUTLINE_COLOR.rgb, TOOLTIP_OUTLINE_COLOR.a * abs(1.0 - (0.5 + uv.x * 0.5) - (0.5 + uv.y * 0.5)));
+    fragColor = vec4(TOOLTIP_OUTLINE_COLOR.rgb, TOOLTIP_OUTLINE_COLOR.a * uv.x);
     return;
   } else {
     fragColor = color * ColorModulator;
