@@ -2,6 +2,13 @@
   "providers": [
     {
       "type": "bitmap",
+      "file": "minecraft:font/misc_icons.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["逡逢連逤"]
+    },
+    {
+      "type": "bitmap",
       "file": "minecraft:font/food.png",
       "ascent": 7,
       "height": 9,
