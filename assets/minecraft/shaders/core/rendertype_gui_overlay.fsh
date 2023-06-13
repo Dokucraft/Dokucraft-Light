@@ -1,29 +1,19 @@
 #version 150
 
-#moj_import <utils.glsl>
 #moj_import <../flavor.glsl>
 
 in vec4 vertexColor;
-in float isHorizon;
-in float isSpyglass;
 in vec2 uv;
 flat in int customType;
 
 uniform vec4 ColorModulator;
-uniform vec2 ScreenSize;
-uniform mat4 ModelViewMat;
 
 out vec4 fragColor;
 
 void main() {
-  if (isHorizon > 0.5) {
-    discardControl(gl_FragCoord.xy, ScreenSize.x);
-  }
   vec4 color = vertexColor;
-  if (color.a == 0.0) {discard;}
-  if (isSpyglass > 0.5 && distance(color.rgb, vec3(0, 0, 0)) < 0.01) {
-    fragColor = vec4(0, 0, 0, 0.9); // backgound colour
-    return;
+  if (color.a == 0.0) {
+    discard;
   }
   if (customType == 1) { // Item hover highlight
     float m = abs(1.0 - (0.5 + uv.x * 0.5) - (0.5 + uv.y * 0.5));
@@ -35,14 +25,7 @@ void main() {
       discard; // inside
     }
     return;
-  } else if (customType == 2) { // Tooltip outline
-    fragColor = vec4(TOOLTIP_OUTLINE_COLOR.rgb, TOOLTIP_OUTLINE_COLOR.a * uv.x);
-    return;
   } else {
     fragColor = color * ColorModulator;
-  }
-	if (isHorizon > 0.5) {
-    fragColor.a = 0;
-    return;
   }
 }
