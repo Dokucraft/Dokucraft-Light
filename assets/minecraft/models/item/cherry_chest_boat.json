@@ -1,0 +1,7 @@
+{
+	"parent": "item/boat_chest",
+	"textures": {
+		"boat": "entity/boat/item/cherry",
+		"chest": "entity/chest_boat/item/cherry"
+	}
+}

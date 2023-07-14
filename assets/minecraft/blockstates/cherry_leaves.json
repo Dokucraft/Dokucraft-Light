@@ -1,0 +1,66 @@
+{
+	"multipart": [
+		{	"when": { "OR": [
+				{"persistent":false, "distance":1},
+				{"persistent":false, "distance":2},
+				{"persistent":false, "distance":3},
+				{"persistent":false, "distance":4},
+				{"persistent":false, "distance":5},
+				{"persistent":false, "distance":6},
+				{"persistent":true}
+			]},
+			"apply": {"model": "block/cherry_leaves"}
+		},
+		{	"when": { "OR": [
+				{"persistent":false, "distance":1},
+				{"persistent":false, "distance":2},
+				{"persistent":false, "distance":3},
+				{"persistent":false, "distance":4},
+				{"persistent":false, "distance":5},
+				{"persistent":false, "distance":6},
+				{"persistent":true}
+			]},
+			"apply": [
+				{"model": "block/leaves/cherry_leaves/top0"},
+				{"model": "block/leaves/cherry_leaves/top1"},
+				{"model": "block/leaves/cherry_leaves/top2"},
+				{"model": "block/leaves/cherry_leaves/top3"}
+			]
+		},
+		{	"when": { "OR": [
+				{"persistent":false, "distance":1},
+				{"persistent":false, "distance":2},
+				{"persistent":false, "distance":3},
+				{"persistent":false, "distance":4},
+				{"persistent":false, "distance":5},
+				{"persistent":false, "distance":6},
+				{"persistent":true}
+			]},
+			"apply": [
+				{"model": "block/leaves/cherry_leaves/bottom0"},
+				{"model": "block/leaves/cherry_leaves/bottom1"},
+				{"model": "block/leaves/cherry_leaves/bottom2"},
+				{"model": "block/leaves/cherry_leaves/bottom3"}
+			]
+		},
+		{	"when": {"persistent":false, "distance":7}, 
+			"apply": {"model": "block/dead_cherry_leaves"}
+		},
+		{	"when": {"persistent":false, "distance":7},
+			"apply": [
+				{"model": "block/leaves/dead_cherry_leaves/top0"},
+				{"model": "block/leaves/dead_cherry_leaves/top1"},
+				{"model": "block/leaves/dead_cherry_leaves/top2"},
+				{"model": "block/leaves/dead_cherry_leaves/top3"}
+			]
+		},
+		{	"when":{"persistent":false, "distance":7},
+			"apply": [
+				{"model": "block/leaves/dead_cherry_leaves/bottom0"},
+				{"model": "block/leaves/dead_cherry_leaves/bottom1"},
+				{"model": "block/leaves/dead_cherry_leaves/bottom2"},
+				{"model": "block/leaves/dead_cherry_leaves/bottom3"}
+			]
+		}
+	]
+}

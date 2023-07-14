@@ -1,0 +1,11 @@
+{ "variants": {
+    "": [
+      { "model": "minecraft:block/plants/torchflower/stage2/0" },
+      { "model": "minecraft:block/plants/torchflower/stage2/1" },
+      { "model": "minecraft:block/plants/torchflower/stage2/2" },
+      { "model": "minecraft:block/plants/torchflower/stage2/3" },
+      { "model": "minecraft:block/plants/torchflower/stage2/4" },
+      { "model": "minecraft:block/plants/torchflower/stage2/5" }
+    ]
+  }
+}
