@@ -1,21 +1,213 @@
 { "sources": [
-		{ "type": "single",
-			"resource": "entity/lead_knot"
-		},
-		{ "type": "single",
-			"resource": "entity/end_crystal/end_crystal"
-		},
-		{ "type": "directory",
-			"source": "entity/boat/item",
-			"prefix": "entity/boat/item/"
-		},
-		{ "type": "directory",
-			"source": "entity/chest_boat/item",
-			"prefix": "entity/chest_boat/item/"
-		},
-		{ "type": "directory",
-			"source": "particle/chest",
-			"prefix": "particle/chest/"
-		}
-	]
+    { "type": "single",
+      "resource": "entity/lead_knot"
+    },
+    { "type": "single",
+      "resource": "entity/end_crystal/end_crystal"
+    },
+    { "type": "directory",
+      "source": "entity/boat/item",
+      "prefix": "entity/boat/item/"
+    },
+    { "type": "directory",
+      "source": "entity/chest_boat/item",
+      "prefix": "entity/chest_boat/item/"
+    },
+    { "type": "directory",
+      "source": "particle/chest",
+      "prefix": "particle/chest/"
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "trims/items/"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "item/(clock|(recovery_)?compass)_\\d+"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "item/[^/]+_(boat|raft)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/torchflower[^/]*$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(acacia|bamboo|birch|cherry|crimson|(dark_)?oak|iron|jungle|mangrove|spruce|warped)_(door_(bottom|top)|trapdoor)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "item/(acacia|bamboo|birch|cherry|crimson|(dark_)?oak|iron|jungle|mangrove|spruce|warped)_door$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(acacia|(flowering_)?azalea|birch|cherry|(dark_)?oak|jungle|mangrove|spruce)_leaves$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(target|basalt)_(side|top)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/wheat_stage\\d$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/bamboo_fence(_gate)?(_particle)?$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(attached_)?(pumpkin|melon)_stem$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(blackstone(_top)?|gilded_blackstone)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(big|small)_dripleaf_(side|stem|t[io]p)(_bottom|_top)?$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/brewing_stand_base$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/cake_inner$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/cartography_table_(side\\d|top)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/cave_vines(_plant)?(_lit)?$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/chiseled_bookshelf_(empty|occupied|side|top)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/debug2?$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/((cobbled_|polished_)?deepslate|deepslate_top|(cracked_)?deepslate_(bricks|tiles))$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(dandelion|dead_bush|poppy|soul_torch|vine|weeping_vines|slime_block)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/grindstone_(pivot|round|side)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/fletching_table_(front|side)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(glow_)?item_frame$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/suspicious_(gravel|sand)_\\d$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/sweet_berry_bush_stage\\d$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(orange|pink|red|white)_tulip$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/polished_basalt_(side|top)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "item/(cake|cauldron|chain|flower_pot|hopper|brewing_stand)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "item/(chest|command_block|furnace|hopper|tnt)_minecart$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "item/(soul_)?(lantern|campfire)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/redstone_dust_(line1|overlay)$"
+      }
+    }
+  ]
 }
