@@ -5,28 +5,13 @@
 		{ "type": "single",
 			"resource": "entity/end_crystal/end_crystal"
 		},
-		{ "type": "single",
-			"resource": "entity/steve"
-		},
-		{ "type": "directory",
-			"source": "entity/bed",
-			"prefix": "entity/bed/"
-		},
 		{ "type": "directory",
 			"source": "entity/boat/item",
 			"prefix": "entity/boat/item/"
 		},
 		{ "type": "directory",
-			"source": "entity/chest",
-			"prefix": "entity/chest/"
-		},
-		{ "type": "directory",
 			"source": "entity/chest_boat/item",
 			"prefix": "entity/chest_boat/item/"
-		},
-		{ "type": "directory",
-			"source": "entity/shulker",
-			"prefix": "entity/shulker/"
 		},
 		{ "type": "directory",
 			"source": "particle/chest",
