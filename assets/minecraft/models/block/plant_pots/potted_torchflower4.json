@@ -1,1 +1,1 @@
-{"parent":"block/plant_pots/potted_acacia_sapling4","ambientocclusion":false,"textures":{"3":"item/torchflower"}}
+{"parent":"block/plant_pots/flower_templates/4","textures":{"3":"item/torchflower"}}
