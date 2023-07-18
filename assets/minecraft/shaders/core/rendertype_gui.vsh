@@ -35,6 +35,12 @@ void main() {
       (pid == 7 && (vid == 2 || vid == 3)) ||
       (pid == 8 && (vid == 0 || vid == 1))
     );
+  } else if ( // Tooltip background
+    approxEqual(Color.a, 0.94118) &&
+    approxEqual(Color.r, 0.06275) &&
+    approxEqual(Color.b, 0.06275)
+  ) {
+    customType = 2;
   }
 
   gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
