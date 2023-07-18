@@ -208,6 +208,12 @@
         "namespace": "minecraft",
         "path": "block/redstone_dust_(line1|overlay)$"
       }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/mud$"
+      }
     }
   ]
 }
