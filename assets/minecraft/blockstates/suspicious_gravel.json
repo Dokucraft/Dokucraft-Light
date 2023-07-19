@@ -1,35 +1,28 @@
-{ "multipart": [
-    { "when": { "dusted": 0 },
-      "apply": [
-        { "model": "block/suspicious_gravel/0/0", "weight": 1000 },
-        { "model": "block/suspicious_gravel/0/1", "weight": 1001 },
-        { "model": "block/suspicious_gravel/0/2", "weight": 1002 },
-        { "model": "block/suspicious_gravel/0/3", "weight": 1003 }
-      ]
-    },
-    { "when": { "dusted": 1 },
-      "apply": [
-        { "model": "block/suspicious_gravel/1/0", "weight": 1000 },
-        { "model": "block/suspicious_gravel/1/1", "weight": 1001 },
-        { "model": "block/suspicious_gravel/1/2", "weight": 1002 },
-        { "model": "block/suspicious_gravel/1/3", "weight": 1003 }
-      ]
-    },
-    { "when": { "dusted": 2 },
-      "apply": [
-        { "model": "block/suspicious_gravel/2/0", "weight": 1000 },
-        { "model": "block/suspicious_gravel/2/1", "weight": 1001 },
-        { "model": "block/suspicious_gravel/2/2", "weight": 1002 },
-        { "model": "block/suspicious_gravel/2/3", "weight": 1003 }
-      ]
-    },
-    { "when": { "dusted": 3 },
-      "apply": [
-        { "model": "block/suspicious_gravel/3/0", "weight": 1000 },
-        { "model": "block/suspicious_gravel/3/1", "weight": 1001 },
-        { "model": "block/suspicious_gravel/3/2", "weight": 1002 },
-        { "model": "block/suspicious_gravel/3/3", "weight": 1003 }
-      ]
-    }
-  ]
+{
+  "variants": {
+    "dusted=0": [
+      { "model": "block/suspicious_gravel/0/0" },
+      { "model": "block/suspicious_gravel/1/0" },
+      { "model": "block/suspicious_gravel/2/0" },
+      { "model": "block/suspicious_gravel/3/0" }
+    ],
+    "dusted=1": [
+      { "model": "block/suspicious_gravel/0/1" },
+      { "model": "block/suspicious_gravel/1/1" },
+      { "model": "block/suspicious_gravel/2/1" },
+      { "model": "block/suspicious_gravel/3/1" }
+    ],
+    "dusted=2": [
+      { "model": "block/suspicious_gravel/0/2" },
+      { "model": "block/suspicious_gravel/1/2" },
+      { "model": "block/suspicious_gravel/2/2" },
+      { "model": "block/suspicious_gravel/3/2" }
+    ],
+    "dusted=3": [
+      { "model": "block/suspicious_gravel/0/3" },
+      { "model": "block/suspicious_gravel/1/3" },
+      { "model": "block/suspicious_gravel/2/3" },
+      { "model": "block/suspicious_gravel/3/3" }
+    ]
+  }
 }
