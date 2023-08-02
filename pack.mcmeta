@@ -1,5 +1,6 @@
 {
   "pack": {
+    "supported_formats": [15, 16],
     "pack_format": 15,
     "description": "§4Light and fluffy\n§6V1.20 By Dokucraft TSC"
   },
