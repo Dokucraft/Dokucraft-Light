@@ -1,5 +1,6 @@
 #version 150
 
+#moj_import <../flavor.glsl>
 #moj_import <../config.txt>
 
 in vec3 Position;
@@ -37,6 +38,7 @@ void main() {
   c3 = vec3(0.0);
   isSun = 0.0;
   vec2 tsize = textureSize(Sampler0, 0);
+  texCoord0 = UV0;
 
   // test if sun or moon. Position.y limit excludes worldborder.
   if (Position.y < SUNDIST  && Position.y > -SUNDIST && (ModelViewMat * vec4(Position, 1.0)).z > -SUNDIST) {
@@ -81,8 +83,16 @@ void main() {
     }
   }
 
+  #ifdef ENABLE_BUTTON_GRADIENTS
+    else {
+      const vec2[] corners = vec2[](vec2(0), vec2(0, 1), vec2(1), vec2(1, 0));
+      vec2 corner = corners[gl_VertexID % 4];
+      
+      cscale = vec3(corner, 1);
+    }
+  #endif
+
   gl_Position = candidate;
-  texCoord0 = UV0;
   isNeg = float(UV0.y < 0);
   ScrSize = 2 / vec2(ProjMat[0][0], -ProjMat[1][1]);
 }

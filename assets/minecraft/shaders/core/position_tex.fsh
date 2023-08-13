@@ -1,6 +1,7 @@
 #version 150
 
 #moj_import <utils.glsl>
+#moj_import <../flavor.glsl>
 #moj_import <../config.txt>
 
 uniform sampler2D Sampler0;
@@ -100,7 +101,28 @@ void main() {
   #endif
 
   else {
-    color = texture(Sampler0, texCoord0) * ColorModulator;
+
+    #ifdef ENABLE_BUTTON_GRADIENTS
+      color = texture(Sampler0, texCoord0);
+
+      if (color.a == 252 / 255.0) {
+        float cs = cscale.x / 2;
+
+        if (color.g == 1)
+          cs += 0.5;
+
+        if (color.b == 1)
+          cs = 0.5;
+
+        cs = color.r == 1 ? cs : 1 - cs;
+
+        color.rgb = mix(BUTTON_GRADIENT_COLOR_A, BUTTON_GRADIENT_COLOR_B, clamp(cs, 0, 1));
+      }
+
+      color *= ColorModulator;
+    #else
+      color = texture(Sampler0, texCoord0) * ColorModulator;
+    #endif
   }
 
   if (textureSize(Sampler0, 0) == vec2(160)) {
