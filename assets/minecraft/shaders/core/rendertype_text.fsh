@@ -68,7 +68,11 @@ void main() {
     color = minecraft_mix_light(Light0_Direction, Light1_Direction, normal, color);
   }
 
-  color = color * vertexColor * ColorModulator;
+  color *= vertexColor * ColorModulator;
+
+  if (color.a < 0.1) {
+    discard;
+  }
 
   fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
 }

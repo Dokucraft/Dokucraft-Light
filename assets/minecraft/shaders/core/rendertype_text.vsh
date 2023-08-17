@@ -33,7 +33,5 @@ void main() {
     vertexColor = Color * texelFetch(Sampler2, UV2 / 16, 0);
     texCoord0 = UV0;
 
-    float lum = max(Color.r, max(Color.g, Color.b));
-
     glpos = gl_Position;
 }
