@@ -12,7 +12,7 @@ out vec4 fragColor;
 void main() {
   discardControlGLPos(gl_FragCoord.xy, glpos);
   vec4 color = vertexColor;
-  if (color.a < 0.9 && color.rgb != vec3(1,0,0)) {
+  if (color.a == 0.0 || (color.a < 0.9 && color.rgb != vec3(1,0,0))) {
     discard;
   }
   fragColor = color * ColorModulator;
