@@ -19,6 +19,7 @@ out vec4 fogColor;
 out vec3 up;
 out vec3 sunDir;
 out float moonPhase;
+out float weather;
 
 #define FPRECISION 4000000.0
 #define PROJNEAR 0.05
@@ -100,5 +101,7 @@ void main() {
 
   direction = (projInv * vec4(outPos.xy * (far - near), far + near, far - near)).xyz;
 
-  moonPhase = texture(DiffuseSampler, start + 26.0 * inc).x;
+  vec4 idx26 = texture(DiffuseSampler, start + 26.0 * inc);
+  moonPhase = idx26.x;
+  weather = idx26.y;
 }

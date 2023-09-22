@@ -198,11 +198,21 @@ void main() {
       color = vec4(encodeFloat(sunDir[index]), 1.0);
     }
 
-    #ifdef ENABLE_POST_MOON_PHASES
-      else if (isSun >= 0.25 && isSun <= 0.75 && index == 26) { // Moon
-        color = vec4(moonPhase, 0, 0, 1);
+    else if (index == 26 && isSun >= 0.25) {
+      color = vec4(0, 0, 0, 1);
+
+      // Weather
+      // When it's raining, the sun's ColorModulator alpha is set to 0
+      if (isSun > 0.75) { // Sun
+        color.g = 1.0 - ColorModulator.a;
       }
-    #endif
+
+      #ifdef ENABLE_POST_MOON_PHASES
+        else { // Moon
+          color.r = moonPhase;
+        }
+      #endif
+    }
 
     else if (isSun < 0.25) {
       color = texture(Sampler0, texCoord0) * ColorModulator;

@@ -33,7 +33,7 @@ Control Map:
 [23] ModelViewMat[2][1]
 [24] ModelViewMat[2][2]
 [25] FogColor
-[26] Moon phase
+[26] Moon phase / Weather
 */
 
 // returns control pixel index or -1 if not control

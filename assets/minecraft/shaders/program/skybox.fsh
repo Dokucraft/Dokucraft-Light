@@ -87,6 +87,12 @@ in vec3 sunDir;
 */
 in float moonPhase;
 
+/* Weather:
+  0.0: Clear
+  1.0: Raining
+*/
+in float weather;
+
 out vec4 fragColor;
 
 const float FUDGE = 0.01;
@@ -221,31 +227,32 @@ float hash21(vec2 p) {
   return fract((p3.x + p3.y) * p3.z);
 }
 
-#if NIGHT_SKY >= 1
-  vec2 gradient(vec2 intPos, float t) {
-    float rand = fract(sin(dot(intPos, vec2(12.9898, 78.233))) * 43758.5453);
-    float angle = 6.283185 * rand + 4.0 * t * rand;
-    return vec2(cos(angle), sin(angle));
-  }
+vec2 gradient(vec2 intPos, float t) {
+  float rand = fract(sin(dot(intPos, vec2(12.9898, 78.233))) * 43758.5453);
+  float angle = 6.283185 * rand + 4.0 * t * rand;
+  return vec2(cos(angle), sin(angle));
+}
 
-  float flownoise(vec3 p) {
-    vec2 i = floor(p.xy);
-    vec2 f = p.xy - i;
-    vec2 blend = f * f * (3.0 - 2.0 * f);
-    float noiseVal = 
+float flownoise(vec3 p) {
+  vec2 i = floor(p.xy);
+  vec2 f = p.xy - i;
+  vec2 blend = f * f * (3.0 - 2.0 * f);
+  float noiseVal = 
+    mix(
       mix(
-        mix(
-          dot(gradient(i + vec2(0, 0), p.z), f - vec2(0, 0)),
-          dot(gradient(i + vec2(1, 0), p.z), f - vec2(1, 0)),
-          blend.x),
-        mix(
-          dot(gradient(i + vec2(0, 1), p.z), f - vec2(0, 1)),
-          dot(gradient(i + vec2(1, 1), p.z), f - vec2(1, 1)),
-          blend.x),
-      blend.y
-    );
-    return noiseVal / 0.7;
-  }
+        dot(gradient(i + vec2(0, 0), p.z), f - vec2(0, 0)),
+        dot(gradient(i + vec2(1, 0), p.z), f - vec2(1, 0)),
+        blend.x),
+      mix(
+        dot(gradient(i + vec2(0, 1), p.z), f - vec2(0, 1)),
+        dot(gradient(i + vec2(1, 1), p.z), f - vec2(1, 1)),
+        blend.x),
+    blend.y
+  );
+  return noiseVal / 0.7;
+}
+
+#if NIGHT_SKY >= 1
 
   float star(vec2 uv, float maxVal) {
     float d = length(uv);
@@ -444,6 +451,17 @@ float linearstep(float edge0, float edge1, float x) {
   }
 #endif
 
+vec3 stormyWeather(vec3 ndr, float sunAngle, float screenNoise) {
+  return fogColor.rgb + vec3((
+    flownoise(ndr * 3) * 0.5 +
+    flownoise((rotate(ndr, vec3(0.5, 0.5, 0), sunAngle * 3) + vec3(0, 0, -timeOfDay * 5)) * 5) * 0.25 +
+    flownoise((rotate(ndr, vec3(0.5, 0, 0.5), -sunAngle * 3) + vec3(0, timeOfDay * 5, 0)) * 8) * 0.125 +
+    flownoise((rotate(ndr, vec3(0, 0.5, 0.5), sunAngle * 3) + vec3(timeOfDay * 5, 0, 0)) * 12) * 0.0625 +
+    screenNoise * 0.0625
+    - 0.5
+  ) * 0.1);
+}
+
 void main() {
   float realDepth = linearizeDepth(texture(DepthSampler, texCoord).r);
   fragColor = texture(DiffuseSampler, texCoord);
@@ -462,10 +480,10 @@ void main() {
     vec3 cloudsAdditive = vec3(0);
 
     float dayLight = smoothstep(-0.1, 0.1, timeOfDay);
-
-    #if defined(ENABLE_POST_SUN) || NIGHT_SKY == 1 || NIGHT_SKY == 2
-      float sunAngle = atan(sunDir.y, sunDir.x);
-    #endif
+    float sunAngle = atan(sunDir.y, sunDir.x);
+    mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
+    vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
+    float screenNoise = hash21(gl_FragCoord.xy);
 
     #ifdef ENABLE_POST_MOON
       vec2 moonUV = getMoonUV((rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(nd, 1.0)).xyz);
@@ -482,11 +500,6 @@ void main() {
     #endif
 
     if (timeOfDay < 0.1) { // Night time
-      #if NIGHT_SKY == 1 || NIGHT_SKY == 2 || defined(ENABLE_NIGHT_FOG)
-        mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
-        vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
-      #endif
-
       #if NIGHT_SKY == 0
         stars = sampleSkybox(SkyBoxNightSampler, (rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(nd, 1.0)).xyz).rgb;
 
@@ -495,7 +508,7 @@ void main() {
           #ifdef ENABLE_POST_MOON
             (fakeSunDir.z + 2.0) / 3.0
           #else
-            0.5
+            0.8
           #endif
         );
       #endif
@@ -563,6 +576,12 @@ void main() {
         dayLight
       );
 
+      // Rainy weather
+      if (weather > 0) {
+        atmosphere.rgb = mix(atmosphere.rgb, stormyWeather(ndr, sunAngle, screenNoise), weather);
+        atmosphere.a = max(dayLight, weather);
+      }
+
       // Make the sky more red near the sun during sunrise/sunset
       atmosphere.rgb = mix(
         atmosphere.rgb,
@@ -602,7 +621,7 @@ void main() {
       cloudNorm = normalize(mat3(dirD, -dirR, -nd) * cloudNorm);
 
       // Adding a tiny bit of noise here lessens the color banding in the gradient
-      float fAtmos = nd.y + hash21(gl_FragCoord.xy) * 0.02;
+      float fAtmos = nd.y + screenNoise * 0.02;
       atmosphere = mix(atmosphere, vec4(mix(
         mix(
           texelFetch(SkyColorSampler, ivec2(0, 2), 0).rgb,
@@ -611,8 +630,13 @@ void main() {
         ),
         texelFetch(SkyColorSampler, ivec2(0, 0), 0).rgb,
         linearstep(0.5, 1, fAtmos)
-        ), dayLight
-      ), dayLight);
+        ), max(weather, dayLight)
+      ), max(weather, dayLight));
+
+      // Rainy weather
+      if (weather > 0) {
+        atmosphere.rgb = mix(atmosphere.rgb, stormyWeather(ndr, sunAngle, screenNoise), weather);
+      }
 
       // Make the sky more red near the sun during sunrise/sunset
       atmosphere.rgb = mix(
@@ -657,9 +681,10 @@ void main() {
       clouds = vec4(
         mix(
           mix(nightCloudsColor, dayCloudsColor, dayLight),
-          sunsetCloudsColor, smoothstep(-0.35, 0, timeOfDay) * smoothstep(0.25, 0, timeOfDay) * smoothstep(-1 + 0.6 * (1 - dayLight), 1, dot(nd, sunDir))
+          sunsetCloudsColor,
+          smoothstep(-0.35, 0, timeOfDay) * smoothstep(0.25, 0, timeOfDay) * smoothstep(-1 + 0.6 * (1 - dayLight), 1, dot(nd, sunDir))
         ),
-        mix(smoothstep(0, 0.8, texValue), texValue, dayLight) * skyTopMask
+        mix(smoothstep(0, 0.8, texValue), texValue, dayLight) * skyTopMask * (1.0 - weather)
         #ifdef ENABLE_POST_SUN
           * (1.0 - sun.a * sun.a * sun.a)
         #endif
@@ -679,7 +704,7 @@ void main() {
           #endif
           + auroras
         )
-      ) * smoothstep(0.05, 0.5, texValue) * smoothstep(0.9, 0, texValue) * skyTopMask);
+      ) * smoothstep(0.05, 0.5, texValue) * smoothstep(0.9, 0, texValue) * skyTopMask) * (1.0 - weather);
     #endif
 
     vec4 screenPos = gl_FragCoord;
