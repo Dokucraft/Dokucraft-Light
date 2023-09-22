@@ -105,3 +105,17 @@
 
 // Only change this value if you add or remove lava texture variants
 #define LAVA_VARIANT_COUNT 5
+
+
+
+// ============================================================================
+//  Mob effects
+// ============================================================================
+
+// Uncomment this line to enable support for all custom mob effect visuals.
+// #define ENABLE_MOB_EFFECTS
+
+// Uncomment any of the lines below to enable specific custom mob effect visuals. Requires ENABLE_MOB_EFFECTS.
+// #define ENABLE_DARKNESS_EFFECT
+// #define ENABLE_SPEED_EFFECT
+// #define ENABLE_WITHER_EFFECT

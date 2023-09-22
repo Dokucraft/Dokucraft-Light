@@ -1,0 +1,3 @@
+#define EFFECT_DARKNESS 1
+#define EFFECT_WITHER 2
+#define EFFECT_SPEED 3
