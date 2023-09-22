@@ -6,12 +6,12 @@ in vec4 Color;
 uniform mat4 ModelViewMat;
 uniform mat4 ProjMat;
 
-out vec4 vertexColor;
-// out vec4 glpos;
+// Having this be flat makes the red horizon glow during sunrise/sunset invisible
+// This is important because having it visible causes issues with the partial transparency in the sun texture
+flat out vec4 vertexColor;
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
     vertexColor = Color;
-    // glpos = gl_Position;
 }
