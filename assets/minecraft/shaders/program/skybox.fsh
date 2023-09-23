@@ -433,7 +433,7 @@ float linearstep(float edge0, float edge1, float x) {
 
     float distSun = dot(wsd, vec3(-1, 0, 0)) * 0.995;
     float sunOpacity = smoothstep(0.995, 0.99999, distSun) + pow(rays, smoothstep(1, 0.97, distSun)) * smoothstep(0.97, 1, distSun) + pow(smoothstep(0.998, 1.0015, ddsd), 2);
-    return vec4(mix(vec3(1, 0.1, 0), vec3(2), sunOpacity), sunOpacity * sunOpacity);
+    return vec4(mix(vec3(1, 0.1, 0), vec3(2), sunOpacity), sunOpacity * sunOpacity * (1.0 - weather));
   }
 #endif
 
