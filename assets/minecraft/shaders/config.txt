@@ -1,6 +1,6 @@
 
 // ============================================================================
-//  Waving & swaying animations
+//  Waving & swinging animations
 // ============================================================================
 
 // Remove this line to disable the waving animation for things like plants, leaves, and fire
@@ -9,11 +9,34 @@
 // Controls how much things like plants, leaves, and fire wave
 #define WAVE_MULTIPLIER 1.0
 
-// Remove this line to disable the swaying animation for hanging lanterns
-#define ENABLE_LANTERN_SWAY
+// Remove this line to disable the swinging animation for hanging lanterns
+#define ENABLE_LANTERN_SWING
 
-// Controls how much hanging lanterns sway
-#define LANTERN_SWAY_MULTIPLIER 1.0
+// Controls how much hanging lanterns swing
+#define LANTERN_SWING_MULTIPLIER 1.0
+
+
+
+// ============================================================================
+//  Grass
+// ============================================================================
+
+// This controls the type of grass to draw on the regular grass block (does not affect short/tall grass)
+// This requires custom models and textures, just enabling an effect here will not do anything other than slow down rendering slightly
+// Possible values:
+//  0: Disable the extra processing to slightly speed up rendering
+//  1: Enable the sparse grass blades effect (low-poly blades)
+//  2: Enable the dense grass blades effect (shell texturing)
+#define GRASS_TYPE 0
+
+// Controls the average width of the grass blades when using the sparse grass blades effect
+#define SPARSE_GRASS_BLADE_WIDTH 0.0625
+
+// Controls the amount of grass blades per block when using the dense grass blades effect
+// If it is a number, it will be squared. For example, 32 would yield 32^2 = 1024 blades per block
+// Can be set to a 2D vector to control the X and Z axes separately, for example vec2(32, 16)
+// The dense grass effect has a constant cost, meaning it does not get slower or faster to render depending on the number of blades to draw, it always performs the same. Doesn't matter if you draw 5 blades per block or a million per block
+#define DENSE_GRASS_BLADES_PER_BLOCK 32
 
 
 

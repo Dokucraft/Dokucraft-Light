@@ -1,0 +1,18 @@
+Special alpha values to use in textures to enable certain shader effects:
+
+The shaders that the values apply to are in square brackets.
+
+ 18: Medium wave effect (transparent) [cutout, mipped cutout]
+ 19: Strong wave effect (transparent) [cutout, mipped cutout]
+ 20: Weak wave effect (transparent) [cutout, mipped cutout]
+ 22: Delayed weak wave effect (transparent) [cutout, mipped cutout]
+ 24: Lantern swing (transparent) [cutout]
+ 26: Note particle [particle]
+141: Lantern swing (opaque) [cutout]
+211: Grass effect (sparse/dense) [mipped cutout]
+212: Grass effect (sparse) [mipped cutout]
+247: Better lava [solid]
+248: Parallax subsurface [solid]
+252: Strong wave effect (opaque) [cutout, mipped cutout]
+253: Medium wave effect (opaque) [cutout, mipped cutout]
+254: Weak wave effect (opaque) [cutout, mipped cutout]

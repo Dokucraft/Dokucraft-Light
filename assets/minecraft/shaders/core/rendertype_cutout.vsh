@@ -29,60 +29,43 @@ out vec4 glpos;
 void main() {
   vec3 position = Position + ChunkOffset;
 
-  #if defined(ENABLE_WAVING) || defined(ENABLE_LANTERN_SWAY)
+  #if defined(ENABLE_WAVING) || defined(ENABLE_LANTERN_SWING)
     int alpha = int(textureLod(Sampler0, UV0, 0).a * 255 + 0.5);
 
-    if (alpha == 141 || alpha == 24) {
-      #ifdef ENABLE_LANTERN_SWAY
-        float time = (1.0 + fract(dot(floor(Position), vec3(1))) / 2.0) * GameTime * SWAYING_SPEED + dot(floor(Position), vec3(1)) * 1234.0;
+    #ifdef ENABLE_LANTERN_SWING
+      if (alpha == 141 || alpha == 24) {
+        float time = (1.0 + fract(dot(floor(Position), vec3(1))) / 2.0) * GameTime * SWING_SPEED + dot(floor(Position), vec3(1)) * 1234.0;
         vec3 newForward = normalize(vec3(
-          sin(time) * SWAYING_AMOUNT,
-          sin(time * PHI) * SWAYING_AMOUNT,
-          -1 + sin(time * 3.14) * SWAYING_AMOUNT
+          sin(time) * SWING_AMOUNT,
+          sin(time * PHI) * SWING_AMOUNT,
+          -1 + sin(time * 3.14) * SWING_AMOUNT
         ));
 
         vec3 relativePos = fract(Position);
         if (relativePos.y > EPSILON) {
           relativePos -= vec3(0.5, 1, 0.5);
           relativePos = tbn(newForward, vec3(0, 1, 0)) * relativePos;
-          vec4 swayedPos = vec4(floor(Position) + relativePos + vec3(0.5, 1, 0.5) + ChunkOffset, 1.0);
-          gl_Position = ProjMat * ModelViewMat * swayedPos;
-          vertexDistance = fog_distance(ModelViewMat, swayedPos.xyz, FogShape);
+          position = floor(Position) + relativePos + vec3(0.5, 1, 0.5) + ChunkOffset;
         }
-      #else
-        gl_Position = ProjMat * ModelViewMat * vec4(position, 1.0);
-        vertexDistance = fog_distance(ModelViewMat, position, FogShape);
-      #endif
-    } else {
-      #ifdef ENABLE_WAVING
-        float xs = 0.0;
-        float zs = 0.0;
-        float animation = GameTime * 4000.0;
-        if (alpha == 18 || alpha == 253 ) {
-          xs = rsin((position.x + position.y + animation) / 2) * -1.0;
-          zs = rcos((position.z + position.y + animation) / 2) * -1.0;
-        } else if (alpha == 19 || alpha == 252 ) {
-          xs = rsin((position.x + position.y + animation) / 2) * -2.0;
-          zs = rcos((position.z + position.y + animation) / 2) * -2.0;
-        } else if (alpha == 20 || alpha == 254 ) {
-          xs = rsin((position.x + position.y + animation) / 2) * -0.5;
-          zs = rcos((position.z + position.y + animation) / 2) * -0.5;
-        } else if (alpha == 22) { // very weak, delayed sway used for the bottom of the torch fire
-          xs = rsin((position.x + position.y + animation) / 2 - 1.0) * -0.5;
-          zs = rcos((position.z + position.y + animation) / 2 - 1.0) * -0.5;
-        }
-        vec4 wavedPos = vec4(position, 1.0) + vec4(xs / 32.0, 0, zs / 32.0, 0.0);
-        gl_Position = ProjMat * ModelViewMat * wavedPos;
-        vertexDistance = fog_distance(ModelViewMat, wavedPos.xyz, FogShape);
-      #else
-        gl_Position = ProjMat * ModelViewMat * vec4(position, 1.0);
-        vertexDistance = fog_distance(ModelViewMat, position, FogShape);
-      #endif
-    }
-  #else
-    gl_Position = ProjMat * ModelViewMat * vec4(position, 1.0);
-    vertexDistance = fog_distance(ModelViewMat, position, FogShape);
+      }
+    #endif
+    #if defined(ENABLE_WAVING) && defined(ENABLE_LANTERN_SWING)
+      else
+    #endif
+    #ifdef ENABLE_WAVING
+      if ((alpha >= 18 && alpha <= 20) || (alpha >= 252 && alpha <= 254) || alpha == 22) {
+        float animMult =
+          int(alpha == 18 || alpha == 253) +
+          int(alpha == 19 || alpha == 252) * 2 +
+          int(alpha == 20 || alpha == 254 || alpha == 22) * 0.5
+        ;
+        float time = GameTime - int(alpha == 22) * 2000;
+        position.xz += waveXZ(position, time) * 0.03125 * animMult;
+      }
+    #endif
   #endif
+  gl_Position = ProjMat * ModelViewMat * vec4(position, 1.0);
+  vertexDistance = fog_distance(ModelViewMat, position, FogShape);
 
   vertexColor = Color;
   lightColor = minecraft_sample_lightmap(Sampler2, UV2);
