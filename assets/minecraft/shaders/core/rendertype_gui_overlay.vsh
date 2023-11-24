@@ -37,7 +37,7 @@ void main() {
     //is first? & on z0
     if(gl_VertexID > -1 && gl_VertexID < 4 && Position.z == 0.0) {
       //is a color that the bg could be? //dark
-      if(Color.r == 0.0 && Color.g == 0.0 && Color.b == 0.0) {
+      if(Color.r < 0.001 && Color.g < 0.001 && Color.b < 0.001) {
         vertexColor.rgb = LOADING_BG_DARK_COLOR;
       }
 

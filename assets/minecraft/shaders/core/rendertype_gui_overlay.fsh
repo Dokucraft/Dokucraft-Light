@@ -12,7 +12,7 @@ out vec4 fragColor;
 
 void main() {
   vec4 color = vertexColor;
-  if (color.a == 0.0) {
+  if (color.a < 0.01) {
     discard;
   }
   if (customType == 1) { // Item hover highlight

@@ -48,7 +48,7 @@ void main() {
   c2 = vec3(0.0);
   c3 = vec3(0.0);
   isSun = 0.0;
-  vec2 tsize = textureSize(Sampler0, 0);
+  ivec2 tsize = textureSize(Sampler0, 0);
   texCoord0 = UV0;
 
   // test if sun or moon. Position.y limit excludes worldborder.
@@ -108,31 +108,34 @@ void main() {
   ScrSize = 2 / vec2(ProjMat[0][0], -ProjMat[1][1]);
 
   #ifdef ENABLE_MOB_EFFECTS
+    mobEffect = 0;
+
     // Isolate mob effect icons
-    if (gl_Position.x > 0.8334 && tsize == vec2(256, 128)) {
+    if (gl_Position.x > 0.8334 && tsize == ivec2(256, 128)) {
       int vx = int(gl_VertexID % 4 >= 2);
       int vy = (gl_VertexID % 4 - vx) % 2;
       vec2 v = vec2(vx, vy);
-      vec4 tcol = texture(Sampler0, texCoord0 - v / tsize);
+      vec4 tcol = texture(Sampler0, texCoord0 - v / vec2(tsize));
+      int tcbf = int(floor(tcol.b * 255.0 + 0.5));
 
       if (
         // Double-check that this is definitely a mob effect icon, otherwise
         // this can break the moon if it is positioned correctly
-        tcol.ra == vec2(241.0/255.0, 16.0/255.0)
+        ivec2(floor(tcol.ra * 255.0 + 0.5)) == ivec2(241, 16)
 
         // Make sure that this specific effect is enabled so that the icon
         // won't get stretched to cover the screen if it's not
         && (false
           #ifdef ENABLE_DARKNESS_EFFECT
-            || tcol.b == 215.0/255.0
+            || tcbf == 215
           #endif
 
           #ifdef ENABLE_WITHER_EFFECT
-            || tcol.b == 216.0/255.0
+            || tcbf == 216
           #endif
 
           #ifdef ENABLE_SPEED_EFFECT
-            || tcol.b == 217.0/255.0
+            || tcbf == 217
           #endif
         )
       ) {
@@ -145,11 +148,11 @@ void main() {
         gl_Position.xy = vec2(vx, 1 - vy) * 2 - 1;
         time = tcol.g;
 
-        if (tcol.b == 215.0/255.0) {
+        if (tcbf == 215) {
           mobEffect = EFFECT_DARKNESS;
-        } else if (tcol.b == 216.0/255.0) {
+        } else if (tcbf == 216) {
           mobEffect = EFFECT_WITHER;
-        } else if (tcol.b == 217.0/255.0) {
+        } else if (tcbf == 217) {
           mobEffect = EFFECT_SPEED;
         }
       }

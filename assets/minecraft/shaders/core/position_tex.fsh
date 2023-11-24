@@ -44,16 +44,16 @@ out vec4 fragColor;
 
 // A single iteration of Bob Jenkins' One-At-A-Time hashing algorithm.
 int hash(int x) {
-    x += ( x << 10 );
-    x ^= ( x >>  6 );
-    x += ( x <<  3 );
-    x ^= ( x >> 11 );
-    x += ( x << 15 );
-    return x;
+  x += ( x << 10 );
+  x ^= ( x >>  6 );
+  x += ( x <<  3 );
+  x ^= ( x >> 11 );
+  x += ( x << 15 );
+  return x;
 }
 
 int noise(ivec2 v, int seed) {
-    return hash(v.x ^ hash(v.y + seed) ^ seed);
+  return hash(v.x ^ hash(v.y + seed) ^ seed);
 }
 
 #ifdef ENABLE_MOB_EFFECTS
@@ -160,12 +160,12 @@ void main() {
       vec2 tF = abs(glpos.xy - rA) / abs(rB - rA);
       vec4 tCol = texture(Sampler0, texRectA / omtc0 * (vec2(1) - tF) + texRectB / texCoord0 * tF);
 
-      if (glpos.x >= rMin.x && glpos.x <= rMax.x && glpos.y >= rMin.y && glpos.y <= rMax.y && tCol.a == 1) {
+      if (glpos.x >= rMin.x && glpos.x <= rMax.x && glpos.y >= rMin.y && glpos.y <= rMax.y && tCol.a >= 0.99) {
         gl_FragDepth = gl_FragCoord.z;
         fragColor = tCol;
       } else {
         // Force the screen effect to be behind all other UI elements
-        gl_FragDepth = 999999;
+        gl_FragDepth = 1.0;
 
         if (mobEffect == EFFECT_DARKNESS) {
           #ifdef ENABLE_DARKNESS_EFFECT
@@ -244,7 +244,7 @@ void main() {
   }
 
   #ifdef ENABLE_POST_MOON_PHASES
-    else if (isSun > 0.25 && isSun < 0.75) {
+    else if (isSun >= 0.25 && isSun < 0.75) {
       discard; // Don't draw the moon here, that happens in the skybox shader
     }
   #endif
@@ -254,16 +254,16 @@ void main() {
     #ifdef ENABLE_BUTTON_GRADIENTS
       color = texture(Sampler0, texCoord0);
 
-      if (color.a == 252 / 255.0) {
+      if (int(color.a * 255 + 0.5) == 252) {
         float cs = cscale.x / 2;
 
-        if (color.g == 1)
+        if (color.g >= 0.99)
           cs += 0.5;
 
-        if (color.b == 1)
+        if (color.b >= 0.99)
           cs = 0.5;
 
-        cs = color.r == 1 ? cs : 1 - cs;
+        cs = color.r >= 0.99 ? cs : 1 - cs;
 
         color.rgb = mix(BUTTON_GRADIENT_COLOR_A, BUTTON_GRADIENT_COLOR_B, clamp(cs, 0, 1));
       }
@@ -279,7 +279,7 @@ void main() {
     color *= ColorModulator;
   }
 
-  if (color.a == 0.0 || color.ra == vec2(241.0/255.0, 16.0/255.0)) {
+  if (color.a < 0.01 || ivec2(floor(color.ra * 255.0 + 0.5)) == ivec2(241, 16)) {
     discard;
   }
   fragColor = color;

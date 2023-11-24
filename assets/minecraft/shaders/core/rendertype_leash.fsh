@@ -14,8 +14,9 @@ in vec4 glpos;
 out vec4 fragColor;
 
 void main() {
-    if (vertexColor.a == 0.0)
-        discard;
-    discardControlGLPos(gl_FragCoord.xy, glpos);
-    fragColor = linear_fog(vertexColor, vertexDistance, FogStart, FogEnd, FogColor);
+  if (vertexColor.a < 0.01) {
+    discard;
+  }
+  discardControlGLPos(gl_FragCoord.xy, glpos);
+  fragColor = linear_fog(vertexColor, vertexDistance, FogStart, FogEnd, FogColor);
 }
