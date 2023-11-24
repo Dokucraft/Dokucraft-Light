@@ -3,6 +3,7 @@
 #moj_import <light.glsl>
 #moj_import <fog.glsl>
 #moj_import <wave.glsl>
+#moj_import <../flavor.glsl>
 
 in vec3 Position;
 in vec4 Color;
@@ -90,7 +91,7 @@ void main() {
         glpos = gl_Position;
 
         vertexColor = vec4(
-          Color.rgb * mix(
+          Color.rgb * GRASS_COLOR_MULTIPLIER * mix(
             0.596,
             #ifdef ENABLE_WAVING
               mix(
@@ -129,7 +130,7 @@ void main() {
         #endif
 
         vertexColor = Color;
-        vertexColor.rgb *= mix(
+        vertexColor.rgb *= GRASS_COLOR_MULTIPLIER * mix(
           0.71,
           1.5,
           shellGrassUV.z
