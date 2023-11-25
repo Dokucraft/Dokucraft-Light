@@ -57,13 +57,13 @@ void main() {
           -face, 1 - face, 0,
           face, 0, 1
         ) * vec3(vidv, 1));
-        position.xz += SPARSE_GRASS_BLADE_WIDTH * vec2(
+        position.xz += LOW_POLY_GRASS_WIDTH * vec2(
           (vidv.x * 2 - 1) * (vidv.x ^ vidv.y),
           (vidv.y * 2 - 1) * (1 - (vidv.x ^ vidv.y))
         ) * face;
 
         // For two of the squares, swap position of the points (0,0) and (1,1)
-        position.xz += SPARSE_GRASS_BLADE_WIDTH * -(vidv * 2 - 1) * (1 - (vidv.x ^ vidv.y)) * (topHalf ^ face);
+        position.xz += LOW_POLY_GRASS_WIDTH * -(vidv * 2 - 1) * (1 - (vidv.x ^ vidv.y)) * (topHalf ^ face);
 
         // Scale and rotate based on texture
         int omcxo = 1 - (vidv.x ^ vidv.y);
@@ -73,7 +73,7 @@ void main() {
         float bts = sin(btt);
         float btc = cos(btt);
         float scale = mix(0.35, 0.75, col.r) + smoothstep(0, mix(160, 32, smoothstep(40, 80, fov)), length(position)) * 0.6;
-        position.xz += (mat2(btc, -bts, bts, btc) * (bladePos * 2 - 1) * scale - bladePos) * SPARSE_GRASS_BLADE_WIDTH;
+        position.xz += (mat2(btc, -bts, bts, btc) * (bladePos * 2 - 1) * scale - bladePos) * LOW_POLY_GRASS_WIDTH;
 
         float offsetY = (int(vidv.x != 1 || vidv.y != 0) ^ topHalf) * 0.5 + 0.5 * topHalf;
 
@@ -85,7 +85,7 @@ void main() {
           position.xz += anim;
         #endif
 
-        position.y += 0.0625 * (2 - topHalf) + offsetY * 0.425 * mix(0.5, 1.5, col.g);
+        position.y += 0.0625 * (2 - topHalf) + offsetY * LOW_POLY_GRASS_HEIGHT * mix(0.5, 1.5, col.g);
 
         gl_Position = ProjMat * ModelViewMat * vec4(position, 1.0);
         glpos = gl_Position;
@@ -129,7 +129,7 @@ void main() {
           vec2 anim = waveXZ(position, GameTime) * animMult;
         #endif
 
-        vertexColor = Color;
+        vertexColor = Color * minecraft_sample_lightmap(Sampler2, UV2);
         vertexColor.rgb *= GRASS_COLOR_MULTIPLIER * mix(
           0.71,
           1.5,
@@ -146,7 +146,6 @@ void main() {
 
         gl_Position = ProjMat * ModelViewMat * vec4(position, 1.0);
         vertexDistance = fog_distance(ModelViewMat, position, FogShape);
-        lightColor = minecraft_sample_lightmap(Sampler2, UV2);
         texCoord0 = UV0;
         normal = ProjMat * ModelViewMat * vec4(Normal, 0.0);
         glpos = gl_Position;

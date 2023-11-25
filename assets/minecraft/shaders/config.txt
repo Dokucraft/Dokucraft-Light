@@ -25,12 +25,15 @@
 // This requires custom models and textures, just enabling an effect here will not do anything other than slow down rendering slightly
 // Possible values:
 //  0: Disable the extra processing to slightly speed up rendering
-//  1: Enable the sparse grass blades effect (low-poly blades)
+//  1: Enable the low-poly grass blades effect
 //  2: Enable the dense grass blades effect (shell texturing)
 #define GRASS_TYPE 0
 
-// Controls the average width of the grass blades when using the sparse grass blades effect
-#define SPARSE_GRASS_BLADE_WIDTH 0.0625
+// Controls the average width of the grass blades when using the low-poly grass blades effect
+#define LOW_POLY_GRASS_WIDTH 0.0625
+
+// Controls the average height of the grass blades when using the low-poly grass blades effect
+#define LOW_POLY_GRASS_HEIGHT 0.325
 
 // Controls the amount of grass blades per block when using the dense grass blades effect
 // If it is a number, it will be squared. For example, 32 would yield 32^2 = 1024 blades per block
