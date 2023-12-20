@@ -47,6 +47,7 @@ void main() {
     }
   #elif GRASS_TYPE == 2
     if (type == 1) {
+      if (hash12(floor(-shellGrassUV.xy)) > DENSE_GRASS_COVERAGE) discard;
       vec2 px = floor(shellGrassUV.xy);
       vec2 o = vec2(
         hash12(px + 47.183),
@@ -54,8 +55,8 @@ void main() {
       ) * 0.5 + 0.25;
       float n = hash12(px);
       vec2 co = o - fract(shellGrassUV.xy);
-      float c = max(0, 1.0 - mix(max(abs(co.x), abs(co.y)), length(co), shellGrassUV.z / n) * 2);
-      if (n * c < shellGrassUV.z) {
+      float c = n * max(0, 1.0 - mix(max(abs(co.x), abs(co.y)), length(co), shellGrassUV.z / n) * 2);
+      if (1.0 - DENSE_GRASS_RADIUS_THRESHOLD < shellGrassUV.z / n || c < shellGrassUV.z) {
         discard;
       }
       vec4 col = texture(Sampler0, texCoord0);
