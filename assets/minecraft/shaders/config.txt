@@ -41,6 +41,18 @@
 // The dense grass effect has a constant cost, meaning it does not get slower or faster to render depending on the number of blades to draw, it always performs the same. Doesn't matter if you draw 5 blades per block or a million per block
 #define DENSE_GRASS_BLADES_PER_BLOCK 32
 
+// Controls the coverage of the dense grass effect (0.0 to 1.0)
+// At 0, there will be no grass blades, and at 1 the amount of grass blades will depend on the option above (DENSE_GRASS_BLADES_PER_BLOCK)
+// Values between 0 and 1 will avoid drawing some of the blades, but not all. For example, at 0.5 only half of the grass blades will be drawn
+// Values outside of this range will be clamped to the edges of the range (0 for values < 0, 1 for values > 1)
+#define DENSE_GRASS_COVERAGE 1.0
+
+// Controls the radius threshold for the grass blades
+// If the radius is lower than the threshold, the grass blade will not be drawn on the current shell
+// The radius of each blade decreases with the shell's height, so increasing this threshold gets rid of the top shells for most grass blades
+// This option is mainly for getting rid of the tiny dots on the top few layers of some grass blades
+#define DENSE_GRASS_RADIUS_THRESHOLD 0.2
+
 
 
 // ============================================================================
