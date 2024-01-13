@@ -1,1 +1,178 @@
-{"credit":"By Ewan Howell","textureSize":[64,64],"models":[{"part":"body1","id":"body1","invertAxis":"xy","translate":[0,-24,0],"submodels":[{"id":"rotate","invertAxis":"xy","translate":[0,0,0],"submodels":[{"id":"physics_body1","invertAxis":"xy","translate":[0,18.6,1],"boxes":[{"coordinates":[-10,-1.5,-1.5,20,3,3],"textureOffset":[0,16]}]},{"id":"body2_2","invertAxis":"xy","translate":[0,17.1,-0.5],"submodels":[{"id":"physics_body2","invertAxis":"xy","translate":[0.5,-5,1.5],"boxes":[{"coordinates":[-1.5,-5,-1.5,3,10,3],"textureOffset":[0,22]}]},{"id":"physics_body_beam1","invertAxis":"xy","translate":[0.5,-2.5,1.5],"boxes":[{"coordinates":[-5.5,-1,-1,11,2,2],"textureOffset":[24,22]}]},{"id":"physics_body_beam2","invertAxis":"xy","translate":[0.5,-5,1.5],"boxes":[{"coordinates":[-5.5,-1,-1,11,2,2],"textureOffset":[24,22]}]},{"id":"physics_body_beam3","invertAxis":"xy","translate":[0.5,-7.5,1.5],"boxes":[{"coordinates":[-5.5,-1,-1,11,2,2],"textureOffset":[24,22]}]},{"id":"body3_2","invertAxis":"xy","translate":[0,-10,0],"submodels":[{"id":"physics_body3","invertAxis":"xy","translate":[0.5,-3,1.5],"boxes":[{"coordinates":[-1.5,-3,-1.5,3,6,3],"textureOffset":[12,22]}]}]}]},{"id":"head1_2","invertAxis":"xy","translate":[0,24,0],"submodels":[{"id":"physics_head1","invertAxis":"xy","translate":[0,0,0],"boxes":[{"coordinates":[-4,-4,-4,8,8,8],"textureOffset":[0,0]}]}]},{"id":"head2_2","invertAxis":"xy","translate":[8,20,0],"submodels":[{"id":"physics_head2","invertAxis":"xy","translate":[1,1,-1],"boxes":[{"coordinates":[-3,-3,-3,6,6,6],"textureOffset":[32,0]}]}]},{"id":"head3_2","invertAxis":"xy","translate":[-10,20,0],"submodels":[{"id":"physics_head3","invertAxis":"xy","translate":[1,1,-1],"boxes":[{"coordinates":[-3,-3,-3,6,6,6],"textureOffset":[32,0]}]}]}]}],"animations":[{"rotate.rz":"if(death_time > 0, -torad(min(sqrt((death_time - 1) / 20 * 1.6), 1) * 90), 0)","render.shadow_opacity":"if(death_time == 0, 1, (20 - death_time) / 20)","render.shadow_size":1},{"head1_2.rx":"head1.rx","head1_2.ry":"head1.ry","head2_2.rx":"head2.rx","head2_2.ry":"head2.ry","head3_2.rx":"head3.rx","head3_2.ry":"head3.ry","body2_2.rx":"body2.rx","body3_2.rx":"body3.rx / 2 + torad(12.15)"},{"var.deltatime":"frame_time * 20","var.a":"if(is_in_water, 0.1, 0.5)"},{"var.velocity_head1_tx":"if(death_time > 0, var.velocity_head1_tx - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_head1_ty":"if(death_time > 0, var.velocity_head1_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_head1_tz":"if(death_time > 0, var.velocity_head1_tz - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_head1_rx":"if(death_time > 0, var.velocity_head1_rx - var.first_frame * (random() - 0.5) * if(is_in_water, 0.5, 1), 0)","var.velocity_head1_ry":"if(death_time > 0, var.velocity_head1_ry - var.first_frame * (random() - 0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_head1_tyz":"sqrt(var.velocity_head1_ty * var.velocity_head1_ty + var.velocity_head1_tz * var.velocity_head1_tz)","var.velocity_angle_head":"atan2(var.velocity_head1_ty, var.velocity_head1_tz)"},{"var.position_head1_x":"var.position_head1_x + var.velocity_head1_tx * var.deltatime","var.position_head1_y":"var.position_head1_y + var.velocity_head1_tyz * sin(head1_2.rx + var.velocity_angle_head) * var.deltatime","var.position_head1_z":"var.position_head1_z + var.velocity_head1_tyz * cos(head1_2.rx + var.velocity_angle_head) * var.deltatime","var.rotation_head1_x":"var.rotation_head1_x + var.velocity_head1_rx * var.deltatime","var.rotation_head1_y":"var.rotation_head1_y + var.velocity_head1_ry * var.deltatime"},{"physics_head1.tx":"var.position_head1_x","physics_head1.ty":"var.position_head1_y","physics_head1.tz":"var.position_head1_z","physics_head1.rx":"var.rotation_head1_x","physics_head1.ry":"var.rotation_head1_y"},{"var.velocity_head2_tx":"if(death_time > 0, var.velocity_head2_tx - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_head2_ty":"if(death_time > 0, var.velocity_head2_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_head2_tz":"if(death_time > 0, var.velocity_head2_tz - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_head2_rx":"if(death_time > 0, var.velocity_head2_rx - var.first_frame * (random() - 0.5) * if(is_in_water, 0.5, 1), 0)","var.velocity_head2_ry":"if(death_time > 0, var.velocity_head2_ry - var.first_frame * (random() - 0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_head2_tyz":"sqrt(var.velocity_head2_ty * var.velocity_head2_ty + var.velocity_head2_tz * var.velocity_head2_tz)","var.velocity_angle_head":"atan2(var.velocity_head2_ty, var.velocity_head2_tz)"},{"var.position_head2_x":"var.position_head2_x + var.velocity_head2_tx * var.deltatime","var.position_head2_y":"var.position_head2_y + var.velocity_head2_tyz * sin(head2_2.rx + var.velocity_angle_head) * var.deltatime","var.position_head2_z":"var.position_head2_z + var.velocity_head2_tyz * cos(head2_2.rx + var.velocity_angle_head) * var.deltatime","var.rotation_head2_x":"var.rotation_head2_x + var.velocity_head2_rx * var.deltatime","var.rotation_head2_y":"var.rotation_head2_y + var.velocity_head2_ry * var.deltatime"},{"physics_head2.tx":"var.position_head2_x - 1","physics_head2.ty":"var.position_head2_y - 1","physics_head2.tz":"var.position_head2_z - 1","physics_head2.rx":"var.rotation_head2_x","physics_head2.ry":"var.rotation_head2_y"},{"var.velocity_head3_tx":"if(death_time > 0, var.velocity_head3_tx - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_head3_ty":"if(death_time > 0, var.velocity_head3_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_head3_tz":"if(death_time > 0, var.velocity_head3_tz - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_head3_rx":"if(death_time > 0, var.velocity_head3_rx - var.first_frame * (random() - 0.5) * if(is_in_water, 0.5, 1), 0)","var.velocity_head3_ry":"if(death_time > 0, var.velocity_head3_ry - var.first_frame * (random() - 0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_head3_tyz":"sqrt(var.velocity_head3_ty * var.velocity_head3_ty + var.velocity_head3_tz * var.velocity_head3_tz)","var.velocity_angle_head":"atan2(var.velocity_head3_ty, var.velocity_head3_tz)"},{"var.position_head3_x":"var.position_head3_x + var.velocity_head3_tx * var.deltatime","var.position_head3_y":"var.position_head3_y + var.velocity_head3_tyz * sin(head3_2.rx + var.velocity_angle_head) * var.deltatime","var.position_head3_z":"var.position_head3_z + var.velocity_head3_tyz * cos(head3_2.rx + var.velocity_angle_head) * var.deltatime","var.rotation_head3_x":"var.rotation_head3_x + var.velocity_head3_rx * var.deltatime","var.rotation_head3_y":"var.rotation_head3_y + var.velocity_head3_ry * var.deltatime"},{"physics_head3.tx":"var.position_head3_x - 1","physics_head3.ty":"var.position_head3_y - 1","physics_head3.tz":"var.position_head3_z - 1","physics_head3.rx":"var.rotation_head3_x","physics_head3.ry":"var.rotation_head3_y"},{"var.velocity_body1_tx":"if(death_time > 0, var.velocity_body1_tx - var.first_frame * (random() -0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body1_ty":"if(death_time > 0, var.velocity_body1_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_body1_tz":"if(death_time > 0, var.velocity_body1_tz - var.first_frame * (random() -0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body1_rx":"if(death_time > 0, var.velocity_body1_rx - var.first_frame * (random() -0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_body1_ry":"if(death_time > 0, var.velocity_body1_ry - var.first_frame * (random() -0.5) * if(is_in_water, 0.25, 0.5), 0)"},{"var.position_body1_x":"var.position_body1_x + var.velocity_body1_tx * var.deltatime","var.position_body1_y":"var.position_body1_y + var.velocity_body1_ty * var.deltatime","var.position_body1_z":"var.position_body1_z + var.velocity_body1_tz * var.deltatime","var.rotation_body1_x":"var.rotation_body1_x + var.velocity_body1_rx * var.deltatime","var.rotation_body1_y":"var.rotation_body1_y + var.velocity_body1_ry * var.deltatime"},{"physics_body1.tx":"var.position_body1_x","physics_body1.ty":"var.position_body1_y - 18.6","physics_body1.tz":"var.position_body1_z + 1","physics_body1.rx":"var.rotation_body1_x","physics_body1.ry":"var.rotation_body1_y"},{"var.velocity_body2_tx":"if(death_time > 0, var.velocity_body2_tx - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body2_ty":"if(death_time > 0, var.velocity_body2_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_body2_tz":"if(death_time > 0, var.velocity_body2_tz - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body2_rx":"if(death_time > 0, var.velocity_body2_rx - var.first_frame * (random() - 0.5) * if(is_in_water, 0.5, 1), 0)","var.velocity_body2_ry":"if(death_time > 0, var.velocity_body2_ry - var.first_frame * (random() - 0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_body2_tyz":"sqrt(var.velocity_body2_ty * var.velocity_body2_ty + var.velocity_body2_tz * var.velocity_body2_tz)","var.velocity_angle_head":"atan2(var.velocity_body2_ty, var.velocity_body2_tz)"},{"var.position_body2_x":"var.position_body2_x + var.velocity_body2_tx * var.deltatime","var.position_body2_y":"var.position_body2_y + var.velocity_body2_tyz * sin(body2_2.rx + var.velocity_angle_head) * var.deltatime","var.position_body2_z":"var.position_body2_z + var.velocity_body2_tyz * cos(body2_2.rx + var.velocity_angle_head) * var.deltatime","var.rotation_body2_x":"var.rotation_body2_x + var.velocity_body2_rx * var.deltatime","var.rotation_body2_y":"var.rotation_body2_y + var.velocity_body2_ry * var.deltatime"},{"physics_body2.tx":"var.position_body2_x - 0.5","physics_body2.ty":"var.position_body2_y + 5","physics_body2.tz":"var.position_body2_z + 1.5","physics_body2.rx":"var.rotation_body2_x","physics_body2.ry":"var.rotation_body2_y"},{"var.velocity_body_beam1_tx":"if(death_time > 0, var.velocity_body_beam1_tx - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body_beam1_ty":"if(death_time > 0, var.velocity_body_beam1_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_body_beam1_tz":"if(death_time > 0, var.velocity_body_beam1_tz - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body_beam1_rx":"if(death_time > 0, var.velocity_body_beam1_rx - var.first_frame * (random() - 0.5) * if(is_in_water, 0.5, 1), 0)","var.velocity_body_beam1_ry":"if(death_time > 0, var.velocity_body_beam1_ry - var.first_frame * (random() - 0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_body_beam1_tyz":"sqrt(var.velocity_body_beam1_ty * var.velocity_body_beam1_ty + var.velocity_body_beam1_tz * var.velocity_body_beam1_tz)","var.velocity_angle_head":"atan2(var.velocity_body_beam1_ty, var.velocity_body_beam1_tz)"},{"var.position_body_beam1_x":"var.position_body_beam1_x + var.velocity_body_beam1_tx * var.deltatime","var.position_body_beam1_y":"var.position_body_beam1_y + var.velocity_body_beam1_tyz * sin(body2_2.rx + var.velocity_angle_head) * var.deltatime","var.position_body_beam1_z":"var.position_body_beam1_z + var.velocity_body_beam1_tyz * cos(body2_2.rx + var.velocity_angle_head) * var.deltatime","var.rotation_body_beam1_x":"var.rotation_body_beam1_x + var.velocity_body_beam1_rx * var.deltatime","var.rotation_body_beam1_y":"var.rotation_body_beam1_y + var.velocity_body_beam1_ry * var.deltatime"},{"physics_body_beam1.tx":"var.position_body_beam1_x - 0.5","physics_body_beam1.ty":"var.position_body_beam1_y + 2.5","physics_body_beam1.tz":"var.position_body_beam1_z + 1.5","physics_body_beam1.rx":"var.rotation_body_beam1_x","physics_body_beam1.ry":"var.rotation_body_beam1_y"},{"var.velocity_body_beam2_tx":"if(death_time > 0, var.velocity_body_beam2_tx - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body_beam2_ty":"if(death_time > 0, var.velocity_body_beam2_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_body_beam2_tz":"if(death_time > 0, var.velocity_body_beam2_tz - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body_beam2_rx":"if(death_time > 0, var.velocity_body_beam2_rx - var.first_frame * (random() - 0.5) * if(is_in_water, 0.5, 1), 0)","var.velocity_body_beam2_ry":"if(death_time > 0, var.velocity_body_beam2_ry - var.first_frame * (random() - 0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_body_beam2_tyz":"sqrt(var.velocity_body_beam2_ty * var.velocity_body_beam2_ty + var.velocity_body_beam2_tz * var.velocity_body_beam2_tz)","var.velocity_angle_head":"atan2(var.velocity_body_beam2_ty, var.velocity_body_beam2_tz)"},{"var.position_body_beam2_x":"var.position_body_beam2_x + var.velocity_body_beam2_tx * var.deltatime","var.position_body_beam2_y":"var.position_body_beam2_y + var.velocity_body_beam2_tyz * sin(body2_2.rx + var.velocity_angle_head) * var.deltatime","var.position_body_beam2_z":"var.position_body_beam2_z + var.velocity_body_beam2_tyz * cos(body2_2.rx + var.velocity_angle_head) * var.deltatime","var.rotation_body_beam2_x":"var.rotation_body_beam2_x + var.velocity_body_beam2_rx * var.deltatime","var.rotation_body_beam2_y":"var.rotation_body_beam2_y + var.velocity_body_beam2_ry * var.deltatime"},{"physics_body_beam2.tx":"var.position_body_beam2_x - 0.5","physics_body_beam2.ty":"var.position_body_beam2_y + 5","physics_body_beam2.tz":"var.position_body_beam2_z + 1.5","physics_body_beam2.rx":"var.rotation_body_beam2_x","physics_body_beam2.ry":"var.rotation_body_beam2_y"},{"var.velocity_body_beam3_tx":"if(death_time > 0, var.velocity_body_beam3_tx - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body_beam3_ty":"if(death_time > 0, var.velocity_body_beam3_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_body_beam3_tz":"if(death_time > 0, var.velocity_body_beam3_tz - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body_beam3_rx":"if(death_time > 0, var.velocity_body_beam3_rx - var.first_frame * (random() - 0.5) * if(is_in_water, 0.5, 1), 0)","var.velocity_body_beam3_ry":"if(death_time > 0, var.velocity_body_beam3_ry - var.first_frame * (random() - 0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_body_beam3_tyz":"sqrt(var.velocity_body_beam3_ty * var.velocity_body_beam3_ty + var.velocity_body_beam3_tz * var.velocity_body_beam3_tz)","var.velocity_angle_head":"atan2(var.velocity_body_beam3_ty, var.velocity_body_beam3_tz)"},{"var.position_body_beam3_x":"var.position_body_beam3_x + var.velocity_body_beam3_tx * var.deltatime","var.position_body_beam3_y":"var.position_body_beam3_y + var.velocity_body_beam3_tyz * sin(body2_2.rx + var.velocity_angle_head) * var.deltatime","var.position_body_beam3_z":"var.position_body_beam3_z + var.velocity_body_beam3_tyz * cos(body2_2.rx + var.velocity_angle_head) * var.deltatime","var.rotation_body_beam3_x":"var.rotation_body_beam3_x + var.velocity_body_beam3_rx * var.deltatime","var.rotation_body_beam3_y":"var.rotation_body_beam3_y + var.velocity_body_beam3_ry * var.deltatime"},{"physics_body_beam3.tx":"var.position_body_beam3_x - 0.5","physics_body_beam3.ty":"var.position_body_beam3_y + 7.5","physics_body_beam3.tz":"var.position_body_beam3_z + 1.5","physics_body_beam3.rx":"var.rotation_body_beam3_x","physics_body_beam3.ry":"var.rotation_body_beam3_y"},{"var.velocity_body3_tx":"if(death_time > 0, var.velocity_body3_tx - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body3_ty":"if(death_time > 0, var.velocity_body3_ty + var.a * var.deltatime - var.first_frame * random() * if(is_in_water, 0.5, 1), 0)","var.velocity_body3_tz":"if(death_time > 0, var.velocity_body3_tz - var.first_frame * (random() - 0.5) * if(is_in_water, 1, 2), 0)","var.velocity_body3_rx":"if(death_time > 0, var.velocity_body3_rx - var.first_frame * (random() - 0.5) * if(is_in_water, 0.5, 1), 0)","var.velocity_body3_ry":"if(death_time > 0, var.velocity_body3_ry - var.first_frame * (random() - 0.5) * if(is_in_water, 0.25, 0.5), 0)","var.velocity_body3_tyz":"sqrt(var.velocity_body3_ty * var.velocity_body3_ty + var.velocity_body3_tz * var.velocity_body3_tz)","var.velocity_angle_head":"atan2(var.velocity_body3_ty, var.velocity_body3_tz)"},{"var.position_body3_x":"var.position_body3_x + var.velocity_body3_tx * var.deltatime","var.position_body3_y":"var.position_body3_y + var.velocity_body3_tyz * sin(body3_2.rx + var.velocity_angle_head) * var.deltatime","var.position_body3_z":"var.position_body3_z + var.velocity_body3_tyz * cos(body3_2.rx + var.velocity_angle_head) * var.deltatime","var.rotation_body3_x":"var.rotation_body3_x + var.velocity_body3_rx * var.deltatime","var.rotation_body3_y":"var.rotation_body3_y + var.velocity_body3_ry * var.deltatime"},{"physics_body3.tx":"var.position_body3_x - 0.5","physics_body3.ty":"var.position_body3_y + 3","physics_body3.tz":"var.position_body3_z + 1.5","physics_body3.rx":"var.rotation_body3_x","physics_body3.ry":"var.rotation_body3_y"},{"var.first_frame":"if(death_time > 0, 0, 1)"},{"var.by_ewan_howell":0}]},{"part":"body2"},{"part":"body3"},{"part":"head1"},{"part":"head2"},{"part":"head3"}]}
+{
+  "models": [
+    {
+      "part": "body1",
+      "attach": "True",
+      "model": "soulsandbase.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "this.ry": "if(age < 180, -age/1000*cos(time*1), 0)",
+          "this.sy": "if(age < 180, 1, 0)",
+          "this.sx": "if(age < 180, 1, 0)",
+          "this.sz": "if(age < 180, 1, 0)"
+        }
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": "True",
+      "model": "soulsandchest.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "this.rx": "if(age < 220, age/3000*cos(time*1.1), 0)",
+          "this.ry": "if(age < 220, age/1000*cos(time*1), 0)",
+          "this.sy": "if(age < 220, 1, 0)",
+          "this.sx": "if(age < 220, 1, 0)",
+          "this.sz": "if(age < 220, 1, 0)"
+        }
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": "True",
+      "model": "soulsandleft.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "this.rx": "if(age < 210, age/1000*cos(time*1), 0)",
+          "this.ry": "if(age < 210, -age/1000*cos(time*0.8), 0)",
+          "this.sy": "if(age < 210, 1, 0)",
+          "this.sx": "if(age < 210, 1, 0)",
+          "this.sz": "if(age < 210, 1, 0)"
+        }
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": "True",
+      "model": "soulsandright.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "this.rx": "if(age < 200, age/1000*cos(time*1), 0)",
+          "this.ry": "if(age < 200, age/1000*cos(time*0.8), 0)",
+          "this.sy": "if(age < 200, 1, 0)",
+          "this.sx": "if(age < 200, 1, 0)",
+          "this.sz": "if(age < 200, 1, 0)"
+        }
+      ]
+    },
+    {
+      "part": "body2",
+      "attach": "True",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "part.sy": "if(age < 180, 0, 1)",
+          "part.sx": "if(age < 180, 0, 1)",
+          "part.sz": "if(age < 180, 0, 1)"
+        }
+      ]
+    },
+    {
+      "part": "body3",
+      "attach": "True",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "part.sy": "if(age < 180, 0, 1)",
+          "part.sx": "if(age < 180, 0, 1)",
+          "part.sz": "if(age < 180, 0, 1)"
+        }
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": "True",
+      "model": "centerhead.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "this.rx": "if(age < 220, 0.1*cos(time+10), 0)",
+          "this.rz": "if(age < 220, 0.1*cos(time+10), 0)",
+          "this.sy": "if(age < 220, 1, 0)",
+          "this.sx": "if(age < 220, 1, 0)",
+          "this.sz": "if(age < 220, 1, 0)"
+        }
+      ]
+    },
+    {
+      "part": "head1",
+      "attach": "True",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "part.sy": "if(age < 220, 0, 1)",
+          "part.sx": "if(age < 220, 0, 1)",
+          "part.sz": "if(age < 220, 0, 1)"
+        }
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": "True",
+      "model": "righthead.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "this.rx": "if(age < 200, 0.1*cos(time+10), 0)",
+          "this.sy": "if(age < 200, 1, 0)",
+          "this.sx": "if(age < 200, 1, 0)",
+          "this.sz": "if(age < 200, 1, 0)"
+        }
+      ]
+    },
+    {
+      "part": "head2",
+      "attach": "True",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "part.sy": "if(age < 200, 0, 1)",
+          "part.sx": "if(age < 200, 0, 1)",
+          "part.sz": "if(age < 200, 0, 1)"
+        }
+      ]
+    },
+    {
+      "part": "body1",
+      "attach": "True",
+      "model": "lefthead.jpm",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "this.rx": "if(age < 210, 0.1*cos(time+10), 0)",
+          "this.sy": "if(age < 210, 1, 0)",
+          "this.sx": "if(age < 210, 1, 0)",
+          "this.sz": "if(age < 210, 1, 0)"
+        }
+      ]
+    },
+    {
+      "part": "head3",
+      "attach": "True",
+      "translate": [0, 0, 0],
+      "rotate": [0, 0, 0],
+      "animations": [
+        {
+          "part.sy": "if(age < 210, 0, 1)",
+          "part.sx": "if(age < 210, 0, 1)",
+          "part.sz": "if(age < 210, 0, 1)"
+        }
+      ]
+    }
+  ]
+}
