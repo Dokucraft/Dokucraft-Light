@@ -1,26 +1,24 @@
 {
   "pack": {
-    "supported_formats": [18, 22],
+    "supported_formats": [18, 25],
     "pack_format": 18,
-    "description": "§4Light and fluffy\n§6V1.20.3 By Dokucraft TSC"
+    "description": "§4Light and fluffy\n§6V1.20.5 By Dokucraft TSC"
   },
   "overlays": {
     "entries": [
       {
         "directory": "v18",
-        "formats": {
-          "min_inclusive": 18,
-          "max_inclusive": 18
-        }
+        "formats": [18, 18]
       },
       {
         "directory": "v22",
-        "formats": {
-          "min_inclusive": 22,
-          "max_inclusive": 22
-        }
+        "formats": [22, 25]
+      },
+      {
+        "directory": "v25",
+        "formats": [25, 25]
       }
     ]
   },
-  "__game_version": "1.20.3"
+  "__game_version": "1.20.5"
 }
