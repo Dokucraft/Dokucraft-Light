@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/shovel_template",
+  "textures": {
+    "layer0": "minecraft:item/netherite_shovel"
+  }
+}
