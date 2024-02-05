@@ -45,8 +45,9 @@
 §bFTWBurn
 §bSyndiShanX
 
-CreativeDyn
 Balint
+CreativeDyn
+DartCat25
 
 0xEBJC
 7automaton
@@ -128,6 +129,7 @@ consulting-detective
 Corbit
 corn
 CornCobDog
+Cpt_Corn
 Cpt_Punch
 CR00T_R0M
 Craftable11
@@ -151,7 +153,6 @@ DarkFlame588
 DarkInferno
 darkpollopesca
 Darlat
-DartCat25
 darthbrick
 DarthMisium
 DasChillyOne
@@ -581,6 +582,7 @@ xXDominic13Xx
 xXGeramNinjaXx
 xXltrooperlXx
 yair10
+Yallendallis
 Yashccher
 YourBestFriendZach
 ZaineZ
