@@ -1,5 +1,4 @@
 {
-	"credit": "Made by SyndiShanX",
 	"parent": "minecraft:block/block",
 	"textures": {
 		"particle": "block/dripleaf/big/stem",
@@ -9,7 +8,7 @@
 		{
 			"name": "Stem",
 			"from": [4.5, 0, 12],
-			"to": [11.5, 15, 12],
+			"to": [11.5, 16, 12],
 			"shade": false,
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 12], "rescale": true},
 			"faces": {
@@ -24,7 +23,7 @@
 		{
 			"name": "Stem",
 			"from": [4.5, 0, 12],
-			"to": [11.5, 15, 12],
+			"to": [11.5, 16, 12],
 			"shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 12], "rescale": true},
 			"faces": {
