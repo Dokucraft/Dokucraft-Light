@@ -24,7 +24,7 @@ out vec4 glpos;
 
 void main() {
   gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
-  vertexDistance = fog_distance(ModelViewMat, Position, FogShape);
+  vertexDistance = fog_distance(Position, FogShape);
   lightMapColor = texelFetch(Sampler2, UV2 / 16, 0);
   vertexColor = Color * lightMapColor;
   texCoord0 = (TextureMat * vec4(UV0, 0.0, 1.0)).xy;

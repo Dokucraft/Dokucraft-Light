@@ -21,7 +21,6 @@ out float vertexDistance;
 out vec4 vertexColor;
 out vec4 lightColor;
 out vec2 texCoord0;
-out vec4 normal;
 
 #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
   #ifdef ENABLE_FRAGMENT_FRESNEL
@@ -48,9 +47,8 @@ void main() {
 
   gl_Position = ProjMat * ModelViewMat * vec4(wpos, 1.0);
 
-  vertexDistance = fog_distance(ModelViewMat, wpos, FogShape);
+  vertexDistance = fog_distance(wpos, FogShape);
   vertexColor = Color;
   lightColor = minecraft_sample_lightmap(Sampler2, UV2);
   texCoord0 = UV0;
-  normal = ProjMat * ModelViewMat * vec4(Normal, 0.0);
 }

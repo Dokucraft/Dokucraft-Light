@@ -46,5 +46,5 @@ void main() {
     }
 
     ProjInv = inverse(ProjMat * ModelViewMat);
-    vertexDistance = fog_distance(ModelViewMat, Position, FogShape);
+    vertexDistance = fog_distance(Position, FogShape);
 }

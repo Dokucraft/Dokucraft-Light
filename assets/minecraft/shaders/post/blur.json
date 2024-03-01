@@ -1,0 +1,43 @@
+{
+  "targets": [
+    "swap",
+    "swap2"
+  ],
+  "passes": [
+    {
+      "name": "blur",
+      "intarget": "minecraft:main",
+      "outtarget": "swap",
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 1.0, 0.0 ]
+        },
+        {
+          "name": "Radius",
+          "values": [ 30.0 ]
+        }
+      ]
+    },
+    {
+      "name": "blur",
+      "intarget": "swap",
+      "outtarget": "swap2",
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 0.0, 1.0 ]
+        },
+        {
+          "name": "Radius",
+          "values": [ 30.0 ]
+        }
+      ]
+    },
+    {
+      "name": "menu-bg",
+      "intarget": "swap2",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

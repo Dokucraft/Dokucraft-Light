@@ -1,7 +1,6 @@
 #version 150
 
 uniform sampler2D DiffuseSampler;
-uniform sampler2D Sampler2;
 
 in vec2 texCoord;
 in vec2 oneTexel;
