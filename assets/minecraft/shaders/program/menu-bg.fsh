@@ -32,6 +32,12 @@
 // Remove or comment out this line to disable the stains
 #define SKETCH_STAINS
 
+// Uncomment this line to enable a grid of dots
+// #define SKETCH_GRID_DOTS
+
+// Uncomment this line to enable a grid of lines
+// #define SKETCH_GRID_LINES
+
 //=====================================================================================================================
 
 uniform sampler2D DiffuseSampler;
@@ -132,6 +138,12 @@ void main() {
         // Paper texture
         #ifdef SKETCH_PAPER_TEXTURE
           * (0.9 + 0.1 * smoothstep(-2.5, 0.5, flownoise(vec3(texCoord * 30 * 2, 3)) + flownoise(vec3(texCoord * 80 * 2, 3)) * 0.5 + flownoise(vec3(texCoord * 240 * 2, 3)) * 0.5))
+        #endif
+
+        #ifdef SKETCH_GRID_DOTS
+          * (smoothstep(0, 2, length(mod(gl_FragCoord.xy, 32) - 16)) * 0.5 + 0.5)
+        #elif defined(SKETCH_GRID_LINES)
+          * (smoothstep(0, 1, min(abs(mod(gl_FragCoord.x, 32) - 16), abs(mod(gl_FragCoord.y, 32) - 16))) * 0.2 + 0.8)
         #endif
       ;
 
