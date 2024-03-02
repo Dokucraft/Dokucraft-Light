@@ -11,9 +11,26 @@
 */
 #define MENU_BACKGROUND 1
 
-// Extran options for menu background effect 1
+
+// Extra options for menu background effect 1
 #define SATURATION 0.5
 #define BRIGHTNESS 0.8
+
+
+// Extra options for menu background effect 2
+
+// The color used as a base for the sketch effect. The stains will affect how this looks, so it might be a good idea to
+// disable the stains if you edit this color
+#define SKETCH_PAPER_COLOR vec3(0.909, 0.878, 0.819)
+
+// The color used for all shading in the sketch effect, including the outlines, the fill, and the paper texture
+#define SKETCH_INK_COLOR vec3(0.231, 0.145, 0)
+
+// Remove or comment out this line to disable the paper texture effect
+#define SKETCH_PAPER_TEXTURE
+
+// Remove or comment out this line to disable the stains
+#define SKETCH_STAINS
 
 //=====================================================================================================================
 
@@ -113,13 +130,18 @@ void main() {
         // Weak, dithered fill
         * mix(mix(0.9, 1, dither(sqrt(l), gl_FragCoord.xy)), 1, cdf)
         // Paper texture
-        * (0.9 + 0.1 * smoothstep(-2.5, 0.5, flownoise(vec3(texCoord * 30 * 2, 3)) + flownoise(vec3(texCoord * 80 * 2, 3)) * 0.5 + flownoise(vec3(texCoord * 240 * 2, 3)) * 0.5));
+        #ifdef SKETCH_PAPER_TEXTURE
+          * (0.9 + 0.1 * smoothstep(-2.5, 0.5, flownoise(vec3(texCoord * 30 * 2, 3)) + flownoise(vec3(texCoord * 80 * 2, 3)) * 0.5 + flownoise(vec3(texCoord * 240 * 2, 3)) * 0.5))
+        #endif
+      ;
 
       // Stains
-      float noise = 1.5 * (flownoise(vec3(texCoord * 2.5, 24)) * 0.5 + flownoise(vec3(texCoord * 10, 24)) * 0.25 + flownoise(vec3(texCoord * 20, 24)) * 0.1);
-      noise = smoothstep(0.3, 0.32, noise) + smoothstep(0.8, 0.32, noise);
-      vec3 stained = mix(vec3(0.231, 0.145, 0), vec3(0.909, 0.878, 0.819), sketch);
-      stained = mix(stained, stained * stained, noise);
+      vec3 stained = mix(SKETCH_INK_COLOR, SKETCH_PAPER_COLOR, sketch);
+      #ifdef SKETCH_STAINS
+        float noise = 1.5 * (flownoise(vec3(texCoord * 2.5, 24)) * 0.5 + flownoise(vec3(texCoord * 10, 24)) * 0.25 + flownoise(vec3(texCoord * 20, 24)) * 0.1);
+        noise = smoothstep(0.3, 0.32, noise) + smoothstep(0.8, 0.32, noise);
+        stained = mix(stained, stained * stained, noise);
+      #endif
 
       fragColor = vec4(stained, color.a);
     #endif
