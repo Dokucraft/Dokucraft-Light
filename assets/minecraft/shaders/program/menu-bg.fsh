@@ -6,8 +6,8 @@
   Controls the type of effect to apply to the menu background.
   0: No effect. The blur will still be applied, that can be changed in post/blur.json
   1: Darken and desaturate.
-  2: Sketch filter. The blur radius in post/blur.json should be set to 9 for this effect. Other blur radius values
-  may cause the outlines to look strange. They were tuned to work with blur radius 9 specifically.
+  2: Sketch filter. The blur radius in post/blur.json should be set to 3 for this effect, and the accessibility
+  setting should be disabled in program/blur.fsh.
 */
 #define MENU_BACKGROUND 1
 
