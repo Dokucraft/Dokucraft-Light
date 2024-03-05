@@ -4,9 +4,9 @@
 
 /*
   Some menu effects may require a specific blur radius, and therefore can not support the accessibility setting that
-  controls the blur radius. Removing this line disables the setting, so that it doesn't affect the radius anymore.
+  controls the blur radius. Uncommenting this line will override the accessibility setting with a constant value.
 */
-#define ENABLE_ACCESSIBILITY_SETTING
+// #define ALPHA_OVERRIDE 0.2
 
 //=====================================================================================================================
 
@@ -29,7 +29,9 @@ void main() {
   // float totalAlpha = 0.0;
   for (float r = -Radius; r <= Radius; r += 1.0) {
     vec4 sampleValue = texture(DiffuseSampler, texCoord + oneTexel * BlurDir * r
-      #ifdef ENABLE_ACCESSIBILITY_SETTING
+      #ifdef ALPHA_OVERRIDE
+        * ALPHA_OVERRIDE
+      #else
         * Alpha
       #endif
     );
