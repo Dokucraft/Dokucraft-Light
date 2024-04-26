@@ -19,7 +19,10 @@ uniform vec2 InSize;
 
 uniform vec2 BlurDir;
 uniform float SampleRadius;
-uniform float Radius;
+
+#ifndef RADIUS_OVERRIDE
+  uniform float Radius;
+#endif
 
 out vec4 fragColor;
 
