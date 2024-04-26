@@ -42,20 +42,6 @@ out vec4 fragColor;
 
 #define POSITION_TEX
 
-// A single iteration of Bob Jenkins' One-At-A-Time hashing algorithm.
-int hash(int x) {
-  x += ( x << 10 );
-  x ^= ( x >>  6 );
-  x += ( x <<  3 );
-  x ^= ( x >> 11 );
-  x += ( x << 15 );
-  return x;
-}
-
-int noise(ivec2 v, int seed) {
-  return hash(v.x ^ hash(v.y + seed) ^ seed);
-}
-
 #ifdef ENABLE_MOB_EFFECTS
 
   #if defined(ENABLE_DARKNESS_EFFECT) || defined(ENABLE_WITHER_EFFECT)
@@ -272,11 +258,6 @@ void main() {
     #else
       color = texture(Sampler0, texCoord0) * ColorModulator;
     #endif
-  }
-
-  if (textureSize(Sampler0, 0) == vec2(160)) {
-    #moj_import <menus-enchanted.glsl>
-    color *= ColorModulator;
   }
 
   if (color.a < 0.01 || ivec2(floor(color.ra * 255.0 + 0.5)) == ivec2(241, 16)) {
