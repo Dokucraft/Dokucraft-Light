@@ -1,9 +1,10 @@
 {
+	"credit": "Made by SyndiShanX",
 	"parent": "block/block",
 	"textures": {
 		"ends": "block/smooth_stone",
-		"sides": "block/smooth_stone_slab_side",
-		"particle": "block/smooth_stone_slab_side"
+		"particle": "block/smooth_stone_slab_side",
+		"sides": "block/smooth_stone_slab_side"
 	},
 	"elements": [
 		{
@@ -13,7 +14,7 @@
 				"north": {"uv": [0, 0, 16, 16], "texture": "#sides", "cullface": "north"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#sides", "cullface": "east"},
 				"south": {"uv": [16, 0, 0, 16], "texture": "#sides", "cullface": "south"},
-				"west": {"uv": [16, 0, 0, 16], "texture": "#sides", "cullface": "west"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#sides", "cullface": "west"},
 				"up": {"uv": [0, 0, 16, 16], "texture": "#ends", "cullface": "up"},
 				"down": {"uv": [0, 16, 16, 0], "texture": "#ends", "cullface": "down"}
 			}
