@@ -9,19 +9,11 @@ in vec4 Color;
 uniform mat4 ModelViewMat;
 uniform mat4 ProjMat;
 
-#if CUSTOM_END_SKY >= 1
-  // uniform mat3 IViewRotMat;
-#endif
-
 out vec2 texCoord0;
 out vec4 vertexColor;
 out vec4 Pos;
 out float isNeg;
 out vec2 ScrSize;
-
-#if CUSTOM_END_SKY >= 1
-  out vec3 direction;
-#endif
 
 void main() {
   gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
@@ -33,9 +25,4 @@ void main() {
   Pos.y = (ModelViewMat * vec4(1)).z;
   Pos.zw = gl_Position.zw;
   ScrSize = 2 / vec2(ProjMat[0][0], -ProjMat[1][1]);
-
-  #if CUSTOM_END_SKY >= 1
-    // This doesn't work!
-    direction = Position;
-  #endif
 }
