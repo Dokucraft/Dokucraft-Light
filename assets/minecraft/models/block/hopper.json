@@ -63,7 +63,7 @@
 			"to": [18.6, 15.99, 8.72],
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"east": {"uv": [0, 0, 1.43, 5.9999], "texture": "#missing"},
+				"east": {"uv": [0, 0, 1.43, 5.9999], "texture": "#6"},
 				"up": {"uv": [0, 16, 2, 8.75], "rotation": 90, "texture": "#2"},
 				"down": {"uv": [16, 14.5, 14, 15.5], "rotation": 90, "texture": "#7"}
 			}
