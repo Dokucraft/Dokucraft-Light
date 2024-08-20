@@ -108,7 +108,6 @@ void main() {
 
         vertexDistance = fog_distance(position, FogShape);
         texCoord0 = UV0;
-        normal = ProjMat * ModelViewMat * vec4(Normal, 0.0);
 
         return;
       }
@@ -146,7 +145,6 @@ void main() {
         gl_Position = ProjMat * ModelViewMat * vec4(position, 1.0);
         vertexDistance = fog_distance(position, FogShape);
         texCoord0 = UV0;
-        normal = ProjMat * ModelViewMat * vec4(Normal, 0.0);
         glpos = gl_Position;
         return;
       }
