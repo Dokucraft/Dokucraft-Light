@@ -16,3 +16,6 @@ The shaders that the values apply to are in square brackets.
 252: Strong wave effect (opaque) [cutout, mipped cutout]
 253: Medium wave effect (opaque) [cutout, mipped cutout]
 254: Weak wave effect (opaque) [cutout, mipped cutout]
+
+
+The shaders listed here are out of date as of 1.21.2.

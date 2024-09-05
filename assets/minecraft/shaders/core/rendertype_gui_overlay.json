@@ -1,6 +1,6 @@
 {
-    "vertex": "rendertype_gui_overlay",
-    "fragment": "rendertype_gui_overlay",
+    "vertex": "minecraft:dokucraft/gui_overlay",
+    "fragment": "minecraft:dokucraft/gui_overlay",
     "samplers": [
     ],
     "uniforms": [

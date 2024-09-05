@@ -1,6 +1,6 @@
-#version 150
+#version 330
 
-#moj_import <../flavor.glsl>
+#moj_import <dokucraft:flavor.glsl>
 
 in vec4 vertexColor;
 in vec2 uv;
@@ -24,7 +24,6 @@ void main() {
     } else {
       discard; // inside
     }
-    return;
   } else {
     fragColor = color * ColorModulator;
   }

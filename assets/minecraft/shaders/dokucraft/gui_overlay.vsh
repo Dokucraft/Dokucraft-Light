@@ -1,6 +1,6 @@
-#version 150
+#version 330
 
-#moj_import <../flavor.glsl>
+#moj_import <dokucraft:flavor.glsl>
 
 in vec3 Position;
 in vec4 Color;
