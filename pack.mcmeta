@@ -1,13 +1,13 @@
 {
   "pack": {
-    "supported_formats": [34, 34],
-    "pack_format": 34,
+    "supported_formats": [37, 37],
+    "pack_format": 37,
     "description": [
       { "text": "Light and fluffy\n", "color": "#b6473f" },
-      { "text": "v1.21.1", "color": "#e0e0dc" },
+      { "text": "v1.21.2", "color": "#e0e0dc" },
       { "text": " | ", "color": "#70706b" },
       { "text": "dokucraft.co.uk", "color": "#ffcf01" }
     ]
   },
-  "__game_version": "1.21.1"
+  "__game_version": "1.21.2"
 }
