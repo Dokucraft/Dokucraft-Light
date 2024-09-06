@@ -1,5 +1,5 @@
 
-#moj_import <../config.txt>
+#moj_import <dokucraft:config.glsl>
 
 #ifndef PI
   #define PI 3.141592653589793

@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 float check_alpha(float textureAlpha, float targetAlpha) {
 	float targetLess = targetAlpha - 0.01;

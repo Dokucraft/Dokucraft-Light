@@ -1,3 +1,6 @@
+#ifndef CONFIG
+#define CONFIG
+
 
 // ============================================================================
 //  Waving & swinging animations
@@ -139,3 +142,7 @@
 // #define ENABLE_DARKNESS_EFFECT
 // #define ENABLE_SPEED_EFFECT
 // #define ENABLE_WITHER_EFFECT
+
+
+
+#endif
