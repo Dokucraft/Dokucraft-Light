@@ -92,6 +92,10 @@
 // Without this enabled, translucent materials will look too bright when viewed from shallow angles.
 #define ENABLE_FRESNEL_BRIGHTNESS_COMPENSATION
 
+// Remove this line to disable the water tint correction.
+// The tint correction adjusts the water tint to make it more similar to how the water used to look like before the tint was added.
+#define ENABLE_WATER_TINT_CORRECTION
+
 
 
 // ============================================================================

@@ -4,6 +4,15 @@
 #moj_import <fog.glsl>
 #moj_import <../config.txt>
 
+#ifdef ENABLE_WATER_TINT_CORRECTION
+  #moj_import <../flavor.glsl>
+  const mat3 waterTintTransform = mat3(
+    WATER_TINT_RED,
+    WATER_TINT_GREEN,
+    WATER_TINT_BLUE
+  );
+#endif
+
 in vec3 Position;
 in vec4 Color;
 in vec2 UV0;
@@ -51,4 +60,10 @@ void main() {
   vertexColor = Color;
   lightColor = minecraft_sample_lightmap(Sampler2, UV2);
   texCoord0 = UV0;
+
+  #ifdef ENABLE_WATER_TINT_CORRECTION
+    if (abs(vertexColor.r - vertexColor.g) >= 0.01 || abs(vertexColor.r - vertexColor.b) >= 0.01) {
+      vertexColor.rgb *= waterTintTransform;
+    }
+  #endif
 }
