@@ -3,6 +3,34 @@
 
 
 // ============================================================================
+//  Menu background
+// ============================================================================
+
+// Controls the type of effect to apply to the menu background.
+// 0: Gaussian blur
+// 1: Gaussian blur + darken and desaturate
+// 2: Sketch filter
+#define MENU_BACKGROUND 1
+
+// Extra options for menu background effect 1
+#define MENU_BACKGROUND_SATURATION 0.5
+#define MENU_BACKGROUND_BRIGHTNESS 0.8
+
+// Remove or comment out this line to disable the paper texture effect.
+#define SKETCH_PAPER_TEXTURE
+
+// Remove or comment out this line to disable the stains.
+#define SKETCH_STAINS
+
+// Uncomment this line to enable a grid of dots.
+// #define SKETCH_GRID_DOTS
+
+// Uncomment this line to enable a grid of lines.
+// #define SKETCH_GRID_LINES
+
+
+
+// ============================================================================
 //  Waving & swinging animations
 // ============================================================================
 

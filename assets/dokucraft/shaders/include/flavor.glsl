@@ -18,3 +18,7 @@
 #define WATER_TINT_RED   vec3( 1.0,   0.4,   0.6)
 #define WATER_TINT_GREEN vec3( 0.0,   1.0,   0.4)
 #define WATER_TINT_BLUE  vec3(-1.0,   1.0,   0.7)
+
+// Colors used in the sketch menu background effect.
+#define SKETCH_PAPER_COLOR vec3(0.909, 0.878, 0.819)
+#define SKETCH_INK_COLOR vec3(0.231, 0.145, 0)
