@@ -20,7 +20,7 @@ in float isSun;
 in float isNeg;
 in vec2 ScrSize;
 
-#ifdef ENABLE_POST_MOON_PHASES
+#ifdef ENABLE_POST_MOON
   flat in float moonPhase;
 #endif
 
@@ -55,7 +55,7 @@ void main() {
         color.g = 1.0 - ColorModulator.a;
       }
 
-      #ifdef ENABLE_POST_MOON_PHASES
+      #ifdef ENABLE_POST_MOON
         else { // Moon
           color.r = moonPhase;
         }
@@ -69,7 +69,7 @@ void main() {
 
   // calculate screen space UV of the sun since it was transformed to cover the entire screen in vsh so texCoord0 no longer works
   else if(isSun > 0.75) {
-    #ifdef DISABLE_CORE_SUN
+    #ifdef ENABLE_POST_SUN
       discard;
     #else
       vec3 p1 = c1 / cscale.x;
@@ -91,7 +91,7 @@ void main() {
     #endif
   }
 
-  #ifdef ENABLE_POST_MOON_PHASES
+  #ifdef ENABLE_POST_MOON
     else if (isSun >= 0.25 && isSun < 0.75) {
       discard; // Don't draw the moon here, that happens in the skybox shader
     }

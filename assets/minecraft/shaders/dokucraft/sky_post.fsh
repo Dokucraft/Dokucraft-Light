@@ -1,55 +1,6 @@
 #version 330
 
-
-/* ------------------------------- Settings -------------------------------- */
-
-// Controls how the atmosphere is rendered.
-// 0: Uses a mostly static skybox during the day that may include things like clouds, depending on the texture used.
-// 1: The clouds use a texture for their shapes and will be dynamically lit by the sun and moon. The color of the sky is based on a separate texture.
-#define ATMOSPHERE 0
-
-// Controls what night sky to render.
-// 0: Use a skybox texture.
-// 1: Generate a night sky procedurally without any textures.
-// 2: Same as 1, but with slightly less color.
-#define NIGHT_SKY 0
-
-// Uncomment this line to enable a light layer of fog that is dynamically lit by the moon at night.
-// #define ENABLE_NIGHT_FOG
-
-// Remove this line to disable the north star
-// No noticeable impact on performance
-// Requires NIGHT_SKY being set to 1 or 2
-#define ENABLE_NORTH_STAR
-
-// Uncomment this line to enable auroras at night
-// Major impact on performance on most graphics cards
-// #define ENABLE_AURORAS
-
-// Controls the colors of the auroras
-// Requires ENABLE_AURORAS
-#define AURORA_COLOR vec3(0.465, 2, 0.833)
-
-// Remove the two slashes at the start of this line to draw a sun as a part of the sky.
-// To disable the regular sun, make sure to enable the same setting in confix.txt.
-// This does not currently use a texture. The shape of the sun is calculated based on the time of day.
-// #define ENABLE_POST_SUN
-
-// Controls the speed of the sun's animation.
-// Requires ENABLE_POST_SUN
-#define SUN_ANIM_SPEED 0.5
-
-// Remove the two slashes at the start of this line to draw a moon as a part of the sky.
-// This requires MoonSampler to be set up properly in program/skybox.json and in post/transparency.json
-// For moon phases to work properly and to hide the regular moon, enable ENABLE_POST_MOON_PHASES in config.txt
-// #define ENABLE_POST_MOON
-
-// Use this to change the size of the moon.
-// Requires ENABLE_POST_MOON
-#define MOON_SCALE 0.3
-
-/* ------------------------------------------------------------------------- */
-
+#moj_import <dokucraft:config.glsl>
 
 uniform sampler2D MainSampler;
 uniform sampler2D MainDepthSampler;

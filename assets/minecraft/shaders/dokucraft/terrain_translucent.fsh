@@ -1,7 +1,6 @@
 #version 330
 
 #moj_import <minecraft:fog.glsl>
-#moj_import <minecraft:emissive_utils.glsl>
 #moj_import <dokucraft:config.glsl>
 
 uniform sampler2D Sampler0;

@@ -21,7 +21,7 @@ out float isSun;
 out float isNeg;
 out vec2 ScrSize;
 
-#ifdef ENABLE_POST_MOON_PHASES
+#ifdef ENABLE_POST_MOON
   flat out float moonPhase;
 #endif
 
@@ -68,7 +68,7 @@ void main() {
     } else { // Moon
       isSun = 0.5;
 
-      #ifdef ENABLE_POST_MOON_PHASES
+      #ifdef ENABLE_POST_MOON
         candidate = vec4(-2.0 * OVERLAYSCALE, -OVERLAYSCALE, 0.0, 1.0);
 
         int vidm4 = gl_VertexID % 4;

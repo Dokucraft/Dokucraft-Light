@@ -105,15 +105,50 @@
 //  Overworld sky
 // ============================================================================
 
-// Remove the two slashes at the start of this line to disable the regular sun drawn using core shaders.
-// Removing the regular sun means the sun can be drawn in the post shader instead, which allows it to use various extra effects.
-// To draw the sun using post shaders, enable the option for it in program/skybox.fsh.
-// #define DISABLE_CORE_SUN
+// Controls how the atmosphere is rendered.
+// 0: Uses a mostly static skybox during the day that may include things like clouds, depending on the texture used.
+// 1: The clouds use a texture for their shapes and will be dynamically lit by the sun and moon. The color of the sky is based on a separate texture.
+#define ATMOSPHERE 0
 
-// Remove the two slashes at the start of this line to allow the post shaders to check what the current moon phase is.
-// Enabling this will completely remove the regular moon. To get the moon back, enable it in the settings in the program/skybox.fsh shader.
-// Incompatible with Optifine's Custom Sky feature.
-// #define ENABLE_POST_MOON_PHASES
+// Controls what night sky to render.
+// 0: Use a skybox texture.
+// 1: Generate a night sky procedurally without any textures.
+// 2: Same as 1, but with slightly less color.
+#define NIGHT_SKY 0
+
+// Uncomment this line to enable a light layer of fog that is dynamically lit by the moon at night.
+// #define ENABLE_NIGHT_FOG
+
+// Remove this line to disable the north star
+// No noticeable impact on performance
+// Requires NIGHT_SKY being set to 1 or 2
+#define ENABLE_NORTH_STAR
+
+// Uncomment this line to enable auroras at night
+// Major impact on performance on most graphics cards
+// #define ENABLE_AURORAS
+
+// Controls the colors of the auroras
+// Requires ENABLE_AURORAS
+#define AURORA_COLOR vec3(0.465, 2, 0.833)
+
+// Remove the two slashes at the start of this line to draw the sun as a part of the sky.
+// This disables the regular sun, which means the sun will not be visible without Fabulous graphics.
+// This does not currently use a texture. The shape of the sun is calculated based on the time of day.
+// #define ENABLE_POST_SUN
+
+// Controls the speed of the sun's animation.
+// Requires ENABLE_POST_SUN
+#define SUN_ANIM_SPEED 0.5
+
+// Remove the two slashes at the start of this line to draw the moon as a part of the sky.
+// This disables the regular moon, which means the moon will not be visible without Fabulous graphics.
+// This requires MoonSampler to be set up properly in shaders/dokucraft/sky_post.json and in post_effect/transparency.json
+// #define ENABLE_POST_MOON
+
+// Use this to change the size of the moon.
+// Requires ENABLE_POST_MOON
+#define MOON_SCALE 0.3
 
 
 

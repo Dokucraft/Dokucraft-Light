@@ -151,10 +151,10 @@ void main() {
         color = mix(color * mix(colMod, colModUnlit, t3c.b), vec4(mix(dcol * colMod.rgb, dcol, textureLod(Sampler0, dg + vec2(tileSize.x, 0), 0).b), 1), ssa);
       }
     } else {
-      color = make_emissive(color * vertexColor * ColorModulator, lightColor, vertexDistance, oa);
+      color = make_emissive(color * vertexColor * ColorModulator, lightColor, oa);
     }
   #else
-    color = make_emissive(color * vertexColor * ColorModulator, lightColor, vertexDistance, oa);
+    color = make_emissive(color * vertexColor * ColorModulator, lightColor, oa);
   #endif
 
   fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
