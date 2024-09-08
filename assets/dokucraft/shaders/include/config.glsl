@@ -106,7 +106,7 @@
 
 
 // ============================================================================
-//  Translucent materials
+//  Water and other translucent materials
 // ============================================================================
 
 // Remove this line to disable the Fresnel effect on translucent materials (water, stained/tinted glass, honey/slime block, etc.)
@@ -115,17 +115,21 @@
 // Removing this line will make the Fresnel effect perform better, but it will look slightly incorrect in some cases
 #define ENABLE_FRAGMENT_FRESNEL
 
-// Remove this line to disable the desaturation of the biome color on highlights on translucent materials (used to make the highlights on water look better)
-#define ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR
-
 // Remove this line to disable the darkening effect on translucent materials when viewed from shallow angles.
 // This effect compensates for the background behind the translucent material becoming harder to see because of the Fresnel effect.
 // Without this enabled, translucent materials will look too bright when viewed from shallow angles.
 #define ENABLE_FRESNEL_BRIGHTNESS_COMPENSATION
 
+// Remove this line to disable the desaturation of the biome color on highlights on translucent materials (used to make the highlights on water look better)
+#define ENABLE_DESATURATE_WATER_HIGHLIGHT
+
 // Remove this line to disable the water tint correction.
 // The tint correction adjusts the water tint to make it more similar to how the water used to look like before the tint was added.
 #define ENABLE_WATER_TINT_CORRECTION
+
+// Remove this line to disable the underwater fog color correction.
+// The fog color correction adjusts the underwater fog color in most biomes to not be the default neon blue.
+#define ENABLE_UNDERWATER_FOG_CORRECTION
 
 
 

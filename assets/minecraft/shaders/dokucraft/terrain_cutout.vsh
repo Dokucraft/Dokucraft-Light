@@ -3,6 +3,7 @@
 #moj_import <minecraft:light.glsl>
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:wave.glsl>
+#moj_import <dokucraft:config.glsl>
 #moj_import <dokucraft:flavor.glsl>
 
 #ifdef ENABLE_BETTER_LAVA

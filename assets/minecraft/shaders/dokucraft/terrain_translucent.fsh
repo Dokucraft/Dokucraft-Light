@@ -16,7 +16,7 @@ in vec4 lightColor;
 in vec2 texCoord0;
 in vec4 normal;
 
-#if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
+#if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_WATER_HIGHLIGHT)
   #ifdef ENABLE_FRAGMENT_FRESNEL
     in vec3 wpos;
     in vec3 wnorm;
@@ -28,7 +28,7 @@ in vec4 normal;
 out vec4 fragColor;
 
 void main() {
-  #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
+  #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_WATER_HIGHLIGHT)
     vec4 color = texture(Sampler0, texCoord0);
 
     if (color.a >= 0.4 && color.a < 0.9) {
@@ -43,7 +43,7 @@ void main() {
         vc.rgb *= mix(1, (color.a + 1) / 2, fresnel);
       #endif
 
-      #ifdef ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR
+      #ifdef ENABLE_DESATURATE_WATER_HIGHLIGHT
         float cmax = max(color.r, max(color.g, color.b));
         float cmin = min(color.r, min(color.g, color.b));
         float sat = (cmax - cmin) / cmax;

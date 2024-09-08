@@ -31,7 +31,7 @@ out vec4 vertexColor;
 out vec4 lightColor;
 out vec2 texCoord0;
 
-#if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
+#if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_WATER_HIGHLIGHT)
   #ifdef ENABLE_FRAGMENT_FRESNEL
     out vec3 wpos;
     out vec3 wnorm;
@@ -41,7 +41,7 @@ out vec2 texCoord0;
 #endif
 
 void main() {
-  #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR)
+  #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_WATER_HIGHLIGHT)
     #ifdef ENABLE_FRAGMENT_FRESNEL
       wpos = Position + ModelOffset;
       wnorm = Normal;

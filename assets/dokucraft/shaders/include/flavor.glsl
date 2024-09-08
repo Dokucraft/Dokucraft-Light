@@ -1,3 +1,5 @@
+#ifndef FLAVOR
+#define FLAVOR
 
 // Color of the outline on items when hovering over them in the GUI
 #define HOVER_OUTLINE_COLOR vec4(0.988, 0.988, 0.988, 1.0)
@@ -19,6 +21,14 @@
 #define WATER_TINT_GREEN vec3( 0.0,   1.0,   0.4)
 #define WATER_TINT_BLUE  vec3(-1.0,   1.0,   0.7)
 
+// Underwater fog correction weights
+#define UNDERWATER_FOG_RED   vec3( 1.0,   0.0,   0.0)
+#define UNDERWATER_FOG_GREEN vec3( 0.0,   1.0,   0.2)
+#define UNDERWATER_FOG_BLUE  vec3( 0.0,   0.0,   0.2)
+
 // Colors used in the sketch menu background effect.
 #define SKETCH_PAPER_COLOR vec3(0.909, 0.878, 0.819)
 #define SKETCH_INK_COLOR vec3(0.231, 0.145, 0)
+
+
+#endif

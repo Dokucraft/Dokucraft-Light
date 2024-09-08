@@ -1,5 +1,6 @@
 #version 330
 
+#moj_import <minecraft:fog.glsl>
 #moj_import <dokucraft:config.glsl>
 
 uniform sampler2D MainSampler;
@@ -332,15 +333,6 @@ vec3 sampleSkybox(sampler2D skyboxSampler, vec3 direction) {
     return clamp((moonUV - vec2(0.5)) / MOON_SCALE + vec2(0.5), vec2(0), vec2(1));
   }
 #endif
-
-vec4 linear_fog(vec4 inColor, float vertexDistance, float fogStart, float fogEnd, vec4 fogColor) {
-  if (vertexDistance <= fogStart) {
-    return inColor;
-  }
-
-  float fogValue = vertexDistance < fogEnd ? smoothstep(fogStart, fogEnd, vertexDistance) : 1.0;
-  return vec4(mix(inColor.rgb, fogColor.rgb, fogValue * fogColor.a), inColor.a);
-}
 
 float linearstep(float edge0, float edge1, float x) {
   return clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);
