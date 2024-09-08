@@ -45,7 +45,11 @@ void main() {
       #endif
 
       #ifdef ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR
-        color = mix(color * vc * ColorModulator, color, color.r * color.g * color.b * (1 - fresnel)) * lightColor;
+        float cmax = max(color.r, max(color.g, color.b));
+        float cmin = min(color.r, min(color.g, color.b));
+        float sat = (cmax - cmin) / cmax;
+        vec4 tinted = color * vc * ColorModulator;
+        color = mix(tinted, color, 1 - smoothstep(0, 0.75, sat)) * lightColor;
       #else
         color *= vc * ColorModulator * lightColor;
       #endif
