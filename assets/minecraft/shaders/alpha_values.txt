@@ -7,6 +7,7 @@ The shaders that the values apply to are in square brackets.
  20: Weak wave effect (transparent) [terrain_cutout]
  22: Delayed weak wave effect (transparent) [terrain_cutout]
  24: Lantern swing (transparent) [terrain_cutout]
+ 25: Disable tint (transparent) [particle]
 141: Lantern swing (opaque) [terrain_cutout]
 211: Grass effect (low-poly/dense) [terrain_cutout]
 212: Grass effect (low-poly) [terrain_cutout]
