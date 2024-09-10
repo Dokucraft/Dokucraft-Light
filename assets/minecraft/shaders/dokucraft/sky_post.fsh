@@ -2,6 +2,7 @@
 
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:flownoise.glsl>
+#moj_import <minecraft:perlin_worley.glsl>
 #moj_import <dokucraft:config.glsl>
 
 uniform sampler2D MainSampler;
@@ -374,14 +375,18 @@ float linearstep(float edge0, float edge1, float x) {
 #endif
 
 vec3 stormyWeather(vec3 ndr, float sunAngle, float screenNoise) {
-  return fogColor.rgb + vec3((
-    flownoise(ndr * 3) * 0.5 +
-    flownoise((rotate(ndr, vec3(0.5, 0.5, 0), sunAngle * 3) + vec3(0, 0, -timeOfDay * 5)) * 5) * 0.25 +
-    flownoise((rotate(ndr, vec3(0.5, 0, 0.5), -sunAngle * 3) + vec3(0, timeOfDay * 5, 0)) * 8) * 0.125 +
-    flownoise((rotate(ndr, vec3(0, 0.5, 0.5), sunAngle * 3) + vec3(timeOfDay * 5, 0, 0)) * 12) * 0.0625 +
-    screenNoise * 0.0625
-    - 0.5
-  ) * 0.1);
+  vec3 fc = linear_fog(vec4(1), 1, 0, 1, fogColor).rgb;
+  if (dot(ndr, rotate(vec3(0, -1, 0), vec3(0, 0, 1), sunAngle - 0.522875)) > 0) {
+    return fc.rgb;
+  }
+  float saf = mod(sunAngle / M_PI * 0.5, 1);
+  return fc.rgb + (0.5 * fc.rgb + 0.1) * (vec3(
+    worleyNoise(ndr * 4  - vec2(saf * 15*4, 0).yxy, 4) +
+    worleyNoise(ndr * 8  - vec2(saf * 9*8, 0).yxy, 8) * 0.5 +
+    worleyNoise(ndr * 16 - vec2(saf * 4*16, 0).yxy, 16) * 0.25 +
+    worleyNoise(ndr * 32 - vec2(saf * 2*32, 0).yxy, 32) * 0.125 +
+    worleyNoise(ndr * 64 - vec2(saf * 64, 0).yxy, 64) * 0.0625
+  ) / 1.9375 * 2 - 1);
 }
 
 void main() {
@@ -510,9 +515,9 @@ void main() {
         mix(
           BlendColor(atmosphere.rgb, horizon),
           horizon,
-          hm
+          mix(hm, hm * 0.1, weather)
         ) / (1 - pow(smoothstep(-5, 3, dot(nd, sunDir)), 4) * vec3(1, 0.48, 0.24)),
-        rm
+        mix(rm, rm * 0.1, weather)
       );
 
       #ifdef ENABLE_POST_SUN
@@ -566,9 +571,9 @@ void main() {
         mix(
           BlendColor(atmosphere.rgb, horizon),
           horizon,
-          hm
+          mix(hm, hm * 0.1, weather)
         ) / (1 - pow(smoothstep(-5, 3, dot(nd, sunDir)), 4) * vec3(1, 0.48, 0.24)),
-        rm
+        mix(rm, rm * 0.1, weather)
       );
 
       #ifdef ENABLE_POST_SUN
