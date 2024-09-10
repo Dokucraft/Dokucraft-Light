@@ -16,6 +16,12 @@
 // Grass color multiplier for shader grass effects
 #define GRASS_COLOR_MULTIPLIER 1
 
+// Procedural water surface colors
+#define PROCEDURAL_WATER_COLOR_1 vec3(0.224, 0.537, 0.835)
+#define PROCEDURAL_WATER_COLOR_2 vec3(0.479, 0.813, 0.984)
+#define PROCEDURAL_WATER_COLOR_3 vec3(0.647, 0.961, 0.996)
+#define PROCEDURAL_WATER_COLOR_4 vec3(0.882, 0.996, 0.996)
+
 // Water tint correction weights
 #define WATER_TINT_RED   vec3( 1.0,   0.4,   0.6)
 #define WATER_TINT_GREEN vec3( 0.0,   1.0,   0.4)

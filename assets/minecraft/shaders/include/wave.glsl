@@ -1,4 +1,5 @@
 
+#moj_import <minecraft:flownoise.glsl>
 #moj_import <dokucraft:config.glsl>
 
 #ifndef PI
@@ -18,31 +19,6 @@
     return mat3(tangent, bitangent, normal);
   }
 #endif
-
-vec2 gradient(vec2 intPos, float t) {
-  float rand = fract(sin(dot(intPos, vec2(12.9898, 78.233))) * 43758.5453);
-  float angle = 6.283185 * rand + 4.0 * t * rand;
-  return vec2(cos(angle), sin(angle));
-}
-
-float flownoise(vec3 p) {
-  vec2 i = floor(p.xy);
-  vec2 f = p.xy - i;
-  vec2 blend = f * f * (3.0 - 2.0 * f);
-  float noiseVal = 
-    mix(
-      mix(
-        dot(gradient(i + vec2(0, 0), p.z), f - vec2(0, 0)),
-        dot(gradient(i + vec2(1, 0), p.z), f - vec2(1, 0)),
-        blend.x),
-      mix(
-        dot(gradient(i + vec2(0, 1), p.z), f - vec2(0, 1)),
-        dot(gradient(i + vec2(1, 1), p.z), f - vec2(1, 1)),
-        blend.x),
-    blend.y
-  );
-  return noiseVal / 0.7;
-}
 
 vec2 waveXZ(vec3 pos, float time) {
   vec3 wind = pos + vec3(32 * sin(fract(time * 20) * 2 * PI)) * vec3(1, 0, 1);

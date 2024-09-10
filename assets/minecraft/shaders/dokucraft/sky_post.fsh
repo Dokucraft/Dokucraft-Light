@@ -1,6 +1,7 @@
 #version 330
 
 #moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:flownoise.glsl>
 #moj_import <dokucraft:config.glsl>
 
 uniform sampler2D MainSampler;
@@ -180,31 +181,6 @@ float hash21(vec2 p) {
   vec3 p3  = fract(vec3(p.xyx) * 0.1031);
   p3 += dot(p3, p3.yzx + 33.33);
   return fract((p3.x + p3.y) * p3.z);
-}
-
-vec2 gradient(vec2 intPos, float t) {
-  float rand = fract(sin(dot(intPos, vec2(12.9898, 78.233))) * 43758.5453);
-  float angle = 6.283185 * rand + 4.0 * t * rand;
-  return vec2(cos(angle), sin(angle));
-}
-
-float flownoise(vec3 p) {
-  vec2 i = floor(p.xy);
-  vec2 f = p.xy - i;
-  vec2 blend = f * f * (3.0 - 2.0 * f);
-  float noiseVal = 
-    mix(
-      mix(
-        dot(gradient(i + vec2(0, 0), p.z), f - vec2(0, 0)),
-        dot(gradient(i + vec2(1, 0), p.z), f - vec2(1, 0)),
-        blend.x),
-      mix(
-        dot(gradient(i + vec2(0, 1), p.z), f - vec2(0, 1)),
-        dot(gradient(i + vec2(1, 1), p.z), f - vec2(1, 1)),
-        blend.x),
-    blend.y
-  );
-  return noiseVal / 0.7;
 }
 
 #if NIGHT_SKY >= 1

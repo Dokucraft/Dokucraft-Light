@@ -19,13 +19,9 @@ out vec4 fragColor;
 #endif
 
 #if MENU_BACKGROUND == 2
-  const int thresholds[8] = int[8](0, 4, 2, 6, 1, 5, 3, 7);
+  #moj_import <minecraft:flownoise.glsl>
 
-  float hash12(vec2 p) {
-    vec3 p3  = fract(vec3(p.xyx) * .1031);
-    p3 += dot(p3, p3.yzx + 33.33);
-    return fract((p3.x + p3.y) * p3.z);
-  }
+  const int thresholds[8] = int[8](0, 4, 2, 6, 1, 5, 3, 7);
 
   float dither(float value, vec2 pos) {
     pos.x += sin((pos.x + pos.y) / 64.0) * 8.0;
@@ -36,31 +32,6 @@ out vec4 fragColor;
     float q = mod(pos.x - pos.y, 64) / 64;
     int r = min(int(value * 8.0) + thresholds[int(q * 8.0)], 8);
     return float(int(value > 0.1 && r > 6));
-  }
-
-  vec2 gradient(vec2 intPos, float t) {
-    float rand = fract(sin(dot(intPos, vec2(12.9898, 78.233))) * 43758.5453);
-    float angle = 6.283185 * rand + 4.0 * t * rand;
-    return vec2(cos(angle), sin(angle));
-  }
-
-  float flownoise(vec3 p) {
-    vec2 i = floor(p.xy);
-    vec2 f = p.xy - i;
-    vec2 blend = f * f * (3.0 - 2.0 * f);
-    float noiseVal = 
-      mix(
-        mix(
-          dot(gradient(i + vec2(0, 0), p.z), f - vec2(0, 0)),
-          dot(gradient(i + vec2(1, 0), p.z), f - vec2(1, 0)),
-          blend.x),
-        mix(
-          dot(gradient(i + vec2(0, 1), p.z), f - vec2(0, 1)),
-          dot(gradient(i + vec2(1, 1), p.z), f - vec2(1, 1)),
-          blend.x),
-      blend.y
-    );
-    return noiseVal / 0.7;
   }
 
   float colorDifference(vec3 c1, vec3 c2) {

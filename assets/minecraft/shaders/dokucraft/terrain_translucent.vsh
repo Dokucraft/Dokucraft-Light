@@ -31,6 +31,12 @@ out vec4 vertexColor;
 out vec4 lightColor;
 out vec2 texCoord0;
 
+#ifdef ENABLE_PROCEDURAL_WATER_SURFACE
+  uniform sampler2D Sampler0;
+  flat out int isWaterSurface;
+  out vec3 pos;
+#endif
+
 #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_WATER_HIGHLIGHT)
   #ifdef ENABLE_FRAGMENT_FRESNEL
     out vec3 wpos;
@@ -61,9 +67,23 @@ void main() {
   lightColor = minecraft_sample_lightmap(Sampler2, UV2);
   texCoord0 = UV0;
 
-  #ifdef ENABLE_WATER_TINT_CORRECTION
+  #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
+    isWaterSurface = 0;
+    pos = Position;
+  #endif
+
+  #if defined(ENABLE_WATER_TINT_CORRECTION) || defined(ENABLE_PROCEDURAL_WATER_SURFACE)
     if (abs(vertexColor.r - vertexColor.g) >= 0.01 || abs(vertexColor.r - vertexColor.b) >= 0.01) {
-      vertexColor.rgb *= waterTintTransform;
+      #ifdef ENABLE_WATER_TINT_CORRECTION
+        vertexColor.rgb *= waterTintTransform;
+      #endif
+
+      #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
+        vec4 color = texture(Sampler0, UV0);
+        if (color.r + color.g < 0.001 && color.b > 0.999 && int(color.a * 255) == 251) {
+          isWaterSurface = 1;
+        }
+      #endif
     }
   #endif
 }
