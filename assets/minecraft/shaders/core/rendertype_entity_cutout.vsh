@@ -2,6 +2,7 @@
 
 #moj_import <light.glsl>
 #moj_import <fog.glsl>
+#moj_import <../flavor.glsl>
 
 in vec3 Position;
 in vec4 Color;
@@ -27,13 +28,21 @@ out vec4 overlayColor;
 out vec2 texCoord0;
 out vec4 glpos;
 
-void main() {
-    gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
+bool approxEqualV3(vec3 a, vec3 b) {
+  return (lessThan(a, b+0.001)==bvec3(true) && lessThan(b-0.001,a)==bvec3(true));
+}
 
-    vertexDistance = fog_distance(Position, FogShape);
+void main() {
+  gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
+
+  if (approxEqualV3(Color.rgb, vec3(0.282, 0.71, 0.094))) {
+    vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, vec4(FOLIAGE_ITEM_TINT, Color.a));
+  } else {
     vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, Color);
-    lightColor = minecraft_sample_lightmap(Sampler2, UV2);
-    overlayColor = texelFetch(Sampler1, UV1, 0);
-    texCoord0 = UV0;
-    glpos = gl_Position;
+  }
+  vertexDistance = fog_distance(Position, FogShape);
+  lightColor = minecraft_sample_lightmap(Sampler2, UV2);
+  overlayColor = texelFetch(Sampler1, UV1, 0);
+  texCoord0 = UV0;
+  glpos = gl_Position;
 }
