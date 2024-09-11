@@ -146,10 +146,6 @@
 // The fog color correction adjusts the underwater fog color in most biomes to not be the default neon blue.
 #define ENABLE_UNDERWATER_FOG_CORRECTION
 
-// Uncomment this line to enable the procedural water surface texture.
-// This requires a specific texture in place of the still water texture.
-// #define ENABLE_PROCEDURAL_WATER_SURFACE
-
 
 
 // ============================================================================
