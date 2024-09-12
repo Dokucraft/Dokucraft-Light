@@ -1,6 +1,11 @@
 {
   "vertex": "minecraft:dokucraft/terrain_cutout",
   "fragment": "minecraft:dokucraft/terrain_cutout",
+  "defines": {
+    "flags": [
+      "SOLID"
+    ]
+  },
   "samplers": [
     { "name": "Sampler0" },
     { "name": "Sampler2" }

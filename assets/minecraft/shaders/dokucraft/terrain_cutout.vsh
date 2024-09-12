@@ -31,15 +31,30 @@ out vec4 lightColor;
 out vec2 texCoord0;
 out vec4 glpos;
 
-#if defined(ENABLE_BETTER_LAVA) || GRASS_TYPE > 0
+// Some things only need to be checked for solid blocks, and some only for
+// cutout blocks, so use some logic to redefine the config options here so they
+// are easier to use later in the script.
+#ifdef SOLID
+  #define USE_GRASS_TYPE 0
+  #ifdef ENABLE_BETTER_LAVA
+    #define USE_BETTER_LAVA
+  #endif
+#else
+  #define USE_GRASS_TYPE GRASS_TYPE
+  #ifdef ENABLE_LANTERN_SWING
+    #define USE_LANTERN_SWING
+  #endif
+#endif
+
+#if defined(USE_BETTER_LAVA) || USE_GRASS_TYPE > 0
   flat out int type;
 #endif
 
-#if GRASS_TYPE == 2
+#if USE_GRASS_TYPE == 2
   out vec3 shellGrassUV;
 #endif
 
-#ifdef ENABLE_BETTER_LAVA
+#ifdef USE_BETTER_LAVA
   out float noiseValue;
   out vec2 tileUVLava;
 
@@ -52,16 +67,16 @@ out vec4 glpos;
   out vec2 tileUVPara;
 #endif
 
-#if defined(ENABLE_BETTER_LAVA) || defined(ENABLE_PARALLAX_SUBSURFACE)
+#if (defined(USE_BETTER_LAVA)) || defined(ENABLE_PARALLAX_SUBSURFACE)
   flat out vec2 tileSize;
 #endif
 
 void main() {
-  #if defined(ENABLE_PARALLAX_SUBSURFACE) || defined(ENABLE_BETTER_LAVA) || GRASS_TYPE == 1
+  #if defined(ENABLE_PARALLAX_SUBSURFACE) || (defined(USE_BETTER_LAVA)) || USE_GRASS_TYPE == 1
     int vidm4 = gl_VertexID % 4;
   #endif
 
-  #if defined(ENABLE_PARALLAX_SUBSURFACE) || defined(ENABLE_BETTER_LAVA)
+  #if defined(ENABLE_PARALLAX_SUBSURFACE) || (defined(USE_BETTER_LAVA))
     tileSize = vec2(32) / vec2(textureSize(Sampler0, 0));
   #endif
 
@@ -71,11 +86,11 @@ void main() {
     vec3 pos = Position + ModelOffset;
   #endif
 
-  #if defined(ENABLE_WAVING) || defined(ENABLE_LANTERN_SWING) || defined(ENABLE_BETTER_LAVA) || GRASS_TYPE > 0
+  #if defined(ENABLE_WAVING) || defined(USE_LANTERN_SWING) || defined(USE_BETTER_LAVA) || USE_GRASS_TYPE > 0
     vec4 col = textureLod(Sampler0, UV0, 0);
     int alpha = int(col.a * 255 + 0.5);
 
-    #if GRASS_TYPE == 1
+    #if USE_GRASS_TYPE == 1
       if (alpha == 211 || alpha == 212) {
         type = 1;
         int face = int(alpha - 211);
@@ -144,7 +159,7 @@ void main() {
 
         return;
       }
-    #elif GRASS_TYPE == 2
+    #elif USE_GRASS_TYPE == 2
       if (alpha == 211) {
         // This and low-poly grass are mutually exclusive, so reusing type=1 is fine here
         type = 1;
@@ -183,11 +198,11 @@ void main() {
       }
     #endif
 
-    #if defined(ENABLE_LANTERN_SWING) && GRASS_TYPE > 0
+    #if defined(USE_LANTERN_SWING) && USE_GRASS_TYPE > 0
       else
     #endif
 
-    #ifdef ENABLE_LANTERN_SWING
+    #ifdef USE_LANTERN_SWING
       // Lanterns in vanilla use the cutout shader, but with Optifine they use cutout mipped
       if (alpha == 141 || alpha == 24) {
         float time = (1.0 + fract(dot(floor(Position), vec3(1))) / 2.0) * GameTime * SWING_SPEED + dot(floor(Position), vec3(1)) * 1234.0;
@@ -206,7 +221,7 @@ void main() {
       }
     #endif
 
-    #if defined(ENABLE_WAVING) && (defined(ENABLE_LANTERN_SWING) || GRASS_TYPE > 0)
+    #if defined(ENABLE_WAVING) && defined(USE_LANTERN_SWING) || USE_GRASS_TYPE > 0
       else
     #endif
 
@@ -222,11 +237,11 @@ void main() {
       }
     #endif
 
-    #if defined(ENABLE_BETTER_LAVA) && (defined(ENABLE_WAVING) || defined(ENABLE_LANTERN_SWING) || GRASS_TYPE > 0)
+    #if defined(USE_BETTER_LAVA) && defined(ENABLE_WAVING)
       else
     #endif
 
-    #ifdef ENABLE_BETTER_LAVA
+    #ifdef USE_BETTER_LAVA
       if (alpha == 247) {
         tileUVLava = vec2(int(vidm4 == 2 || vidm4 == 3), int(vidm4 == 1 || vidm4 == 2));
         if (pos.y >= 0) {
@@ -252,7 +267,7 @@ void main() {
       }
     #endif
 
-    #if GRASS_TYPE > 0
+    #if USE_GRASS_TYPE > 0 || defined(USE_BETTER_LAVA)
       type = 0;
     #endif
   #endif

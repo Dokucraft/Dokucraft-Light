@@ -19,15 +19,27 @@ in vec2 texCoord0;
 in vec4 normal;
 in vec4 glpos;
 
-#if defined(ENABLE_BETTER_LAVA) || GRASS_TYPE > 0
+// Some things only need to be checked for solid blocks, and some only for
+// cutout blocks, so use some logic to redefine the config options here so they
+// are easier to use later in the script.
+#ifdef SOLID
+  #define USE_GRASS_TYPE 0
+  #ifdef ENABLE_BETTER_LAVA
+    #define USE_BETTER_LAVA
+  #endif
+#else
+  #define USE_GRASS_TYPE GRASS_TYPE
+#endif
+
+#if defined(USE_BETTER_LAVA) || USE_GRASS_TYPE > 0
   flat in int type;
 #endif
 
-#if GRASS_TYPE == 2
+#if USE_GRASS_TYPE == 2
   in vec3 shellGrassUV;
 #endif
 
-#ifdef ENABLE_BETTER_LAVA
+#ifdef USE_BETTER_LAVA
   in float noiseValue;
   in vec2 tileUVLava;
 
@@ -40,13 +52,13 @@ in vec4 glpos;
   in vec2 tileUVPara;
 #endif
 
-#if defined(ENABLE_BETTER_LAVA) || defined(ENABLE_PARALLAX_SUBSURFACE)
+#if defined(USE_BETTER_LAVA) || defined(ENABLE_PARALLAX_SUBSURFACE)
   flat in vec2 tileSize;
 #endif
 
 out vec4 fragColor;
 
-#if GRASS_TYPE == 2
+#if USE_GRASS_TYPE == 2
   #moj_import <minecraft:hash12.glsl>
 #endif
 
@@ -59,12 +71,12 @@ out vec4 fragColor;
 void main() {
   discardControlGLPos(gl_FragCoord.xy, glpos);
 
-  #if GRASS_TYPE == 1
+  #if USE_GRASS_TYPE == 1
     if (type == 1) {
       fragColor = linear_fog(vertexColor, vertexDistance, FogStart, FogEnd, FogColor);
       return;
     }
-  #elif GRASS_TYPE == 2
+  #elif USE_GRASS_TYPE == 2
     if (type == 1) {
       if (hash12(floor(-shellGrassUV.xy)) > DENSE_GRASS_COVERAGE) discard;
       vec2 px = floor(shellGrassUV.xy);
@@ -84,7 +96,7 @@ void main() {
     }
   #endif
 
-  #ifdef ENABLE_BETTER_LAVA
+  #ifdef USE_BETTER_LAVA
     // For future reference: This block of code MUST happen before any alpha threshold checks that discard the pixel.
     if (type == 2) {
       vec2 uuv = texCoord0 - tileUVLava * vec2(LAVA_VARIANT_COUNT, 2) * tileSize + tileUVLava * tileSize + vec2(tileSize.x * randomTile, 0);
