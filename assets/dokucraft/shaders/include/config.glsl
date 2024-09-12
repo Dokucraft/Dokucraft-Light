@@ -135,17 +135,6 @@
 // This requires a specific texture in place of the still water texture.
 // #define ENABLE_PROCEDURAL_WATER_SURFACE
 
-// Remove this line to disable the desaturation of the biome color on highlights on translucent materials (used to make the highlights on water look better)
-#define ENABLE_DESATURATE_WATER_HIGHLIGHT
-
-// Remove this line to disable the water tint correction.
-// The tint correction adjusts the water tint to make it more similar to how the water used to look like before the tint was added.
-#define ENABLE_WATER_TINT_CORRECTION
-
-// Remove this line to disable the underwater fog color correction.
-// The fog color correction adjusts the underwater fog color in most biomes to not be the default neon blue.
-#define ENABLE_UNDERWATER_FOG_CORRECTION
-
 
 
 // ============================================================================
