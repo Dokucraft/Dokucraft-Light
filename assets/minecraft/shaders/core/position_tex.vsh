@@ -111,7 +111,7 @@ void main() {
     mobEffect = 0;
 
     // Isolate mob effect icons
-    if (gl_Position.x > 0.8334 && tsize == ivec2(256, 128)) {
+    if (gl_Position.x > 0.8334 && tsize == ivec2(512, 256)) {
       int vx = int(gl_VertexID % 4 >= 2);
       int vy = (gl_VertexID % 4 - vx) % 2;
       vec2 v = vec2(vx, vy);
