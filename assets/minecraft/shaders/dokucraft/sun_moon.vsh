@@ -65,7 +65,7 @@ void main() {
         }
       }
       ProjInv = inverse(ProjMat * ModelViewMat);
-    } else { // Moon
+    } else if (tsize.x == tsize.y * 2) { // Moon
       isSun = 0.5;
 
       #ifdef ENABLE_POST_MOON
