@@ -70,6 +70,7 @@ void main() {
   #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
     isWaterSurface = 0;
     pos = Position;
+    pos.y = 8;
   #endif
 
   #if defined(ENABLE_WATER_TINT_CORRECTION) || defined(ENABLE_PROCEDURAL_WATER_SURFACE)
