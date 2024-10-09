@@ -68,6 +68,11 @@ void main() {
           float n4 = smoothstep(0.98, 1, hash12(px(pos, 1).xz * 15));
           float t = (n1 * 0.75 + n2 * 0.6 + n3) * 0.9;
           t += (t * 0.75 + 0.25) * n4;
+
+          #ifdef ENABLE_PWS_REDUCE_SHADOW_HIGHLIGHTS
+            t = pow(t, mix(3, 1, lightColor.g));
+          #endif
+
           t = floor(t * 8.0) / 8.0;
           t *= pow(1 - fresnel, 0.3) * distFactor;
 
