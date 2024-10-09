@@ -35,7 +35,7 @@ in vec4 glpos;
   flat in int type;
 #endif
 
-#if USE_GRASS_TYPE == 2
+#if USE_GRASS_TYPE == 2 || USE_GRASS_TYPE == 3
   in vec3 shellGrassUV;
 #endif
 
@@ -60,6 +60,8 @@ out vec4 fragColor;
 
 #if USE_GRASS_TYPE == 2
   #moj_import <minecraft:hash12.glsl>
+#elif USE_GRASS_TYPE == 3
+  #moj_import <minecraft:perlin_worley.glsl>
 #endif
 
 #ifdef ENABLE_PARALLAX_SUBSURFACE
@@ -88,6 +90,17 @@ void main() {
       vec2 co = o - fract(shellGrassUV.xy);
       float c = n * max(0, 1.0 - mix(max(abs(co.x), abs(co.y)), length(co), shellGrassUV.z / n) * 2);
       if (1.0 - DENSE_GRASS_RADIUS_THRESHOLD < shellGrassUV.z / n || c < shellGrassUV.z) {
+        discard;
+      }
+      vec4 col = texture(Sampler0, texCoord0);
+      fragColor = linear_fog(vertexColor * vec4(vec3(mix(0.65, 1, col.r)), 1), vertexDistance, FogStart, FogEnd, FogColor);
+      return;
+    }
+  #elif USE_GRASS_TYPE == 3
+    if (type == 1) {
+      float n = clamp(worleyNoise(vec3(shellGrassUV.xy, 0), 256.0), 0.0, 1.0);
+      n = pow(1.0 - sqrt(cos(1.5707963 * n)), 2) * n;
+      if (n < shellGrassUV.z) {
         discard;
       }
       vec4 col = texture(Sampler0, texCoord0);

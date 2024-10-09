@@ -50,7 +50,7 @@ out vec4 glpos;
   flat out int type;
 #endif
 
-#if USE_GRASS_TYPE == 2
+#if USE_GRASS_TYPE == 2 || USE_GRASS_TYPE == 3
   out vec3 shellGrassUV;
 #endif
 
@@ -159,7 +159,7 @@ void main() {
 
         return;
       }
-    #elif USE_GRASS_TYPE == 2
+    #elif USE_GRASS_TYPE == 2 || USE_GRASS_TYPE == 3
       if (alpha == 211) {
         // This and low-poly grass are mutually exclusive, so reusing type=1 is fine here
         type = 1;

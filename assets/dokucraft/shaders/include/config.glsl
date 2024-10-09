@@ -58,6 +58,7 @@
 //  0: Disable the extra processing to slightly speed up rendering
 //  1: Enable the low-poly grass blades effect
 //  2: Enable the dense grass blades effect (shell texturing)
+//  3: Same as 2, but each blade of grass is placed randomly instead of being fixed to the pixel grid (worse for performance, but looks better)
 #define GRASS_TYPE 0
 
 // Controls the average width of the grass blades when using the low-poly grass blades effect
@@ -70,18 +71,21 @@
 // If it is a number, it will be squared. For example, 32 would yield 32^2 = 1024 blades per block
 // Can be set to a 2D vector to control the X and Z axes separately, for example vec2(32, 16)
 // The dense grass effect has a constant cost, meaning it does not get slower or faster to render depending on the number of blades to draw, it always performs the same. Doesn't matter if you draw 5 blades per block or a million per block
+// When using grass type 3, this is more like an average than a precise count.
 #define DENSE_GRASS_BLADES_PER_BLOCK 32
 
 // Controls the coverage of the dense grass effect (0.0 to 1.0)
 // At 0, there will be no grass blades, and at 1 the amount of grass blades will depend on the option above (DENSE_GRASS_BLADES_PER_BLOCK)
 // Values between 0 and 1 will avoid drawing some of the blades, but not all. For example, at 0.5 only half of the grass blades will be drawn
 // Values outside of this range will be clamped to the edges of the range (0 for values < 0, 1 for values > 1)
+// Note: This has no effect on grass type 3.
 #define DENSE_GRASS_COVERAGE 1.0
 
 // Controls the radius threshold for the grass blades
 // If the radius is lower than the threshold, the grass blade will not be drawn on the current shell
 // The radius of each blade decreases with the shell's height, so increasing this threshold gets rid of the top shells for most grass blades
 // This option is mainly for getting rid of the tiny dots on the top few layers of some grass blades
+// Note: This has no effect on grass type 3.
 #define DENSE_GRASS_RADIUS_THRESHOLD 0.2
 
 
