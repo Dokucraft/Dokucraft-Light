@@ -139,9 +139,9 @@
 // This requires a specific texture in place of the still water texture.
 // #define ENABLE_PROCEDURAL_WATER_SURFACE
 
-// Uncomment this line to reduce the number of highlights on the procedural water surface texture when it is in less lit areas.
+// Remove this line to remove the reduction of highlights on the procedural water surface texture when it is in less lit areas.
 // Requires ENABLE_PROCEDURAL_WATER_SURFACE
-// #define ENABLE_PWS_REDUCE_SHADOW_HIGHLIGHTS
+#define ENABLE_PWS_REDUCE_SHADOW_HIGHLIGHTS
 
 
 
