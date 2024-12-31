@@ -6,9 +6,9 @@
       "height": 12,
       "border": {
         "top": 2,
-        "right": 3,
+        "right": 0,
         "bottom": 2,
-        "left": 3
+        "left": 0
       },
       "stretch_inner":true
     }
