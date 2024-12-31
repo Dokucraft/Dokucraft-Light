@@ -1,41 +1,41 @@
 #version 330
 
 #moj_import <dokucraft:config.glsl>
+#moj_import <dokucraft:flavor.glsl>
 
 #ifdef ENABLE_UNDERWATER_FOG_CORRECTION
-  #moj_import <dokucraft:flavor.glsl>
   const mat3 underwaterFogTransform = mat3(
     UNDERWATER_FOG_RED,
     UNDERWATER_FOG_GREEN,
     UNDERWATER_FOG_BLUE
   );
-#endif
 
-vec3 rgbToHsv(vec3 rgb) {
-  float minVal = min(min(rgb.r, rgb.g), rgb.b);
-  float maxVal = max(max(rgb.r, rgb.g), rgb.b);
-  float delta = maxVal - minVal;
-  float h = 0.0;
-  float s = (maxVal > 0.0) ? delta / maxVal : 0.0;
-  if (delta > 0.0) {
-    if (maxVal == rgb.r) {
-      h = (rgb.g - rgb.b) / delta;
-    } else if (maxVal == rgb.g) {
-      h = 2.0 + (rgb.b - rgb.r) / delta;
-    } else {
-      h = 4.0 + (rgb.r - rgb.g) / delta;
+  vec3 rgbToHsv(vec3 rgb) {
+    float minVal = min(min(rgb.r, rgb.g), rgb.b);
+    float maxVal = max(max(rgb.r, rgb.g), rgb.b);
+    float delta = maxVal - minVal;
+    float h = 0.0;
+    float s = (maxVal > 0.0) ? delta / maxVal : 0.0;
+    if (delta > 0.0) {
+      if (maxVal == rgb.r) {
+        h = (rgb.g - rgb.b) / delta;
+      } else if (maxVal == rgb.g) {
+        h = 2.0 + (rgb.b - rgb.r) / delta;
+      } else {
+        h = 4.0 + (rgb.r - rgb.g) / delta;
+      }
+      h = mod(h / 6.0, 1.0);
     }
-    h = mod(h / 6.0, 1.0);
+    return vec3(h, s, maxVal);
   }
-  return vec3(h, s, maxVal);
-}
 
-float hueDistance(float hue1, float hue2) {
-  hue1 = mod(hue1, 1.0);
-  hue2 = mod(hue2, 1.0);
-  float delta = abs(hue1 - hue2);
-  return min(delta, 1.0 - delta);
-}
+  float hueDistance(float hue1, float hue2) {
+    hue1 = mod(hue1, 1.0);
+    hue2 = mod(hue2, 1.0);
+    float delta = abs(hue1 - hue2);
+    return min(delta, 1.0 - delta);
+  }
+#endif
 
 vec4 linear_fog(vec4 inColor, float vertexDistance, float fogStart, float fogEnd, vec4 fogColor) {
   if (vertexDistance <= fogStart) {
