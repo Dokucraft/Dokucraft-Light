@@ -5,7 +5,8 @@
 	"textures": {
 		"top": "block/doors/exposed_copper_door_top",
 		"bottom": "block/doors/exposed_copper_door_bottom",
-		"sides": "block/doors/exposed_copper_door_sides"
+		"sides": "block/doors/exposed_copper_door_sides",
+		"particle": "block/doors/exposed_copper_door_bottom"
 	},
 	"elements": [
 		{

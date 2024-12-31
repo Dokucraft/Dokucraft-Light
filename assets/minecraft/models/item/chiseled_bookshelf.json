@@ -3,7 +3,8 @@
 	"textures": {
 		"ends": "block/bookshelf_ends",
 		"sides": "block/chiseled_bookshelf/side",
-		"front": "block/chiseled_bookshelf/empty_0"
+		"front": "block/chiseled_bookshelf/empty_0",
+		"particle": "block/chiseled_bookshelf/side"
 	},
 	"elements": [
 		{

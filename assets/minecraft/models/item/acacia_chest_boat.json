@@ -1,7 +1,1 @@
-{
-	"parent": "item/boat_chest",
-	"textures": {
-		"boat": "entity/boat/item/acacia",
-		"chest": "entity/chest_boat/item/acacia"
-	}
-}
+{"parent":"item/boat_chest","textures":{"boat":"entity/boat/item/acacia","chest":"entity/chest_boat/item/acacia","particle":"block/acacia_planks"}}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/fence/dark_oak/dark_oak_fence_inventory"
+  }
+}

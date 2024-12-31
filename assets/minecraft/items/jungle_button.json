@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/buttons/jungle/jungle_button_inventory"
+  }
+}

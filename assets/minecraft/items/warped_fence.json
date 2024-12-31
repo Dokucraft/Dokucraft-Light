@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/fence/warped/warped_fence_inventory"
+  }
+}

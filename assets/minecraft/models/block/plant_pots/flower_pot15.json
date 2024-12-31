@@ -1,1 +1,1 @@
-{"parent":"block/plant_pots/templates/flower_pot_type_4","textures":{"pot":"block/flower_pot_3"}}
+{"parent":"block/plant_pots/templates/flower_pot_type_4","textures":{"pot":"block/flower_pot_3","particle":"block/flower_pot"}}

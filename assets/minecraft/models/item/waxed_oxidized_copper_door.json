@@ -5,7 +5,8 @@
 	"textures": {
 		"top": "block/doors/oxidized_copper_door_top",
 		"bottom": "block/doors/oxidized_copper_door_bottom",
-		"sides": "block/doors/oxidized_copper_door_sides"
+		"sides": "block/doors/oxidized_copper_door_sides",
+		"particle": "block/doors/oxidized_copper_door_bottom"
 	},
 	"elements": [
 		{

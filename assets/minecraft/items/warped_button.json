@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/buttons/warped/warped_button_inventory"
+  }
+}

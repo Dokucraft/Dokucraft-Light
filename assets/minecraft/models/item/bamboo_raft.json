@@ -1,7 +1,8 @@
 {
 	"credit": "Made by SyndiShanX",
 	"textures": {
-		"texture": "entity/boat/item/bamboo"
+		"texture": "entity/boat/item/bamboo",
+		"particle": "block/bamboo_planks"
 	},
 	"elements": [
 		{

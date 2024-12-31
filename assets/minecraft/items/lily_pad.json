@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/lily_pad/lily_pad_inventory"
+  }
+}

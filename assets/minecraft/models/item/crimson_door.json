@@ -5,7 +5,8 @@
 	"textures": {
 		"top": "block/doors/crimson_door_top",
 		"bottom": "block/doors/crimson_door_bottom",
-		"sides": "block/doors/crimson_door_sides"
+		"sides": "block/doors/crimson_door_sides",
+		"particle": "block/doors/crimson_door_bottom"
 	},
 	"elements": [
 		{

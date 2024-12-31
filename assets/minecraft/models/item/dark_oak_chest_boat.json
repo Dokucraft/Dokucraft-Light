@@ -1,7 +1,1 @@
-{
-	"parent": "item/boat_chest",
-	"textures": {
-		"boat": "entity/boat/item/dark_oak",
-		"chest": "entity/chest_boat/item/dark_oak"
-	}
-}
+{"parent":"item/boat_chest","textures":{"boat":"entity/boat/item/dark_oak","chest":"entity/chest_boat/item/dark_oak","particle":"block/dark_oak_planks"}}

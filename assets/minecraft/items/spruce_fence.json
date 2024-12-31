@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/fence/spruce/spruce_fence_inventory"
+  }
+}

@@ -5,7 +5,8 @@
 	"textures": {
 		"top": "block/doors/bamboo_door_top",
 		"bottom": "block/doors/bamboo_door_bottom",
-		"sides": "block/doors/bamboo_door_sides"
+		"sides": "block/doors/bamboo_door_sides",
+		"particle": "block/doors/bamboo_door_bottom"
 	},
 	"elements": [
 		{

@@ -2,7 +2,8 @@
 	"credit": "Made by SyndiShanX",
 	"ambientocclusion": false,
 	"textures": {
-		"fence": "block/fence/bamboo_fence"
+		"fence": "block/fence/bamboo_fence",
+		"particle": "block/bamboo_planks"
 	},
 	"elements": [
 		{

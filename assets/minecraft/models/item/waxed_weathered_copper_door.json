@@ -5,7 +5,8 @@
 	"textures": {
 		"top": "block/doors/weathered_copper_door_top",
 		"bottom": "block/doors/weathered_copper_door_bottom",
-		"sides": "block/doors/weathered_copper_door_sides"
+		"sides": "block/doors/weathered_copper_door_sides",
+		"particle": "block/doors/weathered_copper_door_bottom"
 	},
 	"elements": [
 		{

@@ -1,6 +1,4 @@
 {
-	"credit": "Made by SyndiShanX",
-	"parent": "block/cube_all",
 	"textures": {
 		"particle": "block/bookshelf",
 		"sides": "block/bookshelf",

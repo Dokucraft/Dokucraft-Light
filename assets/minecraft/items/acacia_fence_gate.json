@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/gate/acacia/acacia_fence_gate_closed"
+  }
+}

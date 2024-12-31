@@ -5,7 +5,8 @@
 	"textures": {
 		"top": "block/doors/dark_oak_door_top",
 		"bottom": "block/doors/dark_oak_door_bottom",
-		"sides": "block/doors/dark_oak_door_sides"
+		"sides": "block/doors/dark_oak_door_sides",
+		"particle": "block/doors/dark_oak_door_bottom"
 	},
 	"elements": [
 		{

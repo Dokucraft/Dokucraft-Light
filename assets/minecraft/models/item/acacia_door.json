@@ -5,7 +5,8 @@
 	"textures": {
 		"top": "block/doors/acacia_door_top",
 		"bottom": "block/doors/acacia_door_bottom",
-		"sides": "block/doors/acacia_door_sides"
+		"sides": "block/doors/acacia_door_sides",
+		"particle": "block/doors/acacia_door_bottom"
 	},
 	"elements": [
 		{

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/redstone_torch/redstone_torch"
+  }
+}

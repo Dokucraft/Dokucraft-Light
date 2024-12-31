@@ -1,1 +1,1 @@
-{"parent":"item/boat","textures":{"texture":"entity/boat/item/birch"}}
+{"parent":"item/boat","textures":{"texture":"entity/boat/item/birch","particle":"block/birch_planks"}}

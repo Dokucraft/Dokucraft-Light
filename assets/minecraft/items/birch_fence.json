@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/fence/birch/birch_fence_inventory"
+  }
+}

@@ -2,25 +2,25 @@
     { "when": { "age": 0 },
       "apply": [
         { "model": "block/nether_wart_stage0" },
-		{ "model": "block/crop/nether_wart_stage0_mirrored" }
+        { "model": "block/crop/nether_wart_stage0_mirrored" }
       ]
     },
 	{ "when": { "age": 1 },
       "apply": [
         { "model": "block/nether_wart_stage1" },
-		{ "model": "block/crop/nether_wart_stage1_mirrored" }
+        { "model": "block/crop/nether_wart_stage1_mirrored" }
       ]
     },
 	{ "when": { "age": 2 },
       "apply": [
         { "model": "block/nether_wart_stage2" },
-		{ "model": "block/crop/nether_wart_stage2_mirrored" }
+        { "model": "block/crop/nether_wart_stage2_mirrored" }
       ]
     },
 	{ "when": { "age": 3 },
       "apply": [
         { "model": "block/nether_wart_stage3" },
-		{ "model": "block/crop/nether_wart_stage3_mirrored" }
+        { "model": "block/crop/nether_wart_stage3_mirrored" }
       ]
     },
     { "apply": { "model": "block/roots/nether_wart_roots" } }

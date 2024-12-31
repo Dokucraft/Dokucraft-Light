@@ -5,7 +5,8 @@
 	"textures": {
 		"top": "block/doors/iron_door_top",
 		"bottom": "block/doors/iron_door_bottom",
-		"sides": "block/doors/iron_door_sides"
+		"sides": "block/doors/iron_door_sides",
+		"particle": "block/doors/iron_door_bottom"
 	},
 	"elements": [
 		{
