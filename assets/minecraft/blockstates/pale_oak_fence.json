@@ -1,0 +1,20 @@
+{
+	"multipart": [
+		{ "apply": [
+			{ "model": "block/fence/pale_oak/pale_oak_fence_post_0" },
+			{ "model": "block/fence/pale_oak/pale_oak_fence_post_1", "weight": 2 }
+		]},
+		{ "when": { "north": true },
+			"apply": { "model": "block/fence/pale_oak/pale_oak_fence_side_ne", "uvlock": false }
+		},
+		{ "when": { "east": true },
+			"apply": { "model": "block/fence/pale_oak/pale_oak_fence_side_ne", "y": 90, "uvlock": false }
+		},
+		{ "when": { "south": true },
+			"apply": { "model": "block/fence/pale_oak/pale_oak_fence_side_sw", "y": 180, "uvlock": false }
+		},
+		{ "when": { "west": true },
+			"apply": { "model": "block/fence/pale_oak/pale_oak_fence_side_sw", "y": 270, "uvlock": false }
+		}
+	]
+}

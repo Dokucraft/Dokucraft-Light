@@ -1,0 +1,104 @@
+{
+	"credit": "Made by SyndiShanX",
+	"parent": "item/door",
+	"ambientocclusion": false,
+	"textures": {
+		"top": "block/doors/pale_oak_door_top",
+		"bottom": "block/doors/pale_oak_door_bottom",
+		"sides": "block/doors/pale_oak_door_sides",
+		"particle": "block/doors/pale_oak_door_top"
+	},
+	"elements": [
+		{
+			"name": "Door Top",
+			"from": [1, 16, 0],
+			"to": [4, 32, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 0]},
+			"faces": {
+				"north": {"uv": [6, 0, 9, 16], "texture": "#sides"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"south": {"uv": [6, 0, 9, 16], "texture": "#sides"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#top"},
+				"up": {"uv": [0, 0, 3, 16], "rotation": 180, "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Top",
+			"from": [1, 22.5, 11.5],
+			"to": [4, 25.5, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 7.5]},
+			"faces": {
+				"north": {"uv": [12, 9.5, 15, 12.5], "texture": "#sides"},
+				"south": {"uv": [12, 9.5, 15, 12.5], "texture": "#sides"},
+				"up": {"uv": [12, 5, 15, 12.5], "rotation": 180, "texture": "#sides"},
+				"down": {"uv": [12, 5, 15, 12.5], "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Bottom",
+			"from": [1, 0, 0],
+			"to": [4, 16, 16],
+			"faces": {
+				"north": {"uv": [3, 0, 6, 16], "texture": "#sides"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#bottom"},
+				"south": {"uv": [3, 0, 6, 16], "texture": "#sides"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#bottom"},
+				"down": {"uv": [9, 0, 12, 16], "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Bottom Handle",
+			"from": [0.75, 13.5, 1],
+			"to": [4.25, 14.5, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, -0.5]},
+			"faces": {
+				"north": {"uv": [14.5, 1.5, 15, 2.5], "texture": "#bottom"},
+				"east": {"uv": [13, 1.5, 15, 2.5], "texture": "#bottom"},
+				"south": {"uv": [13, 1.5, 13.5, 2.5], "texture": "#bottom"},
+				"west": {"uv": [15, 1.5, 13, 2.5], "texture": "#bottom"},
+				"up": {"uv": [13, 2, 15, 1.5], "rotation": 270, "texture": "#bottom"},
+				"down": {"uv": [13, 2.5, 15, 2], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Handle",
+			"from": [0.75, 14.5, 1.5],
+			"to": [4.25, 15, 2.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, -0.5]},
+			"faces": {
+				"north": {"uv": [14, 1, 14.5, 1.5], "texture": "#bottom"},
+				"east": {"uv": [13.5, 1, 14.5, 1.5], "texture": "#bottom"},
+				"south": {"uv": [13.5, 1, 14, 1.5], "texture": "#bottom"},
+				"west": {"uv": [14.5, 1, 13.5, 1.5], "texture": "#bottom"},
+				"up": {"uv": [13.5, 1, 14.5, 1.5], "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Handle",
+			"from": [0.75, 13, 1.5],
+			"to": [4.25, 13.5, 2.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2.5, -0.5]},
+			"faces": {
+				"north": {"uv": [14, 2.5, 14.5, 3], "texture": "#bottom"},
+				"east": {"uv": [13.5, 2.5, 14.5, 3], "texture": "#bottom"},
+				"south": {"uv": [13.5, 2.5, 14, 3], "texture": "#bottom"},
+				"west": {"uv": [14.5, 2.5, 13.5, 3], "texture": "#bottom"},
+				"down": {"uv": [13.5, 2.5, 14.5, 3], "texture": "#bottom"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Top",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		},
+		{
+			"name": "Bottom",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [2, 3, 4, 5]
+		}
+	]
+}

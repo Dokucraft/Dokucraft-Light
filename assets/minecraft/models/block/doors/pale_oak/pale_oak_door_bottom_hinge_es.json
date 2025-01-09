@@ -1,0 +1,72 @@
+{
+	"credit": "Made by SyndiShanX",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/doors/pale_oak_door_bottom",
+		"bottom": "block/doors/pale_oak_door_bottom",
+		"sides": "block/doors/pale_oak_door_sides"
+	},
+	"elements": [
+		{
+			"name": "Door Bottom",
+			"from": [0, 0, -1],
+			"to": [3, 16, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 0, -1]},
+			"faces": {
+				"north": {"uv": [3, 0, 6, 16], "texture": "#sides"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#bottom"},
+				"south": {"uv": [3, 0, 6, 16], "texture": "#sides"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#bottom"},
+				"down": {"uv": [9, 0, 12, 16], "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Bottom Handle",
+			"from": [-0.25, 13.5, 0],
+			"to": [3.25, 14.5, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, -2, -1.5]},
+			"faces": {
+				"north": {"uv": [14.5, 1.5, 15, 2.5], "texture": "#bottom"},
+				"east": {"uv": [13, 1.5, 15, 2.5], "texture": "#bottom"},
+				"south": {"uv": [13, 1.5, 13.5, 2.5], "texture": "#bottom"},
+				"west": {"uv": [15, 1.5, 13, 2.5], "texture": "#bottom"},
+				"up": {"uv": [13, 2, 15, 1.5], "rotation": 270, "texture": "#bottom"},
+				"down": {"uv": [13, 2.5, 15, 2], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Handle",
+			"from": [-0.25, 14.5, 0.5],
+			"to": [3.25, 15, 1.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, -1, -1.5]},
+			"faces": {
+				"north": {"uv": [14, 1, 14.5, 1.5], "texture": "#bottom"},
+				"east": {"uv": [13.5, 1, 14.5, 1.5], "texture": "#bottom"},
+				"south": {"uv": [13.5, 1, 14, 1.5], "texture": "#bottom"},
+				"west": {"uv": [14.5, 1, 13.5, 1.5], "texture": "#bottom"},
+				"up": {"uv": [13.5, 1, 14.5, 1.5], "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "Door Bottom Handle",
+			"from": [-0.25, 13, 0.5],
+			"to": [3.25, 13.5, 1.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, -2.5, -1.5]},
+			"faces": {
+				"north": {"uv": [14, 2.5, 14.5, 3], "texture": "#bottom"},
+				"east": {"uv": [13.5, 2.5, 14.5, 3], "texture": "#bottom"},
+				"south": {"uv": [13.5, 2.5, 14, 3], "texture": "#bottom"},
+				"west": {"uv": [14.5, 2.5, 13.5, 3], "texture": "#bottom"},
+				"down": {"uv": [13.5, 2.5, 14.5, 3], "texture": "#bottom"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Bottom",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

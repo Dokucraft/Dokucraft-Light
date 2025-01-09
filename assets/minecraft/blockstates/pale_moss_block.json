@@ -1,0 +1,9 @@
+{ "variants": {
+    "": [
+      { "model": "minecraft:block/pale_moss_block" },
+      { "model": "minecraft:block/moss_block/pale_moss_90" },
+      { "model": "minecraft:block/moss_block/pale_moss_180" },
+      { "model": "minecraft:block/moss_block/pale_moss_270" }
+    ]
+  }
+}

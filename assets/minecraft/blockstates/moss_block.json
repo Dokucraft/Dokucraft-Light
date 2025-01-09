@@ -1,9 +1,9 @@
 { "variants": {
     "": [
       { "model": "minecraft:block/moss_block" },
-      { "model": "minecraft:block/moss_block/90" },
-      { "model": "minecraft:block/moss_block/180" },
-      { "model": "minecraft:block/moss_block/270" }
+      { "model": "minecraft:block/moss_block/moss_90" },
+      { "model": "minecraft:block/moss_block/moss_180" },
+      { "model": "minecraft:block/moss_block/moss_270" }
     ]
   }
 }
