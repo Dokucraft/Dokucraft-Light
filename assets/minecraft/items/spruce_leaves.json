@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "minecraft:item/spruce_leaves",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": [0.35, 0.60, 0.40]
+      }
+    ]
+  }
+}

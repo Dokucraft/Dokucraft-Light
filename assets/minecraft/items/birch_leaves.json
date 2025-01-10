@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "minecraft:item/birch_leaves",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": [0.403, 0.513, 0.262]
+      }
+    ]
+  }
+}
