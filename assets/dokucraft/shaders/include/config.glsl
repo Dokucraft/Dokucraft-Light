@@ -194,6 +194,10 @@
 // Requires ENABLE_POST_MOON
 #define MOON_SCALE 0.3
 
+// Remove the two slashes at the start of this line to disable rendering of the default stars.
+// The post-processing night skies draw their own stars, so the core stars should be disabled for those.
+// #define DISABLE_CORE_STARS
+
 
 
 // ============================================================================

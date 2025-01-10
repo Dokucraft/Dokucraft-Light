@@ -1,5 +1,6 @@
 #version 330
 
+#moj_import <dokucraft:config.glsl>
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:utils.glsl>
 
@@ -11,6 +12,7 @@ uniform mat4 ProjMat;
 
 in mat4 ProjInv;
 in float isSky;
+flat in int isStars;
 in float vertexDistance;
 
 out vec4 fragColor;
@@ -44,6 +46,12 @@ void main() {
     } else {
       discard;
     }
+  } else if (isStars == 1) {
+    #ifdef DISABLE_CORE_STARS
+      discard;
+    #else
+      fragColor = vec4(0.522, 0.678, 0.871, 1.0);
+    #endif
   } else if (isSky > 0.5) {
     vec4 screenPos = gl_FragCoord;
     screenPos.xy = (screenPos.xy / ScreenSize - vec2(0.5)) * 2.0;
@@ -53,11 +61,11 @@ void main() {
     ndusq = ndusq * ndusq;
 
     fragColor = linear_fog(ColorModulator, pow(1.0 - ndusq, 8.0), 0.0, 1.0, FogColor);
-    fragColor.a = 0;
+    fragColor.a = 0.0;
   } else {
-    if (vertexDistance < 800) {
-      discard;
-    }
+    // if (vertexDistance < 800) { // Disables the void plane
+    //   discard;
+    // }
     fragColor = ColorModulator;
   }
 }
