@@ -2,7 +2,6 @@
 
 #moj_import <minecraft:light.glsl>
 #moj_import <minecraft:fog.glsl>
-#moj_import <dokucraft:flavor.glsl>
 
 in vec3 Position;
 in vec4 Color;
@@ -40,11 +39,7 @@ void main() {
 
   vertexDistance = fog_distance(Position, FogShape);
   
-  if (approxEqualV3(Color.rgb, vec3(0.282, 0.71, 0.094))) {
-    vertexColor = vec4(FOLIAGE_ITEM_TINT, Color.a);
-  } else {
-    vertexColor = Color;
-  }
+  vertexColor = Color;
 
   #ifdef NO_CARDINAL_LIGHTING
     shadeColor = vec4(1);
