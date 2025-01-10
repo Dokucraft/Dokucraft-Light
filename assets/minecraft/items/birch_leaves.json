@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/birch_leaves",
+    "model": "minecraft:block/birch_leaves",
     "tints": [
       {
         "type": "minecraft:constant",

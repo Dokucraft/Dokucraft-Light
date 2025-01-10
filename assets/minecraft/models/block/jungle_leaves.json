@@ -1,1 +1,6 @@
-{"parent":"minecraft:block/leaves_custom","textures":{"all":"minecraft:block/leaves/jungle_leaves"}}
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "minecraft:block/leaves/jungle_leaves"
+  }
+}

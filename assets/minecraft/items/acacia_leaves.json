@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/acacia_leaves",
+    "model": "minecraft:block/acacia_leaves",
     "tints": [
       {
         "type": "minecraft:constant",

@@ -1,24 +1,7 @@
 {
-	"multipart": [{
-			"apply": [{
-				"model": "block/nether_wart_block"
-			}]
-		},
-		{
-			"apply": [
-				{"model": "block/leaves/nether_wart_block/top0"},
-				{"model": "block/leaves/nether_wart_block/top1"},
-				{"model": "block/leaves/nether_wart_block/top2"},
-				{"model": "block/leaves/nether_wart_block/top3"}
-			]
-		},
-		{
-			"apply": [
-				{"model": "block/leaves/nether_wart_block/bottom0"},
-				{"model": "block/leaves/nether_wart_block/bottom1"},
-				{"model": "block/leaves/nether_wart_block/bottom2"},
-				{"model": "block/leaves/nether_wart_block/bottom3"}
-			]
-		}
-	]
+  "variants": {
+    "": {
+      "model": "minecraft:block/nether_wart_block"
+    }
+  }
 }

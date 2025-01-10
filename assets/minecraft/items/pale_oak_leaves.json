@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/pale_oak_leaves"
+    "model": "minecraft:block/pale_oak_leaves"
   }
 }

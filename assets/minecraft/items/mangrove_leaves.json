@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/mangrove_leaves",
+    "model": "minecraft:block/mangrove_leaves",
     "tints": [
       {
         "type": "minecraft:constant",

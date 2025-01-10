@@ -1,1 +1,6 @@
-{"parent":"minecraft:block/leaves_custom","textures":{"all":"minecraft:block/leaves/dead_flowering_azalea_leaves"}}
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "minecraft:block/leaves/dead_flowering_azalea_leaves"
+  }
+}
