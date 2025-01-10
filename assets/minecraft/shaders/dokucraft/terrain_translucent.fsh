@@ -15,6 +15,7 @@ in vec4 vertexColor;
 in vec4 lightColor;
 in vec2 texCoord0;
 in vec4 normal;
+flat in int isWaterSurface;
 
 #if defined(ENABLE_FRESNEL_EFFECT) || defined(ENABLE_DESATURATE_WATER_HIGHLIGHT)
   #ifdef ENABLE_FRAGMENT_FRESNEL
@@ -33,7 +34,6 @@ out vec4 fragColor;
   #moj_import <dokucraft:flavor.glsl>
 
   uniform float GameTime;
-  flat in int isWaterSurface;
   in vec3 pos;
 
   vec3 px(vec3 p, float scale) {
@@ -100,11 +100,15 @@ void main() {
       #endif
 
       #ifdef ENABLE_DESATURATE_WATER_HIGHLIGHT
-        float cmax = max(color.r, max(color.g, color.b));
-        float cmin = min(color.r, min(color.g, color.b));
-        float sat = (cmax - cmin) / cmax;
-        vec4 tinted = color * vc * ColorModulator;
-        color = mix(tinted, color, 1 - smoothstep(0, 0.75, sat)) * lightColor;
+        if (isWaterSurface == 1) {
+          float cmax = max(color.r, max(color.g, color.b));
+          float cmin = min(color.r, min(color.g, color.b));
+          float sat = (cmax - cmin) / cmax;
+          vec4 tinted = color * vc * ColorModulator;
+          color = mix(tinted, color, 1 - smoothstep(0, 0.75, sat)) * lightColor;
+        } else {
+          color *= vc * ColorModulator * lightColor;
+        }
       #else
         color *= vc * ColorModulator * lightColor;
       #endif

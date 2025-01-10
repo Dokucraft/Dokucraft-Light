@@ -30,10 +30,10 @@ out float vertexDistance;
 out vec4 vertexColor;
 out vec4 lightColor;
 out vec2 texCoord0;
+flat out int isWaterSurface;
 
 #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
   uniform sampler2D Sampler0;
-  flat out int isWaterSurface;
   out vec3 pos;
 #endif
 
@@ -74,7 +74,10 @@ void main() {
   #endif
 
   #if defined(ENABLE_WATER_TINT_CORRECTION) || defined(ENABLE_PROCEDURAL_WATER_SURFACE)
-    if (abs(vertexColor.r - vertexColor.g) >= 0.01 || abs(vertexColor.r - vertexColor.b) >= 0.01) {
+    if (
+      (abs(vertexColor.r - vertexColor.g) >= 0.01 || abs(vertexColor.r - vertexColor.b) >= 0.01) &&
+      vertexColor.b > vertexColor.r && vertexColor.b > vertexColor.g
+    ) {
       #ifdef ENABLE_WATER_TINT_CORRECTION
         vertexColor.rgb *= waterTintTransform;
       #endif
@@ -84,6 +87,8 @@ void main() {
         if (color.r + color.g < 0.001 && color.b > 0.999 && int(color.a * 255) == 251) {
           isWaterSurface = 1;
         }
+      #else
+        isWaterSurface = 1;
       #endif
     }
   #endif
