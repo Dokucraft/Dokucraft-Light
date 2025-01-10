@@ -1,6 +1,6 @@
 {
-  "vertex": "minecraft:dokucraft/gui_widget",
-  "fragment": "minecraft:dokucraft/gui_widget",
+  "vertex": "minecraft:dokucraft/gui_widget_sun_moon",
+  "fragment": "minecraft:dokucraft/gui_widget_sun_moon",
   "samplers": [
     { "name": "Sampler0" }
   ],

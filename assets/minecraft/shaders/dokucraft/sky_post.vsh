@@ -1,5 +1,8 @@
 #version 330
- 
+
+#moj_import <dokucraft:config.glsl>
+#moj_import <dokucraft:flavor.glsl>
+
 in vec4 Position;
 
 uniform mat4 ProjMat;
@@ -57,6 +60,40 @@ float decodeFloat(vec3 ivec) {
   return decodeInt(ivec) / FPRECISION;
 }
 
+#ifdef ENABLE_UNDERWATER_FOG_CORRECTION
+  const mat3 underwaterFogTransform = mat3(
+    UNDERWATER_FOG_RED,
+    UNDERWATER_FOG_GREEN,
+    UNDERWATER_FOG_BLUE
+  );
+
+  vec3 rgbToHsv(vec3 rgb) {
+    float minVal = min(min(rgb.r, rgb.g), rgb.b);
+    float maxVal = max(max(rgb.r, rgb.g), rgb.b);
+    float delta = maxVal - minVal;
+    float h = 0.0;
+    float s = (maxVal > 0.0) ? delta / maxVal : 0.0;
+    if (delta > 0.0) {
+      if (maxVal == rgb.r) {
+        h = (rgb.g - rgb.b) / delta;
+      } else if (maxVal == rgb.g) {
+        h = 2.0 + (rgb.b - rgb.r) / delta;
+      } else {
+        h = 4.0 + (rgb.r - rgb.g) / delta;
+      }
+      h = mod(h / 6.0, 1.0);
+    }
+    return vec3(h, s, maxVal);
+  }
+
+  float hueDistance(float hue1, float hue2) {
+    hue1 = mod(hue1, 1.0);
+    hue2 = mod(hue2, 1.0);
+    float delta = abs(hue1 - hue2);
+    return min(delta, 1.0 - delta);
+  }
+#endif
+
 void main() {
   vec4 outPos = ProjMat * vec4(Position.xy, 0.0, 1.0);
   gl_Position = vec4(outPos.xy, 0.2, 1.0);
@@ -88,6 +125,17 @@ void main() {
   up = vec3(0, 1, 0);
 
   fogColor = texture(MainSampler, start + inc * 25);
+  #ifdef ENABLE_UNDERWATER_FOG_CORRECTION
+    vec3 fcHSV = rgbToHsv(fogColor.rgb);
+    float t = clamp(
+      smoothstep(0.1, 0, hueDistance(0.667, fcHSV.x)) *
+      smoothstep(0.5, 1, fcHSV.y) *
+      fcHSV.z,
+      0, 1
+    );
+
+    fogColor.rgb = mix(fogColor.rgb, fogColor.rgb * underwaterFogTransform, t) * mix(1, 0.75, pow(fogColor.a, 5) * t);
+  #endif
 
   timeOfDay = dot(sunDir, vec3(0, 1, 0));
 

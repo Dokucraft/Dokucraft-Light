@@ -315,6 +315,11 @@ float linearstep(float edge0, float edge1, float x) {
   return clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);
 }
 
+vec3 blendFogColor(vec3 atmosphere, vec3 fogColor) {
+  float dist = length(fogColor - vec3(0.729, 0.831, 1));
+  return mix(atmosphere, BlendColor(atmosphere, fogColor), smoothstep(0.0, 0.2, dist));
+}
+
 #if ATMOSPHERE == 1
   vec2 sampleCloudNorm(vec2 uv, vec3 px) {
     float v = texture(CloudsSampler, uv).r;
@@ -497,7 +502,10 @@ void main() {
       atmosphere = mix(
         atmosphere,
         vec4(
-          sampleSkybox(SkyBoxDaySampler, (vec4(direction, 1) * rotationMatrix(vec3(0, 1, 0), 1.3)).xyz),
+          blendFogColor(
+            sampleSkybox(SkyBoxDaySampler, (vec4(direction, 1) * rotationMatrix(vec3(0, 1, 0), 1.3)).xyz),
+            fogColor.rgb
+          ),
           dayLight
         ),
         dayLight
@@ -549,14 +557,18 @@ void main() {
 
       // Adding a tiny bit of noise here lessens the color banding in the gradient
       float fAtmos = nd.y + screenNoise * 0.02;
-      atmosphere = mix(atmosphere, vec4(mix(
-        mix(
-          texelFetch(SkyColorSampler, ivec2(0, 2), 0).rgb,
-          texelFetch(SkyColorSampler, ivec2(0, 1), 0).rgb,
-          linearstep(0, 0.5, fAtmos)
-        ),
-        texelFetch(SkyColorSampler, ivec2(0, 0), 0).rgb,
-        linearstep(0.5, 1, fAtmos)
+      atmosphere = mix(atmosphere, vec4(
+        blendFogColor(
+          mix(
+            mix(
+              texelFetch(SkyColorSampler, ivec2(0, 2), 0).rgb,
+              texelFetch(SkyColorSampler, ivec2(0, 1), 0).rgb,
+              linearstep(0, 0.5, fAtmos)
+            ),
+            texelFetch(SkyColorSampler, ivec2(0, 0), 0).rgb,
+            linearstep(0.5, 1, fAtmos)
+          ),
+          fogColor.rgb
         ), max(weather, dayLight)
       ), max(weather, dayLight));
 
@@ -607,7 +619,10 @@ void main() {
 
       clouds = vec4(
         mix(
-          mix(nightCloudsColor, dayCloudsColor, dayLight),
+          blendFogColor(
+            mix(nightCloudsColor, dayCloudsColor, dayLight),
+            fogColor.rgb
+          ),
           sunsetCloudsColor,
           smoothstep(-0.35, 0, timeOfDay) * smoothstep(0.25, 0, timeOfDay) * smoothstep(-1 + 0.6 * (1 - dayLight), 1, dot(nd, sunDir))
         ),
