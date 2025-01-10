@@ -29,10 +29,6 @@ out vec4 overlayColor;
 out vec2 texCoord0;
 out vec4 glpos;
 
-bool approxEqualV3(vec3 a, vec3 b) {
-  return (lessThan(a, b+0.001)==bvec3(true) && lessThan(b-0.001,a)==bvec3(true));
-}
-
 void main() {
   gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
   glpos = gl_Position;
