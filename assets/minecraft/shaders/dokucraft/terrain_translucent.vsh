@@ -19,6 +19,7 @@ in vec2 UV0;
 in ivec2 UV2;
 in vec3 Normal;
 
+uniform sampler2D Sampler0;
 uniform sampler2D Sampler2;
 
 uniform mat4 ModelViewMat;
@@ -33,7 +34,6 @@ out vec2 texCoord0;
 flat out int isWaterSurface;
 
 #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
-  uniform sampler2D Sampler0;
   out vec3 pos;
 #endif
 
@@ -74,16 +74,17 @@ void main() {
   #endif
 
   #if defined(ENABLE_WATER_TINT_CORRECTION) || defined(ENABLE_PROCEDURAL_WATER_SURFACE)
+    vec4 color = texture(Sampler0, UV0);
+
     if (
       (abs(vertexColor.r - vertexColor.g) >= 0.01 || abs(vertexColor.r - vertexColor.b) >= 0.01) &&
-      vertexColor.b > vertexColor.r && vertexColor.b > vertexColor.g
+      color.b > color.r && color.b > color.g
     ) {
       #ifdef ENABLE_WATER_TINT_CORRECTION
         vertexColor.rgb *= waterTintTransform;
       #endif
 
       #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
-        vec4 color = texture(Sampler0, UV0);
         if (color.r + color.g < 0.001 && color.b > 0.999 && int(color.a * 255) == 251) {
           isWaterSurface = 1;
         }
