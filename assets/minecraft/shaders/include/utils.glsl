@@ -1,6 +1,6 @@
 #version 330
 
-#define NUMCONTROLS 27
+#define NUMCONTROLS 28
 #define THRESH 0.5
 #define FPRECISION 4000000.0
 #define PROJNEAR 0.05
@@ -34,6 +34,7 @@ Control Map:
 [24] ModelViewMat[2][2]
 [25] FogColor
 [26] Moon phase / Weather
+[27] Sky color
 */
 
 // returns control pixel index or -1 if not control

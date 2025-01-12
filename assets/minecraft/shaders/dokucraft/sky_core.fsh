@@ -40,6 +40,8 @@ void main() {
         fragColor = FogColor;
       } else if (index == 26) {
         fragColor = vec4(0);
+      } else if (index == 27) {
+        fragColor = vec4(ColorModulator.rgb, 1);
       } else {
         fragColor = vec4(0.0, 0.0, 0.0, 1.0);
       }
@@ -50,7 +52,7 @@ void main() {
     #ifdef DISABLE_CORE_STARS
       discard;
     #else
-      fragColor = vec4(0.522, 0.678, 0.871, 1.0);
+      fragColor = vec4(0.522, 0.678, 0.871, ColorModulator.a);
     #endif
   } else if (isSky > 0.5) {
     vec4 screenPos = gl_FragCoord;

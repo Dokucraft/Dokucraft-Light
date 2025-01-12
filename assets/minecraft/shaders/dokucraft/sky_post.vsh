@@ -19,6 +19,7 @@ out float near;
 out float far;
 out mat4 projInv;
 out vec4 fogColor;
+out vec3 skyColor;
 out vec3 up;
 out vec3 sunDir;
 out float moonPhase;
@@ -137,6 +138,7 @@ void main() {
     fogColor.rgb = mix(fogColor.rgb, fogColor.rgb * underwaterFogTransform, t) * mix(1, 0.75, pow(fogColor.a, 5) * t);
   #endif
 
+  skyColor = texture(MainSampler, start + inc * 27).rgb;
   timeOfDay = dot(sunDir, vec3(0, 1, 0));
 
   near = PROJNEAR;

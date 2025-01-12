@@ -3,6 +3,7 @@
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:flownoise.glsl>
 #moj_import <minecraft:perlin_worley.glsl>
+#moj_import <minecraft:oklab.glsl>
 #moj_import <dokucraft:config.glsl>
 
 uniform sampler2D MainSampler;
@@ -32,6 +33,7 @@ in float near;
 in float far;
 in mat4 projInv;
 in vec4 fogColor;
+in vec3 skyColor;
 in vec3 up;
 in vec3 sunDir;
 
@@ -54,112 +56,9 @@ out vec4 fragColor;
 
 const float FUDGE = 0.01;
 
-
-
-/* --------------------------- Color Blend Mode ---------------------------- */
-/*
-** Copyright (c) 2012, Romain Dura romain@shazbits.com
-** 
-** Permission to use, copy, modify, and/or distribute this software for any 
-** purpose with or without fee is hereby granted, provided that the above 
-** copyright notice and this permission notice appear in all copies.
-** 
-** THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES 
-** WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF 
-** MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY 
-** SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES 
-** WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN 
-** ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR 
-** IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-*/
-
-vec3 RGBToHSL(vec3 color) {
-  vec3 hsl; // init to 0 to avoid warnings ? (and reverse if + remove first part)
-
-  float fmin = min(min(color.r, color.g), color.b); //Min. value of RGB
-  float fmax = max(max(color.r, color.g), color.b); //Max. value of RGB
-  float delta = fmax - fmin; //Delta RGB value
-
-  hsl.z = (fmax + fmin) / 2.0; // Luminance
-
-  if (delta == 0.0) { // This is a gray, no chroma...
-    hsl.x = 0.0; // Hue
-    hsl.y = 0.0; // Saturation
-
-  } else { //Chromatic data...
-    if (hsl.z < 0.5)
-      hsl.y = delta / (fmax + fmin); // Saturation
-    else
-      hsl.y = delta / (2.0 - fmax - fmin); // Saturation
-    
-    float deltaR = (((fmax - color.r) / 6.0) + (delta / 2.0)) / delta;
-    float deltaG = (((fmax - color.g) / 6.0) + (delta / 2.0)) / delta;
-    float deltaB = (((fmax - color.b) / 6.0) + (delta / 2.0)) / delta;
-
-    if (color.r == fmax)
-      hsl.x = deltaB - deltaG; // Hue
-    else if (color.g == fmax)
-      hsl.x = (1.0 / 3.0) + deltaR - deltaB; // Hue
-    else if (color.b == fmax)
-      hsl.x = (2.0 / 3.0) + deltaG - deltaR; // Hue
-
-    if (hsl.x < 0.0)
-      hsl.x += 1.0; // Hue
-    else if (hsl.x > 1.0)
-      hsl.x -= 1.0; // Hue
-  }
-
-  return hsl;
-}
-
-float HueToRGB(float f1, float f2, float hue) {
-  if (hue < 0.0)
-    hue += 1.0;
-  else if (hue > 1.0)
-    hue -= 1.0;
-  float res;
-  if ((6.0 * hue) < 1.0)
-    res = f1 + (f2 - f1) * 6.0 * hue;
-  else if ((2.0 * hue) < 1.0)
-    res = f2;
-  else if ((3.0 * hue) < 2.0)
-    res = f1 + (f2 - f1) * ((2.0 / 3.0) - hue) * 6.0;
-  else
-    res = f1;
-  return res;
-}
-
-vec3 HSLToRGB(vec3 hsl) {
-  vec3 rgb;
-  
-  if (hsl.y == 0.0) {
-    rgb = vec3(hsl.z); // Luminance
-  } else {
-    float f2;
-
-    if (hsl.z < 0.5)
-      f2 = hsl.z * (1.0 + hsl.y);
-    else
-      f2 = (hsl.z + hsl.y) - (hsl.y * hsl.z);
-
-    float f1 = 2.0 * hsl.z - f2;
-
-    rgb.r = HueToRGB(f1, f2, hsl.x + (1.0/3.0));
-    rgb.g = HueToRGB(f1, f2, hsl.x);
-    rgb.b = HueToRGB(f1, f2, hsl.x - (1.0/3.0));
-  }
-
-  return rgb;
-}
-
-vec3 BlendColor(vec3 base, vec3 blend) {
-  vec3 blendHSL = RGBToHSL(blend);
-  return HSLToRGB(vec3(blendHSL.r, blendHSL.g, RGBToHSL(base).b));
-}
-
-/* ------------------------------------------------------------------------- */
-
 #define M_PI 3.141592653589793
+
+#define RED_SKY_COLOR vec3(1, 0.6, 0.2)
 
 mat4 rotationMatrix(vec3 axis, float angle) {
     axis = normalize(axis);
@@ -178,14 +77,7 @@ vec3 rotate(vec3 v, vec3 axis, float angle) {
   return (m * vec4(v, 1.0)).xyz;
 }
 
-float hash21(vec2 p) {
-  vec3 p3  = fract(vec3(p.xyx) * 0.1031);
-  p3 += dot(p3, p3.yzx + 33.33);
-  return fract((p3.x + p3.y) * p3.z);
-}
-
 #if NIGHT_SKY >= 1
-
   float star(vec2 uv, float maxVal) {
     float d = length(uv);
     return min((0.1 / d /* + max(0.0, 1.0 - abs(uv.x * uv.y * 5000))*2 */) * smoothstep(1, 0.1, d), maxVal);
@@ -201,7 +93,7 @@ float hash21(vec2 p) {
     vec3 col = vec3(0);
     for (int y = -1; y <= 1; y++) for (int x = -1; x <= 1; x++) {
       vec2 o = vec2(x, y);
-      float n = hash21(mod(id + o, scsqrt2));
+      float n = hash12(mod(id + o, scsqrt2));
       float size = fract(n * 745.32);
       vec3 color = sin(vec3(0.2, 0.3, 0.9) * fract(n * 2345.7) * 109.2) * 0.5 + 0.5;
       color = color * vec3(0.4, 0.2, 0.1) + vec3(0.4, 0.6, 0.9);
@@ -249,7 +141,7 @@ float hash21(vec2 p) {
     vec3 avgCol = vec3(0);
 
     for (float i = 0.0; i < 50.0; i++) {
-      float of = 0.006*hash21(gl_FragCoord.xy)*smoothstep(0.,15., i);
+      float of = 0.006*hash12(gl_FragCoord.xy)*smoothstep(0.,15., i);
       float pt = (.8+pow(i,1.4)*.002)/(direction.y*2.+0.4) - of;
       vec3 bpos = pt*direction;
       avgCol = mix(avgCol, (sin(1.-INV_AURORA_COLOR+i*0.043)*0.5+0.5)*triNoise2d(bpos.zx, 0.06, time), 0.5);
@@ -315,9 +207,13 @@ float linearstep(float edge0, float edge1, float x) {
   return clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);
 }
 
-vec3 blendFogColor(vec3 atmosphere, vec3 fogColor) {
-  float dist = length(fogColor - vec3(0.729, 0.831, 1));
-  return mix(atmosphere, BlendColor(atmosphere, fogColor), smoothstep(0.0, 0.2, dist));
+vec3 colorBlend(vec3 base, vec3 blend) {
+  return oklab2rgb(vec3(rgb2oklab(base).x, rgb2oklab(blend).yz));
+}
+
+vec3 blendSkyColor(vec3 atmosphere, vec3 skyColor) {
+  float dist = length(skyColor - vec3(0.486, 0.639, 1));
+  return mix(atmosphere, colorBlend(atmosphere, skyColor), smoothstep(0.0, 0.2, dist));
 }
 
 #if ATMOSPHERE == 1
@@ -415,7 +311,7 @@ void main() {
     float sunAngle = atan(sunDir.y, sunDir.x);
     mat4 timeRotMat = rotationMatrix(vec3(0, 0, 1), sunAngle - M_PI / 6);
     vec3 ndr = (timeRotMat * vec4(nd, 1.0)).xyz;
-    float screenNoise = hash21(gl_FragCoord.xy);
+    float screenNoise = hash12(gl_FragCoord.xy);
 
     #ifdef ENABLE_POST_MOON
       vec2 moonUV = getMoonUV((rotationMatrix(vec3(0, 0, 1), atan(sunDir.y, sunDir.x)) * vec4(nd, 1.0)).xyz);
@@ -502,9 +398,9 @@ void main() {
       atmosphere = mix(
         atmosphere,
         vec4(
-          blendFogColor(
+          blendSkyColor(
             sampleSkybox(SkyBoxDaySampler, (vec4(direction, 1) * rotationMatrix(vec3(0, 1, 0), 1.3)).xyz),
-            fogColor.rgb
+            skyColor
           ),
           dayLight
         ),
@@ -521,10 +417,10 @@ void main() {
       atmosphere.rgb = mix(
         atmosphere.rgb,
         mix(
-          BlendColor(atmosphere.rgb, horizon),
+          colorBlend(atmosphere.rgb, horizon),
           horizon,
           mix(hm, hm * 0.1, weather)
-        ) / (1 - pow(smoothstep(-5, 3, dot(nd, sunDir)), 4) * vec3(1, 0.48, 0.24)),
+        ) / (1 - pow(smoothstep(-5, 3, dot(nd, sunDir)), 4) * RED_SKY_COLOR),
         mix(rm, rm * 0.1, weather)
       );
 
@@ -558,7 +454,7 @@ void main() {
       // Adding a tiny bit of noise here lessens the color banding in the gradient
       float fAtmos = nd.y + screenNoise * 0.02;
       atmosphere = mix(atmosphere, vec4(
-        blendFogColor(
+        blendSkyColor(
           mix(
             mix(
               texelFetch(SkyColorSampler, ivec2(0, 2), 0).rgb,
@@ -568,7 +464,7 @@ void main() {
             texelFetch(SkyColorSampler, ivec2(0, 0), 0).rgb,
             linearstep(0.5, 1, fAtmos)
           ),
-          fogColor.rgb
+          skyColor
         ), max(weather, dayLight)
       ), max(weather, dayLight));
 
@@ -581,10 +477,10 @@ void main() {
       atmosphere.rgb = mix(
         atmosphere.rgb,
         mix(
-          BlendColor(atmosphere.rgb, horizon),
+          colorBlend(atmosphere.rgb, horizon),
           horizon,
           mix(hm, hm * 0.1, weather)
-        ) / (1 - pow(smoothstep(-5, 3, dot(nd, sunDir)), 4) * vec3(1, 0.48, 0.24)),
+        ) / (1 - pow(smoothstep(-5, 3, dot(nd, sunDir)), 4) * RED_SKY_COLOR),
         mix(rm, rm * 0.1, weather)
       );
 
@@ -619,9 +515,9 @@ void main() {
 
       clouds = vec4(
         mix(
-          blendFogColor(
+          blendSkyColor(
             mix(nightCloudsColor, dayCloudsColor, dayLight),
-            fogColor.rgb
+            skyColor
           ),
           sunsetCloudsColor,
           smoothstep(-0.35, 0, timeOfDay) * smoothstep(0.25, 0, timeOfDay) * smoothstep(-1 + 0.6 * (1 - dayLight), 1, dot(nd, sunDir))
@@ -666,10 +562,39 @@ void main() {
       ) + cloudsAdditive, 1
     ), pow(1.0 - ndusq, 6.0), 0.0, 1.0, mix(fogColor, vec4(0.827, 0.447, 0.27, 1), rm));
 
-    fragColor = vec4(mix(
-      finalColor.rgb,
-      fragColor.rgb,
-      fragColor.a
+    vec3 ok1 = rgb2oklab(finalColor.rgb);
+    vec3 ok2 = rgb2oklab(fragColor.rgb);
+    vec3 ok3 = mix(
+      ok2,
+      mix(
+        ok1,
+        ok2,
+        pow(linearstep(0.08, 1.0, fragColor.a), 0.5)
+      ),
+      (1.0 - fragColor.a) * smoothstep(0.99, 0.985, dot(nd, sunDir) - fragColor.a * fragColor.a)
+    );
+    vec3 ok4 = mix(
+      ok3,
+      max(ok1.xyz, ok3.xyz),
+      smoothstep(0.98, 0.99, dot(nd, sunDir))
+    );
+    fragColor = vec4(oklab2rgb(
+      #ifdef DISABLE_CORE_STARS
+        ok4
+      #else
+        mix(
+          ok1,
+          ok4,
+          clamp(
+            smoothstep(0.7, 0.3,
+              smoothstep(1.0, 0.9, 1.0 - fragColor.a)
+              * (1.0 - fragColor.a)
+              * smoothstep(0.975, 0.96, dot(nd, sunDir))
+            ) + smoothstep(-0.98, -0.99, dot(nd, sunDir)),
+            0.0, 1.0
+          )
+        )
+      #endif
     ), 1);
   }
 }
