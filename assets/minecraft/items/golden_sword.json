@@ -1,0 +1,43 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {
+        "threshold": 0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/golden_sword"
+        }
+      },
+      {
+        "threshold": 0.33,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/sword/golden/imperfect"
+        }
+      },
+      {
+        "threshold": 0.67,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/sword/golden/damaged"
+        }
+      },
+      {
+        "threshold": 0.82,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/sword/golden/broken"
+        }
+      },
+      {
+        "threshold": 0.95,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/sword/golden/wrecked"
+        }
+      }
+    ],
+    "property": "minecraft:damage"
+  }
+}

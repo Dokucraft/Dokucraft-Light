@@ -1,0 +1,43 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {
+        "threshold": 0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/stone_hoe"
+        }
+      },
+      {
+        "threshold": 0.33,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/hoe/stone/imperfect"
+        }
+      },
+      {
+        "threshold": 0.67,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/hoe/stone/damaged"
+        }
+      },
+      {
+        "threshold": 0.82,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/hoe/stone/broken"
+        }
+      },
+      {
+        "threshold": 0.95,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/hoe/stone/wrecked"
+        }
+      }
+    ],
+    "property": "minecraft:damage"
+  }
+}

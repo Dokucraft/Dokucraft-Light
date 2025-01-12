@@ -1,0 +1,43 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {
+        "threshold": 0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/golden_shovel"
+        }
+      },
+      {
+        "threshold": 0.33,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/shovel/golden/imperfect"
+        }
+      },
+      {
+        "threshold": 0.67,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/shovel/golden/damaged"
+        }
+      },
+      {
+        "threshold": 0.82,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/shovel/golden/broken"
+        }
+      },
+      {
+        "threshold": 0.95,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/shovel/golden/wrecked"
+        }
+      }
+    ],
+    "property": "minecraft:damage"
+  }
+}

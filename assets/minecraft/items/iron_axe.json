@@ -1,0 +1,43 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {
+        "threshold": 0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/iron_axe"
+        }
+      },
+      {
+        "threshold": 0.33,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/axe/iron/imperfect"
+        }
+      },
+      {
+        "threshold": 0.67,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/axe/iron/damaged"
+        }
+      },
+      {
+        "threshold": 0.82,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/axe/iron/broken"
+        }
+      },
+      {
+        "threshold": 0.95,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/damaged_tools/axe/iron/wrecked"
+        }
+      }
+    ],
+    "property": "minecraft:damage"
+  }
+}
