@@ -562,39 +562,47 @@ void main() {
       ) + cloudsAdditive, 1
     ), pow(1.0 - ndusq, 6.0), 0.0, 1.0, mix(fogColor, vec4(0.827, 0.447, 0.27, 1), rm));
 
-    vec3 ok1 = rgb2oklab(finalColor.rgb);
-    vec3 ok2 = rgb2oklab(fragColor.rgb);
-    vec3 ok3 = mix(
-      ok2,
-      mix(
-        ok1,
+    #ifdef ENABLE_POST_SUN
+      fragColor = vec4(mix(
+        finalColor.rgb,
+        fragColor.rgb,
+        fragColor.a
+      ), 1.0);
+    #else
+      vec3 ok1 = rgb2oklab(finalColor.rgb);
+      vec3 ok2 = rgb2oklab(fragColor.rgb);
+      vec3 ok3 = mix(
         ok2,
-        pow(linearstep(0.08, 1.0, fragColor.a), 0.5)
-      ),
-      (1.0 - fragColor.a) * smoothstep(0.99, 0.985, dot(nd, sunDir) - fragColor.a * fragColor.a)
-    );
-    vec3 ok4 = mix(
-      ok3,
-      max(ok1.xyz, ok3.xyz),
-      smoothstep(0.98, 0.99, dot(nd, sunDir))
-    );
-    fragColor = vec4(oklab2rgb(
-      #ifdef DISABLE_CORE_STARS
-        ok4
-      #else
         mix(
           ok1,
-          ok4,
-          clamp(
-            smoothstep(0.7, 0.3,
-              smoothstep(1.0, 0.9, 1.0 - fragColor.a)
-              * (1.0 - fragColor.a)
-              * smoothstep(0.975, 0.96, dot(nd, sunDir))
-            ) + smoothstep(-0.98, -0.99, dot(nd, sunDir)),
-            0.0, 1.0
+          ok2,
+          pow(linearstep(0.08, 1.0, fragColor.a), 0.5)
+        ),
+        (1.0 - fragColor.a) * smoothstep(0.99, 0.985, dot(nd, sunDir) - fragColor.a * fragColor.a)
+      );
+      vec3 ok4 = mix(
+        ok3,
+        max(ok1, ok3),
+        smoothstep(0.98, 0.99, dot(nd, sunDir))
+      );
+      fragColor = vec4(oklab2rgb(
+        #ifdef DISABLE_CORE_STARS
+          ok4
+        #else
+          mix(
+            ok1,
+            ok4,
+            clamp(
+              smoothstep(0.7, 0.3,
+                smoothstep(1.0, 0.9, 1.0 - fragColor.a)
+                * (1.0 - fragColor.a)
+                * smoothstep(0.975, 0.96, dot(nd, sunDir))
+              ) + smoothstep(-0.98, -0.99, dot(nd, sunDir)),
+              0.0, 1.0
+            )
           )
-        )
-      #endif
-    ), 1);
+        #endif
+      ), 1);
+    #endif
   }
 }

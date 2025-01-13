@@ -26,7 +26,7 @@ void main() {
   isSky = 0.0;
   isStars = int(
     abs(Position.y - VOIDHEIGHT) > FUDGE &&
-    abs(ColorModulator.r - 0.5) < FUDGE &&
+    ColorModulator.r > FUDGE &&
     abs(ColorModulator.r - ColorModulator.g) < FUDGE &&
     abs(ColorModulator.r - ColorModulator.b) < FUDGE
   );
