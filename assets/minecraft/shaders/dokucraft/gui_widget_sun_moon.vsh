@@ -42,7 +42,6 @@ out vec2 ScrSize;
 #define OVERLAYSCALE 2.0
 
 void main() {
-  // gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
   vec4 candidate = ProjMat * ModelViewMat * vec4(Position, 1.0);
   ProjInv = mat4(0.0);
   cscale = vec3(0.0);
