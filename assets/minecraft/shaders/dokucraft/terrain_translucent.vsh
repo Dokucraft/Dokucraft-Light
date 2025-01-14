@@ -66,30 +66,29 @@ void main() {
   vertexColor = Color;
   lightColor = minecraft_sample_lightmap(Sampler2, UV2);
   texCoord0 = UV0;
+  isWaterSurface = 0;
 
   #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
-    isWaterSurface = 0;
     pos = Position;
     pos.y = 8;
   #endif
 
-  #if defined(ENABLE_WATER_TINT_CORRECTION) || defined(ENABLE_PROCEDURAL_WATER_SURFACE)
+  #if defined(ENABLE_WATER_TINT_CORRECTION) || defined(ENABLE_PROCEDURAL_WATER_SURFACE) || defined(ENABLE_DESATURATE_WATER_HIGHLIGHT)
     vec4 color = texture(Sampler0, UV0);
 
     if (
       (abs(vertexColor.r - vertexColor.g) >= 0.01 || abs(vertexColor.r - vertexColor.b) >= 0.01) &&
-      color.b > color.r && color.b > color.g
+      vertexColor.b > vertexColor.r
     ) {
       #ifdef ENABLE_WATER_TINT_CORRECTION
         vertexColor.rgb *= waterTintTransform;
       #endif
 
+      isWaterSurface = 1;
       #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
         if (color.r + color.g < 0.001 && color.b > 0.999 && int(color.a * 255) == 251) {
-          isWaterSurface = 1;
+          isWaterSurface = 2;
         }
-      #else
-        isWaterSurface = 1;
       #endif
     }
   #endif

@@ -49,7 +49,7 @@ void main() {
     if (
       (color.a >= 0.4 && color.a < 0.9)
       #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
-        || isWaterSurface == 1
+        || isWaterSurface == 2
       #endif
     ) {
       #ifdef ENABLE_FRAGMENT_FRESNEL
@@ -58,7 +58,7 @@ void main() {
       #endif
 
       #ifdef ENABLE_PROCEDURAL_WATER_SURFACE
-        if (isWaterSurface == 1) {
+        if (isWaterSurface == 2) {
           float time = floor(GameTime * 24000) / 24000;
           float distFactor = pow(1.0 - min(1, max(0, vertexDistance - 50) / 200.0), 0.5);
           vec3 pxpos = px(pos, 2);
@@ -100,7 +100,7 @@ void main() {
       #endif
 
       #ifdef ENABLE_DESATURATE_WATER_HIGHLIGHT
-        if (isWaterSurface == 1) {
+        if (isWaterSurface > 0) {
           float cmax = max(color.r, max(color.g, color.b));
           float cmin = min(color.r, min(color.g, color.b));
           float sat = (cmax - cmin) / cmax;
