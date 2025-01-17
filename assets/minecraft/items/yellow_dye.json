@@ -15,14 +15,14 @@
 				"threshold": 4,
 				"model": {
 					"type": "minecraft:model",
-					"model": "minecraft:item/yellow_dye"
+					"model": "minecraft:item/cit/dyes/yellow_dye/2"
 				}
 			},
 			{
 				"threshold": 23,
 				"model": {
 					"type": "minecraft:model",
-					"model": "minecraft:item/cit/dyes/yellow_dye/3"
+					"model": "minecraft:item/yellow_dye"
 				}
 			},
 			{

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "minecraft:item/cit/dyes/blue_dye/3"
+    "layer0": "minecraft:item/cit/dyes/red_dye/2"
   }
 }
