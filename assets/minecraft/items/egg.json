@@ -1,0 +1,65 @@
+{
+	"model": {
+		"type": "minecraft:range_dispatch",
+		"property": "minecraft:count",
+		"normalize": false,
+		"entries": [
+			{
+				"threshold": 1,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/egg"
+				}
+			},
+			{
+				"threshold": 2,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/egg/2"
+				}
+			},
+			{
+				"threshold": 3,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/egg/3"
+				}
+			},
+			{
+				"threshold": 4,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/egg/4"
+				}
+			},
+			{
+				"threshold": 5,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/egg/5"
+				}
+			},
+			{
+				"threshold": 6,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/egg/6"
+				}
+			},
+			{
+				"threshold": 7,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/egg/7"
+				}
+			},
+			{
+				"threshold": 8,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/egg/8"
+				}
+			}
+		]
+	}
+}

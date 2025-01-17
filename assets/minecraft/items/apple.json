@@ -1,0 +1,86 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:component",
+		"component": "minecraft:custom_name",
+		"cases": [
+			{
+				"when": "Cucumber",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/food/cucumber"
+				}
+			},
+			{
+				"when": "Green Apple",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/food/green_apple"
+				}
+			},
+			{
+				"when": "Lemon",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/food/lemon"
+				}
+			},
+			{
+				"when": "Onion",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/food/onion"
+				}
+			},
+			{
+				"when": "Pineapple",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/food/pineapple"
+				}
+			},
+			{
+				"when": "Strawberry",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/food/strawberry"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:range_dispatch",
+			"property": "minecraft:count",
+			"normalize": false,
+			"entries": [
+				{
+					"threshold": 1,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/apple"
+					}
+				},
+				{
+					"threshold": 2,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/cit/items/apple/2"
+					}
+				},
+				{
+					"threshold": 3,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/cit/items/apple/3"
+					}
+				},
+				{
+					"threshold": 4,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/cit/items/apple/4"
+					}
+				}
+			]
+		}
+	}
+}

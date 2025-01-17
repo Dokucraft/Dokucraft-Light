@@ -1,43 +1,64 @@
 {
-  "model": {
-    "type": "minecraft:range_dispatch",
-    "entries": [
-      {
-        "threshold": 0,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/iron_axe"
-        }
-      },
-      {
-        "threshold": 0.33,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/damaged_tools/axe/iron/imperfect"
-        }
-      },
-      {
-        "threshold": 0.67,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/damaged_tools/axe/iron/damaged"
-        }
-      },
-      {
-        "threshold": 0.82,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/damaged_tools/axe/iron/broken"
-        }
-      },
-      {
-        "threshold": 0.95,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/damaged_tools/axe/iron/wrecked"
-        }
-      }
-    ],
-    "property": "minecraft:damage"
-  }
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:component",
+		"component": "minecraft:custom_name",
+		"cases": [
+			{
+				"when": "Iron Halberd",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/tools/iron_halberd"
+				}
+			},
+			{
+				"when": "Xmas Iron Axe",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/tools/xmas_iron_axe"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:range_dispatch",
+			"property": "minecraft:damage",
+			"entries": [
+				{
+					"threshold": 0,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/iron_axe"
+					}
+				},
+				{
+					"threshold": 0.33,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/damaged_tools/axe/iron/imperfect"
+					}
+				},
+				{
+					"threshold": 0.67,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/damaged_tools/axe/iron/damaged"
+					}
+				},
+				{
+					"threshold": 0.82,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/damaged_tools/axe/iron/broken"
+					}
+				},
+				{
+					"threshold": 0.95,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/damaged_tools/axe/iron/wrecked"
+					}
+				}
+			]
+		}
+	}
 }

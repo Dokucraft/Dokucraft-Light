@@ -1,6 +1,7 @@
 {
   "model": {
     "type": "minecraft:range_dispatch",
+		"property": "minecraft:damage",
     "entries": [
       {
         "threshold": 0,
@@ -37,7 +38,6 @@
           "model": "minecraft:item/damaged_tools/hoe/stone/wrecked"
         }
       }
-    ],
-    "property": "minecraft:damage"
+    ]
   }
 }

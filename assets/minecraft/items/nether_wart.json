@@ -1,0 +1,37 @@
+{
+	"model": {
+		"type": "minecraft:range_dispatch",
+		"property": "minecraft:count",
+		"normalize": false,
+		"entries": [
+			{
+				"threshold": 1,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/nether_warts/1"
+				}
+			},
+			{
+				"threshold": 17,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/nether_wart"
+				}
+			},
+			{
+				"threshold": 33,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/nether_warts/3"
+				}
+			},
+			{
+				"threshold": 49,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/nether_warts/4"
+				}
+			}
+		]
+	}
+}

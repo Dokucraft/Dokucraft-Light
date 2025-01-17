@@ -1,0 +1,44 @@
+{
+	"model": {
+		"type": "minecraft:range_dispatch",
+		"property": "minecraft:count",
+		"normalize": false,
+		"entries": [
+			{
+				"threshold": 1,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/sugar"
+				}
+			},
+			{
+				"threshold": 2,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/sugar/1"
+				}
+			},
+			{
+				"threshold": 17,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/sugar/2"
+				}
+			},
+			{
+				"threshold": 33,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/sugar/3"
+				}
+			},
+			{
+				"threshold": 49,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/sugar/4"
+				}
+			}
+		]
+	}
+}

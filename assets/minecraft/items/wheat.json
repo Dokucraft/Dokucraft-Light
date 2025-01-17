@@ -1,0 +1,30 @@
+{
+	"model": {
+		"type": "minecraft:range_dispatch",
+		"property": "minecraft:count",
+		"normalize": false,
+		"entries": [
+			{
+				"threshold": 1,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/wheat/1"
+				}
+			},
+			{
+				"threshold": 17,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/wheat/2"
+				}
+			},
+			{
+				"threshold": 33,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/wheat"
+				}
+			}
+		]
+	}
+}

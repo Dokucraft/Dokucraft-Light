@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/cit/renamable_alts/tools/xmas_diamond_shovel"
+  }
+}

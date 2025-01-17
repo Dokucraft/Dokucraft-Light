@@ -1,0 +1,149 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:component",
+		"component": "minecraft:custom_name",
+		"cases": [
+			{
+				"when": "Lance",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/tools/lance"
+				}
+			},
+			{
+				"when": "Paint Brush",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/paint_brush"
+				}
+			},
+			{
+				"when": "Paint Roller",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/paint_roller"
+				}
+			},
+			{
+				"when": "Bagpipes",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/bagpipes"
+				}
+			},
+			{
+				"when": "Banjo",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/banjo"
+				}
+			},
+			{
+				"when": "Cello",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/cello"
+				}
+			},
+			{
+				"when": "Drum",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/drum"
+				}
+			},
+			{
+				"when": "Flute",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/flute"
+				}
+			},
+			{
+				"when": "Guitar",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/guitar"
+				}
+			},
+			{
+				"when": "Harp",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/harp"
+				}
+			},
+			{
+				"when": "Pan Flute",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/pan_flute"
+				}
+			},
+			{
+				"when": "Rattle",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/rattle"
+				}
+			},
+			{
+				"when": "Trumpet",
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/instruments/trumpet"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:range_dispatch",
+			"property": "minecraft:count",
+			"normalize": false,
+			"entries": [
+				{
+					"threshold": 1,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/stick"
+					}
+				},
+				{
+					"threshold": 2,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/cit/items/stick/1"
+					}
+				},
+				{
+					"threshold": 17,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/cit/items/stick/2"
+					}
+				},
+				{
+					"threshold": 25,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/cit/items/stick/3"
+					}
+				},
+				{
+					"threshold": 33,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/cit/items/stick/4"
+					}
+				},
+				{
+					"threshold": 49,
+					"model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/cit/items/stick/5"
+					}
+				}
+			]
+		}
+	}
+}

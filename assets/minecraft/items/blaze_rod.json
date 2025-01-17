@@ -1,0 +1,30 @@
+{
+	"model": {
+		"type": "minecraft:range_dispatch",
+		"property": "minecraft:count",
+		"normalize": false,
+		"entries": [
+			{
+				"threshold": 1,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/blaze_rod"
+				}
+			},
+			{
+				"threshold": 17,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/blaze_rod/2"
+				}
+			},
+			{
+				"threshold": 42,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/items/blaze_rod/3"
+				}
+			}
+		]
+	}
+}
