@@ -21,7 +21,7 @@
 		],
 		"fallback": {
 			"type": "minecraft:range_dispatch",
-			"property": "minecraft:damage"
+			"property": "minecraft:damage",
 			"entries": [
 				{
 					"threshold": 0,
