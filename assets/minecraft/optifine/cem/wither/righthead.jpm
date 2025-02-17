@@ -1,7 +1,6 @@
 {
 	"texture": "textures/entity/skeleton/wither_skeleton",
 	"textureSize": [64, 32],
-	"credit": "Made with Blockbench",
 	"boxes": [
 		{
 			"coordinates": [-13.125, -2.25, -2.625, 5.25, 5.25, 5.25],

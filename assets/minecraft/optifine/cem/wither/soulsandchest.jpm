@@ -1,10 +1,9 @@
 {
 	"texture": "textures/block/soul_sand",
 	"textureSize": [16, 16],
-	"credit": "Made with Blockbench",
 	"boxes": [
 		{
-			"coordinates": [-5.25, 13.5, -5.25, 10.5, 10.5, 10.5],
+			"coordinates": [-5.25, 3, -5.25, 10.5, 10.5, 10.5],
 			"uvNorth": [0, 0, 16, 16],
 			"uvEast": [0, 0, 16, 16],
 			"uvSouth": [0, 0, 16, 16],

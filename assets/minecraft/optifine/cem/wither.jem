@@ -3,7 +3,7 @@
     {
       "part": "body1",
       "attach": "True",
-      "model": "soulsandbase.jpm",
+      "model": "./wither/soulsandbase.jpm",
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
       "animations": [
@@ -18,7 +18,7 @@
     {
       "part": "body1",
       "attach": "True",
-      "model": "soulsandchest.jpm",
+      "model": "./wither/soulsandchest.jpm",
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
       "animations": [
@@ -34,7 +34,7 @@
     {
       "part": "body1",
       "attach": "True",
-      "model": "soulsandleft.jpm",
+      "model": "./wither/soulsandleft.jpm",
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
       "animations": [
@@ -50,7 +50,7 @@
     {
       "part": "body1",
       "attach": "True",
-      "model": "soulsandright.jpm",
+      "model": "./wither/soulsandright.jpm",
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
       "animations": [
@@ -92,7 +92,7 @@
     {
       "part": "body1",
       "attach": "True",
-      "model": "centerhead.jpm",
+      "model": "./wither/centerhead.jpm",
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
       "animations": [
@@ -121,7 +121,7 @@
     {
       "part": "body1",
       "attach": "True",
-      "model": "righthead.jpm",
+      "model": "./wither/righthead.jpm",
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
       "animations": [
@@ -149,7 +149,7 @@
     {
       "part": "body1",
       "attach": "True",
-      "model": "lefthead.jpm",
+      "model": "./wither/lefthead.jpm",
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
       "animations": [
