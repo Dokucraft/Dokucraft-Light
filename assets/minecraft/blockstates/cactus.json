@@ -1,5 +1,5 @@
 {
-    "variants": {
-        "": { "model": "block/cactus/cactus" }
-    }
+	"variants": {
+		"": { "model": "block/cactus/cactus" }
+	}
 }
