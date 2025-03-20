@@ -1,1 +1,30 @@
-{"parent":"block/cross","textures":{"cross":"block/plants/dead_bush/4"}}
+{
+	"credit": "Made by SyndiShanX",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/plants/dead_bush/4",
+		"cross": "block/plants/dead_bush/4"
+	},
+	"elements": [
+		{
+			"from": [-2.2, 0, 8],
+			"to": [18.2, 16, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#cross"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#cross"}
+			}
+		},
+		{
+			"from": [8, 0, -5.7],
+			"to": [8, 16, 14.7],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 4.5]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#cross"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#cross"}
+			}
+		}
+	]
+}
