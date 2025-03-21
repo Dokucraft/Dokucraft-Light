@@ -1,0 +1,41 @@
+{
+	"credit": "Made by SyndiShanX",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/wildflowers",
+		"flowerbed": "block/wildflowers",
+		"stem": "block/wildflowers_stem"
+	},
+	"elements": [
+		{
+			"name": "Flower",
+			"from": [10, 2, 2.5],
+			"to": [13.5, 2, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 2.5]},
+			"faces": {
+				"up": {"uv": [10, 2.5, 13.5, 6], "texture": "#flowerbed"},
+				"down": {"uv": [10, 6, 13.5, 2.5], "texture": "#flowerbed"}
+			}
+		},
+		{
+			"name": "Stem",
+			"from": [12.8, 0, -7.55],
+			"to": [12.8, 2, -7.05],
+			"rotation": {"angle": -45, "axis": "y", "origin": [-1, 0, -3]},
+			"faces": {
+				"east": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"west": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"name": "Stem",
+			"from": [12.55, 0, -7.3],
+			"to": [13.05, 2, -7.3],
+			"rotation": {"angle": -45, "axis": "y", "origin": [-1, 0, -3]},
+			"faces": {
+				"north": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"south": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		}
+	]
+}
