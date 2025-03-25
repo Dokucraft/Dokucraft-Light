@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/particle__vert.glsl>

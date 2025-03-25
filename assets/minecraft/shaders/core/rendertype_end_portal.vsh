@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/end_portal__vert.glsl>

@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/leash__vert.glsl>

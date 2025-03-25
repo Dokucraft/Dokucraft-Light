@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/sky_core__vert.glsl>

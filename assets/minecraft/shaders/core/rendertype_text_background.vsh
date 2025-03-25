@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/text_background__vert.glsl>

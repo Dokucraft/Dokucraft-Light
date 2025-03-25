@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/text_truetype__vert.glsl>

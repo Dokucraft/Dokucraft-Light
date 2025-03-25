@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/beacon_beam__frag.glsl>

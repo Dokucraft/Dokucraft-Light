@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/gui_widget_sun_moon__vert.glsl>

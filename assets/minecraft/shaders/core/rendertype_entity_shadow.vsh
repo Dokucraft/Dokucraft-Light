@@ -1,0 +1,1 @@
+#moj_import <minecraft:dokucraft/entity_shadow__vert.glsl>
