@@ -7,8 +7,12 @@
 			{
 				"when": "Netherite Cutlass",
 				"model": {
-					"type": "minecraft:model",
-					"model": "minecraft:item/cit/renamable_alts/tools/netherite_cutlass"
+					"type": "minecraft:condition",
+					"property": "minecraft:component",
+					"predicate": "minecraft:enchantments",
+					"value": [{"enchantments": "minecraft:fire_aspect", "levels": {"min": 1, "max": 2}}],
+					"on_true": {"type": "minecraft:model", "model": "minecraft:item/cit/enchanted_tools/netherite_cutlass"},
+					"on_false": {"type": "minecraft:model", "model": "minecraft:item/cit/renamable_alts/tools/netherite_cutlass"}
 				}
 			},
 			{
@@ -27,8 +31,12 @@
 			}
 		],
 		"fallback": {
-			"type": "minecraft:model",
-			"model": "minecraft:item/netherite_sword"
+			"type": "minecraft:condition",
+			"property": "minecraft:component",
+			"predicate": "minecraft:enchantments",
+			"value": [{"enchantments": "minecraft:fire_aspect", "levels": {"min": 1, "max": 2}}],
+			"on_true": {"type": "minecraft:model", "model": "minecraft:item/cit/enchanted_tools/netherite_sword"},
+			"on_false": {"type": "minecraft:model", "model": "minecraft:item/netherite_sword"}
 		}
 	}
 }
