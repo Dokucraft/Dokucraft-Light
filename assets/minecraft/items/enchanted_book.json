@@ -337,11 +337,26 @@
         "value": [{"enchantments": "minecraft:wind_burst", "levels": {"min": 1, "max": 3}}],
         "on_true": {"type": "minecraft:model", "model": "minecraft:item/cit/enchanted_books/wind_burst"},
         "on_false": {"type": "minecraft:empty"}
+      },
+			{
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:stored_enchantments",
+        "value": [{
+					"enchantments": [
+						"minecraft:aqua_affinity", "minecraft:bane_of_arthropods", "minecraft:binding_curse", "minecraft:blast_protection", "minecraft:breach", "minecraft:channeling",
+						"minecraft:density", "minecraft:depth_strider", "minecraft:efficiency", "minecraft:feather_falling", "minecraft:fire_aspect", "minecraft:fire_protection",
+						"minecraft:flame", "minecraft:fortune", "minecraft:frost_walker", "minecraft:impaling", "minecraft:infinity", "minecraft:knockback", "minecraft:looting",
+						"minecraft:loyalty", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:mending", "minecraft:multishot", "minecraft:piercing", "minecraft:power",
+						"minecraft:projectile_protection", "minecraft:protection", "minecraft:punch", "minecraft:quick_charge", "minecraft:respiration", "minecraft:riptide",
+						"minecraft:sharpness", "minecraft:silk_touch", "minecraft:smite", "minecraft:soul_speed", "minecraft:sweeping_edge", "minecraft:swift_sneak", "minecraft:thorns",
+						"minecraft:unbreaking", "minecraft:vanishing_curse", "minecraft:wind_burst"
+					],
+					"levels": {"min": 1, "max": 5}
+        }],
+        "on_true": {"type": "minecraft:empty"},
+        "on_false": {"type": "minecraft:model", "model": "minecraft:item/enchanted_book"}
       }
-    ],
-		"fallback": {
-			"type": "minecraft:model",
-			"model": "minecraft:item/enchanted_book"
-		}
+    ]
   }
 }
