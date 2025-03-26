@@ -1,0 +1,42 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:component",
+		"component": "minecraft:custom_name",
+		"cases": [
+			{
+				"when": ["dinnerbone", "Dinnerbone", "grumm", "Grumm"],
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/name_tags/dinnerbone"
+				}
+			},
+			{
+				"when": ["jeb_", "Jeb_"],
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/name_tags/jeb"
+				}
+			},
+			{
+				"when": ["johnny", "Johnny"],
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/name_tags/johnny"
+				}
+			},
+			{
+				"when": ["toast", "Toast"],
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/cit/renamable_alts/name_tags/toast"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/name_tag"
+		}
+				
+	}
+}
