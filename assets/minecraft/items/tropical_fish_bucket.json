@@ -1,0 +1,325 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:tropical_fish/pattern",
+    "cases": [
+      {
+        "when": "betty",
+        "model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "white",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "red", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/red_cichlid"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+        }
+      },
+      {
+        "when": "blockfish",
+				"model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "yellow",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "purple", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/dottyback"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						},
+						{
+							"when": "white",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "red", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/red_snapper"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+				}
+      },
+      {
+        "when": "brinely",
+        "model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "light_blue",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "lime", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/queen_angelfish"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+				}
+      },
+      {
+        "when": "clayfish",
+				"model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/base_color",
+					"cases": [
+						{
+							"when": "white",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/pattern_color",
+								"cases": [
+									{"when": "red", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/emperor_red_snapper"}},
+									{"when": "gray", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/butterflyfish"}},
+									{"when": "orange", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/ornate_butterflyfish"}}
+								],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+				}
+      },
+      {
+        "when": "dasher",
+				"model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/base_color",
+					"cases": [
+						{
+							"when": "cyan",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/pattern_color",
+								"cases": [
+									{"when": "pink", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/parrotfish"}},
+									{"when": "yellow", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/yellowtail_parrotfish"}}
+								],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+				}
+      },
+      {
+        "when": "flopper",
+				"model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/base_color",
+					"cases": [
+						{
+							"when": "gray",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/pattern_color",
+								"cases": [
+									{"when": "blue", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/blue_tang"}},
+									{"when": "gray", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/black_tang"}}
+								],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						},
+						{
+							"when": "yellow",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/pattern_color",
+								"cases": [{"when": "yellow", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/yellow_tang"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						},
+						{
+							"when": "white",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/pattern_color",
+								"cases": [{"when": "yellow", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/threadfin"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+				}
+      },
+			{
+        "when": "glitter",
+        "model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "gray",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "white", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/moorish_idol"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+        }
+      },
+			{
+        "when": "kob",
+				"model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "white",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [
+									{"when": "orange", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/clownfish"}},
+									{"when": "red", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/tomato_clownfish"}}
+								],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+				}
+      },
+			{
+        "when": "snooper",
+        "model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "red",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "gray", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/red_lipped_blenny"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+        }
+      },
+      {
+        "when": "spotty",
+				"model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "light_blue",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "pink", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/cotton_candy_betta"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						},
+						{
+							"when": "yellow",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "white", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/goatfish"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+				}
+      },
+			{
+        "when": "stripey",
+        "model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "gray",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "orange", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/anemone"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+        }
+      },
+			{
+        "when": "sunstreak",
+				"model": {
+					"type": "minecraft:select",
+					"property": "minecraft:component",
+					"component": "minecraft:tropical_fish/pattern_color",
+					"cases": [
+						{
+							"when": "gray",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "blue", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/cichlid"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						},
+						{
+							"when": "white",
+							"model": {
+								"type": "minecraft:select",
+								"property": "minecraft:component",
+								"component": "minecraft:tropical_fish/base_color",
+								"cases": [{"when": "gray", "model": {"type": "minecraft:model", "model": "minecraft:item/cit/tropical_fish_buckets/triggerfish"}}],
+								"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+							}
+						}
+					],
+					"fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+				}
+      }
+    ],
+    "fallback": {"type": "minecraft:model", "model": "minecraft:item/tropical_fish_bucket"}
+  }
+}

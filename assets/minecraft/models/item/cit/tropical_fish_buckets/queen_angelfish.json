@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/cit/tropical_fish_buckets/queen_angelfish"
+  }
+}
