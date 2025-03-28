@@ -6,19 +6,19 @@
     "cases": [
       {
         "when": "blue",
-        "model": {"type": "minecraft:model", "model": "minecraft:item/cit/axolotl_bucket/blue"}
+        "model": {"type": "minecraft:model", "model": "minecraft:item/cit/axolotl_buckets/blue"}
       },
       {
         "when": "cyan",
-        "model": {"type": "minecraft:model", "model": "minecraft:item/cit/axolotl_bucket/cyan"}
+        "model": {"type": "minecraft:model", "model": "minecraft:item/cit/axolotl_buckets/cyan"}
       },
       {
         "when": "gold",
-        "model": {"type": "minecraft:model", "model": "minecraft:item/cit/axolotl_bucket/gold"}
+        "model": {"type": "minecraft:model", "model": "minecraft:item/cit/axolotl_buckets/gold"}
       },
       {
         "when": "wild",
-        "model": {"type": "minecraft:model", "model": "minecraft:item/cit/axolotl_bucket/wild"}
+        "model": {"type": "minecraft:model", "model": "minecraft:item/cit/axolotl_buckets/wild"}
       }
     ],
     "fallback": {
