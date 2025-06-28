@@ -44,19 +44,19 @@
     { "type": "filter",
       "pattern": {
         "namespace": "minecraft",
-        "path": "block/(acacia|bamboo|birch|cherry|crimson|(dark_)?oak|iron|jungle|mangrove|spruce|warped)_(door_(bottom|top)|trapdoor)$"
+        "path": "block/(acacia|bamboo|birch|cherry|crimson|(dark_)?oak|iron|jungle|mangrove|pale_oak|spruce|warped|(exposed_|oxidized_|weathered_)?copper)_(door_(bottom|top)|trapdoor)$"
       }
     },
     { "type": "filter",
       "pattern": {
         "namespace": "minecraft",
-        "path": "item/(acacia|bamboo|birch|cherry|crimson|(dark_)?oak|iron|jungle|mangrove|spruce|warped)_door$"
+        "path": "item/(acacia|bamboo|birch|cherry|crimson|(dark_)?oak|iron|jungle|mangrove|pale_oak|spruce|warped|(exposed_|oxidized_|weathered_)?copper)_door$"
       }
     },
     { "type": "filter",
       "pattern": {
         "namespace": "minecraft",
-        "path": "block/(acacia|(flowering_)?azalea|birch|cherry|(dark_)?oak|jungle|mangrove|spruce)_leaves$"
+        "path": "block/(acacia|(flowering_)?azalea|birch|cherry|(dark_)?oak|jungle|mangrove|pale_oak|spruce)_leaves$"
       }
     },
     { "type": "filter",
@@ -213,6 +213,18 @@
       "pattern": {
         "namespace": "minecraft",
         "path": "block/mud$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "item/[^\/]+_spawn_egg$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/dried_ghast_hydration_\\d_(north|south|east|west|top|bottom)$"
       }
     }
   ]
