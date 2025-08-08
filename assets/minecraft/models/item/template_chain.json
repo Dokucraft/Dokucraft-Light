@@ -1,0 +1,203 @@
+{
+	"format_version": "1.21.6",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#chain"
+	},
+	"elements": [
+		{
+			"name": "Chain Link",
+			"from": [7.75, 16.5, 7.5],
+			"to": [8.25, 17, 8.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 12.25, 8]},
+			"faces": {
+				"east": {"uv": [7.5, 7, 6.5, 7.5], "rotation": 180, "texture": "#chain"},
+				"west": {"uv": [6.5, 7, 7.5, 7.5], "rotation": 180, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"down": {"uv": [6.5, 7, 7.5, 7.5], "rotation": 90, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.75, 14.5, 7],
+			"to": [8.25, 17, 7.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 12.25, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"east": {"uv": [9, 7, 6.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"south": {"uv": [9, 7, 6.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"west": {"uv": [6.5, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7, 7.5], "rotation": 90, "texture": "#chain"},
+				"down": {"uv": [8.5, 7, 9, 7.5], "rotation": 270, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.75, 14.5, 8.5],
+			"to": [8.25, 17, 9],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 12.25, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"east": {"uv": [9, 7, 6.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"south": {"uv": [9, 7, 6.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"west": {"uv": [6.5, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7, 7.5], "rotation": 90, "texture": "#chain"},
+				"down": {"uv": [8.5, 7, 9, 7.5], "rotation": 270, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.5, 15, 7.75],
+			"to": [8.5, 15.5, 8.25],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, -1.39286, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 7, 7.5, 7.5], "rotation": 180, "texture": "#chain"},
+				"south": {"uv": [7.5, 7, 6.5, 7.5], "rotation": 180, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7.5, 7.5], "texture": "#chain"},
+				"down": {"uv": [6.5, 7, 7.5, 7.5], "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.75, 14.5, 7.5],
+			"to": [8.25, 15, 8.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 12.25, 8]},
+			"faces": {
+				"east": {"uv": [9, 7, 8, 7.5], "rotation": 180, "texture": "#chain"},
+				"west": {"uv": [8, 7, 9, 7.5], "rotation": 180, "texture": "#chain"},
+				"up": {"uv": [8, 7, 9, 7.5], "rotation": 270, "texture": "#chain"},
+				"down": {"uv": [8, 7, 9, 7.5], "rotation": 90, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [8.5, 12.5, 7.75],
+			"to": [9, 15.5, 8.25],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, -1.39286, 8]},
+			"faces": {
+				"north": {"uv": [6, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"east": {"uv": [6, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"south": {"uv": [9, 7, 6, 7.5], "rotation": 270, "texture": "#chain"},
+				"west": {"uv": [9, 7, 6, 7.5], "rotation": 270, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7, 7.5], "rotation": 180, "texture": "#chain"},
+				"down": {"uv": [8.5, 7, 9, 7.5], "rotation": 180, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7, 12.5, 7.75],
+			"to": [7.5, 15.5, 8.25],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, -1.39286, 8]},
+			"faces": {
+				"north": {"uv": [6, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"east": {"uv": [6, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"south": {"uv": [9, 7, 6, 7.5], "rotation": 270, "texture": "#chain"},
+				"west": {"uv": [9, 7, 6, 7.5], "rotation": 270, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7, 7.5], "rotation": 180, "texture": "#chain"},
+				"down": {"uv": [8.5, 7, 9, 7.5], "rotation": 180, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.5, 12.5, 7.75],
+			"to": [8.5, 13, 8.25],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, -1.39286, 8]},
+			"faces": {
+				"north": {"uv": [8, 7, 9, 7.5], "rotation": 180, "texture": "#chain"},
+				"south": {"uv": [9, 7, 8, 7.5], "rotation": 180, "texture": "#chain"},
+				"up": {"uv": [8, 7, 9, 7.5], "texture": "#chain"},
+				"down": {"uv": [8, 7, 9, 7.5], "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.75, 13, 7.5],
+			"to": [8.25, 13.5, 8.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 12.25, 8]},
+			"faces": {
+				"east": {"uv": [7.5, 7, 6.5, 7.5], "rotation": 180, "texture": "#chain"},
+				"west": {"uv": [6.5, 7, 7.5, 7.5], "rotation": 180, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"down": {"uv": [6.5, 7, 7.5, 7.5], "rotation": 90, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.75, 11, 7],
+			"to": [8.25, 13.5, 7.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 12.25, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"east": {"uv": [9, 7, 6.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"south": {"uv": [9, 7, 6.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"west": {"uv": [6.5, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7, 7.5], "rotation": 90, "texture": "#chain"},
+				"down": {"uv": [8.5, 7, 9, 7.5], "rotation": 270, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.75, 11, 8.5],
+			"to": [8.25, 13.5, 9],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 12.25, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"east": {"uv": [9, 7, 6.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"south": {"uv": [9, 7, 6.5, 7.5], "rotation": 270, "texture": "#chain"},
+				"west": {"uv": [6.5, 7, 9, 7.5], "rotation": 90, "texture": "#chain"},
+				"up": {"uv": [6.5, 7, 7, 7.5], "rotation": 90, "texture": "#chain"},
+				"down": {"uv": [8.5, 7, 9, 7.5], "rotation": 270, "texture": "#chain"}
+			}
+		},
+		{
+			"name": "Chain Link",
+			"from": [7.75, 11, 7.5],
+			"to": [8.25, 11.5, 8.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 12.25, 8]},
+			"faces": {
+				"east": {"uv": [9, 7, 8, 7.5], "rotation": 180, "texture": "#chain"},
+				"west": {"uv": [8, 7, 9, 7.5], "rotation": 180, "texture": "#chain"},
+				"up": {"uv": [8, 7, 9, 7.5], "rotation": 270, "texture": "#chain"},
+				"down": {"uv": [8, 7, 9, 7.5], "rotation": 90, "texture": "#chain"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, -3.75, 1]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, -3.75, 1],
+			"scale": [-1, 1, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, -0.55, 3.88],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, -0.55, 3.88],
+			"scale": [-0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [-0.25, -2.75, -5.75]
+		},
+		"gui": {
+			"rotation": [-34, 133, 60],
+			"translation": [-8.5, -11, 0],
+			"scale": [2.4, 2.4, 2.4]
+		},
+		"head": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 2.5, 0]
+		},
+		"fixed": {
+			"rotation": [0, -180, -37.5],
+			"translation": [7.25, -9.5, -1.5],
+			"scale": [2, 2, 2]
+		}
+	}
+}

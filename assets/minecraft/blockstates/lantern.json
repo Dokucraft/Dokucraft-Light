@@ -1,13 +1,13 @@
 {
-    "variants": {
-        "hanging=false":[
-			{ "model": "block/lantern/lantern" },
-			{ "model": "block/lantern/lantern_2" },
-			{ "model": "block/lantern/lantern_3" }
+	"variants": {
+		"hanging=false": [
+			{"model": "block/lantern/lantern"},
+			{"model": "block/lantern/lantern_2"},
+			{"model": "block/lantern/lantern_3"}
 		],
 		"hanging=true": [
-			{ "model": "block/lantern/lantern_hanging" },
-			{ "model": "block/lantern/lantern_hanging_2" }
+			{"model": "block/lantern/lantern_hanging"},
+			{"model": "block/lantern/lantern_hanging_2"}
 		]
-    }
+	}
 }

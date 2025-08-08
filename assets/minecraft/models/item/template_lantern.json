@@ -1,0 +1,48 @@
+{
+	"parent": "block/lantern/template_lantern_2",
+	"ambientocclusion": false,
+	"textures": {
+		"lantern": "#lantern",
+		"particle": "#lantern"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [67, -180, 0],
+			"translation": [0, -2, -1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [67, -180, 0],
+			"translation": [0, -2, -1.25],
+			"scale": [0.62, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"rotation": [-13.5, -5, 0],
+			"translation": [1, 3, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-13.5, -5, 0],
+			"translation": [1, 3, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"ground": {
+			"translation": [0, 1, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [0, 1.75, 0]
+		},
+		"head": {
+			"rotation": [-90, -90, -90],
+			"translation": [-0.25, 19.25, 0],
+			"scale": [1.6, 1.6, 1.6]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 5, 1.25],
+			"scale": [1.6, 1.6, 1.6]
+		}
+	}
+}
