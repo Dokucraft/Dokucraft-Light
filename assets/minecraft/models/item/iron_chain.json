@@ -1,6 +1,6 @@
 {
 	"parent": "item/template_chain",
 	"textures": {
-		"chain": "block/chain"
+		"chain": "block/iron_chain"
 	}
 }
