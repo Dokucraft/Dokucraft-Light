@@ -1,0 +1,8 @@
+{
+	"parent": "block/copper_bars/template_copper_bars_post",
+	"textures": {
+		"main": "block/weathered_copper_bars",
+		"alt": "block/weathered_copper_bar",
+		"particle": "block/weathered_copper_bars"
+	}
+}

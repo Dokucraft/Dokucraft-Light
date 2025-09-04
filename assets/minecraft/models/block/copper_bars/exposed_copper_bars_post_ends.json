@@ -1,0 +1,7 @@
+{
+	"parent": "block/copper_bars/template_copper_bars_post_ends",
+	"textures": {
+		"main": "block/exposed_copper_bars",
+		"particle": "block/exposed_copper_bars"
+	}
+}

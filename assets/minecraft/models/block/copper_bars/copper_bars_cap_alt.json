@@ -1,0 +1,7 @@
+{
+	"parent": "block/copper_bars/template_copper_bars_cap_alt",
+	"textures": {
+		"alt": "block/copper_bar",
+		"particle": "block/copper_bar"
+	}
+}
