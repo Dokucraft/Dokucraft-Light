@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east": { "model": "block/torch/copper_torch_wall" },
+        "facing=south": { "model": "block/torch/copper_torch_wall", "y": 90 },
+        "facing=west": { "model": "block/torch/copper_torch_wall", "y": 180 },
+        "facing=north": { "model": "block/torch/copper_torch_wall", "y": 270 }
+    }
+}
