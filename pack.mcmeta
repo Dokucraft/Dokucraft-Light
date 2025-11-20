@@ -8,5 +8,8 @@
       { "text": " | ", "color": "#70706b" },
       { "text": "dokucraft.co.uk", "color": "#ffcf01" }
     ]
+  },
+  "dokucraft": {
+    "game_version": "1.21.10"
   }
 }
