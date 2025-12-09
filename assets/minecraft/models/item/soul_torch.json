@@ -1,1 +1,1 @@
-{"parent":"block/torch/soul_torch","textures":{"fire":"item/soul_fire_torch_flame"},"gui_light":"front"}
+{"parent":"block/torch/soul_torch","textures":{"fire":"block/item/soul_fire_torch_flame"},"gui_light":"front"}

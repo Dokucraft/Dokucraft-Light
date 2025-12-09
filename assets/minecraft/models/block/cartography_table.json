@@ -9,8 +9,8 @@
 		"5": "block/cartography_map_t",
 		"6": "block/cartography_map_b",
 		"7": "block/cartography_map_n",
-		"8": "item/compass/compass",
-		"9": "item/map_filled",
+		"8": "block/item/compass",
+		"9": "block/item/map_filled",
 		"10": "block/cartography_bottom",
 		"particle": "block/cartography_sides"
 	},
