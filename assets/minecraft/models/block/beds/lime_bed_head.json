@@ -1,0 +1,8 @@
+{
+  "parent": "block/beds/bed_head",
+  "textures": {
+    "east": "block/beds/lime/bed_head_east",
+    "west": "block/beds/lime/bed_head_west",
+    "up": "block/beds/lime/bed_head_up"
+  }
+}
