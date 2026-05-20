@@ -1,6 +1,6 @@
 { "sources": [
     { "type": "single",
-      "resource": "entity/lead_knot"
+      "resource": "entity/lead_knot/lead_knot"
     },
     { "type": "single",
       "resource": "entity/end_crystal/end_crystal"
