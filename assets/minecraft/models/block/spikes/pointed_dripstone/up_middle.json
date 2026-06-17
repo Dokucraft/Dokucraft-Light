@@ -1,0 +1,6 @@
+{
+	"parent":"block/spikes/template_up_middle",
+	"textures": {
+		"spike": "block/dripstone_block"
+	}
+}
