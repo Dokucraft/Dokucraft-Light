@@ -1,0 +1,6 @@
+{
+	"parent":"block/spikes/template_up_tip",
+	"textures": {
+		"spike": "block/sulfur"
+	}
+}
