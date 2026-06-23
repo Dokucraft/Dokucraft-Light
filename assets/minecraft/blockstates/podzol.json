@@ -1,11 +1,10 @@
 {
-    "variants": {
-        "snowy=false": [
-            { "model": "block/podzol" },
-            { "model": "block/podzol", "y": 90 },
-            { "model": "block/podzol", "y": 180 },
-            { "model": "block/podzol", "y": 270 }
-        ],
-        "snowy=true": { "model": "block/podzol_snow" }
-    }
+  "variants": {
+    "snowy=false": [
+      { "model": "minecraft:block/podzol/0" },
+      { "model": "minecraft:block/podzol/1" },
+      { "model": "minecraft:block/podzol/2" }
+    ],
+    "snowy=true": { "model": "minecraft:block/podzol_snow" }
+  }
 }
