@@ -7,11 +7,11 @@
       { "model": "minecraft:block/deepslate/polished/slab/lower/4" }
     ],
     "type=double": [
-      { "model": "minecraft:block/deepslate/polished/0" },
-      { "model": "minecraft:block/deepslate/polished/1" },
-      { "model": "minecraft:block/deepslate/polished/2" },
-      { "model": "minecraft:block/deepslate/polished/3" },
-      { "model": "minecraft:block/deepslate/polished/4" }
+      { "model": "minecraft:block/deepslate/polished/slab/double/0" },
+      { "model": "minecraft:block/deepslate/polished/slab/double/1" },
+      { "model": "minecraft:block/deepslate/polished/slab/double/2" },
+      { "model": "minecraft:block/deepslate/polished/slab/double/3" },
+      { "model": "minecraft:block/deepslate/polished/slab/double/4" }
     ],
     "type=top": [
       { "model": "minecraft:block/deepslate/polished/slab/upper/0" },
