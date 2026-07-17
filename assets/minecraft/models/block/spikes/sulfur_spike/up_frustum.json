@@ -1,0 +1,6 @@
+{
+	"parent":"block/spikes/template_up_frustum",
+	"textures": {
+		"spike": "block/sulfur"
+	}
+}

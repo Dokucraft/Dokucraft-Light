@@ -1,0 +1,6 @@
+{
+	"parent":"block/spikes/template_down_tip_merge",
+	"textures": {
+		"spike": "block/sulfur"
+	}
+}
