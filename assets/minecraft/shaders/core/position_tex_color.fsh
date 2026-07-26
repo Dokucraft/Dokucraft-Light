@@ -1,4 +1,5 @@
 #version 330
+#extension GL_ARB_separate_shader_objects : require
 
 // Can't moj_import in things used during startup, when resource packs don't exist.
 #define ENABLE_BUTTON_GRADIENTS
@@ -14,11 +15,11 @@ layout(std140) uniform DynamicTransforms {
 
 uniform sampler2D Sampler0;
 
-in vec3 cscale;
-in vec2 texCoord0;
-in vec4 vertexColor;
+layout(location = 0) in vec2 texCoord0;
+layout(location = 1) in vec4 vertexColor;
+layout(location = 2) in vec3 cscale;
 
-out vec4 fragColor;
+layout(location = 0) out vec4 fragColor;
 
 void main() {
   vec4 color = vec4(0.0);
