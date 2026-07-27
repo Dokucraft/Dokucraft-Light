@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "block/buttons/poplar/poplar_button_inventory"
+  }
+}

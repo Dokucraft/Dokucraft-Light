@@ -1,0 +1,135 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by SyndiShanX",
+	"ambientocclusion": false,
+	"textures": {
+		"top": "block/doors/poplar_door_top",
+		"sides": "block/doors/poplar_door_sides",
+		"particle": "block/doors/poplar_door_top"
+	},
+	"elements": [
+		{
+			"name": "Door Top",
+			"from": [0, 0, 10.5],
+			"to": [3, 16, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 17]},
+			"faces": {
+				"north": {"uv": [9, 0, 12, 16], "texture": "#sides"},
+				"east": {"uv": [16, 0, 9.5, 16], "texture": "#top"},
+				"south": {"uv": [3, 0, 6, 16], "texture": "#sides"},
+				"west": {"uv": [9.5, 0, 16, 16], "texture": "#top"},
+				"up": {"uv": [0, 9.5, 3, 16], "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Top",
+			"from": [0, 0, 1],
+			"to": [3, 16, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 17]},
+			"faces": {
+				"north": {"uv": [3, 0, 6, 16], "texture": "#sides"},
+				"east": {"uv": [6.5, 0, 0, 16], "texture": "#top"},
+				"south": {"uv": [9, 0, 12, 16], "texture": "#sides"},
+				"west": {"uv": [0, 0, 6.5, 16], "texture": "#top"},
+				"up": {"uv": [0, 0, 3, 6.5], "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Top",
+			"from": [0, 9.5, 7.5],
+			"to": [3, 16, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 3, 9.5]},
+			"faces": {
+				"east": {"uv": [6.5, 0, 9.5, 9], "texture": "#top"},
+				"west": {"uv": [6.5, 0, 9.5, 6.5], "texture": "#top"},
+				"up": {"uv": [0, 6.5, 3, 9.5], "texture": "#sides"},
+				"down": {"uv": [9, 3.5, 12, 6.5], "rotation": 180, "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Top",
+			"from": [0, 9, 7.5],
+			"to": [3, 9.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 9.5]},
+			"faces": {
+				"east": {"uv": [6.5, 6.5, 7, 7], "texture": "#top"},
+				"south": {"uv": [9, 6.5, 12, 7], "texture": "#sides"},
+				"west": {"uv": [6.5, 6.5, 7, 7], "texture": "#top"},
+				"down": {"uv": [9, 6.5, 12, 7], "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Top",
+			"from": [0, 9, 10],
+			"to": [3, 9.5, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 1, 12.5]},
+			"faces": {
+				"north": {"uv": [9, 9, 12, 9.5], "texture": "#sides"},
+				"east": {"uv": [9, 6.5, 9.5, 7], "texture": "#top"},
+				"west": {"uv": [9, 6.5, 9.5, 7], "texture": "#top"},
+				"down": {"uv": [9, 9, 12, 9.5], "texture": "#sides"}
+			}
+		},
+		{
+			"name": "Door Top Hinge",
+			"from": [-0.25, 10, 1.5],
+			"to": [3.25, 12.5, 3.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, -5, 4.5]},
+			"faces": {
+				"north": {"uv": [0.5, 3.5, 1, 6], "texture": "#top"},
+				"east": {"uv": [2.5, 3.5, 0.5, 6], "texture": "#top"},
+				"south": {"uv": [2, 3.5, 2.5, 6], "texture": "#top"},
+				"west": {"uv": [0.5, 3.5, 2.5, 6], "texture": "#top"},
+				"up": {"uv": [0.5, 3.5, 2.5, 4], "rotation": 90, "texture": "#top"},
+				"down": {"uv": [0.5, 5.5, 2.5, 6], "rotation": 270, "texture": "#top"}
+			}
+		},
+		{
+			"name": "Door Top Hinge",
+			"from": [-0.25, 10.5, 3.5],
+			"to": [3.25, 12, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, -5, 6.5]},
+			"faces": {
+				"east": {"uv": [3, 4, 2.5, 5.5], "texture": "#top"},
+				"south": {"uv": [2.5, 4, 3, 5.5], "texture": "#top"},
+				"west": {"uv": [2.5, 4, 3, 5.5], "texture": "#top"},
+				"up": {"uv": [2.5, 4, 3, 4.5], "rotation": 90, "texture": "#top"},
+				"down": {"uv": [2.5, 5, 3, 5.5], "rotation": 270, "texture": "#top"}
+			}
+		},
+		{
+			"name": "Door Top Hinge",
+			"from": [-0.25, 0, 1.5],
+			"to": [3.25, 1.5, 3.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, -15, 4.5]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 16], "texture": "#top"},
+				"east": {"uv": [2.5, 14.5, 0.5, 16], "texture": "#top"},
+				"south": {"uv": [2, 14.5, 2.5, 16], "texture": "#top"},
+				"west": {"uv": [0.5, 14.5, 2.5, 16], "texture": "#top"},
+				"up": {"uv": [0.5, 14.5, 2.5, 15], "rotation": 90, "texture": "#top"}
+			}
+		},
+		{
+			"name": "Door Top Hinge",
+			"from": [-0.25, 0, 3.5],
+			"to": [3.25, 1, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, -15, 6.5]},
+			"faces": {
+				"east": {"uv": [3, 15, 2.5, 16], "texture": "#top"},
+				"south": {"uv": [2.5, 15, 3, 16], "texture": "#top"},
+				"west": {"uv": [2.5, 15, 3, 16], "texture": "#top"},
+				"up": {"uv": [2.5, 15, 3, 15.5], "rotation": 90, "texture": "#top"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Top",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+		}
+	]
+}
