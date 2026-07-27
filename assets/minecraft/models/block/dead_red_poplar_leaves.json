@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "minecraft:block/leaves/dead_red_poplar_leaves"
+  }
+}

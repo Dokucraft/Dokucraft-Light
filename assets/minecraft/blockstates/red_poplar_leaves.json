@@ -1,0 +1,18 @@
+{
+  "multipart": [
+    {	"when": { "OR": [
+      {"persistent":false, "distance":1},
+      {"persistent":false, "distance":2},
+      {"persistent":false, "distance":3},
+      {"persistent":false, "distance":4},
+      {"persistent":false, "distance":5},
+      {"persistent":false, "distance":6},
+      {"persistent":true}
+    ]},
+      "apply": {"model": "block/red_poplar_leaves"}
+    },
+    {	"when": {"persistent":false, "distance":7}, 
+			"apply": {"model": "block/dead_red_poplar_leaves"}
+		}
+  ]
+}

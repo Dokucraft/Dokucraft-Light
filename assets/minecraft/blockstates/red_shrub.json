@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "": [
+        { "model": "block/plants/red_shrub/0" },
+        { "model": "block/plants/red_shrub/1" },
+        { "model": "block/plants/red_shrub/2" }
+    ]
+    }
+}
