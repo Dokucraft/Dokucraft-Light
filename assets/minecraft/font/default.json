@@ -34,13 +34,6 @@
       "ascent": 14,
       "height": 20,
       "chars": ["儗儘儙儚儛儜","儝儞償儠儡儢","儣儤儥儦儧儨","儩優儫儬儭儮","儯儰儱儲儳儴","儵儶儷儸儹儺","儻儼儽儾儿兀"]
-    },
-    {
-      "type": "ttf",
-      "file": "minecraft:negative_spaces.ttf",
-      "shift": [0.0, 0.0],
-      "size": 10.0,
-      "oversample": 1.0
     }
   ]
 }
