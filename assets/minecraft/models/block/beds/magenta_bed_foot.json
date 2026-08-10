@@ -1,0 +1,9 @@
+{
+  "parent": "block/beds/bed_foot",
+  "textures": {
+		"south": "block/beds/magenta/bed_foot_south",
+    "east": "block/beds/magenta/bed_foot_east",
+    "west": "block/beds/magenta/bed_foot_west",
+    "up": "block/beds/magenta/bed_foot_up"
+  }
+}
