@@ -1,6 +1,7 @@
 {
 	"format_version": "1.21.11",
 	"credit": "Made by SyndiShanX",
+	"parent": "item/door",
 	"ambientocclusion": false,
 	"textures": {
 		"top": "block/doors/poplar_door_top",
