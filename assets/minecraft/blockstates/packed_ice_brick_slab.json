@@ -1,0 +1,15 @@
+{
+	"variants": {
+		"type=bottom": [
+			{ "model": "block/packed_ice_bricks/slab/bottom/0" },
+			{ "model": "block/packed_ice_bricks/slab/bottom/1" }
+		],
+		"type=top": [
+			{ "model": "block/packed_ice_bricks/slab/top/0" },
+			{ "model": "block/packed_ice_bricks/slab/top/1" }
+		],
+		"type=double": {
+			"model": "block/packed_ice_bricks"
+		}
+	}
+}

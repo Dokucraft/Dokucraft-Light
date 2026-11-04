@@ -1,0 +1,58 @@
+{
+  "multipart": [
+    { "when": { "up": "true" },
+			"apply": [
+				{ "model": "block/packed_ice_bricks/wall/post/0" },
+				{ "model": "block/packed_ice_bricks/wall/post/1" }
+			]
+		},
+    { "when": { "north": "low" },
+      "apply": [
+        { "model": "block/packed_ice_bricks/wall/side/0", "uvlock": true },
+				{ "model": "block/packed_ice_bricks/wall/side/1", "uvlock": true }
+      ]
+    },
+    { "when": { "east": "low" },
+      "apply": [
+        { "model": "block/packed_ice_bricks/wall/side/0", "uvlock": true, "y": 90 },
+				{ "model": "block/packed_ice_bricks/wall/side/1", "uvlock": true, "y": 90 }
+      ]
+    },
+    { "when": { "south": "low" },
+      "apply": [
+        { "model": "block/packed_ice_bricks/wall/side/0", "uvlock": true, "y": 180 },
+				{ "model": "block/packed_ice_bricks/wall/side/1", "uvlock": true, "y": 180 }
+      ]
+    },
+    { "when": { "west": "low" },
+      "apply": [
+        { "model": "block/packed_ice_bricks/wall/side/0", "uvlock": true, "y": 270 },
+				{ "model": "block/packed_ice_bricks/wall/side/1", "uvlock": true, "y": 270 }
+      ]
+    },
+    { "when": { "north": "tall" },
+      "apply": [
+        { "model": "block/packed_ice_bricks/wall/side_tall/0", "uvlock": true },
+				{ "model": "block/packed_ice_bricks/wall/side_tall/1", "uvlock": true }
+      ]
+    },
+    { "when": { "east": "tall" },
+      "apply": [
+        { "model": "block/packed_ice_bricks/wall/side_tall/0", "uvlock": true, "y": 90 },
+				{ "model": "block/packed_ice_bricks/wall/side_tall/1", "uvlock": true, "y": 90 }
+      ]
+    },
+    { "when": { "south": "tall" },
+      "apply": [
+        { "model": "block/packed_ice_bricks/wall/side_tall/0", "uvlock": true, "y": 180 },
+				{ "model": "block/packed_ice_bricks/wall/side_tall/1", "uvlock": true, "y": 180 }
+      ]
+    },
+    { "when": { "west": "tall" },
+      "apply": [
+        { "model": "block/packed_ice_bricks/wall/side_tall/0", "uvlock": true, "y": 270 },
+				{ "model": "block/packed_ice_bricks/wall/side_tall/1", "uvlock": true, "y": 270 }
+      ]
+    }
+  ]
+}
